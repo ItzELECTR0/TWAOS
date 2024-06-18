@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc81008149a763b468f830783c72c0e9, type: 3}
+  m_Name: Credits
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: f52dbec2b1338ea479a11e6d2735e315, type: 3}
+  sectionSpacing: 70
+  headerSpacing: 30
+  nameListSpacing: 50
+  credits:
+  - headerTitle: Created by
+    headerTitleKey: CreditsCreatedBy
+    items:
+    - Team Michsky
+  - headerTitle: Art Design
+    headerTitleKey: CreditsArtDesign
+    items:
+    - Mariyah Gaines
+    - Ralphy Griffin
+    - Ricky Broughton
+    - Selena Crouch
+    - Felix Corbett
+  - headerTitle: Programming
+    headerTitleKey: CreditsProgrammer
+    items:
+    - Teo Cohen
+    - Kezia Bush
+    - Darsh Stokes
+  - headerTitle: Sound Design
+    headerTitleKey: CreditsSoundDesign
+    items:
+    - Thomas Beaumont
+    - Lily-Anne Taylor
+  - headerTitle: Concept Artist
+    headerTitleKey: CreditsConceptArtist
+    items:
+    - Madeline Xiong
+  - headerTitle: VFX Artist
+    headerTitleKey: CreditsVFXArtist
+    items:
+    - Cassian Wilcox
+    - Nylah Sykes
+  - headerTitle: Voiceover
+    headerTitleKey: CreditsVoiceover
+    items:
+    - Willie Lawson
+    - Lorena Lozano
+    - Jonny Allen
+    - Keagan Guest
+  - headerTitle: User Interface
+    headerTitleKey: CreditsUI
+    items:
+    - Bobby Gray
+  - headerTitle: Playtesters
+    headerTitleKey: CreditsPlaytesters
+    items:
+    - Alberto Ewing
+    - Leonidas West
+    - Gary Alcock
+    - Erika Frey
+    - Gloria Fulton
+  mentions:
+  - ID: Logo Placeholder
+    icon: {fileID: 21300000, guid: 6c6acdf7b632b1647b8e847aa5e8a59e, type: 3}
+    description: 'Optional footnote goes here.
+
+      You can add additional information
+      or license details here.'
+    descriptionKey: CreditsLogoDescription
+    descriptionSpacing: 30
+    layoutSpacing: 160
+  - ID: Logo Placeholder 2
+    icon: {fileID: 21300000, guid: 78ca0ac98a59e2d49a61da6d805033a7, type: 3}
+    description: 'Optional footnote goes here.
+
+      You can add additional information
+      or license details here.'
+    descriptionKey: CreditsLogoDescription
+    descriptionSpacing: 30
+    layoutSpacing: 160

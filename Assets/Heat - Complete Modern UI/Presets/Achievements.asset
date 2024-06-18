@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6902ec504077034682a24926832eb0e, type: 3}
+  m_Name: Achievements
+  m_EditorClassIdentifier: 
+  achievements:
+  - title: Sample Achievement 1
+    icon: {fileID: 21300000, guid: 2df039799e5bb5a40a15b3c247386a49, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 10
+    icon: {fileID: 21300000, guid: 57b2c596f4084bc44b426791635ec8f9, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 11
+    icon: {fileID: 21300000, guid: 6208e75404504114297288e0c6269259, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 0
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 12
+    icon: {fileID: 21300000, guid: 96f2bb0ce8fff0f418073f00e8df2491, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 13
+    icon: {fileID: 21300000, guid: e201e3c4219daf34d8bb4a04ad30c96b, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 14
+    icon: {fileID: 21300000, guid: 2df039799e5bb5a40a15b3c247386a49, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 15
+    icon: {fileID: 21300000, guid: 57b2c596f4084bc44b426791635ec8f9, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 0
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 16
+    icon: {fileID: 21300000, guid: 6208e75404504114297288e0c6269259, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 17
+    icon: {fileID: 21300000, guid: 96f2bb0ce8fff0f418073f00e8df2491, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 18
+    icon: {fileID: 21300000, guid: e201e3c4219daf34d8bb4a04ad30c96b, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 0
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 19
+    icon: {fileID: 21300000, guid: 2df039799e5bb5a40a15b3c247386a49, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 2
+    icon: {fileID: 21300000, guid: e201e3c4219daf34d8bb4a04ad30c96b, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 20
+    icon: {fileID: 21300000, guid: 96f2bb0ce8fff0f418073f00e8df2491, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 21
+    icon: {fileID: 21300000, guid: e201e3c4219daf34d8bb4a04ad30c96b, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 22
+    icon: {fileID: 21300000, guid: 2df039799e5bb5a40a15b3c247386a49, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 0
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 23
+    icon: {fileID: 21300000, guid: 57b2c596f4084bc44b426791635ec8f9, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 24
+    icon: {fileID: 21300000, guid: 57b2c596f4084bc44b426791635ec8f9, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 3
+    icon: {fileID: 21300000, guid: 96f2bb0ce8fff0f418073f00e8df2491, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 4
+    icon: {fileID: 21300000, guid: 6208e75404504114297288e0c6269259, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 5
+    icon: {fileID: 21300000, guid: 57b2c596f4084bc44b426791635ec8f9, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 0
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 6
+    icon: {fileID: 21300000, guid: 2df039799e5bb5a40a15b3c247386a49, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 2
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 7
+    icon: {fileID: 21300000, guid: e201e3c4219daf34d8bb4a04ad30c96b, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 8
+    icon: {fileID: 21300000, guid: 96f2bb0ce8fff0f418073f00e8df2491, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 1
+    dataBehaviour: 0
+    isHidden: 1
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc
+  - title: Sample Achievement 9
+    icon: {fileID: 21300000, guid: 6208e75404504114297288e0c6269259, type: 3}
+    description: This is a sample achievement made for demo purposes.
+    type: 0
+    dataBehaviour: 1
+    isHidden: 0
+    hiddenTitle: Hidden Achievement
+    hiddenIcon: {fileID: 21300000, guid: 2d091f989b9be9b4ab41653ee6efcdef, type: 3}
+    hiddenDescription: This is a hidden achievement and must be unlocked to preview.
+    titleKey: AchievementSampleTitle
+    decriptionKey: AchievementSampleDesc
+    hiddenTitleKey: AchievementHiddenTitle
+    hiddenDescKey: AchievementHiddenDesc

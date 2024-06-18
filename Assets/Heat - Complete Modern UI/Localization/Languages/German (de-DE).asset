@@ -1,0 +1,768 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b70abea511859e248a1cf2c44035e321, type: 3}
+  m_Name: German (de-DE)
+  m_EditorClassIdentifier: 
+  localizationSettings: {fileID: 11400000, guid: 2cbd73cf0fc79bf4ab2e27e18b1ba7c8, type: 2}
+  languageID: de-DE
+  languageName: German
+  localizedName: Deutsch
+  tableList:
+  - table: {fileID: 11400000, guid: c4d223e438e911a44aecec230da547ea, type: 2}
+    tableContent:
+    - key: AchievementsTitle
+      value: Erfolge
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementTotal
+      value: Gesamt
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementLegendary
+      value: "Legend\xE4r"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementRare
+      value: "Selten\r"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementCommon
+      value: Verbreitet
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ButtonAll
+      value: Alle
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PAK_Part1
+      value: "Dr\xFCcken Sie"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PAK_Key
+      value: "Ein Schl\xFCssel"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PAK_Part2
+      value: Anfangen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ButtonGoBack
+      value: "// Geh Zur\xFCck"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: StoryModeTitle
+      value: Geschichtsmodus
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MultiplayerTitle
+      value: Mehrspieler
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ExitTitle
+      value: Ausgang
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ExtrasTitle
+      value: Extras
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsTitle
+      value: Einstellungen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: GeneralTitle
+      value: Allgemein
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ControlsTitle
+      value: Kontrollen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AudioTitle
+      value: Audio
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: VisualsTitle
+      value: Visuals
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MultiplayerSearchingLabel
+      value: Suche nach spielen...
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LanguageTitle
+      value: Sprache
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsTitle
+      value: "Nachrichten\r"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ButtonMoreDetails
+      value: Mehr Details
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemTitle1
+      value: Willkommen bei der Heat UI
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemDescription1
+      value: "Dies ist ein Bereich, in dem Sie die neuesten Updates, \xC4nderungsprotokolle
+        und mehr anzeigen k\xF6nnen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemTitle2
+      value: "Vollst\xE4ndig anpassbar"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemDescription2
+      value: "Sie k\xF6nnen neue Elemente hinzuf\xFCgen, die Gr\xF6\xDFe \xE4ndern
+        oder das Erscheinungsbild des Bereichs \xE4ndern, indem Sie die Voreinstellung
+        f\xFCr Nachrichtenelemente anpassen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemTitle3
+      value: "F\xFCgen Sie einfach neue Inhalte hinzu"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewsItemDescription3
+      value: "Sie k\xF6nnen ganz einfach neue Slider-Elemente hinzuf\xFCgen, indem
+        Sie die Komponente \u201ENews Slider\u201C verwenden, die dem Slider-Objekt
+        hinzugef\xFCgt wird."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementHiddenTitle
+      value: Versteckte Leistung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementHiddenDesc
+      value: "Dies ist ein versteckter Erfolg und muss f\xFCr die Vorschau freigeschaltet
+        werden."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementSampleTitle
+      value: Beispielleistung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementSampleDesc
+      value: Dies ist ein Beispielerfolg, der zu Demozwecken erstellt wurde.
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: DiscordDescription
+      value: Tritt unserem Discord server bei
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: TwitterDescription
+      value: Folge uns auf Twitter
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterContinue
+      value: Fortsetzen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterPlay
+      value: Spielen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterReplay
+      value: Wiederholung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterCompleted
+      value: Abgeschlossen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterUnlocked
+      value: Entsperrt
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChapterLocked
+      value: Gesperrt
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter1Title
+      value: Kapitel 1
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter1Description
+      value: "Dies ist das Beschreibungsfeld. Hier k\xF6nnen Sie etwas zum Kapitel
+        sagen. Dies ist ein mehrzeiliges Feld und wird abh\xE4ngig von seinem Inhalt
+        automatisch in der Gr\xF6\xDFe angepasst. Sie k\xF6nnen auch beliebigen TMP-unterst\xFCtzten
+        Rich-Text verwenden. Sie k\xF6nnen die Komponente \u201EKapitel-Manager\u201C
+        verwenden, um \xC4nderungen am Kapitelbereich vorzunehmen. Keine Sorge, es
+        ist wirklich einfach zu bedienen!"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter2Title
+      value: Kapitel 2
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter2Description
+      value: "Dies ist das Beschreibungsfeld. Hier k\xF6nnen Sie etwas zum Kapitel
+        sagen. Dies ist ein mehrzeiliges Feld und wird abh\xE4ngig von seinem Inhalt
+        automatisch in der Gr\xF6\xDFe angepasst. Sie k\xF6nnen auch beliebigen TMP-unterst\xFCtzten
+        Rich-Text verwenden. Sie k\xF6nnen die Komponente \u201EKapitel-Manager\u201C
+        verwenden, um \xC4nderungen am Kapitelbereich vorzunehmen. Keine Sorge, es
+        ist wirklich einfach zu bedienen!"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter3Title
+      value: Kapitel 3
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter3Description
+      value: "Dies ist das Beschreibungsfeld. Hier k\xF6nnen Sie etwas zum Kapitel
+        sagen. Dies ist ein mehrzeiliges Feld und wird abh\xE4ngig von seinem Inhalt
+        automatisch in der Gr\xF6\xDFe angepasst. Sie k\xF6nnen auch beliebigen TMP-unterst\xFCtzten
+        Rich-Text verwenden. Sie k\xF6nnen die Komponente \u201EKapitel-Manager\u201C
+        verwenden, um \xC4nderungen am Kapitelbereich vorzunehmen. Keine Sorge, es
+        ist wirklich einfach zu bedienen!"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter4Title
+      value: Kapitel 4
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: Chapter4Description
+      value: "Dies ist das Beschreibungsfeld. Hier k\xF6nnen Sie etwas zum Kapitel
+        sagen. Dies ist ein mehrzeiliges Feld und wird abh\xE4ngig von seinem Inhalt
+        automatisch in der Gr\xF6\xDFe angepasst. Sie k\xF6nnen auch beliebigen TMP-unterst\xFCtzten
+        Rich-Text verwenden. Sie k\xF6nnen die Komponente \u201EKapitel-Manager\u201C
+        verwenden, um \xC4nderungen am Kapitelbereich vorzunehmen. Keine Sorge, es
+        ist wirklich einfach zu bedienen!"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ButtonCancel
+      value: Absagen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ButtonConfirm
+      value: "Best\xE4tigen"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ExitModalDescription
+      value: "Sie sind sicher, dass Sie beenden wollen? Diese Aktion kann nicht r\xFCckg\xE4ngig
+        gemacht werden."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LabelOn
+      value: An
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LabelOff
+      value: Aus
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsTitle
+      value: Kredite
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SelectLabel
+      value: "Ausw\xE4hlen"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NavigateLabel
+      value: Navigieren
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PrevChapterLabel
+      value: Vorheriges Kapitel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NextChapterLabel
+      value: "N\xE4chstes Kapitel"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: GoBackLabel
+      value: "Geh Zur\xFCck"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PrevCategoryLabel
+      value: Vorherige Kategorie
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NextCategoryLabel
+      value: "N\xE4chste Kategorie"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: BoostCreditsLabel
+      value: Steigern (Halten)
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CloseLabel
+      value: Nah Dran
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ControllerLayoutTitle
+      value: Controller-Layout
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsVoiceover
+      value: "Voice-over\r"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsCreatedBy
+      value: "Erstellt von\r"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsArtDesign
+      value: Kunstdesign
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsProgrammer
+      value: Programmierung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsSoundDesign
+      value: Audiogestaltung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsConceptArtist
+      value: "Konzeptk\xFCnstler"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsVFXArtist
+      value: "VFX-K\xFCnstler"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsUI
+      value: "Benutzeroberfl\xE4che"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsPlaytesters
+      value: Spieletester
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: WebsiteDescription
+      value: "\xDCberpr\xFCfen Sie unsere Website"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: RedditDescription
+      value: Folgen Sie uns auf Reddit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: YouTubeDescription
+      value: Abonnieren Sie uns auf YouTube
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: EnableHintsLabel
+      value: Hinweise aktivieren
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: EnableTutorialsLabel
+      value: Tutorials aktivieren
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: UIScaleLabel
+      value: UI-Skala
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SubtitleScaleLabel
+      value: Untertitelskala
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: EnableSubtitlesLabel
+      value: Untertitel aktivieren
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: VolumeHeader
+      value: Volumen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MasterVolumeLabel
+      value: "Master-Lautst\xE4rke"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MusicVolumeLabel
+      value: "Musiklautst\xE4rke"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SFXVolumeLabel
+      value: "SFX-Lautst\xE4rke"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: UIVolumeLabel
+      value: "UI-Lautst\xE4rke"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: DisplayHeader
+      value: Anzeige
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ResolutionLabel
+      value: "Aufl\xF6sung"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: EnableHintsDesc
+      value: "Erstbesucher? M\xF6chten Sie beim Spielen etwas Neues lernen? Wenn
+        ja, k\xF6nnen Sie dies aktivieren."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: EnableSubtitlesDesc
+      value: Sehen Sie, was die Leute auf dem Bildschirm sagen.
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LanguageDesc
+      value: "W\xE4hlen Sie eine Sprache aus, die Sie bevorzugen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: UIScaleDesc
+      value: "Zu gro\xDF? Zu klein? Das hat sie gesagt? Nun, Sie k\xF6nnen die Gr\xF6\xDFe
+        der Benutzeroberfl\xE4che hier verwalten."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SubtitleScaleDesc
+      value: "Zu gro\xDF? Zu klein? Das hat sie gesagt? Nun, Sie k\xF6nnen die Untertitelgr\xF6\xDFe
+        hier verwalten."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MasterVolumeDesc
+      value: "Wenn Sie die allgemeine Lautst\xE4rke des Spiels verringern oder erh\xF6hen
+        m\xF6chten, k\xF6nnen Sie mit diesem Schieberegler spielen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: MusicVolumeDesc
+      value: "Wenn Sie die Musiklautst\xE4rke des Spiels verringern oder erh\xF6hen
+        m\xF6chten, k\xF6nnen Sie mit diesem Schieberegler spielen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SFXVolumeDesc
+      value: "Wenn Sie die Effektlautst\xE4rke des Spiels verringern oder erh\xF6hen
+        m\xF6chten, k\xF6nnen Sie mit diesem Schieberegler spielen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: UIVolumeDesc
+      value: "Wenn Sie die Benutzeroberfl\xE4che des Spiels verringern oder erh\xF6hen
+        m\xF6chten, k\xF6nnen Sie mit diesem Schieberegler spielen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ResolutionDesc
+      value: "Bildschirme mit h\xF6herer Aufl\xF6sung k\xF6nnen sch\xE4rfere, klarere
+        und detailliertere Bilder erzeugen. Sie k\xF6nnen jede gew\xFCnschte Aufl\xF6sung
+        w\xE4hlen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsDesc
+      value: "Optimieren Sie einige Optionen und machen Sie Ihr Spielerlebnis noch
+        besser! Mit den Schaltfl\xE4chen oben k\xF6nnen Sie zwischen den Kategorien
+        wechseln."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: VSyncLabel
+      value: VSync
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: VSyncDesc
+      value: "VSync ist die Grafiktechnologie, die f\xFCr die Synchronisierung der
+        Bildrate eines Spiels mit der Bildwiederholfrequenz eines Monitors verantwortlich
+        ist. Diese Synchronisation liefert ein fl\xFCssiges, unterbrechungsfreies
+        Gameplay f\xFCr grafiklastige 3D-Spiele."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: FrameRateLabel
+      value: Bildrate
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: FrameRateDesc
+      value: Begrenzen Sie die Bildrate. Es wird empfohlen, diese Option an die Bildwiederholfrequenz
+        Ihres Monitors anzupassen. Beachten Sie, dass diese Option keine Auswirkung
+        hat, wenn VSync aktiviert ist.
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: FrameRateUnlimited
+      value: Unbegrenzt
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: WindowModeLabel
+      value: Fenstermodus
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: WindowModeDesc
+      value: "W\xE4hlen Sie den bevorzugten Fenstermodus. Wenn Sie Eingabeverz\xF6gerungen
+        feststellen, k\xF6nnen Sie den Modus <b>Vollbild</b> ausprobieren."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: BorderlessLabel
+      value: Randlos
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: FullscreenLabel
+      value: Ganzer Bildschirm
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: WindowedLabel
+      value: Gefenstert
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsLogoDescription
+      value: "Hier steht eine optionale Fu\xDFnote.\r\nHier k\xF6nnen Sie zus\xE4tzliche
+        Informationen oder Lizenzdetails hinzuf\xFCgen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AccessibilityTitle
+      value: Barrierefreiheit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SearchLabel
+      value: Suche
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CancelSearchLabel
+      value: Suche Abbrechen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: GameModeLabel
+      value: Spielmodus
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PlayLabel
+      value: Spielen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SearchingLabel
+      value: Suche...
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PauseMenuContinue
+      value: Fortsetzen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ExitMainMenuTitle
+      value: "Zur\xFCck zum hauptmen\xFC"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ExitMainMenuDescription
+      value: "M\xF6chten Sie wirklich zum Hauptmen\xFC zur\xFCckkehren? Nicht gespeicherter
+        Fortschritt geht verloren."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: QuestTextSample
+      value: Beispiel missionstext
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NotificationTextSample
+      value: Aufgabe erledigt <b>[+50 XP]</b>
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PausedLabel
+      value: Angehalten
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: TextureQualityLabel
+      value: "Texturqualit\xE4t"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: TextureQualityDesc
+      value: "Texturen mit h\xF6herer Qualit\xE4t f\xFChren zu wesentlich tieferen
+        Details, erfordern jedoch mehr VRAM und Videoverarbeitungshardware."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsGraphicsLow
+      value: "L\xE5g"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsGraphicsMedium
+      value: Mittel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsGraphicsHigh
+      value: Hoch
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SettingsGraphicsUltra
+      value: Ultra
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AnisotropicFilteringLabel
+      value: Anisotrope filterung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AnisotropicFilteringDesc
+      value: "Die Texturfilterung l\xE4sst entfernte Objekte in Spielen sch\xE4rfer
+        erscheinen. Es funktioniert, indem es das Erscheinungsbild von Texturen verbessert,
+        die in einem steilen Winkel betrachtet werden."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CamAndPlayerLabel
+      value: Kamera & Player
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CamSensitivityLabel
+      value: Kameraempfindlichkeit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CamSensitivityDesc
+      value: Passen Sie die Kameraempfindlichkeit an.
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SprintModeLabel
+      value: Sprint-Modus
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SprintModeLabelDesc
+      value: "Legen Sie fest, ob Sie sprinten m\xF6chten, indem Sie die Taste gedr\xFCckt
+        halten oder umschalten."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SprintToggleLabel
+      value: Umschalten
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SprintHoldLabel
+      value: Halt
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ReverseLookLabel
+      value: Umgekehrter Blick
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ReverseLookDesc
+      value: Kehrt den Kamerablick um, wenn aktiviert.
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: KeyBindingsHeader
+      value: Tastenbelegungen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AdvancedHeader
+      value: Fortschrittlich
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ScrollLabel
+      value: Scrollen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LobbyLabel
+      value: Empfangshalle
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ReadyLabel
+      value: Bereit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NotReadyLabel
+      value: Nicht Bereit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: UnreadyLabel
+      value: Unbereit
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PAK_Touchscreen
+      value: Touchscreen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PrevPageLabel
+      value: Vorherige Seite
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NextPageLabel
+      value: "N\xE4chste Seite"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewGameTitle
+      value: Neues Spiel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewGameModalDescription
+      value: "Sind Sie sicher, dass Sie ein neues Spiel starten m\xF6chten?\r\nDadurch
+        wird Ihre automatische Speicherung \xFCberschrieben."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: HomeTitle
+      value: Startseite
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ChaptersTitle
+      value: Kapitel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ShopTitle
+      value: "Gesch\xE4ft"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ContinueTitle
+      value: Weitermachen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ContinueDescription
+      value: Setzen Sie Ihre Reise fort
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewGameTitle
+      value: Neues Spiel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: NewGameDescription
+      value: Ein Neustart
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LoadGameTitle
+      value: Spiel laden
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LoadGameDescription
+      value: Laden Sie Ihr gespeichertes Spiel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: AchievementsDescription
+      value: Sehen Sie sich die Erfolgsbibliothek an
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ControllerLayoutDescription
+      value: Siehe Controller-Zuordnung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: CreditsDescription
+      value: Leute, die das Spiel gemacht haben
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PurchasedLabel
+      value: Gekauft
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PurchaseLabel
+      value: Kaufen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PurchaseItemTitle
+      value: Artikel kaufen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: PurchaseItemDescription
+      value: "Sind Sie sicher, dass Sie den Artikel kaufen m\xF6chten?"
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SampleShopItemTitle
+      value: Beispieltitel
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: SampleShopItemDescription
+      value: "Beschreibung der Shop-Schaltfl\xE4che hier. Unterst\xFCtzt Mehrzeilen."
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: WeaponsTitle
+      value: Waffen
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: ClothesTitle
+      value: Kleidung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: VehiclesTitle
+      value: Fahrzeuge
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+    - key: LoadTitle
+      value: Belastung
+      audioValue: {fileID: 0}
+      spriteValue: {fileID: 0}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9501c69babff75f45abcc8c316f59088, type: 3}
+  m_Name: Heat UI Manager
+  m_EditorClassIdentifier: 
+  enableDynamicUpdate: 1
+  achievementLibrary: {fileID: 11400000, guid: 4d17e10117d0c814cbf152ca22ffa40e, type: 2}
+  commonColor: {r: 1, g: 1, b: 1, a: 255}
+  rareColor: {r: 1, g: 0.49019608, b: 0.78431374, a: 255}
+  legendaryColor: {r: 1, g: 0.49019608, b: 0.19607843, a: 255}
+  hoverSound: {fileID: 8300000, guid: f0cb06f9461ea8b4bba64f3f7064a702, type: 3}
+  clickSound: {fileID: 8300000, guid: 4656469a7b79f5c4a84f2ecd79f129d1, type: 3}
+  accentColor: {r: 1, g: 0.6862745, b: 0, a: 1}
+  accentColorInvert: {r: 0.09803922, g: 0.13725491, b: 0.1764706, a: 1}
+  primaryColor: {r: 1, g: 1, b: 1, a: 1}
+  secondaryColor: {r: 0.09803922, g: 0.13725491, b: 0.1764706, a: 1}
+  negativeColor: {r: 1, g: 0.29411766, b: 0.29411766, a: 1}
+  backgroundColor: {r: 0.09803922, g: 0.13725491, b: 0.1764706, a: 1}
+  fontLight: {fileID: 11400000, guid: 561b17b1e2e773d4dbdf4095f3b05cca, type: 2}
+  fontRegular: {fileID: 11400000, guid: 8e8f97682e668e94cb30d2e6b8e13d84, type: 2}
+  fontMedium: {fileID: 11400000, guid: 3c499bda0f839fa40ae8c42951d5779d, type: 2}
+  fontSemiBold: {fileID: 11400000, guid: 928da2220a0ff5e44aa484bdb0006131, type: 2}
+  fontBold: {fileID: 11400000, guid: e66011e4b0dfee745b0bdcceedc236fd, type: 2}
+  customFont: {fileID: 0}
+  enableLocalization: 0
+  localizationSettings: {fileID: 11400000, guid: 2cbd73cf0fc79bf4ab2e27e18b1ba7c8, type: 2}
+  currentLanguage: {fileID: 11400000, guid: 7f0d34462af20e740a7fc45541f666a0, type: 2}
+  brandLogo: {fileID: 21300000, guid: 78ca0ac98a59e2d49a61da6d805033a7, type: 3}
+  gameLogo: {fileID: 21300000, guid: db29e29da505c4348be353a9303e4de2, type: 3}
+  enableSplashScreen: 1
+  showSplashScreenOnce: 1
+  pakType: 0
+  pakText: Press {Any Key} To Start
+  pakLocalizationText: PAK_Part1 {PAK_Key} PAK_Part2
