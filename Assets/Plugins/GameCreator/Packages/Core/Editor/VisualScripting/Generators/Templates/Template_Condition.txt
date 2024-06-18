@@ -1,0 +1,12 @@
+using System;
+using GameCreator.Runtime.Common;
+using GameCreator.Runtime.VisualScripting;
+
+[Serializable]
+public class {{CLASSNAME}} : Condition
+{
+    protected override bool Run(Args args)
+    {
+        return true;
+    }
+}

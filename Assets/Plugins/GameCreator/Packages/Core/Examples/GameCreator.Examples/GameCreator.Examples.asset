@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7734bdb5c6ff542a7a94b0aec1b2782c, type: 3}
+  m_Name: GameCreator.Examples
+  m_EditorClassIdentifier: 
+  m_Install:
+    m_Name: Examples
+    m_Module: Game Creator
+    m_Description: 'A collection of examples to get you started with Game Creator.
+      It is recommended to start from top to bottom and includes, among other examples:
+
+
+      -
+      Player movement
+
+      - Interact with objects
+
+      - Gesture & State animations
+
+      -
+      Entering and exiting Ragdoll state
+
+      - Managing footstep sounds
+
+      -
+      Multiple camera types
+
+      - Multiple visual scripting examples
+
+      -
+      Using Variables
+
+      - Saving and Loading game data'
+    m_Author: Catsoft Works
+    m_Version:
+      major: 1
+      minor: 9
+      patch: 25
+    m_Complexity: 0
+    m_Dependencies:
+    - m_ID: GameCreator.Blockout
+      m_MinVersion:
+        major: 1
+        minor: 4
+        patch: 10
+    - m_ID: GameCreator.Characters
+      m_MinVersion:
+        major: 1
+        minor: 7
+        patch: 22

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0b935016f124151bbd7d3de9dcfa14, type: 3}
+  m_Name: Footsteps
+  m_EditorClassIdentifier: 
+  m_MaterialSounds:
+    m_LayerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    m_MaterialSounds: []
+    m_DefaultSounds:
+      m_Volume: 0.25
+      m_Variations:
+      - {fileID: 8300000, guid: 1308243b72a5441f2abf527819e250e9, type: 3}
+      m_Impact:
+        m_Prefab: {fileID: 0}
+        m_UsePooling: 0
+        m_Size: 5
+        m_HasDuration: 0
+        m_Duration: 10
+  references:
+    version: 2
+    RefIds: []

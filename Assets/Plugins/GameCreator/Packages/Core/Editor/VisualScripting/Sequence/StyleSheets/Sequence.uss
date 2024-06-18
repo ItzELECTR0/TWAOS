@@ -1,0 +1,33 @@
+* {
+    --gc-sequence-track-height: 20px;
+    
+    --gc-sequence-clip-height: 14px;
+    --gc-sequence-clip-margin: 0;
+
+    --gc-sequence-clip-height-thin: 2px;
+    --gc-sequence-clip-margin-thin: 6px;
+    
+    --gc-sequence-clip-offset: 3px;
+
+    --gc-sequence-playback-tooltip-height: 18px;
+    --gc-sequence-playback-tooltip-offset: 1px;
+
+    --gc-sequence-metric-unit-height: 7px;
+    --gc-sequence-metric-unit-margin: 13px;
+    --gc-sequence-metric-fraction-height: 5px;
+    --gc-sequence-metric-fraction-margin: 15px;
+}
+
+#GC-Sequence-Head {
+    background-color: var(--gc-color-bg-dark);
+    border-width: var(--gc-common-border-width);
+    border-color: var(--gc-color-border-default);
+}
+
+#GC-Sequence-Body {
+    background-color: var(--gc-color-bg-dark);
+}
+
+#GC-Sequence-Foot {
+    
+}

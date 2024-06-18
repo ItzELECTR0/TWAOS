@@ -1,0 +1,24 @@
+#GC-Settings-Details-Toolbar ToolbarButton {
+    -unity-text-align: middle-left;
+}
+
+#GC-Settings-Details-ScrollView {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#GC-Settings-Details-ScrollView-Content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#GC-Settings-Details-ScrollView #GC-Settings-Details-ScrollView-Content {
+    margin: var(--gc-common-space-smaller) var(--gc-common-space-small);
+    height: auto;
+}
+
+.gc-settings-details-content-fullscreen {
+    width: 100%;
+    height: 100%;
+}

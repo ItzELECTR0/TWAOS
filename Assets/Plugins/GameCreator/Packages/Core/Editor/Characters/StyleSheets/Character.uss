@@ -1,0 +1,21 @@
+#GC-Character-GroupGeneral {
+    margin-top: var(--gc-common-space-smaller);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#GC-Character-GroupGeneral-L {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 4px;
+    background-color: var(--gc-color-bg-light);
+    border-width: var(--gc-common-border-width);
+    border-radius: var(--gc-common-border-radius);
+    border-color: var(--gc-color-border-default);
+}
+
+#GC-Character-GroupGeneral-R {
+    margin-left: var(--gc-common-space-smaller);
+    flex-grow: 1;
+    flex-shrink: 1;
+}

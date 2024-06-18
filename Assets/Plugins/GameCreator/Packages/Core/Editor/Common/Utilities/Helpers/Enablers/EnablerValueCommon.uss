@@ -1,0 +1,31 @@
+#GC-Enabler-Root {
+    --gc-toggle-size: 15px;
+}
+
+#GC-Enabler-Root {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: var(--gc-common-element-height);
+}
+
+#GC-Enabler-Root Label {
+    height: 100%;
+    margin-left: 3px;
+    -unity-text-align: middle-left;
+}
+
+#GC-Enabler-Root Toggle {
+    width: var(--gc-toggle-size);
+    height: var(--gc-common-element-height);
+    margin-left: 0;
+    margin-right: var(--gc-common-space-smallest);
+}
+
+#GC-Enabler-Root Toggle > VisualElement {
+    width: var(--gc-toggle-size);
+}
+
+#GC-Enabler-Root PropertyField {
+    flex-grow: 1;
+    margin-right: 2px;
+}

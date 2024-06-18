@@ -1,0 +1,27 @@
+LabelProgress {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: var(--gc-common-space-default);
+}
+
+LabelProgress Label {
+    flex-grow: 1;
+    height: 100%;
+    -unity-text-align: middle-left;
+}
+
+LabelProgress #GC-LabelProgress-Bar {
+    width: var(--gc-common-element-width);
+    height: var(--gc-common-space-small);
+    margin-top: var(--gc-common-space-smaller);
+    margin-right: var(--gc-common-space-smaller);
+    background-color: var(--gc-color-bg-darker);
+    flex-grow: 0;
+}
+
+LabelProgress #GC-LabelProgress-Progress {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}

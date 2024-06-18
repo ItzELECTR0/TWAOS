@@ -1,0 +1,22 @@
+#GC-SelectType-Head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 2px;
+}
+
+#GC-SelectType-Head Label {
+    -unity-text-align: middle-left;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#GC-SelectType-Head Button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2px 5px;
+    -unity-text-align: middle-left;
+}

@@ -1,0 +1,28 @@
+WarningMessage {
+    margin: var(--gc-common-space-smaller) 0;
+    padding: var(--gc-common-space-smaller);
+    border-width: var(--gc-common-border-width);
+    border-radius: var(--gc-common-border-radius);
+    border-color: var(--gc-color-border-warning);
+    background-color: var(--gc-color-bg-warning);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+WarningMessage Image {
+    width: var(--gc-list-head-size);
+    height: var(--gc-list-head-size);
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 0;
+    margin: 0;
+}
+
+WarningMessage Label {
+    width: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    white-space: normal;
+    margin-left: var(--gc-common-space-smaller);
+}

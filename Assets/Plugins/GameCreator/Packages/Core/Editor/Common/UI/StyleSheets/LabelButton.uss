@@ -1,0 +1,11 @@
+LabelButton {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+LabelButton Button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 20px;
+    margin-right: var(--gc-common-space-small);
+}

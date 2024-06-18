@@ -1,0 +1,246 @@
+#GC-Install-Content {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/** CONTENT **************************************************************************************/
+
+/* LIST CONTENT */
+
+.gc-install-list-button {
+    padding: 1px;
+    margin: 0 3px;
+    border-radius: 0;
+}
+
+InstallContentList {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+#GC-Install-Content-List {
+    height: 100%;
+    flex-shrink: 0;
+}
+
+/* MODULE ****************************************************************************************/
+
+#GC-Install-Content-List-Module-Root {
+    border-bottom-width: 1px;
+    border-bottom-color: var(--gc-color-border-default);
+}
+
+#GC-Install-Content-List-Module-Head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--gc-color-bg-lighter);
+    border-radius: 0;
+    margin: 0;
+    padding: 3px;
+}
+
+#GC-Install-Content-List-Module-Head:hover,
+#GC-Install-Content-List-Module-Head:active {
+    background-color: var(--gc-color-bg-lightest);
+}
+
+#GC-Install-Content-List-Module-Body {
+    
+}
+
+#GC-Install-Content-List-Module-Icon {
+    margin: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: var(--gc-common-element-height);
+    height: var(--gc-common-element-height);
+}
+
+#GC-Install-Content-List-Module-Name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+}
+
+/* INSTALL ***************************************************************************************/
+
+InstallerElementInstall {
+    border-top-width: 1px;
+    border-top-color: var(--gc-color-border-default);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 0;
+    margin: 0;
+    padding: 4px;
+}
+
+.gc-install-content-list-install-active {
+    background-color: var(--gc-color-bg-active);
+}
+
+.gc-install-content-list-install-inactive {
+    background-color: var(--gc-color-bg-dark);
+}
+
+.gc-install-content-list-install-inactive:hover,
+.gc-install-content-list-install-inactive:active {
+    background-color: var(--gc-color-bg-light);
+}
+
+#GC-Install-Content-List-Install-Name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: var(--gc-common-space-small);
+    overflow: hidden;
+}
+
+#GC-Install-Content-List-Install-Vers {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#GC-Install-Content-List-Install-Type,
+#GC-Install-Content-List-Install-Stat {
+    margin: 0 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+}
+
+/* DETAILS */
+
+InstallerContentDetails #GC-Install-Content-Details-ScrollView {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+InstallerContentDetails #GC-Install-Content-Details-Interactions {
+    padding: var(--gc-common-space-smaller);
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--gc-color-bg-dark);
+    border-top-width: 1px;
+    border-top-color: var(--gc-color-border-default);
+}
+
+InstallerContentDetails #GC-Install-Content-Details-Interactions Button {
+    padding: var(--gc-common-space-smaller) var(--gc-common-space-small);
+}
+
+/* DETAILS INFORMATION */
+
+#GC-Install-Content-Details-Content {
+    padding: var(--gc-common-space-small);
+}
+
+#GC-Install-Content-Details-Header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: var(--gc-common-space-small);
+}
+
+#GC-Install-Content-Details-Title {
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#GC-Install-Content-Details-Complexity {
+    -unity-text-align: middle-left;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: var(--gc-common-space-small);
+    padding: var(--gc-common-space-smallest) var(--gc-common-space-small);
+    border-width: var(--gc-common-border-width);
+}
+
+.gc-install-complexity-start-here {
+    background-color: #1D1E1F;
+    color: #69C0E3;
+    border-color: #69C0E3;
+}
+
+.gc-install-complexity-beginner {
+    background-color: #1D1E1F;
+    color: #69E39F;
+    border-color: #69E39F;
+}
+
+.gc-install-complexity-intermediate {
+    background-color: #1D1E1F;
+    color: #FFC107;
+    border-color: #FFC107;
+}
+
+.gc-install-complexity-advanced {
+    background-color: #1D1E1F;
+    color: #FF0707;
+    border-color: #FF0707;
+}
+
+.gc-install-complexity-skin {
+    background-color: #1D1E1F;
+    color: #FFC107;
+    border-color: #FFC107;
+}
+
+.gc-install-complexity-none {
+    background-color: #1D1E1F;
+    color: #FFC107;
+    border-color: #FFC107;
+}
+
+#GC-Install-Content-Details-Author {
+    opacity: 0.75;
+    margin-bottom: var(--gc-common-space-small);
+}
+
+#GC-Install-Content-Details-Version {
+    margin-bottom: var(--gc-common-space-smaller);
+}
+
+#GC-Install-Content-Details-Description {
+    margin-top: var(--gc-common-space-smaller);
+    margin-bottom: var(--gc-common-space-small);
+    white-space: normal;
+}
+
+#GC-Install-Content-Details-Dependencies {
+    -unity-font-style: bold;
+    margin-bottom: var(--gc-common-space-small);
+}
+
+.gc-install-content-details-dependency {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: var(--gc-list-head-size);
+    background-color: var(--gc-color-list-head-default);
+    border-radius: 11px;
+    border-color: var(--gc-color-border-element);
+    border-width: var(--gc-common-border-width);
+    margin-bottom: var(--gc-common-space-smaller);
+}
+
+.gc-install-content-details-dependency Image {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+    margin: var(--gc-list-head-image-margin);
+}
+
+.gc-install-content-details-dependency Label {
+    flex-grow: 1;
+    margin-left: var(--gc-common-space-smallest);
+    -unity-text-align: middle-left;
+}

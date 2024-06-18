@@ -1,0 +1,15 @@
+using System;
+using GameCreator.Runtime.VisualScripting;
+
+namespace {{NAMESPACE}}
+{
+    [Serializable]
+    public class {{CLASSNAME}} : Event
+    {
+        protected override void OnStart(Trigger trigger)
+        {
+            base.OnStart(trigger);
+            _ = trigger.Execute(this.Self);
+        }
+    }
+}

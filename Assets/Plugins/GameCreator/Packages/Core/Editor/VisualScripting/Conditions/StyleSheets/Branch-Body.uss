@@ -1,0 +1,25 @@
+﻿BranchItemTool {
+    margin-bottom: var(--gc-common-space-smaller);
+}
+
+.gc-branch-label {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: var(--gc-list-head-image-size);
+    margin: var(--gc-common-space-smaller) 0 var(--gc-common-space-smaller) 0;
+    padding: 0;
+}
+
+.gc-branch-label Image {
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+    margin: 0;
+    padding: 0;
+}
+
+.gc-branch-label Label {
+    -unity-font-style: bold;
+    margin: 0 0 0 var(--gc-common-space-smaller);
+    -unity-text-align: middle-left;
+    padding: 0;
+}
