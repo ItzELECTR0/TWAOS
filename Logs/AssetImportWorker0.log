@@ -1,0 +1,903 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.5f1 (17028576122a) revision 1507973'; Using compiler version '193933522'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26236) 64bit ProfessionalWorkstation' Language: 'en' Physical Memory: 31036 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projects/TWAOS/TWAOSr
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53321
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: D:/Projects/TWAOS/TWAOSr
+D:/Projects/TWAOS/TWAOSr
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [26176]  Target information:
+
+Player connection [26176]  * "[IP] 192.168.100.65 [Port] 0 [Flags] 2 [Guid] 3243827495 [EditorId] 3243827495 [Version] 1048832 [Id] WindowsEditor(7,TheTempest) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26176]  * "[IP] 172.17.96.1 [Port] 0 [Flags] 2 [Guid] 3243827495 [EditorId] 3243827495 [Version] 1048832 [Id] WindowsEditor(7,TheTempest) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26176]  * "[IP] 172.30.240.1 [Port] 0 [Flags] 2 [Guid] 3243827495 [EditorId] 3243827495 [Version] 1048832 [Id] WindowsEditor(7,TheTempest) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26176]  * "[IP] 25.42.202.244 [Port] 0 [Flags] 2 [Guid] 3243827495 [EditorId] 3243827495 [Version] 1048832 [Id] WindowsEditor(7,TheTempest) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26176]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3243827495 [EditorId] 3243827495 [Version] 1048832 [Id] WindowsEditor(7,TheTempest) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26176] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26176] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Library Redirect Path: Library/
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+Refreshing native plugins compatible for Editor in 49.97 ms, found 28 plugins.
+Preloading 13 native plugins for Editor in 28.61 ms.
+Initialize engine version: 6000.0.5f1 (17028576122a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/TWAOS/TWAOSr/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:          NVIDIA
+    VRAM:            7987 MB
+    App VRAM Budget: 7219 MB
+    Driver:          32.0.15.5585
+d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 67108864.
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56080
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.5f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.010199 seconds.
+- Loaded All Assemblies, in  1.693 seconds
+Native extension for LinuxStandalone target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.587 seconds
+Domain Reload Profiling: 2274ms
+	BeginReloadAssembly (363ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (347ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (886ms)
+		LoadAssemblies (359ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (882ms)
+			TypeCache.Refresh (880ms)
+				TypeCache.ScanAssembly (585ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (587ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (460ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (64ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (211ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'Newtonsoft.Json.dll' with different versions detected, using 'Packages/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' and ignoring 'Assets/UnityPackages/JsonNet/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  7.622 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 18.47 ms, found 28 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-TWAOS
+TypeManager.Initialize took: 1000ms
+Refreshing native plugins compatible for Editor in 13.28 ms, found 28 plugins.
+Mirror | mirror-networking.com | discord.gg/N9QVxbM
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Mirror.Welcome:OnInitializeOnLoad () (at Assets/Mirror/Editor/Welcome.cs:18)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/Mirror/Editor/Welcome.cs Line: 18)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.709 seconds
+Domain Reload Profiling: 14324ms
+	BeginReloadAssembly (2520ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (4988ms)
+		LoadAssemblies (3798ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1324ms)
+			TypeCache.Refresh (1026ms)
+				TypeCache.ScanAssembly (982ms)
+			BuildScriptInfoCaches (252ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (6709ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4332ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (223ms)
+			ProcessInitializeOnLoadAttributes (2988ms)
+			ProcessInitializeOnLoadMethodAttributes (1086ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1883ms)
+Shader 'VRM10/Universal Render Pipeline/MToon10': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'VRM10/Universal Render Pipeline/MToon10': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 18.62 ms, found 28 plugins.
+Preloading 13 native plugins for Editor in 0.75 ms.
+Unloading 662 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16590 unused Assets / (11.1 MB). Loaded Objects now: 17830.
+Memory consumption went from 0.52 GB to 0.50 GB.
+Total: 31.162700 ms (FindLiveObjects: 2.267200 ms CreateObjectMapping: 2.749900 ms MarkObjects: 15.815900 ms  DeleteObjects: 10.327800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 20449.196444 seconds.
+  path: Assets/Samples/VRM/0.123.0/SimpleViewer
+  artifactKey: Guid(3a6d452dd22a018418f29d6a4d429752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/VRM/0.123.0/SimpleViewer using Guid(3a6d452dd22a018418f29d6a4d429752) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '882566f48ef5742933d46818157dba31') in 0.0216357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'Newtonsoft.Json.dll' with different versions detected, using 'Packages/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' and ignoring 'Assets/UnityPackages/JsonNet/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  9.287 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 24.20 ms, found 28 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+TypeManager.Initialize took: 1495ms
+Refreshing native plugins compatible for Editor in 23.76 ms, found 28 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.891 seconds
+Domain Reload Profiling: 16181ms
+	BeginReloadAssembly (6919ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (33ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (4728ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (2177ms)
+		LoadAssemblies (2870ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1238ms)
+			TypeCache.Refresh (169ms)
+				TypeCache.ScanAssembly (134ms)
+			BuildScriptInfoCaches (995ms)
+			ResolveRequiredComponents (59ms)
+	FinalizeReload (6891ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5601ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (15ms)
+			BeforeProcessingInitializeOnLoad (348ms)
+			ProcessInitializeOnLoadAttributes (4369ms)
+			ProcessInitializeOnLoadMethodAttributes (835ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (257ms)
+Shader 'VRM10/Universal Render Pipeline/MToon10': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 22.84 ms, found 28 plugins.
+Preloading 13 native plugins for Editor in 1.08 ms.
+Unloading 54 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16594 unused Assets / (5.9 MB). Loaded Objects now: 17852.
+Memory consumption went from 468.9 MB to 463.0 MB.
+Total: 613.665000 ms (FindLiveObjects: 3.484500 ms CreateObjectMapping: 4.017800 ms MarkObjects: 594.834000 ms  DeleteObjects: 11.326400 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (18.1 MB). Loaded Objects now: 17852.
+Memory consumption went from 453.0 MB to 434.9 MB.
+Total: 158.236900 ms (FindLiveObjects: 1.415600 ms CreateObjectMapping: 1.815600 ms MarkObjects: 147.758500 ms  DeleteObjects: 7.244000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Shader 'VRM10/Universal Render Pipeline/MToon10': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 21.38 ms, found 28 plugins.
+Preloading 13 native plugins for Editor in 1.12 ms.
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16498 unused Assets / (9.1 MB). Loaded Objects now: 17856.
+Memory consumption went from 465.8 MB to 456.8 MB.
+Total: 36.192900 ms (FindLiveObjects: 2.519600 ms CreateObjectMapping: 4.047100 ms MarkObjects: 20.163300 ms  DeleteObjects: 9.459900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'Newtonsoft.Json.dll' with different versions detected, using 'Packages/com.unity.nuget.newtonsoft-json/Runtime/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' and ignoring 'Assets/UnityPackages/JsonNet/Newtonsoft.Json.dll, AssemblyName=Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.089 seconds
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.UIElement.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Configuration.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.high-definition/Editor/Wizard/HDWizard.Window.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 23.30 ms, found 28 plugins.
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Assertion failed on expression: 'pred(*previous, *i)'
+Native extension for LinuxStandalone target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.entities/Unity.Scenes.Editor/Internals/Properties/Unity.Properties.Internals.asmref has no target assembly definition
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+TypeManager.Initialize took: 1479ms
+Refreshing native plugins compatible for Editor in 23.92 ms, found 28 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.472 seconds
+Domain Reload Profiling: 9567ms
+	BeginReloadAssembly (899ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (32ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (553ms)
+	RebuildCommonClasses (81ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (2007ms)
+		LoadAssemblies (1124ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1075ms)
+			TypeCache.Refresh (28ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (982ms)
+			ResolveRequiredComponents (49ms)
+	FinalizeReload (6473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5432ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (312ms)
+			ProcessInitializeOnLoadAttributes (4039ms)
+			ProcessInitializeOnLoadMethodAttributes (1021ms)
+			AfterProcessingInitializeOnLoad (27ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (96ms)
+Shader 'VRM10/Universal Render Pipeline/MToon10': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 23.67 ms, found 28 plugins.
+Preloading 13 native plugins for Editor in 1.10 ms.
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16597 unused Assets / (6.6 MB). Loaded Objects now: 17860.
+Memory consumption went from 476.1 MB to 469.5 MB.
+Total: 51.474700 ms (FindLiveObjects: 7.286000 ms CreateObjectMapping: 4.541200 ms MarkObjects: 26.807400 ms  DeleteObjects: 12.836100 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0.6 MB). Loaded Objects now: 17860.
+Memory consumption went from 469.5 MB to 468.9 MB.
+Total: 25.331300 ms (FindLiveObjects: 1.330200 ms CreateObjectMapping: 1.805800 ms MarkObjects: 21.759800 ms  DeleteObjects: 0.433600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 496.222974 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample
+  artifactKey: Guid(64bfa7987b0d77a4cb116cfe2b7d22f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample using Guid(64bfa7987b0d77a4cb116cfe2b7d22f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '85a2d11ef748fa04df38830cea5906d2') in 0.0078793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.563000 seconds.
+  path: Assets/Samples
+  artifactKey: Guid(21b6119250409e64da1e9b740c78ba34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples using Guid(21b6119250409e64da1e9b740c78ba34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7e586c52bcb7b254c1b1a2f17f7a70ee') in 0.0008495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.291321 seconds.
+  path: Assets/Samples/Core RP Library
+  artifactKey: Guid(f20ad2894a1edc7449ed067ecb6db1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Core RP Library using Guid(f20ad2894a1edc7449ed067ecb6db1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'a19a9d7212521d858b2defcdc243f6d3') in 0.0011651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.354679 seconds.
+  path: Assets/Samples/Demo Team Hair System
+  artifactKey: Guid(5be998586faebbd48bd144643b2138e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System using Guid(5be998586faebbd48bd144643b2138e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '05f58abbdffaefcf7d71f1665b4bf917') in 0.000731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.569147 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1
+  artifactKey: Guid(86fa1b9106c8a0445b9d95a301743997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1 using Guid(86fa1b9106c8a0445b9d95a301743997) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '5a38cfa3fdfce504d11b32c9151784d0') in 0.0006209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.908759 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/HairSample.asmdef
+  artifactKey: Guid(ab711d20616f81447bfddeeaa3bcb198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/HairSample.asmdef using Guid(ab711d20616f81447bfddeeaa3bcb198) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f4ad1351e567d935469e279510af2423') in 0.0008474 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.305831 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes
+  artifactKey: Guid(119276f942291324ea76d6ed54730879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes using Guid(119276f942291324ea76d6ed54730879) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '1e0864edfe758bdacded7ebee0eeb395') in 0.0006179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.056926 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes/HairSample_Builtin.unity
+  artifactKey: Guid(596767a14da7dcd4ca6e2ed6a252d333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes/HairSample_Builtin.unity using Guid(596767a14da7dcd4ca6e2ed6a252d333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'bfdbbf036ab2619d67583fd098e34f0f') in 0.0006255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.120708 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes/HairSample_HDRP.unity
+  artifactKey: Guid(392deafd1a40c1446ae2f51f689809e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Scenes/HairSample_HDRP.unity using Guid(392deafd1a40c1446ae2f51f689809e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '08bd633a1105462f578e6287add06961') in 0.0005971 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 418.508428 seconds.
+  path: Assets/3D
+  artifactKey: Guid(243ac7bd3a421c94ea7845dd8098f5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D using Guid(243ac7bd3a421c94ea7845dd8098f5da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '14fe086954a3f2035097b76da57a4e96') in 0.0010255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.967845 seconds.
+  path: Assets/3D/Characters
+  artifactKey: Guid(62d93a57fd6d7924ba4b6688585333a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters using Guid(62d93a57fd6d7924ba4b6688585333a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'aef436a8c112f59763e0e379a0ff9821') in 0.0009623 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.776641 seconds.
+  path: Assets/3D/Characters/Neon
+  artifactKey: Guid(d08ad12f0d4ac184d9af003d01532360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon using Guid(d08ad12f0d4ac184d9af003d01532360) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'dd8390f29ccb4e9959d06683b35851a9') in 0.0007622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/3D/Characters/Neon/Empty.mat
+  artifactKey: Guid(d41f508e70f7e6e4e921ec45171d923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Empty.mat using Guid(d41f508e70f7e6e4e921ec45171d923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+ -> (artifact id: 'afbb5296dd3a933c9c0128bd0a8c089a') in 34.2960476 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.352269 seconds.
+  path: Assets/3D/Characters/Neon/Empty.mat
+  artifactKey: Guid(d41f508e70f7e6e4e921ec45171d923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Empty.mat using Guid(d41f508e70f7e6e4e921ec45171d923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'afbb5296dd3a933c9c0128bd0a8c089a') in 2.3346655 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/3D/Characters/Neon/Stars.mat
+  artifactKey: Guid(a81e01a80bdfe544aaf7cebf42785c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Stars.mat using Guid(a81e01a80bdfe544aaf7cebf42785c4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '0e841ae91fcae5bd24169ed7ba4f685a') in 5.4090071 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.127449 seconds.
+  path: Assets/3D/Characters/Neon/Hair
+  artifactKey: Guid(cee97843c00063c41832c4bc85249294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair using Guid(cee97843c00063c41832c4bc85249294) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '382e2e78d1a2ff5dbdbaa9811471c7d3') in 0.0015641 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 112.346917 seconds.
+  path: Assets/3D/Characters/Neon/Hair/hair.png
+  artifactKey: Guid(c513f31fd426bd24294a947b3baa8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/hair.png using Guid(c513f31fd426bd24294a947b3baa8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '1617a915c768714709fcc0a97ebaf152') in 0.0317422 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.056623 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.shadergraph
+  artifactKey: Guid(15831caf9cc1bde45b64ecd85be4f1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.shadergraph using Guid(15831caf9cc1bde45b64ecd85be4f1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'bfdfa96bd3be0f313cfc3542f9c4e426') in 3.3669256 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 299.403463 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.shadergraph
+  artifactKey: Guid(15831caf9cc1bde45b64ecd85be4f1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.shadergraph using Guid(15831caf9cc1bde45b64ecd85be4f1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '0d0be800c27421f4a252d36170ac61cd') in 5.2825428 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.365873 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9eb2c5ce0c893ad1e6c41e139d16273b') in 0.6573202 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.046940 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'ea8278d0f1579e0b7eb6ec17ff4b5292') in 0.7508973 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.874806 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '1836ee0450146baedfabffffa39436a4') in 4.96009 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.709730 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset
+  artifactKey: Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset using Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f16650a91a600aeb6b514833998c0333') in 0.0176845 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1257.067233 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '92db814511f018e6bb3822b81d73d1c4') in 5.813535 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 275.260413 seconds.
+  path: Assets/3D/Characters/Neon/Hair/NeonHair.asset
+  artifactKey: Guid(56b7704bf6fd0494b889aebbb974eec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/NeonHair.asset using Guid(56b7704bf6fd0494b889aebbb974eec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '89e49c4ee44ce6ca3fb27f5921e54833') in 0.0048123 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 720.907278 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset
+  artifactKey: Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset using Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '17db9c4d77749e6418358447c42d9eca') in 0.0084772 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 233.140309 seconds.
+  path: Assets/3D/Characters/Neon/Hair/Hair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/Hair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9c448548cd13f2ffb99e6844d9d36bbe') in 0.9008283 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.856865 seconds.
+  path: Assets/3D/Characters/Neon/Hair/Hair.mat
+  artifactKey: Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Neon/Hair/Hair.mat using Guid(1ed9b16001d3c0148b716780d8f2b5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f5d0d61e692aa66009fa6486fa6154e1') in 3.9150833 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.770124 seconds.
+  path: Assets/3D/Characters/Aca
+  artifactKey: Guid(ceb68dc269dacb24895053f3998fffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Aca using Guid(ceb68dc269dacb24895053f3998fffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3a09781b86e1773d18d5e6ede662bed5') in 0.0020851 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.357890 seconds.
+  path: Assets/3D/Characters/Ava
+  artifactKey: Guid(ceb68dc269dacb24895053f3998fffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava using Guid(ceb68dc269dacb24895053f3998fffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '8fc1e21540c29d95e5edf26471a3a901') in 0.0010782 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.317007 seconds.
+  path: Assets/3D/Characters/Ava/AvaTex.png
+  artifactKey: Guid(bda44c404016a0f49a5bae6dce5f80e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava/AvaTex.png using Guid(bda44c404016a0f49a5bae6dce5f80e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '2ea051671f685b80aefcb0e7427c970f') in 0.0165019 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.382342 seconds.
+  path: Assets/3D/Characters/Ava/EmissionTex.png
+  artifactKey: Guid(8c144a70c366a044bb2dd2d51866b2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava/EmissionTex.png using Guid(8c144a70c366a044bb2dd2d51866b2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '93fd74ab5e9907baa61bfc11fe039445') in 0.0157333 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.190373 seconds.
+  path: Assets/3D/Characters/Ava/Hair/hair.png
+  artifactKey: Guid(c513f31fd426bd24294a947b3baa8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava/Hair/hair.png using Guid(c513f31fd426bd24294a947b3baa8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'd53fc506e0d854cd948d84ff4b7640a6') in 0.0113399 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.844023 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(2240552d5bcf5344bb6dc7b021732447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(2240552d5bcf5344bb6dc7b021732447) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4ed9b48c48c940cc406d2f9446fae614') in 0.0017367 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.240402 seconds.
+  path: Assets/Textures/Characters
+  artifactKey: Guid(8a1f83b4855c07c4391486bcf18ef745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters using Guid(8a1f83b4855c07c4391486bcf18ef745) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9bbf2f1609cce10101f27d67a63339d1') in 0.0020623 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.765963 seconds.
+  path: Assets/Textures/Characters/Neon
+  artifactKey: Guid(5631b9a5530d60d4c9a1c931ab446381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Neon using Guid(5631b9a5530d60d4c9a1c931ab446381) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'd3a12d120ad5f7dc369aa35692cf7137') in 0.0010263 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Textures/Characters/Neon/Neon.mat
+  artifactKey: Guid(60efc465581c8ba47a9b456540ee9393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Neon/Neon.mat using Guid(60efc465581c8ba47a9b456540ee9393) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '1fefb3722085d4b91508af8b88456c8c') in 1.5452314 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.331241 seconds.
+  path: Assets/Textures/Characters/Sip
+  artifactKey: Guid(32920b661d7605046b82f16bec794ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Sip using Guid(32920b661d7605046b82f16bec794ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'dbeb1c1d1cc28c9d0bc9c9bea5c69c5f') in 0.0016378 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.118493 seconds.
+  path: Assets/Textures/Characters/Sip/EmissionTex.png
+  artifactKey: Guid(d1ddf6c2631dc9a439267f81f2b271ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Sip/EmissionTex.png using Guid(d1ddf6c2631dc9a439267f81f2b271ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '56c78f5dc0c140a71c94a22def2e47e8') in 0.0525286 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Textures/Characters/Sip/Sip.mat
+  artifactKey: Guid(f61df607d6da6c54d803d120251e7962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Sip/Sip.mat using Guid(f61df607d6da6c54d803d120251e7962) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'ab6ab1c6772742cefdb1082b9ef6692a') in 0.1385579 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Textures/Characters/Sip/NoSmileSipTex.png
+  artifactKey: Guid(09448a46dba6e914785c8066de32aede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Characters/Sip/NoSmileSipTex.png using Guid(09448a46dba6e914785c8066de32aede) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '28f454bdaab8ed341804d1792da5c5ba') in 0.0472835 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.018684 seconds.
+  path: Assets/3D/Buildings
+  artifactKey: Guid(f66faa55c8d56004fb1c0450dae71e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Buildings using Guid(f66faa55c8d56004fb1c0450dae71e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'b46f8e4afee61730d08dcf63a6c6a364') in 0.0038543 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.122611 seconds.
+  path: Assets/3D/Characters/Ava/Sip.mat
+  artifactKey: Guid(156a07b35e31fa74da105c9f597c0303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava/Sip.mat using Guid(156a07b35e31fa74da105c9f597c0303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e58241628f56d26761a11e7675a1b8b1') in 0.8629265 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.325058 seconds.
+  path: Assets/3D/Characters/Ava/Ava.mat
+  artifactKey: Guid(156a07b35e31fa74da105c9f597c0303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D/Characters/Ava/Ava.mat using Guid(156a07b35e31fa74da105c9f597c0303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3eead1904c54deacc6fe4f6546146b84') in 0.6018128 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 463.576135 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset
+  artifactKey: Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset using Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'ddc5009aa74d69d17bd1c5828396d238') in 0.0067065 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 4370.827476 seconds.
+  path: Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset
+  artifactKey: Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Demo Team Hair System/0.14.2-exp.1/Minimal Hair Sample/Styles/CurlyCurtain.asset using Guid(8eb9a34a36e03bd44ab91a8369408d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '803e0e90722685e953a03e7d1798b36f') in 0.0124258 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+

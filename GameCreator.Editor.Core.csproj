@@ -1,0 +1,1786 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>GameCreator.Editor.Core</RootNamespace>
+    <ProjectGuid>{D3B32F20-BC8A-71D4-3898-0F3E979AEDFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>GameCreator.Editor.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_6000_0_5;UNITY_6000_0;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_AMD;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_WAIT_FOR_PRESENTATION;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_VIRTUALTEXTURES;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;ELECTRIS;UNITY_POST_PROCESSING_STACK_V2;STEAMWORKS_NET;REICONED2;CROSS_PLATFORM_INPUT;PW_ADDRESSABLES;HDPipeline;FLORA_PRESENT;MIRROR;MIRROR_89_OR_NEWER;MIRROR_79_OR_NEWER;MIRROR_81_OR_NEWER;MIRROR_82_OR_NEWER;MIRROR_83_OR_NEWER;MIRROR_84_OR_NEWER;MIRROR_85_OR_NEWER;MIRROR_86_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;USG0001</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;USG0001</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>6000.0.5f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+    <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\WelcomeRepositoryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Tools\InstructionListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Curves\BezierDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\ConditionGenerator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarActions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundsDataDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Ragdoll\RagdollDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeInternalTextures.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Tools\MemoryTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\ConditionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyButtonDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionAccelerationDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateBasicLocomotionEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Skins\SkinEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\ShotTypeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmaller.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\TNavAreaDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\HotspotEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\VersionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Audio\Drawers\AudioConfigDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\TToolbarButton.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Interaction\InteractionModeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Scene\SceneReferenceDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\PackagePayload.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetGlobalListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Selectors\TypeSelectorElementSpot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\NameListView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldFloatDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\ConditionListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemHeadBobbingDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldQuaternionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemAnimationDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigFeetPlantDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\InstallDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Date.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\ID\IdStringDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Interfaces\IPolymorphicItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Windows\TypeSelectorFancyPopup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundsTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\BranchListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitFacingDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyTextureDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\SequenceTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmallest.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Selectors\TypeSelectorSpot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionItemDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Drawers\MemoriesDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Variables\NameVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\NameVariableView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorLocalNameVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemTrackDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\BoneDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Manipulators\ManipulatorDropToListVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TypeSelectorValueFancy.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Drawers\FootstepDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Dependency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldStringDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\TChangeValueDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\TRunnerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Tools\RigLayersTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\EntryAnimationClipDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Tools\TPolymorphicItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Signals\Drawers\SignalDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyValueVector2Drawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Utils\Favorites.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareFloatDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyNone.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Assets\Installer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyLegR.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\DropdownTMPPropertyIntegerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContentList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubSettingsWindow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\GlobalNameVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\TReflectionPropertyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Editors\TAssetRepositoryEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\PadBox.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorLocalListVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\EditorSettings\EditorSettingsRegistrar.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\TrackTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\CharacterInfo\ModelTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\DirectoryUtils.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Elements\ListTypeElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Tools\RigLayerTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TypeSelectorValueDropdown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyIntegerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\List\TTypeSelectorList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\TReflectionMemberDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\TrackToolDefault.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeScaleDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Values\TValueDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\ListPick\TListSetPickDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\DropdownPropertyIntegerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldTextureDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SuccessMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\ButtonInstructionsEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\VersionsNotifications.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Drawers\Elements\TypeSelectorValueElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\ID\IdPathStringDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarConditions.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyStringDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetLocalNameDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\LocalListVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Search\CandidateField.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemAnchorDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerElementInstall.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\RunInstructionsListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\EditorToolbarGameCreator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Scene\SceneEntriesDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\VersionsManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\TVariableView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\CharacterInfo\DropModelManipulator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\ConditionListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarLocalListVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TimeMode\TimeModeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetGlobalNameDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Pipelines\PipelineTrimmer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Utils\IdProvider.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Upload.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavAreaValueDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigAimTowardsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\DependencyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Utils\Levenshtein.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavAreaMaskDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Panels\SettingsContentDetails.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\NavigationOptionsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Lists\NameListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Scene\SceneEntryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionBaseDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\AssetEntry.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\LatestData.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldColorDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\TInputPropertyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionDisableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateOverrideAnimatorEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\TextPropertyStringEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\TReflectionFieldDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangePositionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\AnimimGraphDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Tools\HandleItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Http.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\GeneralSaveDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Pool\Drawers\PoolFieldDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Selectors\TypeSelectorMemory.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Selectors\TypeSelectorRigLayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Utils\Tokenizer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Drawers\FootstepsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemPeekDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Interfaces\IPolymorphicListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\GlobalVariablesPostProcessor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeBoxDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Editors\ShotCameraEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\SaveUniqueIDDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\TagValueDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\Types\TypeReferenceBehaviourDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerManagerWindow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceArrow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Runtimes\NameVariablesRuntimeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyDead.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Settings\GlobalVariablesDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarLocalNameVariables.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateCompleteLocomotionEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\TShotSystemDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Uninstalls\UninstallCore.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\BaseTextAreaDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorGlobalListVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyQuaternionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumesDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Search\CandidateDocument.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\TUnitDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitPlayerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionJumpDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Items\IndexVariableView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Staging\SkeletonConfigurationStage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyFloatDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\UpdatesRepositoryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareDirectionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\TogglePropertyBoolEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarPlayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\TDetectorListVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Enums\State.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemZoomDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\EventDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\TextSeparator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerElementModule.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionShowDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationComplete.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareStringOrAnyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\CharacterEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Editors\WelcomeSettingsEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Tools\VolumeTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\TypeSelectorFancyType.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\RunConditionsListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Manipulators\HandleDragManipulator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\InputFieldPropertyStringEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\TDetectorNameVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\InfoMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\PropertyEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyArmR.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\ErrorMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemNoiseDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Drawers\MemoryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\InverseIndex\Indexer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Downloader\Documentation.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyBoolDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionInteractionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\TNamePickTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\SerializationUtils.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\IndexListView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\InstructionListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Selectors\TypeSelectorHandle.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorGlobalNameVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\RunEventDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeSphereDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\BranchItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetLocalListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLeanDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\BoneRackDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldVector3Drawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Title\TTitleDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Selectors\TypeSelectorElementCondition.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyGameObjectDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContentList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\LocalNamePickTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\CopyPasteUtils.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyLegL.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\GameCreatorHub.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\PercentageWithLabelDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Tools\HandleListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarCharacter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionsTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeQuaternionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareIntegerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Selectors\TypeSelectorElementMemory.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\DriverNavmeshAgentTypeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyDoubleDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyColorDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Enablers\TEnablerValueCommonDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Download.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavLinkTypeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetLocalListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\LocomotionPropertiesDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\HorizontalBox.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldDoubleDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\MotionDashDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Tools\FootTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyVector2Drawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Array\TArrayDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Utils\Searcher.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\Types\TypeReferenceComponentDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Tools\MemoriesTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ToolCombat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitDriverDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarTrigger.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TTypeSelectorValue.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\UniqueIDDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Array\TArrayTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateTLocomotionEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldBoolDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\InputActionFromAssetDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Busy\BusyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundDefaultDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Variables\IndexVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Panels\SettingsContentList.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\LayerMaskValueDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\AirborneDrawers.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\AssetDate.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\EventGenerator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\TLocalVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeChapter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationSummary.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Editors\MaterialSoundsAssetEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Version.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\PlaybackTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Staging\TPreviewSceneStage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Collection.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\MarkerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\SliderPropertyFloatEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\LabelProgress.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Elements\DocumentationBaseElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Utilities\UnityUIUtilities.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeCapsuleDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\ListPick\TListGetPickDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarHotspot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\StyleSheetUtils.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\AssetVersion.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Drawers\HandleItemDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaFieldDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\CrouchDrawers.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\StateDataDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\ActionsEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\LocalNameVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Lists\NameListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFirstPersonDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Fields\GlobalNamePickTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\BranchDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceHead.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyBase.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertySpriteDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Classes\InitRunner.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\ConditionsEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Subunits\AxonometryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\TScriptGenerator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Index.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\CameraTransitionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareMinDistanceOrNoneDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeCommands.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\ShakeEffectDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeDirectionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Selectors\TypeSelectorVolume.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Selectors\TypeSelectorElementRigLayer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\TListView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Documents\Field.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\InstructionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Icons\IconWindowHub.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ReactionAnimationsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerToolbar.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeNode.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeBoolDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFollowDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaWideDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Documentation\DocumentationHub.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Drawers\HandleFieldDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Drawers\TextReferenceDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\IPropertyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Uninstalls\UninstallManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\Inputs\TInputDropdown.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceClip.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextAreaLabelDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\AlignLabel\AlignLabel.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemLockOnDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Appearance\IndentDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\EventCallbackEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\TGlobalVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\VolumeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\TypeSelectorFancyProperty.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\Properties\InputPropertyValueFloatDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\LatestEntry.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\PackageBlob.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetGlobalListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceTrack.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Icons\IconBusyArmL.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\DetailsTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\FlexibleSpace.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetLocalNameDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceSmall.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Editors\RememberEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Documents\Domain.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\RenderPipelines.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemLookDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionHideDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\InputMapFromAssetDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\TetherLimit.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\HitData.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\AssetRelease.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\GlobalListVariablesEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Editors\HandleEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Curves\SegmentDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Package.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Lists\IndexListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditorPopup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLookToDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionDisablePlaymodeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Staging\StagingGizmosEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Tools\TPolymorphicListTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\LookSectionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Selectors\TypeSelectorInstruction.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Pipelines\PipelineStemmer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Drawers\ClipDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\CopyRunnerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\SettingsWindow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Drawers\Elements\TTypeSelectorElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\EventElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Drawers\SpotListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Pipelines\Pipelines.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Tools\ClipTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceClipAdd.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Selectors\TypeSelectorElementVolume.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigAlignGroundDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Documents\Document.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Install.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Lists\IndexListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Transition\TransitionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\List\TypeSelectorListFancy.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Tools\ConditionItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\PercentageWithoutLabelDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\GeneralAudioDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitAnimimDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Footsteps\Tools\FeetTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Drawers\IRepositoryDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\InverseKinematicsDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Drawers\RigLayersDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldVector2Drawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Editors\TCameraEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\WarningMessage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContent.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeColorDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Runtimes\ListVariablesRuntimeDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\DashAnimationDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Drawers\InstallerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarMarker.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Icons\IconWindowInstaller.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\UseRaycastDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Attributes\Drawers\Conditions\ConditionEnableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Handles\Selectors\TypeSelectorElementHandle.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypePage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Parameter.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Drawers\BranchListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemOrbitDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContentDetails.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Window\DocumentationPopup.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeIntegerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\Inputs\InputDropdownFloat.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Tools\SpotItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\HitPayload.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\Manipulators\ManipulatorPolymorphicListSort.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitPlayerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Elements\PropertyElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Comparers\CompareGameObjectOrAnyDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\ITypeSelector.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Toolbar\ToolbarShot.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\LabelButton.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\TypeBook\TypeBook.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Set\FieldSetGlobalNameDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContentDetails.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemHeadLeaningDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Dependency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Box\TBoxDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\TShotTypeElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\InputFieldTMPPropertyStringEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\ContentBox.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Fields\PropertyGetInstantiateDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Selectors\TypeSelectorElementInstruction.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldSpriteDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitMotionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\TWeaponEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Section\TSectionDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Icons\IconWindowSettings.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\TypeReferenceDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Drawers\SpringLimitDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\IUnitFacingDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Items\IndexVariableTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\Selectors\TypeSelectorCondition.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Tools\Items\NameVariableTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\SpaceCustom.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Percentage\TPercentageDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyVector3Drawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\TTypeSelector.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldIntegerDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\Inputs\InputDropdownText.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Auth.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Tools\InstructionItemTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Version.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateAnimationEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Collectors\CollectorListVariableDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundTextureDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceClipRemove.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Busy\BusyTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\BaseActionsEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\EditorSettings\EditorSettingsCore.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Components\TriggerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Search\Pipelines\IPipeline.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\ChangeFloatDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemViewportDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Manipulators\MouseDropdownManipulator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\ExitAnimationClipDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\InstructionGenerator.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\Drawers\SaveDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Combat\ToolCombatItem.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Versions\Classes\AssetChanges.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerWindow.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Staging\APreviewSceneStage.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitDriverDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldGameObjectDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\Drawers\StandDrawers.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Utils\TypeUtils.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\InstallManager.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\SelectTypeElement.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\LabelTitle.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Drawers\SpotDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Tools\VolumesTool.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Tools\SpotListTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Signals\StyleSheets\Signal.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Box\TBox.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Kernel.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memories.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\StyleSheets\TypeSelectorFancy.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Instruction.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Array\TArray.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonValues.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Reaction-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volume-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\StyleSheets\InputActionFromAsset.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\StyleSheets\Sequence.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\SaveUniqueID.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Skeleton.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\State.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-List.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volume-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\InputField.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memory-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\IndexList.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Title\TitleDrawer.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Condition.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\RigLayer.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonColors_Dark.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Styles\Documentation.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Character.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Busy.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsDetails.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Stylesheets\HubExplorerWindow.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Videos.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\StyleSheets\Hotspot.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Stylesheets\HubSettingsWindow.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\StyleSheets\Playback.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\StyleSheets\Marker.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSound-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TextArea\TextArea.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instruction-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\BoneRack.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Condition.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Feet.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\PadBox.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Reaction-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Slider.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\StyleSheets\Installer.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instruction-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\StyleSheets\ReflectionMember.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\ErrorMessage.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Event.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Toggle.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\TextSeparator.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\SkeletonPopup.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Handles.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\Welcome.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\LabelProgress.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\InfoMessage.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonColors_Light.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Text.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Foot-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Input\StyleSheets\InputMapFromAsset.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\HorizontalBox.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsWindow.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Welcome.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\LabelButton.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\StyleSheets\Details.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\StyleSheets\Instructions-List.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Version.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\SettingsList.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\TextReference.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\ContentBox.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\Updates.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\SuccessMessage.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\Styles\PropertyElement.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Branch-List.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Handle-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Drop.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Package_Event.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-List.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Examples.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\StyleSheets\Clip.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Model.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Combat.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Conditions\StyleSheets\Condition-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\GameCreator.Editor.Core.asmdef" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Unit.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Volumes.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Generators\Templates\Template_Instruction.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSound-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\StyleSheets\ShotType.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Hub.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\RuntimeGlobalList.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Section\TSection.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Documentation.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\StyleSheets\MaterialSounds.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Data\Discord.txt" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\Save.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\WarningMessage.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\StyleSheets\SelectType.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Foot-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Handle-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Dropdown.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\StyleSheets\Memory-Body.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\Reactions.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\StyleSheets\Track.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\StyleSheets\RigLayers.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\NameList.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\StyleSheets\Button.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\StyleSheets\NamePickTool.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\Shared\CommonElements.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Documentation\Styles\Popup.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\StyleSheets\InputDropdown.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Enablers\EnablerValueCommon.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\StyleSheets\Event.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Lists\StyleSheets\Polymorphic-Item-Head.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\StyleSheets\Repository.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Structures\Save\StyleSheets\UniqueID.uss" />
+    <None Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\StyleSheets\InstallerWindow.uss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AMDModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AMDModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HierarchyCoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.HierarchyCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputForUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputForUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.MarshallingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.MarshallingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.MultiplayerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.MultiplayerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.PropertiesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.AdaptivePerformanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.AdaptivePerformanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.BuildProfileModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.BuildProfileModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.CoreBusinessMetricsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreBusinessMetricsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.EditorToolbarModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.EditorToolbarModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.GIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GraphicsStateCollectionSerializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphicsStateCollectionSerializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GridAndSnapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridAndSnapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.MultiplayerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.MultiplayerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PropertiesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.PropertiesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SafeModeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SafeModeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.ShaderFoundryModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.ShaderFoundryModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SketchUpModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SketchUpModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.SubstanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TreeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.TreeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIAutomationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UmbraModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.VFXModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEngine\UnityEditor.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UWP.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.CecilX.Mdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit\net40\unity-custom\nunit.framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rewired_Editor">
+      <HintPath>Assets\Scripts\Game Logic\Play Logic\Rewired\Internal\Libraries\Editor\Rewired_Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography">
+      <HintPath>Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+      <HintPath>Assets\Scripts\Game Logic\Play Logic\Rewired\Internal\Libraries\Runtime\Rewired_Windows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>Assets\Scripts\Game Logic\Play Logic\Rewired\Internal\Libraries\Runtime\Rewired_Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Python.Runtime">
+      <HintPath>Library\PackageCache\com.unity.scripting.python\Editor\Lib\x64\Python.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\PlaybackEngines\MacStandaloneSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.Vectors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Microsoft.CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.DataSetExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Transactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.AppContext.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Buffers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Concurrent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Specialized.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Console.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Data.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Process.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Drawing.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Calendars.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Pipes.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Expressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Queryable.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NameResolution.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Ping.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Requests.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Sockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.DispatchProxy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Reader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Handles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Claims.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Principal.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.SecureString.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Http.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Overlapped.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Thread.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Timer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.InputSystem.csproj">
+      <Project>{AF2BAF02-1A77-4A24-0A9E-0B9F97C251B7}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameCreator.Runtime.Core.csproj">
+      <Project>{DA1C7722-E17D-28A4-349F-62221DE6472F}</Project>
+      <Name>GameCreator.Runtime.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{F6E57F36-BAAB-1EC9-D214-1311072A8F5C}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{C6071448-210D-9CB0-AFCC-AB140BD468B7}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{A5CD7055-3B5C-B945-14EA-FC5991C734CC}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{B77E54CF-F1C3-3488-73E7-B7AFE812D86A}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{D7D36E31-1AA9-7043-37AF-2D263295E8FB}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{0CFD53BD-04AB-A1D1-D220-DF6FFA414560}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
