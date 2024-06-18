@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 72a2c0872b017a3458d3a97dfdd94cfc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cabin
+    second: {fileID: 2100000, guid: a692b1143bda2914f8b05b12d2d35b42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_frame
+    second: {fileID: 2100000, guid: e30c5adccfe55824da4691beeb70b080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metal
+    second: {fileID: 2100000, guid: 1ff757f7f9d89404090bcd6bc2bb1704, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_wood
+    second: {fileID: 2100000, guid: ebfbd6b9e6744bf48998dd6eaf712c10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foundation
+    second: {fileID: 2100000, guid: 16c4f92c4366691458920f2140bc20f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gate
+    second: {fileID: 2100000, guid: 073f659cc61e5264ab7a62894a2ada5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: ad85294e559cd8a46b9abe61254e2c5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ladder
+    second: {fileID: 2100000, guid: 47c6edb3626035f4b87b4f43029bd7c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: planks
+    second: {fileID: 2100000, guid: 0e67606ff57d56b499ef034a2d40f64e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof.001
+    second: {fileID: 2100000, guid: a72019cd490cdfe418b7e72f743b7151, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: windows
+    second: {fileID: 2100000, guid: 0343d39838d78c64d8a3645b50255afa, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: cabin_baseColor
+    second: {fileID: 2800000, guid: b69c83b7a8f02cc488af8ea993590573, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: cabin_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 45c4ede0818c4804a9da46734c077bd5, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: cabin_normal.normal
+    second: {fileID: 2800000, guid: acda99caae9bc5346af7666306e0f753, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_frame_baseColor
+    second: {fileID: 2800000, guid: 175e3621daa698445adb32525d1aa4ee, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_frame_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 9f73440a16de53749a13e9cc262f6485, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_frame_normal.normal
+    second: {fileID: 2800000, guid: fd0e3740505e80a4eb9d942fb741d75b, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_metal_baseColor
+    second: {fileID: 2800000, guid: 37906aa6e23270647a870b95ed710209, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_metal_metallicRoughness.standard
+    second: {fileID: 2800000, guid: e80544bc29584c04c8945f40a6e3acb0, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_metal_normal.normal
+    second: {fileID: 2800000, guid: 4a6e8eb00c37ec248bc7d7c26e8446ee, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_wood_baseColor
+    second: {fileID: 2800000, guid: 54ce4423025f2f34d8ba8d61250913dc, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_wood_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 228544664af6c5c44a69fa67476030bf, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: door_wood_normal.normal
+    second: {fileID: 2800000, guid: 61fc9c4cf0838d44e8f7620093e7a3c9, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: foundation_baseColor
+    second: {fileID: 2800000, guid: 26ca6f3cf37defd4683185a09969cd1c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: foundation_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 5a822ee38d736b2479695098282ce7d3, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: foundation_normal.normal
+    second: {fileID: 2800000, guid: 5004f9223869dd04686df4d4836a1737, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: gate_baseColor
+    second: {fileID: 2800000, guid: 91673dcbb87f4b24c8a8bb383ece5b33, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: gate_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 3761d54914fc8b1439084a6c3d081a1e, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: gate_normal.normal
+    second: {fileID: 2800000, guid: a9eb40b6abd36774fa296bcabbd0fbf8, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: glass_baseColor
+    second: {fileID: 2800000, guid: 22a309724f4fa3b468dadab8442e10f7, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: glass_metallicRoughness.standard
+    second: {fileID: 2800000, guid: cd4fcdd0ea7f36e44b1d67cf85b33e02, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: glass_normal.normal
+    second: {fileID: 2800000, guid: 075dd4fd755055742a6ca0292aab4803, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: ladder_baseColor
+    second: {fileID: 2800000, guid: 6ba9954ee100d644bba8dce8d179589f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: ladder_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 9a47880e1601ad249a3242db76a18546, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: ladder_normal.normal
+    second: {fileID: 2800000, guid: e43421dcabdf548478cfa692b8cb4ec0, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: planks_baseColor
+    second: {fileID: 2800000, guid: 970e101e14bbf004197f67711b8ca171, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: planks_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 36c4d577cb3ee86438a1bcab4b367941, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: planks_normal.normal
+    second: {fileID: 2800000, guid: 6215d5727625b3d49a1cd8bb0cf334b0, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: roof.001_baseColor
+    second: {fileID: 2800000, guid: 15aca4fae63a1a647b528f9c93f69525, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: roof.001_metallicRoughness.standard
+    second: {fileID: 2800000, guid: a64170e55e2eac441952eb645ce5522e, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: roof.001_normal.normal
+    second: {fileID: 2800000, guid: b1682d6c1c149ee4189a6be435074c1f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: windows_baseColor
+    second: {fileID: 2800000, guid: 620eeb220b7533447b6ceff2bbf4f1fa, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: windows_metallicRoughness.standard
+    second: {fileID: 2800000, guid: 9f4e1e1b0fe5dd94cb83774b8ee6844c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: windows_normal.normal
+    second: {fileID: 2800000, guid: 60dd3dc364489ff48a06d442a58ddd28, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: aecd2106718f2444db3ca21345da2cef, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0
