@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mountain_01
+  m_Shader: {fileID: 4800000, guid: d0f7254d46c7d0e4fbfee3f7ffe67411, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _DISABLE_SSR_TRANSPARENT
+  - _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2225
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - MOTIONVECTORS
+  - TransparentBackface
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseAOANoiseMask:
+        m_Texture: {fileID: 2800000, guid: fd9b9ebb72b9a6442a21096fdb35fc6e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseAlbedoASmoothness:
+        m_Texture: {fileID: 2800000, guid: 21ed3ac565b77ab4bbb40d6c6586a285, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseNormalMap:
+        m_Texture: {fileID: 2800000, guid: 74f932c9d85ade144ad4ff75527f103a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: f3ba9bcca8829584cb67df27e59c8db2, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap2:
+        m_Texture: {fileID: 2800000, guid: ba9f6853812dae1429c361dcb7fe8916, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedo:
+        m_Texture: {fileID: 2800000, guid: c00b49f3c5a93304bb6c0be235730e18, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 2800000, guid: a0a51804be16cdb42bda00f9df7f96c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c0997a8ddac9f684d8e70b75990abafe, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: c0997a8ddac9f684d8e70b75990abafe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopAlbedoASmoothness:
+        m_Texture: {fileID: 2800000, guid: b94a53fe693b5ff41a047d57dc3d96ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopNormalMap:
+        m_Texture: {fileID: 2800000, guid: a6595745300d3bf46be8e5ec06d3443f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaCutoff: 0.5
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _AlphaToMask: 0
+    - _AlphaToMaskInspectorValue: 0
+    - _BaseAOIntensity: 0.5
+    - _BaseSmoothness: 0.5
+    - _BlendMode: 0
+    - _BumpScale: 1
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoIntensity: 1
+    - _DetailNormalMapIntensity: 2
+    - _DetailNormalMapScale: 1
+    - _DetailUVScale: 20
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedGIMode: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _EnableBlendModePreserveSpecularLighting: 1
+    - _EnableFogOnTransparent: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Opacity: 1
+    - _OpaqueCullMode: 2
+    - _Parallax: 0.02
+    - _ReceivesSSR: 1
+    - _ReceivesSSRTransparent: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _Shininess: 0.6763323
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 10
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 9
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 15
+    - _StencilWriteMaskMV: 41
+    - _SupportDecals: 1
+    - _SurfaceType: 0
+    - _TopContrast: 2
+    - _TopEnableNoise: 0
+    - _TopIntensity: 1
+    - _TopNoise: 0
+    - _TopNoiseUVScale: 1
+    - _TopNormalIntensity: 1.111
+    - _TopOffset: 0.184
+    - _TopSmoothness: 0.524
+    - _TopUVScale: 26.3
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentWritingMotionVec: 0
+    - _TransparentZWrite: 1
+    - _UVSec: 0
+    - _UseShadowThreshold: 0
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    - __dirty: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TopColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
