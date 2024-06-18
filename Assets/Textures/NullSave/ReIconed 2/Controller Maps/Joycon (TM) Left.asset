@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb7218a5a1c7d34aa714c95625cf3a6, type: 3}
+  m_Name: Joycon (TM) Left
+  m_EditorClassIdentifier: 
+  compatibleDevices:
+  - 3eb01142-da0e-4a86-8ae8-a15c2b1f2a04
+  isFallback: 0
+  isCustom: 0
+  customGuid: 
+  tmpSpriteAsset: {fileID: 11400000, guid: 33f699f0ac448d049a7985ecb6d1aef1, type: 2}
+  inputMaps:
+  - inputName: Stick X
+    unitySprite: {fileID: 21300498, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 68
+  - inputName: Stick Y
+    unitySprite: {fileID: 21300498, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 68
+  - inputName: Down Button
+    unitySprite: {fileID: 21300454, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 46
+  - inputName: Right Button
+    unitySprite: {fileID: 21300460, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 49
+  - inputName: Left Button
+    unitySprite: {fileID: 21300458, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 48
+  - inputName: Up Button
+    unitySprite: {fileID: 21300462, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 50
+  - inputName: SL
+    unitySprite: {fileID: 21300528, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 83
+  - inputName: SR
+    unitySprite: {fileID: 21300530, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 84
+  - inputName: L
+    unitySprite: {fileID: 21300794, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 96
+  - inputName: ZL
+    unitySprite: {fileID: 21300542, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 90
+  - inputName: Capture Button
+    unitySprite: {fileID: 21300040, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 20
+  - inputName: '- Button'
+    unitySprite: {fileID: 21300046, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 23
+  - inputName: Stick
+    unitySprite: {fileID: 21300500, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 69

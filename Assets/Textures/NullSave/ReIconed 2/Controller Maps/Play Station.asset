@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb7218a5a1c7d34aa714c95625cf3a6, type: 3}
+  m_Name: Play Station
+  m_EditorClassIdentifier: 
+  compatibleDevices:
+  - c3ad3cad-c7cf-4ca8-8c2e-e3df8d9960bb
+  - 71dfe6c8-9e81-428f-a58e-c7e664b7fbed
+  - cd9718bf-a87a-44bc-8716-60a0def28a9f
+  isFallback: 0
+  isCustom: 0
+  customGuid: 
+  tmpSpriteAsset: {fileID: 11400000, guid: 33f699f0ac448d049a7985ecb6d1aef1, type: 2}
+  inputMaps:
+  - inputName: Left Stick X
+    unitySprite: {fileID: 21300490, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 64
+  - inputName: Left Stick Y
+    unitySprite: {fileID: 21300490, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 64
+  - inputName: Right Stick X
+    unitySprite: {fileID: 21300494, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 66
+  - inputName: Right Stick Y
+    unitySprite: {fileID: 21300494, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 66
+  - inputName: Cross
+    unitySprite: {fileID: 21300022, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 11
+  - inputName: Circle
+    unitySprite: {fileID: 21300020, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 10
+  - inputName: Square
+    unitySprite: {fileID: 21300024, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 12
+  - inputName: Triangle
+    unitySprite: {fileID: 21300026, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 13
+  - inputName: L1
+    unitySprite: {fileID: 21300002, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 1
+  - inputName: L2
+    unitySprite: {fileID: 21300536, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 87
+  - inputName: R1
+    unitySprite: {fileID: 21300004, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 2
+  - inputName: R2
+    unitySprite: {fileID: 21300538, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 88
+  - inputName: Share
+    unitySprite: {fileID: 21300044, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 22
+  - inputName: Options
+    unitySprite: {fileID: 21300042, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 21
+  - inputName: Left Stick Button
+    unitySprite: {fileID: 21300492, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 65
+  - inputName: Right Stick Button
+    unitySprite: {fileID: 21300496, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 67
+  - inputName: D-Pad Up
+    unitySprite: {fileID: 21300448, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 43
+  - inputName: D-Pad Right
+    unitySprite: {fileID: 21300446, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 42
+  - inputName: D-Pad Down
+    unitySprite: {fileID: 21300440, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 39
+  - inputName: D-Pad Left
+    unitySprite: {fileID: 21300444, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 41
+  - inputName: PS Button
+    unitySprite: {fileID: 21300036, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 18
+  - inputName: Left Stick X-
+    unitySprite: {fileID: 21300798, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 98
+  - inputName: Left Stick X+
+    unitySprite: {fileID: 21300796, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 97
+  - inputName: Left Stick X/
+    unitySprite: {fileID: 21300788, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 93
+  - inputName: Left Stick X*
+    unitySprite: {fileID: 21300786, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 92
+  - inputName: Right Stick X-
+    unitySprite: {fileID: 21300812, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 105
+  - inputName: Right Stick X+
+    unitySprite: {fileID: 21300808, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 103
+  - inputName: Right Stick X/
+    unitySprite: {fileID: 21300802, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 100
+  - inputName: Right Stick X*
+    unitySprite: {fileID: 21300800, guid: bec84854812e7fd40bb929c169fb3a1e, type: 3}
+    tmpSpriteIndex: 99
