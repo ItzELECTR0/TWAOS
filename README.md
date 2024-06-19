@@ -1,8 +1,7 @@
 <div align="center">
   <h1>TWAOS</h1>
-  <h2>The Wonderful Adventures Of Sip:<h2>
-  <h2>An open-source AAA video game created by a solo developer.<h2>
   <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS Cover 4K 2 0" width="600"/>
+  <h3>The Wonderful Adventures Of Sip: An open-source AAA video game created by a solo developer.<h3>
 </div>
 
 ## OFFICIAL PAGES
