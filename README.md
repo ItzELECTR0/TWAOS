@@ -1,5 +1,8 @@
 # TWAOS
 
+![TWAOS Cover  4K 2 0](https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3)
+
+
 The Wonderful Adventures Of Sip:
 An open-source AAA video game created by a solo developer.
 
