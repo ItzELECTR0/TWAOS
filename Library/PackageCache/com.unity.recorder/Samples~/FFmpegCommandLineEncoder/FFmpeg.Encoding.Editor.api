@@ -1,0 +1,34 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace UnityEditor.Recorder.Examples
+{
+    [System.ComponentModel.DisplayName(@"FFmpeg Encoder")] [UnityEditor.Recorder.Encoder.EncoderSettings(typeof(FFmpegEncoder))] public sealed class FFmpegEncoderSettings : System.IEquatable<FFmpegEncoderSettings>, UnityEditor.Recorder.Encoder.IEncoderSettings
+    {
+        public string FFMpegPath { get; }
+        public FFmpegEncoderSettings.OutputFormat Format { get; set; }
+        public FFmpegEncoderSettings() {}
+        public override bool Equals(object obj);
+        public override int GetHashCode();
+        public string GetOptions();
+        public string GetPixelFormat(bool inputContainsAlpha);
+        public bool SupportsCurrentPlatform();
+        public enum OutputFormat
+        {
+            [UnityEngine.InspectorName(@"H.264 Default")] H264Default = 0,
+            [UnityEngine.InspectorName(@"H.264 Lossless 420")] H264Lossless420 = 2,
+            [UnityEngine.InspectorName(@"H.264 Lossless 444")] H264Lossless444 = 3,
+            [UnityEngine.InspectorName(@"H.264 NVIDIA")] H264Nvidia = 1,
+            [UnityEngine.InspectorName(@"H.265 HEVC Default")] HevcDefault = 4,
+            [UnityEngine.InspectorName(@"H.265 HEVC NVIDIA")] HevcNvidia = 5,
+            [UnityEngine.InspectorName(@"Apple ProRes 422 (apcn)")] ProRes422 = 9,
+            [UnityEngine.InspectorName(@"Apple ProRes 422 HQ (apch)")] ProRes422HQ = 8,
+            [UnityEngine.InspectorName(@"Apple ProRes 422 LT (apcs)")] ProRes422LT = 10,
+            [UnityEngine.InspectorName(@"Apple ProRes 422 Proxy (apco)")] ProRes422Proxy = 11,
+            [UnityEngine.InspectorName(@"Apple ProRes 4444 (ap4h)")] ProRes4444 = 7,
+            [UnityEngine.InspectorName(@"Apple ProRes 4444 XQ (ap4x)")] ProRes4444XQ = 6,
+            [UnityEngine.InspectorName(@"VP8 (WebM)")] VP8Default = 12,
+            [UnityEngine.InspectorName(@"VP9 (WebM)")] VP9Default = 13,
+        }
+    }
+}

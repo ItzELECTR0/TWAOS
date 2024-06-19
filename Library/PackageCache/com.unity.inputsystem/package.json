@@ -1,0 +1,110 @@
+{
+  "name": "com.unity.inputsystem",
+  "displayName": "Input System",
+  "version": "1.8.2",
+  "unity": "2019.4",
+  "description": "A new input system which can be used as a more extensible and customizable alternative to Unity's classic input system in UnityEngine.Input.",
+  "keywords": [
+    "input",
+    "events",
+    "keyboard",
+    "mouse",
+    "gamepad",
+    "touch",
+    "vr",
+    "xr"
+  ],
+  "dependencies": {
+    "com.unity.modules.uielements": "1.0.0"
+  },
+  "_upm": {
+    "changelog": "### Added\n- Additional tests for UI Input default actions (Navigate, Submit, Scroll etc.)\n\n### Fixed\n- Fixed an issue where UI interactions would not function without setting up a project-wide actions asset in Project Settings. Default UI actions are now created on the fly, if no asset for project-wide actions has been set. [ISXB-811](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-811).\n- Physical keyboards used on Android/ChromeOS could have keys \"stuck\" reporting as pressed after a long press and release [ISXB-475](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-475).\n- NullReferenceException thrown when right-clicking an empty Action Map list in Input Actions Editor windows [ISXB-833](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-833).\n- Fixed an issue where `System.ObjectDisposedException` would be thrown when deleting the last ActionMap item in the Input Actions Asset editor.\n- Fixed DualSense Edge's vibration and light bar not working on Windows\n- Fixed Project-wide Actions asset failing to reload properly after deleting project's Library folder.\n- Fixed an issue where `System.InvalidOperationException` is thrown when entering PlayMode after deleting an ActionMap from Project-wide actions and later resetting it.\n- Fixed Input Actions Editor window resource leak that could result in unexpected exceptions [ISXB-865](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-865).\n- Fixed an issue where UI integration would throw exceptions when Project-wide Input Actions asset did not contain the implicitly required `UI` action map or was missing any of the required actions. Additionally this fix now also generates warnings in the console for any divergence from expected action configuration or lack of bindings in edit-mode.\n\n### Changed\n- For Unity 6.0 and above, when an `EventSystem` GameObject is created in the Editor it will have the\n`InputSystemUIInputModule` by default if the Input System package is installed and enabled."
+  },
+  "upmCi": {
+    "footprint": "dfcdb250b15c1691d105f3bfe62fcc7d55352fac"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.8/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/InputSystem.git",
+    "type": "git",
+    "revision": "ea78ad9a0d8809879718f3d850572097f3f5a7f4"
+  },
+  "samples": [
+    {
+      "displayName": "Custom Binding Composite",
+      "description": "Shows how to implement a custom composite binding.",
+      "path": "Samples~/CustomComposite"
+    },
+    {
+      "displayName": "Custom Device",
+      "description": "Shows how to implement a custom input device.",
+      "path": "Samples~/CustomDevice"
+    },
+    {
+      "displayName": "Custom Device Usages",
+      "description": "Shows how to tag devices with custom usage strings that can be used, for example, to distinguish multiple instances of the same type of device (e.g. 'Gamepad') based on how the device is used (e.g. 'Player1' vs 'Player2' or 'LeftHand' vs 'RightHand').",
+      "path": "Samples~/CustomDeviceUsages"
+    },
+    {
+      "displayName": "Gamepad Mouse Cursor",
+      "description": "An example that shows how to use the gamepad for driving a mouse cursor for use with UIs.",
+      "path": "Samples~/GamepadMouseCursor"
+    },
+    {
+      "displayName": "In-Game Hints",
+      "description": "Demonstrates how to create in-game hints in the UI which reflect current bindings and active control schemes.",
+      "path": "Samples~/InGameHints"
+    },
+    {
+      "displayName": "InputDeviceTester",
+      "description": "A scene containing UI to visualize the controls on various supported input devices.",
+      "path": "Samples~/InputDeviceTester"
+    },
+    {
+      "displayName": "Input Recorder",
+      "description": "Shows how to capture and replay input events. Also useful by itself to debug input event sequences.",
+      "path": "Samples~/InputRecorder"
+    },
+    {
+      "displayName": "On-Screen Controls",
+      "description": "Demonstrates a simple setup for an on-screen joystick.",
+      "path": "Samples~/OnScreenControls"
+    },
+    {
+      "displayName": "Rebinding UI",
+      "description": "An example UI component that demonstrates how to create UI for rebinding actions.",
+      "path": "Samples~/RebindingUI"
+    },
+    {
+      "displayName": "Simple Demo",
+      "description": "A walkthrough of a simple character controller that demonstrates several techniques for working with the input system. See the README.md file in the sample for details.",
+      "path": "Samples~/SimpleDemo"
+    },
+    {
+      "displayName": "Simple Multiplayer",
+      "description": "Demonstrates how to set up a simple local multiplayer scenario.",
+      "path": "Samples~/SimpleMultiplayer"
+    },
+    {
+      "displayName": "Touch Samples",
+      "description": "A series of sample scenes for using touch input with the Input System package. This sample is not actually part of the package, but needs to be downloaded.",
+      "path": "Samples~/TouchSamples"
+    },
+    {
+      "displayName": "UI vs. Game Input",
+      "description": "An example that shows how to deal with ambiguities that may arrise when overlaying interactive UI elements on top of a game scene.",
+      "path": "Samples~/UIvsGameInput"
+    },
+    {
+      "displayName": "Unity Remote",
+      "description": "An example with a simple scene for trying out the Unity Remote app.",
+      "path": "Samples~/UnityRemote"
+    },
+    {
+      "displayName": "Visualizers",
+      "description": "Several example visualizations of input controls/devices and input actions.",
+      "path": "Samples~/Visualizers"
+    }
+  ],
+  "_fingerprint": "2e301545be76611bf3e328b5c47097d3838f0434"
+}

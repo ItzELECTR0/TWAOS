@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "com.unity.timeline": "1.0.0",
+    "com.unity.modules.unityanalytics": "1.0.0",
+    "com.unity.modules.cloth": "1.0.0"
+  },
+  "description": "Import and export Alembic files (.abc), record and stream animations in the Alembic format directly in Unity.\nNOTE: Supported build platforms: only Windows 64-bit/Arm64, macOS X, and Linux 64.\n\nThe Alembic format is commonly used in animation to transfer facial, cloth, and other simulation between applications in the form of baked data.",
+  "displayName": "Alembic",
+  "keywords": [
+    "alembic",
+    "abc",
+    "animation",
+    "facial",
+    "cloth",
+    "simulation"
+  ],
+  "name": "com.unity.formats.alembic",
+  "unity": "2019.4",
+  "version": "2.4.0",
+  "relatedPackages": {
+    "com.unity.formats.alembic.tests": "2.4.0"
+  },
+  "_upm": {
+    "changelog": "### Added\n- Added library for Windows ARM64 platform support.\n\n### Changed\n- Updated Alembic to 1.8.5 (was 1.7.16).\n- Updated ISPC to 1.21.0 (was 1.14.1).\n\n### Fixed\n- Fixed bug where vertex color displayed as black when processing RGB, RGBA, and Normal attributes in the `Face` scope\n- Fixed bug causing Editor to crash when a UV attribute is processed in the `Points` or `Face` scope.\n- Prevent a NullReferenceException when adding a curve renderer to an Alembic file with non-visible meshes."
+  },
+  "upmCi": {
+    "footprint": "1509c97479e6b1fdf80b5f6135de0e1df22b6527"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.formats.alembic@2.4/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.formats.alembic.git",
+    "type": "git",
+    "revision": "e7bdaa51d3725be85e55946df9087e1c0046d2a7"
+  },
+  "_fingerprint": "9d89ad59ac867821b74ba85f6a2a7b7f20e49e1b"
+}
