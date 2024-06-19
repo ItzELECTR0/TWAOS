@@ -3,7 +3,7 @@ The Wonderful Adventures Of Sip:
 An open-source AAA video game created by a solo developer.
 
 # Steam Page
-The official Steam page can be found:
+The official Steam page can be found at:
 https://store.steampowered.com/app/2231750/The_Wonderful_Adventures_Of_Sip/
 
 # Flashing Lights Disclaimer
