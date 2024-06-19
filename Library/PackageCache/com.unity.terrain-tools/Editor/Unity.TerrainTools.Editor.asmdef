@@ -1,0 +1,29 @@
+{
+    "name": "Unity.TerrainTools.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:80a73a91925646247bbed371a68aa7b5"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "",
+            "define": "USE_HIGH_DEFINITION_RENDERPIPELINE"
+        },
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "",
+            "define": "USE_UNIVERSAL_RENDERPIPELINE"
+        }
+    ],
+    "noEngineReferences": false
+}
