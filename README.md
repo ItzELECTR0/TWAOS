@@ -1,15 +1,21 @@
 # TWAOS
+
 The Wonderful Adventures Of Sip:
 An open-source AAA video game created by a solo developer.
 
-# STEAM PAGE
-The official Steam page can be found at:
+# OFFICIAL PAGES
+
+The official Steam page can be found here:
 https://store.steampowered.com/app/2231750/The_Wonderful_Adventures_Of_Sip/
+
+The official Itch.io page can be found here:
+https://electris.itch.io/twaos
 
 # FLASHING LIGHTS DISCLAIMER
 The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
 
 # RESPONSABILITY DISCLAIMER
+
 Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. We hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and our cloud backup of the game.
 
 Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
@@ -19,7 +25,9 @@ Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it'
 The story is undergoing major rewriting. Consider the Steam and Itch.io descriptions invalid for now. 
 
 # THE GAMEPLAY
+
 The player is set in a 3D world controlled with a third-person camera. The environment is closed down and partially interactable. You will unlock the use of Sip's supernatural lightning powers and be able to use them at will to either be the hero or become the very thing you swore to destroy. The game will make you experience Sip's life from that point forward, and it is up to you to guide him.
 
 # MATURE CONTENT
+
 The game contains battles, constant profanity, and some gore that can be disabled. Some aspects may be classified as light psychological horror.
