@@ -1,0 +1,97 @@
+/**********************************************************************
+Copyright (c) 2019 Advanced Micro Devices, Inc. All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+********************************************************************/
+
+// WebGPU has extremely strict uniformity requirements that are incompatible with the current implementation of this shader.
+#pragma exclude_renderers webgpu
+
+#pragma multi_compile __ INDIRECT_TRACE
+#pragma multi_compile __ FULL_HIT
+#pragma multi_compile __ ANY_HIT
+
+#include "trace_ray.hlsl"
+
+uint g_constants_ray_count;
+RWStructuredBuffer<uint> g_ray_count: register(u2);
+RWStructuredBuffer<Ray> g_rays: register(u3);
+#if FULL_HIT
+RWStructuredBuffer<FullHitData> g_hits: register(u4);
+#else
+RWStructuredBuffer<AnyHitData> g_hits: register(u4);
+#endif
+StructuredBuffer<BvhNode> g_bvh;
+StructuredBuffer<BvhNode> g_bottom_bvhs;
+RWStructuredBuffer<uint> g_stack;
+StructuredBuffer<InstanceInfo> g_instance_infos;
+
+StructuredBuffer<uint> g_trace_index_buffer;
+StructuredBuffer<uint> g_trace_vertex_buffer;
+int g_trace_vertex_stride;
+/**
+ * @brief Trace rays againsts given acceleration structure
+ *
+ **/
+#pragma kernel TraceRays
+[numthreads(GROUP_SIZE, 1, 1)]
+void TraceRays(
+    in uint gidx: SV_DispatchThreadID,
+    in uint lidx: SV_GroupThreadID)
+{
+#if INDIRECT_TRACE
+    const uint ray_count = g_ray_count[0];
+#else
+    const uint ray_count = g_constants_ray_count;
+#endif
+    if (gidx >= ray_count)
+    {
+        return;
+    }
+
+    // prepare ray info for trace
+    float3 ray_o = g_rays[gidx].origin;
+    float3 ray_d = g_rays[gidx].direction;
+    float  ray_mint = g_rays[gidx].min_t;
+    float  ray_maxt = g_rays[gidx].max_t;
+
+#if (ANY_HIT)
+    bool closestHit = false;
+#else
+    bool closestHit = true;
+#endif
+
+    TraceParams traceParams;
+    traceParams.bvh = g_bvh;
+    traceParams.bottom_bvhs = g_bottom_bvhs;
+    traceParams.stack = g_stack;
+    traceParams.instance_infos = g_instance_infos;
+    traceParams.globalThreadIndex = gidx;
+    traceParams.localThreadIndex = lidx;
+
+    VertexPoolDesc vertex_pool_desc;
+    vertex_pool_desc.index_buffer = g_trace_index_buffer;
+    vertex_pool_desc.vertex_buffer = g_trace_vertex_buffer;
+    vertex_pool_desc.vertex_stride = g_trace_vertex_stride;
+
+    TraceHitResult hit = TraceRay(traceParams, vertex_pool_desc, ray_o, ray_mint, ray_d, ray_maxt, 0xFFFFFFFF, 0, closestHit);
+
+#if FULL_HIT
+    g_hits[gidx].uv = hit.uv;
+    g_hits[gidx].prim_id = hit.prim_id;
+#endif
+    g_hits[gidx].inst_id = hit.inst_id;
+}

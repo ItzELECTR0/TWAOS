@@ -1,0 +1,78 @@
+/**********************************************************************
+Copyright (c) 2019 Advanced Micro Devices, Inc. All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+********************************************************************/
+
+// WebGPU has extremely strict uniformity requirements that are incompatible with the current implementation of this shader.
+#pragma exclude_renderers webgpu
+
+uint g_constants_triangle_count;
+
+RWStructuredBuffer<uint> g_indices;
+int g_indices_offset;
+
+RWStructuredBuffer<uint> g_scratch_buffer;
+uint g_sorted_prim_refs_offset;
+uint g_temp_indices_offset;
+
+#define GROUP_SIZE 256
+#define PRIMITIVES_PER_THREAD 8
+
+#pragma kernel OrderIndices
+[numthreads(GROUP_SIZE, 1, 1)]
+void OrderIndices(
+    in uint gidx: SV_DispatchThreadID,
+    in uint lidx : SV_GroupThreadID,
+    in uint bidx : SV_GroupID)
+{
+    for (int i = 0; i < PRIMITIVES_PER_THREAD; ++i)
+    {
+        uint dst_index = gidx * PRIMITIVES_PER_THREAD + i;
+
+        if (dst_index < g_constants_triangle_count)
+        {
+            uint src_index = g_scratch_buffer[g_sorted_prim_refs_offset + dst_index];
+
+            g_scratch_buffer[g_temp_indices_offset + 3 * dst_index    ] = g_indices[g_indices_offset + 3 * src_index];
+            g_scratch_buffer[g_temp_indices_offset + 3 * dst_index + 1] = g_indices[g_indices_offset + 3 * src_index + 1];
+            g_scratch_buffer[g_temp_indices_offset + 3 * dst_index + 2] = g_indices[g_indices_offset + 3 * src_index + 2];
+        }
+    }
+}
+
+#pragma kernel CopyOrderedIndicesBack
+[numthreads(GROUP_SIZE, 1, 1)]
+void CopyOrderedIndicesBack(
+    in uint gidx: SV_DispatchThreadID,
+    in uint lidx : SV_GroupThreadID,
+    in uint bidx : SV_GroupID)
+{
+    // Each thread handles PRIMITIVES_PER_THREAD triangles.
+    for (int i = 0; i < PRIMITIVES_PER_THREAD; ++i)
+    {
+        //  Calculate linear triangle index.
+        uint dst_index = gidx * PRIMITIVES_PER_THREAD + i;
+
+        // Check out of bounds for this triangle.
+        if (dst_index < g_constants_triangle_count)
+        {
+            g_indices[g_indices_offset + 3 * dst_index    ] = g_scratch_buffer[g_temp_indices_offset + 3 * dst_index    ];
+            g_indices[g_indices_offset + 3 * dst_index + 1] = g_scratch_buffer[g_temp_indices_offset + 3 * dst_index + 1];
+            g_indices[g_indices_offset + 3 * dst_index + 2] = g_scratch_buffer[g_temp_indices_offset + 3 * dst_index + 2];
+        }
+    }
+}

@@ -1,0 +1,68 @@
+#define RAYTRACING_BACKEND_COMPUTE
+#define GROUP_SIZE_X 64
+#define GROUP_SIZE_Y 1
+#define RAYTRACING_GROUP_SIZE GROUP_SIZE_X*GROUP_SIZE_Y
+
+#include "DynamicGISkyOcclusion.hlsl"
+
+int g_DispatchWidth;
+int g_DispatchHeight;
+int g_DispatchDepth;
+
+#pragma kernel MainRayGenShader
+[numthreads(GROUP_SIZE_X, GROUP_SIZE_Y, 1)]
+void MainRayGenShader(
+    in uint3 gidx: SV_DispatchThreadID,
+    in uint lidx : SV_GroupIndex)
+{
+    if (gidx.x >= uint(g_DispatchWidth) || gidx.y >= uint(g_DispatchHeight) || gidx.z >= uint(g_DispatchDepth))
+        return;
+
+    UnifiedRT::DispatchInfo dispatchInfo;
+    dispatchInfo.dispatchThreadID = gidx;
+    dispatchInfo.dispatchDimensionsInThreads = int3(g_DispatchWidth, g_DispatchHeight, g_DispatchDepth);
+    dispatchInfo.localThreadIndex = lidx;
+    dispatchInfo.globalThreadIndex = gidx.x + gidx.y * g_DispatchWidth + gidx.z * (g_DispatchWidth* g_DispatchHeight);
+
+    RayGenExecute(dispatchInfo);
+}
+
+#pragma kernel EncodeShadingDirection
+
+StructuredBuffer<float3> _SkyShadingPrecomputedDirection;
+StructuredBuffer<float3> _SkyShadingDirections;
+RWStructuredBuffer<uint> _SkyShadingIndices;
+
+uint _ProbeCount;
+
+uint LinearSearchClosestDirection(float3 direction)
+{
+    int indexMax = 255;
+    float bestDot = -10.0f;
+    int bestIndex = 0;
+
+    for (int index=0; index< indexMax; index++)
+    {
+        float currentDot = dot(direction, _SkyShadingPrecomputedDirection[index]);
+        if (currentDot > bestDot)
+        {
+            bestDot = currentDot;
+            bestIndex = index;
+        }
+    }
+    return bestIndex;
+}
+
+[numthreads(64, 1, 1)]
+void EncodeShadingDirection(uint probeId : SV_DispatchThreadID)
+{
+    if (probeId >= _ProbeCount)
+        return;
+
+    uint bestDirectionIndex = 255;
+    float norm = length(_SkyShadingDirections[probeId]);
+    if (norm > 0.0001f)
+        bestDirectionIndex = LinearSearchClosestDirection(_SkyShadingDirections[probeId] / norm);
+
+    _SkyShadingIndices[probeId] = bestDirectionIndex;
+}
