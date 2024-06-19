@@ -1,0 +1,33 @@
+{
+  "name": "com.vrmc.vrm",
+  "version": "0.123.0",
+  "displayName": "VRM-1.0",
+  "description": "VRM-1.0 importer",
+  "unity": "2021.3",
+  "keywords": [
+    "vrm",
+    "importer",
+    "avatar",
+    "vr"
+  ],
+  "author": {
+    "name": "VRM Consortium"
+  },
+  "dependencies": {
+    "com.vrmc.vrmshaders": "0.123.0",
+    "com.vrmc.gltf": "0.123.0"
+  },
+  "samples": [
+    {
+      "displayName": "VRM10Viewer",
+      "description": "VRM10 runtime loader sample",
+      "path": "Samples~/VRM10Viewer"
+    },
+    {
+      "displayName": "VRM10FirstPersonSample",
+      "description": "First Person layer sample with multi camera",
+      "path": "Samples~/VRM10FirstPersonSample"
+    }
+  ],
+  "_fingerprint": "a023ba1d03714c57252bf8b3ac9c30b37e04aac7"
+}
