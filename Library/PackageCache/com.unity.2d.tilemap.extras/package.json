@@ -1,0 +1,50 @@
+{
+  "name": "com.unity.2d.tilemap.extras",
+  "displayName": "2D Tilemap Extras",
+  "version": "4.0.2",
+  "unity": "2023.1",
+  "description": "2D Tilemap Extras is a package that contains extra scripts for use with 2D Tilemap features in Unity. These include custom Tiles and Brushes for the Tilemap feature.\n\nThe following are included in the package:\nBrushes: GameObject Brush, Group Brush, Line Brush, Random Brush\nTiles: Animated Tile, Rule Tile, Rule Override Tile\nOther: Grid Information, Custom Rules for Rule Tile",
+  "keywords": [
+    "2d"
+  ],
+  "category": "2D",
+  "dependencies": {
+    "com.unity.modules.tilemap": "1.0.0",
+    "com.unity.2d.tilemap": "1.0.0",
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0"
+  },
+  "relatedPackages": {
+    "com.unity.2d.tilemap.extras.tests": "4.0.2"
+  },
+  "samples": [
+    {
+      "displayName": "Waterfall Animated Tile",
+      "description": "An example implementation of an Animated Tile.",
+      "path": "Samples~/WaterfallAnimatedTile"
+    },
+    {
+      "displayName": "Pipe Rule Tile",
+      "description": "An example implementation of a Rule Tile with rules matching four-way orthogonal neighbors.",
+      "path": "Samples~/PipeRuleTile"
+    },
+    {
+      "displayName": "Dungeon Rule Tile",
+      "description": "An example implementation of a Rule Tile with rules matching eight-way orthogonal and diagonal neighbors.",
+      "path": "Samples~/DungeonRuleTile"
+    }
+  ],
+  "_upm": {
+    "changelog": "### Fixed\n- [GameObjectBrush] Use cell offset to determine location of GameObject when painting and erasing"
+  },
+  "upmCi": {
+    "footprint": "1dc77b3f9a7dc9ec88a1b175812698bd0c8714ff"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@4.0/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/2d-extras.git",
+    "type": "git",
+    "revision": "21a24803135ec4fbe47be9ccd27fb06e47d06d88"
+  },
+  "_fingerprint": "6a6fc3dece599bfc4df5dd2cb0da6635868f1281"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "com.unity.2d.spriteshape",
+  "version": "10.0.5",
+  "unity": "2023.1",
+  "displayName": "2D SpriteShape",
+  "description": "SpriteShape Runtime & Editor Package contains the tooling and the runtime component that allows you to create very organic looking spline based 2D worlds. It comes with intuitive configurator and a highly performant renderer.",
+  "keywords": [
+    "2d",
+    "shape",
+    "spriteshape",
+    "smartsprite",
+    "spline",
+    "terrain2d"
+  ],
+  "category": "2D",
+  "dependencies": {
+    "com.unity.mathematics": "1.1.0",
+    "com.unity.2d.common": "9.0.4",
+    "com.unity.modules.physics2d": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Sprite Shape Samples",
+      "description": "Samples to get started with SpriteShape",
+      "path": "Samples~/Samples"
+    },
+    {
+      "displayName": "Sprite Shape Extras",
+      "description": "This sample has utility scripts that has various use-cases of SpriteShape",
+      "path": "Samples~/Extras"
+    }
+  ],
+  "relatedPackages": {
+    "com.unity.2d.spriteshape.tests": "10.0.5",
+    "com.unity.2d.common.tests": "9.0.4"
+  },
+  "_upm": {
+    "changelog": "### Fixed\n- DANB-604 Fix case where Spriteshape vertex array exceeds limit even though it has not reached 64K."
+  },
+  "upmCi": {
+    "footprint": "af3fe774c4b71e6121985bd7de07c2b50ddc85a7"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.2d.spriteshape@10.0/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/2d.git",
+    "type": "git",
+    "revision": "a9b408c1401f5388a343ce948ac7a264ddb85a73"
+  },
+  "_fingerprint": "95f21ed414f23a92f9f6a0adce34576bff1ad3fd"
+}
