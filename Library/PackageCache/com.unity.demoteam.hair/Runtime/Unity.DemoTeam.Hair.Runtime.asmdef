@@ -1,0 +1,85 @@
+{
+    "name": "Unity.DemoTeam.Hair.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2665a8d13d1b3f18800f46e256720795",
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:d8b63aba1907145bea998dd612889d6b",
+        "GUID:df380645f10b7bc4b97d4f5eb6303d95",
+        "GUID:457756d89b35d2941b3e7b37b4ece6f1",
+        "GUID:15fc0a57446b3144c949da3e2b9737a9",
+        "GUID:22f31b74491fb45d5b598e0b935deb31",
+        "GUID:7e9d95a3be8cd654ba8a8d2bb2409223",
+        "GUID:b10624d713de0ea499050eed0b22b274"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "10.2.2",
+            "define": "HAS_PACKAGE_UNITY_HDRP"
+        },
+        {
+            "name": "com.unity.render-pipelines.high-definition",
+            "expression": "15.0.2",
+            "define": "HAS_PACKAGE_UNITY_HDRP_15_0_2"
+        },
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "10.2.2",
+            "define": "HAS_PACKAGE_UNITY_URP"
+        },
+        {
+            "name": "com.unity.formats.alembic",
+            "expression": "2.2.2",
+            "define": "HAS_PACKAGE_UNITY_ALEMBIC"
+        },
+        {
+            "name": "com.unity.demoteam.digital-human",
+            "expression": "0.1.1-preview",
+            "define": "HAS_PACKAGE_DEMOTEAM_DIGITALHUMAN"
+        },
+        {
+            "name": "com.unity.demoteam.digital-human",
+            "expression": "0.2.0-preview",
+            "define": "HAS_PACKAGE_DEMOTEAM_DIGITALHUMAN_0_2_0_PREVIEW"
+        },
+        {
+            "name": "com.unity.demoteam.digital-human",
+            "expression": "0.2.1-preview",
+            "define": "HAS_PACKAGE_DEMOTEAM_DIGITALHUMAN_0_2_1_PREVIEW"
+        },
+        {
+            "name": "com.unity.demoteam.mesh-to-sdf",
+            "expression": "1.0.0",
+            "define": "HAS_PACKAGE_DEMOTEAM_MESHTOSDF"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "1.0.0-pre.3",
+            "define": "HAS_PACKAGE_UNITY_COLLECTIONS_1_0_0_PRE_3"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "1.0.0-pre.5",
+            "define": "HAS_PACKAGE_UNITY_COLLECTIONS_1_0_0_PRE_5"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "1.3.0",
+            "define": "HAS_PACKAGE_UNITY_COLLECTIONS_1_3_0"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "[2.0.0,2.1.0-exp.4)",
+            "define": "HAS_PACKAGE_UNITY_COLLECTIONS_2_0_0_UNTIL_2_1_0_EXP_4"
+        }
+    ],
+    "noEngineReferences": false
+}

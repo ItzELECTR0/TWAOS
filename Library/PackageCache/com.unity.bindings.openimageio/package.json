@@ -1,0 +1,24 @@
+{
+  "name": "com.unity.bindings.openimageio",
+  "displayName": "OpenImageIO Bindings",
+  "version": "1.0.0",
+  "unity": "2023.1",
+  "type": "library",
+  "hideInEditor": true,
+  "description": "This package contains C# bindings for the OpenImageIO library. OpenImageIO is a image manipulation library that provides an unified way to work with multiple image formats.",
+  "dependencies": {
+    "com.unity.collections": "1.0.0"
+  },
+  "_upm": {
+    "changelog": "### Added\n- Added support for Windows Arm64."
+  },
+  "upmCi": {
+    "footprint": "d5e353ca618f15c7d61bfcff9d70608ab64eb9d2"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.recorder.git",
+    "type": "git",
+    "revision": "ea9b18e6c1a9d42406064f8e726352d7c26b656d"
+  },
+  "_fingerprint": "3229d2aa5c76c70269dc58c79d5864ec84fa4a74"
+}

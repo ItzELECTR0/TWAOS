@@ -1,0 +1,34 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace UnityEditor.Bindings.OpenImageIO
+{
+    public class OiioWrapper
+    {
+        public OiioWrapper() {}
+        public static int FreeAllocatedMemory(OiioWrapper.SubImagesList list);
+        public static T[] IntPtrToManagedArray<T>(System.IntPtr pointerToArr, System.UInt32 arrayCount) where T : struct, new();
+        public static OiioWrapper.SubImagesList ReadImage(Unity.Collections.FixedString4096Bytes filePath);
+        public static UnityEngine.Texture2D Tex2DFromImageHeader(OiioWrapper.ImageHeader subImgHeader);
+        public static int WriteImage(Unity.Collections.FixedString4096Bytes filePath, System.UInt32 nImages, OiioWrapper.ImageHeader* headers);
+        public struct Attribute
+        {
+            public Unity.Collections.FixedString4096Bytes key;
+            public Unity.Collections.FixedString4096Bytes value;
+        }
+        public struct ImageHeader
+        {
+            public System.IntPtr attributes;
+            public System.UInt32 attributesCount;
+            public System.UInt32 channelsCount;
+            public System.IntPtr data;
+            public System.UInt32 height;
+            public System.UInt32 width;
+        }
+        public struct SubImagesList
+        {
+            public System.IntPtr data;
+            public System.UInt32 subImagesCount;
+        }
+    }
+}

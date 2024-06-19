@@ -1,0 +1,26 @@
+{
+  "name": "com.unity.dedicated-server",
+  "displayName": "Dedicated Server",
+  "version": "1.1.0",
+  "unity": "6000.0",
+  "unityRelease": "3f1",
+  "description": "The Dedicated Server package contains optimizations and workflow improvements for developing Dedicated Server platform",
+  "dependencies": {},
+  "relatedPackages": {
+    "com.unity.multiplayer.workflows.tests.common": "0.0.0",
+    "com.unity.dedicated-server.tests": "0.0.0"
+  },
+  "_upm": {
+    "changelog": "### Fixed\n\n- Fixed the content selection icon overlapping with the Cinemachine for the camera in the hierarchy view.\n- Fixed multiplayer roles settings not being synced to multiplayer playmode virtual players.\n\n### Changed\n\n- Multiplayer Roles can be now assigned to build profiles. The old `EditorMultiplayerRolesManager.[Get|Set]MultiplayerRoleForBuildTarget` API has been deprecated in favor of the new `EditorMultiplayerRolesManager.[Get|Set]MultiplayerRoleForBuildProfile` API."
+  },
+  "upmCi": {
+    "footprint": "561a389d0f5aee8620d278b33f782a7fb1270f0f"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.dedicated-server@1.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/multiplayer-workflows.git",
+    "type": "git",
+    "revision": "49ca8afa5238571a591be4bd8a21a1f598040783"
+  },
+  "_fingerprint": "119dc3582659f84907f0da8b71e4588498f4e90b"
+}

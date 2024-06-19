@@ -1,0 +1,32 @@
+{
+  "name": "com.unity.collections",
+  "displayName": "Collections",
+  "version": "2.4.2",
+  "unity": "2022.3",
+  "unityRelease": "11f1",
+  "dependencies": {
+    "com.unity.burst": "1.8.13",
+    "com.unity.nuget.mono-cecil": "1.11.4",
+    "com.unity.test-framework": "1.4.3",
+    "com.unity.test-framework.performance": "3.0.3"
+  },
+  "description": "A C# collections library providing data structures that can be used in jobs, and optimized by Burst compiler.",
+  "keywords": [
+    "dots",
+    "collections",
+    "unity"
+  ],
+  "_upm": {
+    "changelog": "* Update entities package dependencies"
+  },
+  "upmCi": {
+    "footprint": "7655bd34494e79591b53f53739a3b26feef160e9"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.collections@2.4/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/dots.git",
+    "type": "git",
+    "revision": "964c24b165e01a75458934a172bde8cce9b901f3"
+  },
+  "_fingerprint": "dc09d9a70ebd8439afd28494af4b2e94bd4260fd"
+}
