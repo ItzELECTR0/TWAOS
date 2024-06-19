@@ -1,5 +1,5 @@
 # TWAOS
-The Wonderful Adventures Of Sip
+The Wonderful Adventures Of Sip:
 An open-source AAA video game created by a solo developer.
 
 # Steam Page
