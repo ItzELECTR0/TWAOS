@@ -32,6 +32,7 @@ WTF Fox
 
 # |Sketchfab Creators|
 Edouard Angebault
+Lumoize
 TriosStudents
 Warkarma
 Yanez Designs
