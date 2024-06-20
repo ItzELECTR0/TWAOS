@@ -1,6 +1,0 @@
-﻿#ifndef __HAIRSIMCOMPUTECONFIG_HLSL__
-#define __HAIRSIMCOMPUTECONFIG_HLSL__
-
-#include "HairSimConf.cs.hlsl"
-
-#endif//__HAIRSIMCOMPUTECONFIG_HLSL__

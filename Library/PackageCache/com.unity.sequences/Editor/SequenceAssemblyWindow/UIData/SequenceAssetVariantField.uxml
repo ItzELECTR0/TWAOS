@@ -1,7 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="flex-direction: row; margin-left: 20px; margin-top: 2px; margin-bottom: 2px;">
-        <ui:Label text="Variant" tooltip="The specific Sequence Asset Variant currently used in the Sequence." style="-unity-text-align: middle-left;" />
-        <ui:VisualElement name="variants" class="seq-gameobjeseq-popup" style="flex-grow: 1;" />
-        <ui:Button name="context-menu" tooltip="Manage Sequence Asset Variants" class="seq-menu-button" />
-    </ui:VisualElement>
-</ui:UXML>

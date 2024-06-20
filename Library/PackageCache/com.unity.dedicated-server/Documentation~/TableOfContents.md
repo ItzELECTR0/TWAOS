@@ -1,8 +1,0 @@
-* [About the Dedicated Server package](index.md)
-* [Set default command line arguments](cli-arguments.md)
-* [Multiplayer roles](multiplayer-roles.md)
-    * [Control which GameObjects and components exist on the client or the server](content-selection.md)
-    * [Automatically remove components from a Multiplayer Role](automatic-selection.md)
-    * [Identify null references](safety-checks.md)
-    * [Multiplayes roles icons](mutliplayer-roles-icons.md)
-    * [Multiplayer roles reference](multiplayer-roles-reference.md)
