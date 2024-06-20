@@ -31,6 +31,7 @@ Quixel
 WTF Fox
 
 # |Sketchfab Creators|
+Allay Design
 Algirdas Lalys
 Daniel Cardona
 Edouard Angebault
