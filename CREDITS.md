@@ -32,6 +32,7 @@ WTF Fox
 
 # |Sketchfab Creators|
 Algirdas Lalys
+Daniel Cardona
 Edouard Angebault
 Lumoize
 Slls666
