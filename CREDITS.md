@@ -35,6 +35,7 @@ Algirdas Lalys
 Daniel Cardona
 Edouard Angebault
 Lumoize
+₦₥₵ ฿₵
 Slls666
 TriosStudents
 Warkarma
