@@ -31,8 +31,10 @@ Quixel
 WTF Fox
 
 # |Sketchfab Creators|
+Algirdas Lalys
 Edouard Angebault
 Lumoize
+Slls666
 TriosStudents
 Warkarma
 Yanez Designs
