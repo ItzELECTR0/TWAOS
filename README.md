@@ -32,7 +32,5 @@ The player is set in a 3D world controlled with a third-person camera. The envir
 
 ## MATURE CONTENT
 
-The game contains battles, constant profanity, and some gore that can be disabled. Some aspects may be classified as light psychological horror.
-
-
-The game contains battles, constant profanity, and some gore that can be disabled. Some aspects may be classified as light psychological horror.
+The game contains battles, constant profanity, and some gore that can be disabled.
+Some aspects may be classified as light psychological horror.
