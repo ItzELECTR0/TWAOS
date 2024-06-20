@@ -20,6 +20,7 @@
 
 Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. We hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and our cloud backup of the game.
 
+We want to make it clear that while the first chapter is free, the rest won't be.
 Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
 
 ## THE STORY
