@@ -12,7 +12,11 @@
 
 <div align="left">
   <h2>FLASHING LIGHTS DISCLAIMER</h2>
-  <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100" align="center"/>
+
+  <div align="center">
+    <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100"/>
+  </div>
+  
   <h4>The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.<h4>
 </div>
 
