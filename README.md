@@ -10,8 +10,11 @@
 
 [The Wonderful Adventures Of Sip on Itch.io](https://electris.itch.io/twaos)
 
-## FLASHING LIGHTS DISCLAIMER
-The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
+<div align="left">
+  <h2>FLASHING LIGHTS DISCLAIMER</h2>
+  <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/02ce71e4-8d99-4207-99a2-2c14619926be" alt="flashwarnicon" width="600"/>
+  <h4>The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.<h4>
+</div>
 
 ## RESPONSIBILITY DISCLAIMER
 
