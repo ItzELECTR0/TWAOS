@@ -1,0 +1,49 @@
+.seq-asset-collection {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.seq-flex-label Label {
+    min-width: auto;
+    flex-grow: 1;
+    max-width: 150px;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: auto;
+}
+
+#seq-header-content {
+    padding: 10px 0 10px 14px;
+}
+
+#seq-header-content Label {
+    align-self: center;
+    margin: auto auto auto 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.seq-empty-state-msg {
+    height: 417px;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.seq-empty-state-msg > TextElement {
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+    flex-basis: initial;
+    flex-direction: row;
+    overflow: visible;
+    align-items: auto;
+    justify-content: flex-start;
+}

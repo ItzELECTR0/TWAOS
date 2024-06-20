@@ -1,0 +1,122 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace UnityEngine.Sequences
+{
+    public class MasterSequence : ScriptableObject
+    {
+        public UnityEngine.Timeline.TimelineAsset masterTimeline { get; }
+        public MasterSequence() {}
+    }
+
+    public class SceneReference : ISerializationCallbackReceiver
+    {
+        public string path { get; set; }
+        public SceneReference() {}
+        public void OnAfterDeserialize();
+        public void OnBeforeSerialize();
+        public static string op_Implicit(SceneReference sceneReference);
+    }
+
+    public class Sequence
+    {
+    }
+
+    [DisallowMultipleComponent] [ExecuteInEditMode] public class SequenceAsset : MonoBehaviour
+    {
+        public string type { get; set; }
+        public SequenceAsset() {}
+    }
+
+    [ExecuteInEditMode] public sealed class SequenceFilter : MonoBehaviour
+    {
+        public SequenceFilter() {}
+    }
+
+    public class TimelineSequence : Sequence
+    {
+        public UnityEngine.Timeline.TimelineAsset timeline { get; }
+    }
+}
+
+namespace UnityEngine.Sequences.Timeline
+{
+    [System.ComponentModel.DisplayName(@"Editorial Clip")] public class EditorialPlayableAsset : NestedTimelinePlayableAsset, ISerializationCallbackReceiver, UnityEngine.Timeline.ITimelineClipAsset
+    {
+        public UnityEngine.Timeline.ClipCaps clipCaps { get; }
+        public EditorialPlayableAsset() {}
+        public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, GameObject owner);
+        public void OnAfterDeserialize();
+        public void OnBeforeSerialize();
+    }
+
+    [System.ComponentModel.DisplayName(@"Sequencing/Editorial Track")] [UnityEngine.Timeline.TrackClipType(typeof(EditorialPlayableAsset), false)] [UnityEngine.Timeline.TrackColor(0.058f, 0.462f, 0.588f)] public class EditorialTrack : NestedTimelineTrack
+    {
+        public EditorialTrack() {}
+    }
+
+    [UnityEngine.Timeline.HideInMenu] public abstract class NestedTimelinePlayableAsset : UnityEngine.Playables.PlayableAsset
+    {
+        public UnityEngine.ExposedReference<UnityEngine.Playables.PlayableDirector> director;
+        public override double duration { get; }
+        protected NestedTimelinePlayableAsset() {}
+        public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, GameObject owner);
+    }
+
+    [UnityEngine.Timeline.HideInMenu] public abstract class NestedTimelineTrack : UnityEngine.Timeline.TrackAsset
+    {
+        protected NestedTimelineTrack() {}
+        public override void GatherProperties(UnityEngine.Playables.PlayableDirector director, UnityEngine.Timeline.IPropertyCollector driver);
+    }
+
+    [System.ComponentModel.DisplayName(@"Activation clip")] public class SceneActivationPlayableAsset : UnityEngine.Playables.PlayableAsset, UnityEngine.Timeline.ITimelineClipAsset
+    {
+        public UnityEngine.Timeline.ClipCaps clipCaps { get; }
+        public SceneActivationPlayableAsset() {}
+        public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, GameObject owner);
+    }
+
+    [UnityEngine.Timeline.TrackClipType(typeof(SceneActivationPlayableAsset))] [UnityEngine.Timeline.TrackColor(0.55f, 0.5f, 0.14f)] public class SceneActivationTrack : UnityEngine.Timeline.TrackAsset
+    {
+        public SceneReference scene;
+        public SceneActivationTrack() {}
+        public override UnityEngine.Playables.Playable CreateTrackMixer(UnityEngine.Playables.PlayableGraph graph, GameObject go, int inputCount);
+        public override void GatherProperties(UnityEngine.Playables.PlayableDirector director, UnityEngine.Timeline.IPropertyCollector driver);
+    }
+
+    [System.ComponentModel.DisplayName(@"Sequence Asset Clip")] public class SequenceAssetPlayableAsset : NestedTimelinePlayableAsset, UnityEngine.Timeline.ITimelineClipAsset
+    {
+        public UnityEngine.Timeline.ClipCaps clipCaps { get; }
+        public SequenceAssetPlayableAsset() {}
+    }
+
+    [System.ComponentModel.DisplayName(@"Sequencing/Sequence Asset Track")] [UnityEngine.Timeline.TrackClipType(typeof(SequenceAssetPlayableAsset), false)] [UnityEngine.Timeline.TrackColor(0.058f, 0.462f, 0.588f)] public class SequenceAssetTrack : NestedTimelineTrack
+    {
+        public SequenceAssetTrack() {}
+    }
+
+    public class StoryboardPlayableAsset : UnityEngine.Playables.PlayableAsset, UnityEngine.Timeline.ITimelineClipAsset
+    {
+        [Range(0f, 1f)] [SerializeField] [Tooltip(@"The opacity of the board.  0 is transparent, 1 is opaque")] public float alpha = 0.5f;
+        [SerializeField] [Tooltip(@"The board to be displayed")] public Texture board;
+        [Tooltip(@"If checked, the board will be flipped horizontally")] public bool horizontalFlip;
+        [SerializeField] [Tooltip(@"The screen-space position at which to display the board. Zero is center")] public Vector2 position;
+        [Min(0f)] [Tooltip(@"The screen-space scaling to apply to the board")] public Vector2 scale;
+        [SerializeField] [Tooltip(@"If checked, the specified board will be displayed as an overlay over the virtual camera's output")] public bool showBoard = true;
+        [Tooltip(@"If checked, X and Y scale are synchronized")] public bool syncScale = true;
+        [Tooltip(@"If checked, the board will be flipped vertically")] public bool verticalFlip;
+        [Range(-180f, 180f)] [SerializeField] [Tooltip(@"The z-axis rotation to apply to the board")] public float zRotation;
+        public UnityEngine.Timeline.ClipCaps clipCaps { get; }
+        public StoryboardPlayableAsset() {}
+        public override UnityEngine.Playables.Playable CreatePlayable(UnityEngine.Playables.PlayableGraph graph, GameObject owner);
+    }
+
+    [System.ComponentModel.DisplayName(@"Storyboard Track")] [UnityEngine.Timeline.TrackClipType(typeof(StoryboardPlayableAsset))] [UnityEngine.Timeline.TrackColor(0.9294118f, 0.4941176f, 0.007843138f)] public class StoryboardTrack : UnityEngine.Timeline.TrackAsset
+    {
+        [SerializeField] [Tooltip(@"Clips created in this track will be created with this default duration.Changing this value with not change the length of pre-existing Clips")] public double defaultFrameDuration = 3d;
+        [SerializeField] [Tooltip(@"sorting order of the Storyboard Canvas")] public int sortOrder;
+        public StoryboardTrack() {}
+        public override UnityEngine.Playables.Playable CreateTrackMixer(UnityEngine.Playables.PlayableGraph graph, GameObject go, int inputCount);
+        protected override void OnCreateClip(UnityEngine.Timeline.TimelineClip clip);
+    }
+}

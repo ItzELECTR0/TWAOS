@@ -1,0 +1,36 @@
+{
+  "displayName": "Sequences",
+  "name": "com.unity.sequences",
+  "unity": "2022.1",
+  "version": "2.1.1",
+  "dependencies": {
+    "com.unity.timeline": "1.6.3",
+    "com.unity.recorder": "2.5.5",
+    "com.unity.settings-manager": "1.0.3",
+    "com.unity.ugui": "1.0.0"
+  },
+  "description": "Efficiently create movies, game cinematics or any other linear content.\nOrganize your project's editorial structure and your creative content, assemble the elements for easy authoring and collaboration, and try out new ideas in a non-destructive way.",
+  "relatedPackages": {
+    "com.unity.sequences.tests": "2.1.1"
+  },
+  "_upm": {
+    "changelog": "### Fixed\n* Prevent unexpected path error when switching the Editor from dark theme to light theme."
+  },
+  "upmCi": {
+    "footprint": "87d75dc630e6582965fdac85ba5c109ac389ea64"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.sequences@2.1/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/com.unity.sequences.git",
+    "type": "git",
+    "revision": "15614c605852d6c3143fd62db4ca99e067847e22"
+  },
+  "samples": [
+    {
+      "displayName": "Scene Management",
+      "description": "This sample contains a Scene with a Master Sequence that uses the Scene Management features. It is made of multiple sequences, each with their own Scene Activation Track to control the activation of different Scenes for set and lighting.",
+      "path": "Samples~/SceneManagement"
+    }
+  ],
+  "_fingerprint": "ad2354e142b80a219da0fc2c30055d53a00ce1fd"
+}

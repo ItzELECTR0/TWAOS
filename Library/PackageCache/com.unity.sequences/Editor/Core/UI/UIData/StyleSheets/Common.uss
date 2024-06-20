@@ -1,0 +1,184 @@
+.seq-header {
+    background-color: var(--unity-colors-toolbar-background);
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    border-bottom-width: 1px;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+    min-height: 21px;
+}
+
+.seq-header .unity-toolbar-search-field {
+    flex-shrink: 1;
+    margin-left: auto;
+}
+
+#seq-header-content {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#seq-header-content > .unity-toolbar-search-field {
+    flex-shrink: 1;
+    margin-left: auto;
+}
+
+.seq-create-button {
+    background-color: var(--unity-colors-toolbar-background);
+    border-radius: 0;
+    border-width: 0;
+    flex-shrink: 0;
+    margin: 1px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    padding-top: 1px;
+}
+
+.seq-create-button:hover {
+    background-color: var(--unity-colors-toolbar_button-background-focus);
+}
+
+.seq-create-button > .unity-toolbar-menu__arrow {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+}
+
+.seq-create-add-new-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.seq-dropdown-icon {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+}
+
+.seq-tree-view__item-label {
+    flex-grow: 1;
+}
+
+.seq-tree-view__item-icon {
+    width: 16px;
+    height: 16px;
+    padding-top: 1px;
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-character {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Character-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-fx {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Fx-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-lighting {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Lighting-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-photography {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Photography-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-prop {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Prop-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-set {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Set-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-audio {
+    background-image: resource("Packages/com.unity.sequences/Editor/Editor Default Resources/Icons/Common/CollectionType/Audio-selected.png");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-prefab {
+    background-image: resource("Prefab On Icon");
+}
+
+.unity-collection-view__item.unity-collection-view__item--selected .seq-tree-view__item-icon-prefab-variant {
+    background-image: resource("PrefabVariant On Icon");
+}
+
+.seq-help-button {
+    border-width: 0;
+    border-radius: 0;
+    height: 16px;
+    width: 16px;
+    margin-top: 2px;
+    background-color: var(--unity-colors-toolbar-background);
+}
+
+.seq-help-button:hover {
+    background-color: var(--unity-colors-toolbar_button-background-focus);
+}
+
+.seq-menu-button {
+    border-width: 0;
+    border-radius: 0;
+    height: 18px;
+    width: 18px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.seq-tree-view-container {
+    flex-grow: 1;
+    min-height: auto;
+}
+
+.seq-list {
+    margin: 5px 5px 10px 5px;
+    flex-grow: 0;
+}
+
+.seq-list-header {
+    border-top-right-radius: 3px;
+    border-width: 1px;
+    -unity-font-style: bold;
+    padding: 2px 4px;
+}
+
+.seq-list-content {
+    padding: 5px 0;
+    border-bottom-left-radius: 3px;
+    border-width: 0 1px 1px 1px;
+}
+
+.seq-list-item {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.seq-list-footer {
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    height: 18px;
+}
+
+.seq-list-footer-buttons {
+    flex-direction: row;
+    width: 58px;
+    margin-top: -1px;
+    border-width: 0 1px 1px 1px;
+    border-radius: 0;
+    border-bottom-left-radius: 3px;
+}
+
+.seq-list-footer-buttons Button {
+    font-size: 20px;
+    border-width: 0px;
+    height: 15px;
+    width: 24px;
+    margin: 1px 2px 2px 2px;
+    padding-bottom: 3px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.seq-warning-label {
+    margin: 5px 10px 0px 10px;
+    -unity-text-align: middle-center;
+    background-color: rgba(255, 255, 0, 0.17);
+    border-width: 1px;
+    border-color: rgba(110, 110, 0, 255);
+}

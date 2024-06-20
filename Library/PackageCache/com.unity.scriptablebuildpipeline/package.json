@@ -1,0 +1,29 @@
+{
+  "name": "com.unity.scriptablebuildpipeline",
+  "displayName": "Scriptable Build Pipeline",
+  "version": "2.1.3",
+  "unity": "2019.4",
+  "description": "The Scriptable Build Pipeline moves the asset bundle build pipeline to C#.  Use the pre-defined build flows, or create your own using the divided up APIs.  This system improves build time, fixes incremental build, and provides greater flexibility.",
+  "keywords": [
+    "build",
+    "bundle",
+    "bundles",
+    "assetbundles",
+    "cache",
+    "server"
+  ],
+  "dependencies": {},
+  "_upm": {
+    "changelog": "- Fixed error where key was already in a dictionary and we try to add it again\n- Fixed issue where SpriteAtlas addressable bundle size is doubled if previous build cache is not cleared"
+  },
+  "upmCi": {
+    "footprint": "7632bcf5a0a46f55ac4f9c2ed79ce93143da1f67"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.scriptablebuildpipeline@2.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/Addressables.git",
+    "type": "git",
+    "revision": "ce0566e3aa96bd3b1648c405187751d0306cc931"
+  },
+  "_fingerprint": "b3d0a166a95926a82d3cc547102f0cd369589adf"
+}

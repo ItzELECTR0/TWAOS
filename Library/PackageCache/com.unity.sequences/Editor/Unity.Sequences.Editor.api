@@ -1,0 +1,55 @@
+// This file is generated. Do not modify by hand.
+// XML documentation file not found. To check if public methods have XML comments,
+// make sure the XML doc file is present and located next to the scraped dll
+namespace UnityEditor.Sequences
+{
+    public static class MasterSequenceExtensions
+    {
+        public static void Delete(this UnityEngine.Sequences.MasterSequence masterSequence);
+        public static bool Rename(this UnityEngine.Sequences.MasterSequence masterSequence, string newName);
+    }
+
+    public class SequenceAssetException : System.Exception
+    {
+        public SequenceAssetException(string message) {}
+    }
+
+    public static class SequenceAssetUtility
+    {
+        public static UnityEngine.GameObject CreateSource(string name, string type = default(string), bool animate = true, bool instantiate = false);
+        public static UnityEngine.GameObject CreateVariant(UnityEngine.GameObject source, string name = default(string), bool instantiate = false);
+        public static bool DeleteSourceAsset(UnityEngine.GameObject source, bool deleteVariants = true);
+        public static bool DeleteVariantAsset(UnityEngine.GameObject variant);
+        public static UnityEngine.GameObject DuplicateVariant(UnityEngine.GameObject variant);
+        public static System.Collections.Generic.IEnumerable<UnityEngine.GameObject> FindAllSources(string type = default(string));
+        public static System.Collections.Generic.IEnumerable<UnityEngine.GameObject> GetInstancesInSequence(UnityEngine.Playables.PlayableDirector sequenceDirector, string type = default(string));
+        public static UnityEngine.GameObject GetSource(UnityEngine.GameObject prefab);
+        public static string GetType(UnityEngine.GameObject prefab);
+        public static System.Collections.Generic.IEnumerable<UnityEngine.GameObject> GetVariants(UnityEngine.GameObject source);
+        public static bool HasVariants(UnityEngine.GameObject source);
+        public static UnityEngine.GameObject InstantiateInSequence(UnityEngine.GameObject prefab, UnityEngine.Playables.PlayableDirector sequenceDirector, UnityEngine.Timeline.TimelineClip clip = default(UnityEngine.Timeline.TimelineClip));
+        public static bool IsSequenceAsset(UnityEngine.GameObject prefab);
+        public static bool IsSource(UnityEngine.GameObject prefab);
+        public static bool IsVariant(UnityEngine.GameObject prefab);
+        public static void RemoveFromSequence(UnityEngine.GameObject instance, UnityEngine.Playables.PlayableDirector sequenceDirector);
+        public static void RemoveFromSequence(UnityEngine.GameObject instance, UnityEngine.Playables.PlayableDirector sequenceDirector, InteractionMode interactionMode);
+        public static string Rename(UnityEngine.GameObject prefab, string oldName, string newName, bool renameVariants = true, bool renameInstances = true);
+        public static UnityEngine.GameObject UpdateInstanceInSequence(UnityEngine.GameObject oldInstance, UnityEngine.GameObject newPrefab, UnityEngine.Playables.PlayableDirector sequenceDirector, InteractionMode interactionMode = InteractionMode.UserAction);
+    }
+
+    public static class SequenceUtility
+    {
+        public static event System.Action<UnityEngine.Sequences.TimelineSequence, UnityEngine.Sequences.MasterSequence> sequenceCreated;
+        public static event System.Action sequenceDeleted;
+        public static UnityEngine.Sequences.MasterSequence CreateMasterSequence(string name, float fps = -1f);
+        public static UnityEngine.Sequences.TimelineSequence CreateSequence(string name, UnityEngine.Sequences.MasterSequence masterSequence, UnityEngine.Sequences.TimelineSequence parent = default(UnityEngine.Sequences.TimelineSequence));
+        public static void DeleteSequence(UnityEngine.Sequences.TimelineSequence sequence, UnityEngine.Sequences.MasterSequence masterSequence);
+    }
+
+    public static class TimelineSequenceExtensions
+    {
+        public static void Delete(this UnityEngine.Sequences.TimelineSequence clip);
+        public static void Record(this UnityEngine.Sequences.TimelineSequence clip);
+        public static void Rename(this UnityEngine.Sequences.TimelineSequence clip, string newName);
+    }
+}
