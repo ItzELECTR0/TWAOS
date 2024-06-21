@@ -18,14 +18,14 @@
 
 ## RESPONSIBILITY DISCLAIMER
 
-Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. We hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and our cloud backup of the game.
+Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. I hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and my cloud backup of the game.
 
 I want to make it clear that while the first chapter is free, the rest won't be.
 Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
 
 ##  THE PREMISE
 
-The characters of the game are sphere. The world they live in is one of powers. The game's main story takes place in 2069 (Starts in 2066). The main character, Sip, has the power of lightning and energy, but not the regular one, it's quite, different.
+The characters of the game are spheres. The world they live in is one of powers. The game's main story takes place in 2069 (Starts in 2066). The main character, Sip, has the power of lightning and energy, but not the regular one, it's quite, different.
 
 ## THE STORY
 
