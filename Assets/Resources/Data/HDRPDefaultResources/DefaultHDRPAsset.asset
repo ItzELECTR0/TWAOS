@@ -50,12 +50,12 @@ MonoBehaviour:
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    colorBufferFormat: 74
+    colorBufferFormat: 48
     supportCustomPass: 1
-    customBufferFormat: 12
+    customBufferFormat: 74
     supportedLitShaderMode: 2
     planarReflectionResolution:
-      m_Values: 000800000020000000400000
+      m_Values: 000800000010000000100000
       m_SchemaId:
         m_Id: With3Levels
     cubeReflectionResolution:
@@ -75,7 +75,7 @@ MonoBehaviour:
     supportDitheringCrossFade: 1
     supportRuntimeAOVAPI: 1
     supportTerrainHole: 1
-    lightProbeSystem: 1
+    lightProbeSystem: 0
     oldLightProbeSystem: 0
     probeVolumeMemoryBudget: 2048
     supportProbeVolumeGPUStreaming: 1
@@ -97,8 +97,8 @@ MonoBehaviour:
       reflectionCubemapSize: 256
       maxEnvLightsOnScreen: 32
       reflectionCacheCompressed: 1
-      reflectionProbeFormat: 74
-      reflectionProbeTexCacheSize: 16384
+      reflectionProbeFormat: 48
+      reflectionProbeTexCacheSize: 4096
       reflectionProbeTexLastValidCubeMip: 3
       reflectionProbeTexLastValidPlanarMip: 0
       reflectionProbeDecreaseResToFit: 1
@@ -123,15 +123,15 @@ MonoBehaviour:
       directionalShadowFilteringQuality: 2
       areaShadowFilteringQuality: 1
       punctualLightShadowAtlas:
-        shadowAtlasResolution: 16384
+        shadowAtlasResolution: 4096
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 1
       areaLightShadowAtlas:
-        shadowAtlasResolution: 16384
+        shadowAtlasResolution: 2048
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 1
-      cachedPunctualLightShadowAtlas: 16384
-      cachedAreaLightShadowAtlas: 16384
+      cachedPunctualLightShadowAtlas: 4096
+      cachedAreaLightShadowAtlas: 2048
       allowDirectionalMixedCachedShadows: 1
       shadowResolutionDirectional:
         m_Values: 00010000000200000004000000080000
@@ -150,7 +150,7 @@ MonoBehaviour:
       maxAreaShadowMapResolution: 2048
       supportScreenSpaceShadows: 1
       maxScreenSpaceShadowSlots: 4
-      screenSpaceShadowBufferFormat: 8
+      screenSpaceShadowBufferFormat: 48
     decalSettings:
       drawDistance: 1000
       atlasWidth: 2048
@@ -165,16 +165,16 @@ MonoBehaviour:
       lutFormat: 48
       bufferFormat: 48
     dynamicResolutionSettings:
-      enabled: 0
+      enabled: 1
       useMipBias: 0
-      advancedUpscalersByPriority: 00
+      advancedUpscalersByPriority: 0100
       DLSSPerfQualitySetting: 1
       DLSSInjectionPoint: 0
       DLSSUseOptimalSettings: 1
       DLSSSharpness: 0.5
-      FSR2EnableSharpness: 0
+      FSR2EnableSharpness: 1
       FSR2Sharpness: 0
-      FSR2UseOptimalSettings: 0
+      FSR2UseOptimalSettings: 1
       FSR2QualitySetting: 0
       FSR2InjectionPoint: 0
       fsrOverrideSharpness: 0
@@ -182,7 +182,7 @@ MonoBehaviour:
       maxPercentage: 100
       minPercentage: 100
       dynResType: 1
-      upsampleFilter: 4
+      upsampleFilter: 5
       forceResolution: 0
       forcedPercentage: 100
       lowResTransparencyMinimumThreshold: 0
