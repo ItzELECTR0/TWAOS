@@ -35,9 +35,9 @@ Allay Design
 Algirdas Lalys
 Daniel Cardona
 Edouard Angebault
-Lumoize
 ₦₥₵ ฿₵
 Slls666
+Smoothie 3D
 TriosStudents
 Warkarma
 Yanez Designs
