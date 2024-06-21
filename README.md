@@ -23,8 +23,13 @@ Official support is not available to you. If you use the contents of this reposi
 I want to make it clear that while the first chapter is free, the rest won't be.
 Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
 
+##  THE PREMISE
+
+The characters of the game are sphere. The world they live in is one of powers. The game's main story takes place in 2069 (Starts in 2066). The main character, Sip, has the power of lightning and energy, but not the regular one, it's quite, different.
+
 ## THE STORY
 
+Short placeholder explination: Sip is one rejected by the world and his family, with what is considered the weakest power of all. He partakes in the biggest tragedy of his life and is forced to run away.
 The story is undergoing major rewriting. Consider the Steam and Itch.io descriptions invalid for now. 
 
 ## THE GAMEPLAY
