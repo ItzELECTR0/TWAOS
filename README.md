@@ -40,3 +40,9 @@ I wish to finish the first one by 2027, the rest following along not too long af
 
 The game contains battles, constant profanity, and some gore that can be disabled.
 Some aspects may be classified as light psychological horror.
+
+## CREATOR's SOCIALS
+
+[Studio Youtube Channel](https://www.youtube.com/@ELECTRIS)
+[Personal Youtube Channel](https://www.youtube.com/@ELEC7RO)
+[Discord Server](https://discord.gg/TgtCGKxbZr)
