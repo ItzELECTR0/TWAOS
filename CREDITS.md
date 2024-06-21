@@ -33,8 +33,11 @@ WTF Fox
 # |Sketchfab Creators|
 Allay Design
 Algirdas Lalys
+Ankledot
 Daniel Cardona
+Doaa Sheha
 Edouard Angebault
+Faheem Yusuf
 Janexx
 Mehdi Shahsavan
 Misha.Yast71
@@ -42,10 +45,13 @@ Misha.Yast71
 Polybean
 Slls666
 Smoothie 3D
+T-Art
+Tobei
 Townhill
 TriosStudents
 Warkarma
 Yanez Designs
+Yenikholic
 
 Sketchfab Models are under fair use of the CC BY 4.0 License
 Credits to their creators above
