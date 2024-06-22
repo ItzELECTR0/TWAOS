@@ -34,8 +34,10 @@ WTF Fox
 Allay Design
 Algirdas Lalys
 Ankledot
+Ap3design
 Daniel Cardona
 Doaa Sheha
+Dylanheyes
 Edouard Angebault
 Faheem Yusuf
 Janexx
