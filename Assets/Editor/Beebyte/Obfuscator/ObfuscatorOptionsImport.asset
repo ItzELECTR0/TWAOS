@@ -18,8 +18,8 @@ MonoBehaviour:
   fields: 1
   properties: 1
   events: 1
-  skipRenameOfAllPublicMonobehaviourMethods: 1
-  skipRenameOfAllPublicMonobehaviourFields: 1
+  skipRenameOfAllPublicMonobehaviourMethods: 0
+  skipRenameOfAllPublicMonobehaviourFields: 0
   searchForUnityReflectionMethods: 1
   obfuscateLiterals: 1
   stripLiteralEscapeCharacters: 1
@@ -217,7 +217,7 @@ MonoBehaviour:
   inheritBeebyteAttributes: 0
   treatScriptableObjectsAsSerializable: 1
   deriveNamesFromCryptoHash: 1
-  sha1seed: 
+  sha1seed: 72YV2S2DcPM1JcJ2ZNoqEkbS
   numberOfDifferentCharactersAsPowerOfTwo: 4
   numberOfHashBitsToUse: 6
   allowCopyingOfAllAttributesInFakeCode: 0
@@ -235,9 +235,9 @@ MonoBehaviour:
   - OnStop_
   - OnFailStart_
   - OnFailStop_
-  skipEnums: 1
+  skipEnums: 0
   maxInstructionsForCloning: 2000
-  preserveNamespaces: 0
+  preserveNamespaces: 1
   obfuscateMonoBehaviourClassNames: 0
   replaceLiterals:
   - OnHover
@@ -271,7 +271,7 @@ MonoBehaviour:
   - Unity.Burst.BurstCompileAttribute
   equivalentAttributesForSkipRename:
   - Newtonsoft.Json.JsonPropertyAttribute
-  includeCompilationPipelineAssemblies: 0
+  includeCompilationPipelineAssemblies: 1
   assemblies:
   - Assembly-CSharp.dll
   compiledAssemblies: []
@@ -280,7 +280,7 @@ MonoBehaviour:
   onlyObfuscateLiteralsInObfuscatedMethods: 0
   obfuscateLiteralsInAllMethods: 0
   noPublicFakeMethods: 0
-  progressBar: 1
+  progressBar: 2
   obfuscateReleaseOnly: 0
   attributesToRemoveIfObfuscatedMember:
   - UnityEngine.AddComponentMenu
@@ -302,3 +302,7 @@ MonoBehaviour:
   obfuscateAnonymousTypes: 0
   obfuscateAnonymousYieldingEnumeratorTypes: 1
   allowCompilerGeneratedFieldsOnSerializedTypesToBeObfuscated: 0
+  literalObfuscationBlockLength: 64
+  skipClassesByRegex:
+  - ^UnitySourceGeneratedAssemblyMonoScriptTypes_v.*$
+  retainIndices: 0

@@ -2,6 +2,7 @@
 
 namespace Rewired.Integration.Cinemachine {
     using UnityEngine;
+    using Cinemachine;
     using System.Collections.Generic;
 
     /// <summary>
