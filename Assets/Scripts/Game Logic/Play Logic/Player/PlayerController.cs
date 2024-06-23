@@ -288,6 +288,7 @@ namespace ELECTRIS
             }
         }
 
+        // WHY THIS SHIT BREAKING THE WHOLE SYSTEM?
         private void Jump()
         {
             exitingSlope = true;

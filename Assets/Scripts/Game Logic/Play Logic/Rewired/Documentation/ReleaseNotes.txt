@@ -1,3 +1,81 @@
+1.1.50.0:
+
+  Changes:
+    - Added keyboard key combination override modes.
+    - Changed the default keyboard key combination override mode to Cancel. This mode makes key combination override behavior more intuitive, with Actions bound to modifier keys canceled when a key combo is activated that contains that modifier key. Canceled Actions do not return True until the bound key is released and pressed again. Existing Rewired Input Managers will retain the legacy mode (Pause), but newly created Rewired Input Managers will default to Cancel.
+    - Added Key Combination Override Mode to Rewired Input Manager Settings.
+    - Added Generate Key Events On Key Combination Override to Rewired Input Manager Settings.
+    - Added Enhanced Device Support device type exclusion options.
+
+  API Changes:
+    - Added Rewired.Config.KeyCombinationOverrideMode enum.
+    - Added ReInput.ConfigHelper.keyCombinationOverrideMode property.
+    - Added ReInput.ConfigHelper.generateKeyEventsOnKeyCombinationOverride property.
+    - Added Rewired.ControllerExtensions.DualSenseExtension.GetVibrationMode function.
+    - Added Rewired.ControllerExtensions.DualSenseExtension.SetVibrationMode function.
+    - Addde Rewired.ControllerExtensions.DualSenseVibrationMode enum.
+    - Added Rewired.Config.EnhancedDeviceSupportDeviceType enum.
+    - Added ReInput.ConfigHelper.enhancedDeviceSupportExcludedDeviceTypes property.
+  
+  Bug Fixes:
+    - Player.GetButtonTimePressed and Player.GetButtonTimeUnpressed now return correct values when an Action bound to a keyboard modifier key has its value blocked or unblocked due to a key combination being activated or deactivated that includes the modifier key and Key Combination Override mode is set to Pause and Generate Key Events On Key Combination Override is disabled.
+
+1.1.49.2:
+
+  Changes:
+    - Updated Cinemachine integration to work with Unity Editor Play Mode options.
+
+  Controller Definitions:
+    - Microsoft Xbox One, Android: Changed mapping of View button for newer Android versions dropping support for older versions of Android that map the View button to keyboard ESC.
+    
+  Bug Fixes:
+    - Rewired_MacOS library: Now ad-hoc signed instead of signed with development identity.
+    - Rewired_MacOS library: Prevent possible issues on MacOS versions < 11.
+
+1.1.49.1:
+
+  Bug Fixes:
+    - MacOS Standalone, Native, Enhanced Device Support: Fixed bug causing controllers using Enhanced Device Support to stop working after editor pause, long level loading time, or application out of focus with Unity Player -> Run in Background disabled.
+
+1.1.49.0:
+
+  Changes:
+    - Added Use Physical Keys (Unity) option in Rewired Input Manager to detect Unity Physical Keys setting and to display warning to users about implications of using this setting. (Unity 2021.2+)
+    - Native Keyboard Handling is disabled if Unity Physical Keys setting is enabled.
+    
+  API Changes:
+    - Added Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension class.
+    - Added Rewired.Platforms.Linux.UDev.UdevControllerExtension class.
+    - Added Rewired.Platforms.Windows.XInput.XInputControllerExtension class.
+    - Added Rewired.Platforms.Windows.XInput.CapabilityFlags enum.
+    - Added Rewired.Platforms.Windows.XInput.DeviceType enum.
+    - Added Rewired.Platforms.Windows.XInput.DeviceSubType enum.
+    - Added Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension class.
+    - Added Rewired.Platforms.Microsoft.WindowsGamingInput.DeviceType enum.
+    - Added Rewired.Platforms.UWP.HID.HIDControllerExtension class.
+
+1.1.48.0:
+  
+  Changes:
+    - Linux Standalone, Native: Added Enhanced Device Support option. Special device features such as Sony DualSense vibration, IMU, and trigger haptics now work on Linux. (See documentation for Linux permissions issues.)
+    - Linux Standalone, Native: Modified format of joystick.HardwareIdentifier string.
+    - Windows Standalone, Raw Input: Modified format of joystick.HardwareIdentifier string for consistency.
+    - Windows Standalone, Direct Input: Modified format of joystick.HardwareIdentifier string for consistency.
+    - MacOS, Native: Modified format of joystick.HardwareIdentifier string for consistency.
+    - Enhanced Device Support, Sony DualSense: Changed to vibration compatibility mode v2 for proper vibration intensity ramp, removed workaround.
+    - MacOS Standalone, Native, Enhanced Device Support: Sony DualSense special features now work when connected via Bluetooth.
+    - MacOS Standalone, Native, Enhanced Device Support: Sony DualShock 4 special features now work when connected via Bluetooth.
+
+  Controller Definitions:
+    - Sony DualSense, Linux Native: Added more device identifiers for matching.
+    - Nintendo Pro Controller, Linux Native: Added variant for newer versions of Ubuntu.
+    - Nintendo Left Joy-Con, Linux Native: Added variant for newer versions of Ubuntu.
+    - Nintendo Right Joy-Con, Linux Native: Added variant for newer versions of Ubuntu.
+
+  Bug Fixes:
+    - Windows Standalone, Raw Input + Enhanced Device Support: Fixed possible issue with cleanup of resources for devices supported by Enhanced Device Support.
+    - Windows Standalone, Raw Input + Enhanced Device Support: Fixed Sony DualShock 4 special features no longer working via Bluetooth (bug introduced in 1.1.47.0).
+
 1.1.47.0:
   
   Changes:

@@ -6203,6 +6203,65 @@
             Throttles are calibrated to a range of -1 to +1 with 0 being in the center position.
             </summary>
         </member>
+        <member name="T:Rewired.Config.KeyCombinationOverrideMode">
+            <summary>
+            Determines how Actions bound to keys that are also used in key combinations behave.
+            Example: Ctrl is bound to Action1 and Ctrl + W is bound to Action 2.
+            When Ctrl is pressed, Action1 activates until W is also pressed.
+            This enum defines how the underlying Action1 bound to Ctrl will behave when H is pressed
+            and when H is released. When Ctrl + H is pressed, the key combination overrides Action1
+            and it returns a value of False.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.KeyCombinationOverrideMode.None">
+            <summary>
+            All key combination override handling is disabled for all keys including modifier and primary keys.
+            Even if a key combination includes a key that is already bound to an Action, both
+            the Action bound to the key combination and the Action bound to the individual
+            key will return true when pressed. Example: W is bound to Action1. Cntl + W is bound to Action2.
+            When Cntl + W is pressed, both Action1 and Action2 return true.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.KeyCombinationOverrideMode.Pause">
+            <summary>
+            An Action bound to a modifier key that is a member of a key combination will return False
+            for the duration that the key combination is active. Once the key combination becomes inactive
+            by releasing the primary key, the Action bound to the modifier key will no longer be overridden
+            and return a True value.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.KeyCombinationOverrideMode.Cancel">
+            <summary>
+            An Action bound to a modifier key that is a member of a key combination will return False for
+            the duration that the key combination is active. When any key of the overriding key combination 
+            is released, the Action bound to the modifier key will no longer be overridden and return a True
+            value if the key is still pressed.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.KeyCombinationOverrideMode.Overlap">
+            <summary>
+            An Action bound to a modifier key that is a member of a key combination will return True
+            as long as the key is held and will not have its value overridden by the key combination
+            unless the modifier key matches the primary key of the key combination.
+            Actions bound to each modifier key in the key combination will return value along with the Action
+            bound to the key combination.
+            Example: Cntl is bound to Action1. Cntl + W is bound to Action2. When Cntl + W is pressed,
+            both Action1 and Action2 return true. 
+            Note that this does not apply to the primary key of a key combination. In the previous example,
+            an Action bound to W alone does not return true when Cntl + W is pressed.
+            This also does not apply to key combinations themselves. Key combinations can be overridden by other
+            key combinations that have more modifiers.
+            Example: Cntl + W is bound to Action1. Cntl + Shift + W is bound to Action2.
+            When Cntl + Shift + W is pressed, Action2 returns true, but Action1 returns false.
+            If a key combination is overridden by another key combination that has more modifiers, the
+            overridden key combination will return false until all constiutent keys are released and pressed again.
+            </summary>
+        </member>
+        <member name="T:Rewired.Config.EnhancedDeviceSupportDeviceType">
+            <summary>
+            Devices supported by Enhanced Device Support.
+            </summary>
+        </member>
         <member name="T:Rewired.Config.LogLevelFlags">
             <summary>
             Log level flags for logging.
@@ -7602,6 +7661,29 @@
             Light #5
             </summary>
         </member>
+        <member name="T:Rewired.ControllerExtensions.DualSenseVibrationMode">
+            <summary>
+            Dual Sense vibration mode.
+            </summary>
+        </member>
+        <member name="F:Rewired.ControllerExtensions.DualSenseVibrationMode.Advanced">
+            <summary>
+            Required to use audio-based vibration.
+            Normal motor vibration does not work in Advanced mode.
+            </summary>
+        </member>
+        <member name="F:Rewired.ControllerExtensions.DualSenseVibrationMode.Compatible">
+            <summary>
+            Approximates how a DualShock 4 handles vibration.
+            Vibration mode must be set to either Compatible or Compatible2 to use standard motor vibration.
+            </summary>
+        </member>
+        <member name="F:Rewired.ControllerExtensions.DualSenseVibrationMode.Compatible2">
+            <summary>
+            Approximates how a DualShock 4 handles vibration even more accurately than Compatible mode.
+            Vibration mode must be set to either Compatible or Compatible2 to use standard motor vibration.
+            </summary>
+        </member>
         <member name="T:Rewired.ControllerExtensions.DualSenseExtension">
             <summary>
             Allows access to controller-specific functions such as vibration.
@@ -7656,6 +7738,17 @@
             <summary>
             Stops vibration on all motors.
             </summary>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.DualSenseExtension.GetVibrationMode">
+            <summary>
+            Gets the vibration mode for the gamepad.
+            </summary>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.DualSenseExtension.SetVibrationMode(Rewired.ControllerExtensions.DualSenseVibrationMode)">
+            <summary>
+            Sets the vibration mode for the gamepad.
+            </summary>
+            <param name="mode">The vibration mode.</param>
         </member>
         <member name="M:Rewired.ControllerExtensions.DualSenseExtension.GetVibration(Rewired.ControllerExtensions.DualShock4MotorType)">
             <summary>
@@ -10205,6 +10298,11 @@
             Runtime only!
             </summary>
         </member>
+        <member name="M:Rewired.Data.ConfigVars.GetPlatformVar_enhancedDeviceSupportExcludedDeviceTypes">
+            <summary>
+            Runtime only!
+            </summary>
+        </member>
         <member name="M:Rewired.Data.ConfigVars.SetPlatformVar_ignoreInputWhenAppNotInFocus(System.Boolean)">
             <summary>
             Runtime only!
@@ -10241,6 +10339,11 @@
             </summary>
         </member>
         <member name="M:Rewired.Data.ConfigVars.SetPlatformVar_useWindowsGamingInput(System.Boolean)">
+            <summary>
+            Runtime only!
+            </summary>
+        </member>
+        <member name="M:Rewired.Data.ConfigVars.SetPlatformVar_enhancedDeviceSupportExcludedDeviceTypes(System.Collections.Generic.IList{Rewired.Config.EnhancedDeviceSupportDeviceType})">
             <summary>
             Runtime only!
             </summary>
@@ -13442,20 +13545,29 @@
         <member name="M:Rewired.VirtualButton.SetOn(Rewired.UpdateLoopType,System.Boolean)">
             <summary>
             This does not store the valuePrev at this time so it can be set multiple times per update.
-            You cannot set a negative value here because the button may be fed by multiple sources and
-            negatives cannot cancel out positives. The button value will be cleared at the end up update.
+            You cannot set off here because the button may be fed by multiple sources and
+            off cannot cancel out on. The button value will be cleared at the end up update.
+            </summary>
+        </member>
+        <member name="M:Rewired.VirtualButton.SetState(Rewired.UpdateLoopType,Rewired.ButtonStateFlags,System.Boolean)">
+            <summary>
+            This does not store the valuePrev at this time so it can be set multiple times per update.
+            This overrides the buttons value, so this should not be set by multiple sources because an Off
+            state will override an On state.
             </summary>
         </member>
         <member name="M:Rewired.VirtualButton.InnerButton.SetOn(System.Boolean)">
             <summary>
             This does not store the valuePrev at this time so it can be set multiple times per update.
-            You cannot set a negative value here because the button may be fed by multiple sources and
-            negatives cannot cancel out positives. The button value will be cleared at the end up update.
+            You cannot set off here because the button may be fed by multiple sources and
+            off cannot cancel out on. The button value will be cleared at the end up update.
             </summary>
         </member>
-        <member name="T:Rewired.VirtualButton.InnerButton.ButtonValueFlags">
+        <member name="M:Rewired.VirtualButton.InnerButton.SetState(Rewired.ButtonStateFlags,System.Boolean)">
             <summary>
-            Represents the value and previous 
+            This does not store the valuePrev at this time so it can be set multiple times per update.
+            This overrides the buttons value, so this should not be set by multiple sources because an Off
+            state will override an On state.
             </summary>
         </member>
         <member name="M:Rewired.PlayerAction.GetAxis">
@@ -22319,6 +22431,29 @@
             receive the event callback. If disabled, controller connection events for controllers already connected before runtime starts will be missed.
             </summary>
         </member>
+        <member name="P:Rewired.ReInput.ConfigHelper.keyCombinationOverrideMode">
+            <summary>
+            Determines how Actions bound to keys that are also used in key combinations behave.
+            Example: Ctrl is bound to Action1 and Ctrl + W is bound to Action 2.
+            When Ctrl is pressed, Action1 activates until W is also pressed.
+            This defines how the underlying Action1 bound to Ctrl will behave when H is pressed
+            and when H is released. When Ctrl + H is pressed, the key combination overrides Action1
+            and it returns a value of False.
+            This setting can be changed without resetting Rewired.
+            </summary>
+        </member>
+        <member name="P:Rewired.ReInput.ConfigHelper.generateKeyEventsOnKeyCombinationOverride">
+            <summary>
+            Determines if key up and down events are generated when the Action(s) bound to one or more modifier keys that are part of
+            a key combination are overridden and resumed when the succeeding key(s) in the key combination are pressed or released.
+            Example: Cntl is bound to Action1. Cntl + W is bound to Action2. When Cntl is pressed, Action1 generates Down and On events.
+            When W is pressed while Cntl is held, should Action1, bound to Cntl, generate an Up event (because it has been overridden and is now off).
+            Similarly, when Cntl + W is held and W is released, if <see cref="T:Rewired.Config.KeyCombinationOverrideMode"/> is set to
+            <see cref="F:Rewired.Config.KeyCombinationOverrideMode.Pause"/>, should Action1, bound to Cntl, generate a Down event (because it is
+            no longer overridden and resumes returning True)?
+            This setting can be changed without resetting Rewired.
+            </summary>
+        </member>
         <member name="P:Rewired.ReInput.ConfigHelper.autoAssignJoysticks">
             <summary>
             Toggles joystick auto-assignment during runtime. This setting can be changed without resetting Rewired.
@@ -22347,6 +22482,13 @@
         <member name="P:Rewired.ReInput.ConfigHelper.logLevel">
             <summary>
             Determines the level of internal logging.
+            </summary>
+        </member>
+        <member name="P:Rewired.ReInput.ConfigHelper.enhancedDeviceSupportExcludedDeviceTypes">
+            <summary>
+            Gets or sets a copy of the list of all the device types excluded from Enhanced Device Support.
+            This will not return any values if the current platform does not support Enhanced Device Support.
+            Rewired will be completely reset if this value is set.
             </summary>
         </member>
         <member name="T:Rewired.ReInput.ControllerHelper">

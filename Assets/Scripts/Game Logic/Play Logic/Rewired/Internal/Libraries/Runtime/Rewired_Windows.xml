@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rewired_Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Rewired.Platforms.Microsoft.WindowsGamingInput.DeviceType">
+            <summary>
+            Windows Gaming Input device type.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Microsoft.WindowsGamingInput.DeviceType.Unknown">
+            <summary>
+            Unknown device type.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Microsoft.WindowsGamingInput.DeviceType.Gamepad">
+            <summary>
+            Gamepad device type.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension">
+            <summary>
+            Provides information about a Windows Gaming Input device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.deviceType">
+            <summary>
+            Windows Gaming Input device type.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.nativePointer">
+            <summary>
+            Native pointer to the device object.
+            Note: This will always return IntPtr.Zero on UWP when using .NET scripting backend.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.nonRoamableId">
+            <summary>
+            Non roamable id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.isWireless">
+            <summary>
+            Determines if the device is wireless.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.productName">
+            <summary>
+            HID product name string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.Rewired#ControllerExtensions#IHIDControllerExtension#manufacturer">
+            <summary>
+            HID manufacturer string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.vendorId">
+            <summary>
+            HID vendor id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.productId">
+            <summary>
+            HID product id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.Rewired#ControllerExtensions#IHIDControllerExtension#usagePage">
+            <summary>
+            HID usage page.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Microsoft.WindowsGamingInput.WindowsGamingInputControllerExtension.Rewired#ControllerExtensions#IHIDControllerExtension#usage">
+            <summary>
+            HID usage.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.DirectInput.DirectInputDeviceType">
+            <summary>
+            Direct Input device type.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.DirectInput.DirectInputDeviceAxisMode">
+            <summary>
+            Direct Input device axis mode.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.DirectInput.DirectInputInputRange">
+            <summary>
+            Direct Input input range.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.DirectInput.DirectInputInputRange.Minimum">
+            <summary>
+            Minimum value of this range
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.DirectInput.DirectInputInputRange.Maximum">
+            <summary>
+            Maximum value of this range
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension">
+            <summary>
+            Provides information about a Raw Input device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.instanceGuid">
+            <summary>
+            Instance Guid.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.productGuid">
+            <summary>
+            Product Guid.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.instanceName">
+            <summary>
+            Gets or sets the friendly instance name of the device. 
+            This property exists for advanced applications that want to change the friendly instance name of a device (as returned in the tszInstanceName member of the <see cref="T:Rewired.Libraries.SharpDX.DirectInput.DeviceInstance"/> structure) to distinguish it from similar devices that are plugged in simultaneously. Most applications should have no need to change the friendly name.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.productName">
+            <summary>
+            Gets or sets the friendly product name of the device.
+            This property exists for advanced applications that want to change the friendly product name of a device (as returned in the tszProductName member of the <see cref="T:Rewired.Libraries.SharpDX.DirectInput.DeviceInstance"/> structure) to distinguish it from similar devices which are plugged in simultaneously. Most applications should have no need to change the friendly name.
+            This setting applies to the entire device.
+            Setting the product name is only useful for changing the user-defined name of an analog joystick on Microsoft Windows 98, Windows 2000, and Windows Millennium Edition (Windows Me) computers. In other cases, attempting to set this property will still return ok. However, the name is not stored in a location used by the getter of this property.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.forceFeedbackDriverGuid">
+            <summary>
+            Force feedback driver Guid.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.usagePage">
+            <summary>
+            HID usage page.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.usage">
+            <summary>
+            HID usage.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.deviceType">
+            <summary>
+            Direct Input device type.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.deviceSubtype">
+            <summary>
+            Direct Input device sub type.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.rawType">
+            <summary>
+            Direct Input raw type.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.isHumanInterfaceDevice">
+            <summary>
+            Is the device a HID?
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.axisMode">
+            <summary>
+            Gets or sets the axis mode.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.bufferSize">
+            <summary>
+            Gets or sets the input buffer size. The buffer size determines the amount of data that the buffer can hold between calls to GetDeviceData before data is lost. You can set this value to 0 to indicate that the application does not read buffered data from the device. If the buffer size is too large for the device to support it, then the largest possible buffer size is set. However, this property always returns the buffer size set using the BufferSize property, even if the buffer cannot be supported because it is too large.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.classGuid">
+            <summary>
+            Gets the class GUID for the device. This property lets advanced applications perform operations on a human interface device that are not supported by DirectInput. 
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.forceFeedbackGain">
+            <summary>
+            Gets or sets the force feedback gain of the device. 
+            The gain value is applied to all effects created on the device. The value is an integer in the range from 0 through 10,000, specifying the amount by which effect magnitudes should be scaled for the device. For example, a value of 10,000 indicates that all effect magnitudes are to be taken at face value. A value of 9,000 indicates that all effect magnitudes are to be reduced to 90 percent of their nominal magnitudes.
+            DirectInput always checks the gain value before setting the gain property. If the gain is outside of the range (less than zero or greater than 10,000), setting this property will raise an exception. Otherwise, no exception if successful, even if the device does not support force feedback.
+            Setting a gain value is useful when an application wants to scale down the strength of all force-feedback effects uniformly, based on user preferences.
+            Unlike other properties, the gain can be set when the device is in an acquired state. 
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.interfacePath">
+            <summary>
+            Gets the device interface path for the device. This property lets advanced applications perform operations on a human interface device that are not supported by DirectInput. 
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.joystickId">
+            <summary>
+            Gets the instance number of a joystick. This property is not implemented for the mouse or keyboard.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.productId">
+            <summary>
+            Gets the product ID of a HID device. This property applies to the entire device, rather than to any particular object.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.DirectInput.DirectInputControllerExtension.vendorId">
+            <summary>
+            Gets the vendor id of a HID device. This property applies to the entire device, rather than to any particular object.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension">
+            <summary>
+            Provides information about a Raw Input device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.hidDeviceHandle">
+            <summary>
+            HID device handle.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.rawInputDeviceHandle">
+            <summary>
+            Raw Input device handle.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.devicePath">
+            <summary>
+            HID device path string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.productName">
+            <summary>
+            HID product name string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.manufacturer">
+            <summary>
+            HID manufacturer string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.vendorId">
+            <summary>
+            HID vendor id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.productId">
+            <summary>
+            HID product id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.productGuid">
+            <summary>
+            HID product Guid.
+            This is a Guid created from the Product Id and Vendor Id in the format:
+            PID-VID-0000-0000-0000-504944564944
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.isBluetoothDevice">
+            <summary>
+            Is the device a Bluetooth device?
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.bluetoothDeviceName">
+            <summary>
+            Bluetooth device name string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.hubId">
+            <summary>
+            HID hub id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.portId">
+            <summary>
+            HID port id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.usagePage">
+            <summary>
+            HID usage page.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.RawInput.RawInputControllerExtension.usage">
+            <summary>
+            HID usage.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.XInput.CapabilityFlags">
+            <summary>	
+            Describes the capabilities of a connected controller.
+            </summary>	
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.CapabilityFlags.VoiceSupported">
+            <summary>	
+            Voice is supported.
+            </summary>	
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.CapabilityFlags.None">
+            <summary>	
+            None.
+            </summary>	
+        </member>
+        <member name="T:Rewired.Platforms.Windows.XInput.DeviceType">
+            <summary>
+            Device type.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceType.Gamepad">
+            <summary>
+            Gamepad.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.XInput.DeviceSubType">
+            <summary>
+            Device sub type.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.Gamepad">
+            <summary>
+            Gamepad.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.Wheel">
+            <summary>
+            Wheel.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.ArcadeStick">
+            <summary>
+            ArcadeStick.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.FlightStick">
+            <summary>
+            FlightStick.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.DancePad">
+            <summary>
+            DancePad.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.Guitar">
+            <summary>
+            Guitar.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.GuitarAlternate">
+            <summary>
+            GuitarAlternate.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.DrumKit">
+            <summary>
+            DrumKit.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.GuitarBass">
+            <summary>
+            GuitarBass.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Windows.XInput.DeviceSubType.ArcadePad">
+            <summary>
+            ArcadePad.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Windows.XInput.XInputControllerExtension">
+            <summary>
+            Provides information about an I/O Kit device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.XInput.XInputControllerExtension.userIndex">
+            <summary>
+            XInput user index.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.XInput.XInputControllerExtension.capabilityFlags">
+            <summary>
+            Capability flags.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.XInput.XInputControllerExtension.deviceType">
+            <summary>
+            Device type.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Windows.XInput.XInputControllerExtension.deviceSubType">
+            <summary>
+            Device sub type.
+            </summary>
+        </member>
+    </members>
+</doc>

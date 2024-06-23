@@ -94,7 +94,6 @@ namespace Rewired.Utils {
     using System.Collections;
     using System.Collections.Generic;
     using Rewired.Utils.Interfaces;
-    using System;
 
     /// <exclude></exclude>
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
@@ -501,11 +500,6 @@ namespace Rewired.Utils {
 
         public System.Type[] GetControllerTemplateInterfaceTypes() {
             return Rewired.Internal.ControllerTemplateFactory.templateInterfaceTypes;
-        }
-
-        public void WindowsStandalone_ForwardRawInput(IntPtr rawInputHeaderIndices, IntPtr rawInputDataIndices, uint indicesCount, IntPtr rawInputData, uint rawInputDataSize)
-        {
-            throw new NotImplementedException();
         }
 
         #endregion

@@ -1,0 +1,596 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rewired_OSX</name>
+    </assembly>
+    <members>
+        <member name="T:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension">
+            <summary>
+            Allows access to controller-specific functions.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetTriggerEffect(Rewired.ControllerExtensions.DualSenseTriggerType,Rewired.ControllerExtensions.IDualSenseTriggerEffect)">
+            <summary>
+            Sets a trigger effect.
+            </summary>
+            <param name="trigger">The trigger which will play the effect.</param>
+            <param name="effect">The trigger effect.</param>
+            <returns>True on success, false if an error occurred.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetTriggerEffectStates">
+            <summary>
+            Gets the current trigger effect states.
+            </summary>
+            <returns>Trigger effect states.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetAccelerometerValue">
+            <summary>
+            Gets the value from the accelerometer converted to Unity's coordinate system.
+            The value returned could be thought of as a gravity vector and user acceleration combined.
+            If using this value to apply a force in the direction of the vector, invert each axis first.
+            This value represents the last value reported by the accelerometer.
+            </summary>
+            <returns>Accelerometer data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetAccelerometerValueRaw">
+            <summary>
+            Gets the raw value from the accelerometer as reported by the device.
+            Note: Device coordinate system does not match Unity's.
+            </summary>
+            <returns>Raw accelerometer data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetGyroscopeValueRaw">
+            <summary>
+            Gets the raw value from the gyroscope as reported by the device.
+            Note: Device coordinate system does not match Unity's.
+            </summary>
+            <returns>Raw gyroscope data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetGyroscopeValue">
+            <summary>
+            Gets the value from the gyroscope converted to Unity's coordinate system.
+            </summary>
+            <returns>Gyroscope data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetOrientation">
+            <summary>
+            Gets the orientation converted to Unity's coordinate system.
+            </summary>
+            <returns>Orientation</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.ResetOrientation">
+            <summary>
+            Resets the orientation.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetLightColor(UnityEngine.Color)">
+            <summary>
+            Sets the light color. Alpha can be used to set intensity.
+            </summary>
+            <param name="color">Light color</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetLightColor(System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the light color.
+            </summary>
+            <param name="red">Red channel [0.0 - 1.0]</param>
+            <param name="green">Green channel [0.0 - 1.0]</param>
+            <param name="blue">Blue channel [0.0 - 1.0]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetLightColor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the light color.
+            </summary>
+            <param name="red">Red channel [0.0 - 1.0]</param>
+            <param name="green">Green channel [0.0 - 1.0]</param>
+            <param name="blue">Blue channel [0.0 - 1.0]</param>
+            <param name="intensity">Intensity [0.0 - 1.0]</param>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.maxTouches">
+            <summary>
+            Number of simultaneous touches supported by this device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.touchCount">
+            <summary>
+            The current touch count.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetTouchId(System.Int32)">
+            <summary>
+            Gets the touch id for the touch at the specified index.
+            </summary>
+            <param name="index">Index of the touch</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetTouchPosition(System.Int32,UnityEngine.Vector2@)">
+            <summary>
+            Gets the touch position for a particular index normalized to a 0 - 1 range. (Left = 0, Bottom = 0)
+            </summary>
+            <param name="index">The index of the touch for which to return position.</param>
+            <param name="position">X/Y position of the touch [0 - 1]</param>
+            <returns>True if the touch at index is currently touching. False if there is no touch at index.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetTouchPositionByTouchId(System.Int32,UnityEngine.Vector2@)">
+            <summary>
+            Gets the touch position for a particular touch id normalized to a 0 - 1 range. (Left = 0, Bottom = 0)
+            </summary>
+            <param name="touchId">The id of the touch for which to return position.</param>
+            <param name="position">X/Y position of the touch [0 - 1]</param>
+            <returns>True if the touch at touchId is currently touching. False if there is no touch at touchId.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.IsTouching(System.Int32)">
+            <summary>
+            Determines if the current touch id is valid for any currently active touch.
+            </summary>
+            <param name="index">The index of the touch</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.IsTouchingByTouchId(System.Int32)">
+            <summary>
+            Determines if the current touch id is valid for any currently active touch.
+            </summary>
+            <param name="touchId">The id of the touch</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Single,System.Single)">
+            <summary>
+            Sets vibration level for left and right motors.
+            </summary>
+            <param name="leftMotorLevel">float: 0.0 - 1.0</param>
+            <param name="rightMotorLevel">float: 0.0 - 1.0</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets vibration level for left and right motors.
+            </summary>
+            <param name="leftMotorLevel">float: 0.0 - 1.0</param>
+            <param name="rightMotorLevel">float: 0.0 - 1.0</param>
+            <param name="leftMotorDuration">Length of time in seconds to activate the left motor before it stops. [0 = Infinite]</param>
+            <param name="rightMotorDuration">Length of time in seconds to activate the right motor before it stops. [0 = Infinite]</param>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.vibrationMotorCount">
+            <summary>
+            The number of vibration motors in this controller.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Int32,System.Single)">
+            <summary>
+            Sets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Int32,System.Single,System.Single)">
+            <summary>
+            Sets vibration level for a motor at a specified index with a timeout.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="duration">Length of time in seconds to activate the motor before it stops. [0 = Infinite]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Int32,System.Single,System.Boolean)">
+            <summary>
+            Sets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="stopOtherMotors">Stop other motors?</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.SetVibration(System.Int32,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Sets vibration level for a motor at a specified index with a timeout.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="duration">Length of time in seconds to activate the motor before it stops. [0 = Infinite]</param>
+            <param name="stopOtherMotors">Stop other motors?</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.GetVibration(System.Int32)">
+            <summary>
+            Gets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <returns>Motor level [float: 0.0 - 1.0]</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualSenseExtension.StopVibration">
+            <summary>
+            Stops vibration on all motors.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension">
+            <summary>
+            Allows access to controller-specific functions.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetAccelerometerValue">
+            <summary>
+            Gets the value from the accelerometer converted to Unity's coordinate system.
+            The value returned could be thought of as a gravity vector and user acceleration combined.
+            If using this value to apply a force in the direction of the vector, invert each axis first.
+            This value represents the last value reported by the accelerometer.
+            </summary>
+            <returns>Accelerometer data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetAccelerometerValueRaw">
+            <summary>
+            Gets the raw value from the accelerometer as reported by the device.
+            Note: Device coordinate system does not match Unity's.
+            </summary>
+            <returns>Raw accelerometer data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetGyroscopeValueRaw">
+            <summary>
+            Gets the raw value from the gyroscope as reported by the device.
+            Note: Device coordinate system does not match Unity's.
+            </summary>
+            <returns>Raw gyroscope data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetGyroscopeValue">
+            <summary>
+            Gets the value from the gyroscope converted to Unity's coordinate system.
+            </summary>
+            <returns>Gyroscope data</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetOrientation">
+            <summary>
+            Gets the orientation converted to Unity's coordinate system.
+            </summary>
+            <returns>Orientation</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.ResetOrientation">
+            <summary>
+            Resets the orientation.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetLightColor(UnityEngine.Color)">
+            <summary>
+            Sets the light color. Alpha can be used to set intensity.
+            </summary>
+            <param name="color">Light color</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetLightColor(System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the light color.
+            </summary>
+            <param name="red">Red channel [0.0 - 1.0]</param>
+            <param name="green">Green channel [0.0 - 1.0]</param>
+            <param name="blue">Blue channel [0.0 - 1.0]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetLightColor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the light color.
+            </summary>
+            <param name="red">Red channel [0.0 - 1.0]</param>
+            <param name="green">Green channel [0.0 - 1.0]</param>
+            <param name="blue">Blue channel [0.0 - 1.0]</param>
+            <param name="intensity">Intensity [0.0 - 1.0]</param>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.maxTouches">
+            <summary>
+            Number of simultaneous touches supported by this device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.touchCount">
+            <summary>
+            The current touch count.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetTouchId(System.Int32)">
+            <summary>
+            Gets the touch id for the touch at the specified index.
+            </summary>
+            <param name="index">Index of the touch</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetTouchPosition(System.Int32,UnityEngine.Vector2@)">
+            <summary>
+            Gets the touch position for a particular index normalized to a 0 - 1 range. (Left = 0, Bottom = 0)
+            </summary>
+            <param name="index">The index of the touch for which to return position.</param>
+            <param name="position">X/Y position of the touch [0 - 1]</param>
+            <returns>True if the touch at index is currently touching. False if there is no touch at index.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetTouchPositionByTouchId(System.Int32,UnityEngine.Vector2@)">
+            <summary>
+            Gets the touch position for a particular touch id normalized to a 0 - 1 range. (Left = 0, Bottom = 0)
+            </summary>
+            <param name="touchId">The id of the touch for which to return position.</param>
+            <param name="position">X/Y position of the touch [0 - 1]</param>
+            <returns>True if the touch at touchId is currently touching. False if there is no touch at touchId.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.IsTouching(System.Int32)">
+            <summary>
+            Determines if the current touch id is valid for any currently active touch.
+            </summary>
+            <param name="index">The index of the touch</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.IsTouchingByTouchId(System.Int32)">
+            <summary>
+            Determines if the current touch id is valid for any currently active touch.
+            </summary>
+            <param name="touchId">The id of the touch</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Single,System.Single)">
+            <summary>
+            Sets vibration level for left and right motors.
+            </summary>
+            <param name="leftMotorLevel">float: 0.0 - 1.0</param>
+            <param name="rightMotorLevel">float: 0.0 - 1.0</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets vibration level for left and right motors.
+            </summary>
+            <param name="leftMotorLevel">float: 0.0 - 1.0</param>
+            <param name="rightMotorLevel">float: 0.0 - 1.0</param>
+            <param name="leftMotorDuration">Length of time in seconds to activate the left motor before it stops. [0 = Infinite]</param>
+            <param name="rightMotorDuration">Length of time in seconds to activate the right motor before it stops. [0 = Infinite]</param>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.vibrationMotorCount">
+            <summary>
+            The number of vibration motors in this controller.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Int32,System.Single)">
+            <summary>
+            Sets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Int32,System.Single,System.Single)">
+            <summary>
+            Sets vibration level for a motor at a specified index with a timeout.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="duration">Length of time in seconds to activate the motor before it stops. [0 = Infinite]</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Int32,System.Single,System.Boolean)">
+            <summary>
+            Sets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="stopOtherMotors">Stop other motors?</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.SetVibration(System.Int32,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Sets vibration level for a motor at a specified index with a timeout.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <param name="motorLevel">Motor level [float: 0.0 - 1.0]</param>
+            <param name="duration">Length of time in seconds to activate the motor before it stops. [0 = Infinite]</param>
+            <param name="stopOtherMotors">Stop other motors?</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.GetVibration(System.Int32)">
+            <summary>
+            Gets vibration level for a motor at a specified index.
+            </summary>
+            <param name="motorIndex">Motor index</param>
+            <returns>Motor level [float: 0.0 - 1.0]</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerDualShock4Extension.StopVibration">
+            <summary>
+            Stops vibration on all motors.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Apple.GameController.GCControllerExtension">
+            <summary>
+            Allows access to controller-specific functions.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerExtension.nativePlayerIndex">
+            <summary>
+            Gets the native player index.
+            This corresponds to playerIndex in the Game Controller framework.
+            This is only useful for direct interaction with the Game Controller framework.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerExtension.nativeDevicePointer">
+            <summary>
+            Gets the native pointer to the GCController object.
+            This is only useful for direct interaction with the Game Controller framework.
+            If the pointer is unavailable or invalid, returns IntPtr.Zero.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerExtension.GetElementSfSymbolsName(System.Int32)">
+            <summary>
+            Gets the native system symbol name of a controller element.
+            If the element has been remapped by the user in the OS, this will return the remapped symbol name.
+            </summary>
+            <returns>Native system symbol name of a controller element.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerExtension.GetElementUnmappedSfSymbolsName(System.Int32)">
+            <summary>
+            Gets the native un-remapped system symbol name of a controller element.
+            </summary>
+            <returns>Un-remapped system symbol name of a controller element.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerExtension.GetElementLocalizedName(System.Int32)">
+            <summary>
+            Gets the native localized name of a controller element.
+            If the element has been remapped by the user in the OS, this will return the remapped localized name.
+            </summary>
+            <returns>Native localized name of a controller element.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerExtension.GetElementUnmappedLocalizedName(System.Int32)">
+            <summary>
+            Gets the native un-remapped localized name of a controller element.
+            </summary>
+            <returns>Un-remapped localized name of a controller element.</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Apple.GameController.GCControllerInput">
+            <summary>
+            Provides access to input-related methods and settings at runtime.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment">
+            <summary>
+            Provides access to controller assignment-related settings at runtime.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.assignJoysticksByNativePlayerIndex">
+            <summary>
+            If enabled, Joysticks will be assigned based on the GCController player index associated with the controller to a specific Rewired Player.
+            The GCController player index to Rewired Player associations must be set up using the other functions in this class before they will have any effect.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.GetNativePlayerIndicesForPlayer(Rewired.Player,System.Collections.Generic.List{Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex})">
+            <summary>
+            Get the native GCController player index associated with the Rewired Player.
+            </summary>
+            <param name="player">Rewired player</param>
+            <param name="results">A list to receive the native GCController player indices. The incoming list will be cleared by the function.</param>
+            <returns>The number of native GCController player indices returned in the results list.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.GetNativePlayerIndicesForPlayer(System.Int32,System.Collections.Generic.List{Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex})">
+            <summary>
+            Get the native GCController player indices associated with the Rewired Player.
+            </summary>
+            <param name="playerId">Rewired player id</param>
+            <param name="results">A list to receive the native GCController player indexs. The incoming list will be cleared by the function.</param>
+            <returns>The number of native GCController player indices returned in the results list.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.GetPlayerForNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex)">
+            <summary>
+            Gets the Rewired Player associated with the native GCController player index.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index.</param>
+            <returns>Rewired Player for the native GCController player index. If none, returns null.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.GetPlayerIdForNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex)">
+            <summary>
+            Gets the Rewired Player id associated with the native GCController player index.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index. This corresponds to XUserLocalId.</param>
+            <returns>Player id for the native GCController player index. If none, returns -1.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.SetPlayerForNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex,Rewired.Player)">
+            <summary>
+            Sets the native GCController player index associated with the Rewired Player.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index. This corresponds to XUserLocalId.</param>
+            <param name="player">Rewired player</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.SetPlayerForNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex,System.Int32)">
+            <summary>
+            Sets the native GCController player index associated with the Rewired Player.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index. This corresponds to XUserLocalId.</param>
+            <param name="playerId">Rewired player id</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.RemoveNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex)">
+            <summary>
+            Removes the Player association for the local XUser id.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index. This corresponds to XUserLocalId.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.ContainsNativePlayerIndex(Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex)">
+            <summary>
+            Determines if there is a Player association with the native GCController player index.
+            </summary>
+            <param name="nativePlayerIndex">Native GCController player index. This corresponds to XUserLocalId.</param>
+            <returns>True if there is a Player associated to this native GCController player index, or False if not.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerInput.ControllerAssignment.ClearNativePlayerIndices">
+            <summary>
+            Clears all native GCController player index to Player associations.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex.Unset">
+            <summary>
+            The default index for a player on a controller. No lights are lit on the controller.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex.One">
+            <summary>
+            Specifies that player one is using this controller.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex.Two">
+            <summary>
+            Specifies that player two is using this controller.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex.Three">
+            <summary>
+            Specifies that player three is using this controller.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Apple.GameController.GCControllerPlayerIndex.Four">
+            <summary>
+            Specifies that player four is using this controller.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Apple.GameController.GCControllerTools.GCControllerToUnityCoords(UnityEngine.Quaternion)">
+            THIS HAS NOT BEEN TESTED
+        </member>
+        <member name="T:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension">
+            <summary>
+            Provides information about an I/O Kit device.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.deviceService">
+            <summary>
+            Device service handle.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.productName">
+            <summary>
+            HID product name string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.manufacturer">
+            <summary>
+            HID manufacturer string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.vendorId">
+            <summary>
+            HID vendor id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.productId">
+            <summary>
+            HID product id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.isBluetoothDevice">
+            <summary>
+            Is the device a Bluetooth device?
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.version">
+            <summary>
+            Version.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.serialNumber">
+            <summary>
+            Serial number.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.transport">
+            <summary>
+            Transport.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.locationId">
+            <summary>
+            Location id.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.usagePage">
+            <summary>
+            HID usage page.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.MacOS.IOKit.IOKitControllerExtension.usage">
+            <summary>
+            HID usage.
+            </summary>
+        </member>
+    </members>
+</doc>
