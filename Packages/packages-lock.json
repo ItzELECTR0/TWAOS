@@ -14,6 +14,65 @@
       "dependencies": {},
       "hash": "d52ef7bf27547802c41d527c936ee7f8799e2652"
     },
+    "com.spoiledcat.environment": {
+      "version": "2.2.6",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.spoiledcat.logging": "2.2.6",
+        "com.spoiledcat.simpleio": "2.2.6",
+        "com.spoiledcat.simplejson": "2.2.6"
+      },
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.git": {
+      "version": "1.0.27",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.logging": {
+      "version": "2.2.6",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.simpleio": {
+      "version": "2.2.6",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.simplejson": {
+      "version": "2.2.6",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.threading": {
+      "version": "2.2.6",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.spoiledcat.logging": "2.2.6",
+        "com.spoiledcat.simpleio": "2.2.6",
+        "com.spoiledcat.environment": "2.2.6"
+      },
+      "url": "https://registry.spoiledcat.com"
+    },
+    "com.spoiledcat.ui": {
+      "version": "2.2.6",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.spoiledcat.threading": "2.2.6"
+      },
+      "url": "https://registry.spoiledcat.com"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.2",
       "depth": 1,
@@ -167,6 +226,13 @@
       "dependencies": {
         "com.unity.splines": "2.0.0"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.collab-proxy": {
+      "version": "2.3.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.collections": {
