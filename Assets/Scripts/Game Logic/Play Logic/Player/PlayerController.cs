@@ -81,11 +81,11 @@ namespace ELECTRIS
 
         private void Start()
         {
-            if (combatMode)
+            if (!combatMode)
             {
                 GameStateManager.Instance.SetState(GameState.Gameplay);
             }
-            else if (!combatMode)
+            else if (combatMode)
             {
                 GameStateManager.Instance.SetState(GameState.Combat);
             }

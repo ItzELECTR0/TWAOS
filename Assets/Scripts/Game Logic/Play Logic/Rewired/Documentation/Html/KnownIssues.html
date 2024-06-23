@@ -148,6 +148,8 @@
     <h3><a href="#general">General</a></h3>
     <ul>
       <li><a href="#not-compatible-unity-new-input-system">Compatibility with Unity's &quot;new&quot; input system</a></li>
+      <li><a href="#unity-physical-keys">Unity Physical Keys setting</a></li>
+      <li><a href="#keyboard-key-names-incorrect">Keyboard key names are incorrect on non-US 101-key keyboards</a></li>
       <li><a href="#windows-standalone-il2cpp-vs2019-hang">All platforms compiled with IL2CPP on Windows: Builds never finish, build fails with errors, builds crash, built exe hangs at launch, or builds throw exceptions about duplicate Actions</a></li>
       <li><a href="#running-in-a-sandbox">Running in a Sandbox</a></li>
     </ul>
@@ -187,16 +189,16 @@
       <li><a href="#uwp-shift-keys">Windows 10 Universal: Left Shift is activated when Right Shift is pressed</a></li>
       <li><a href="#uwp-net-550-reference-rewriter-error">Windows 10 Universal .NET: UnityException: Failed to run reference rewriter error on Unity 5.5.0, 5.5.1</a></li>
     </ul>
-    <h3><a href="#osx">MacOS:</a></h3>
+    <h3><a href="#macos">MacOS:</a></h3>
     <ul>
-      <li><a href="#osx-application-freeze-on-initialize">OSX: Application freezes forever when initializing Rewired</a></li>
-      <li><a href="#osx-apple-silicon-crash">OSX, Apple Silicon: Build crashes when a controller is connected</a></li>
-      <li><a href="#osx-standalone-il2cpp">OSX, IL2CPP: Rewired falls back to Unity input</a></li>
-      <li><a href="#osx-net46-initialization-exception">OSX, .NET 4.6 experimental backend: Throws exception on initialization in Unity 2017.1 - Unity 2017.3</a></li>
-      <li><a href="#osx-game-controller-framework">MacOS: Game Controller Framework</a>
+      <li><a href="#macos-application-freeze-on-initialize">MacOS: Application freezes forever when initializing Rewired</a></li>
+      <li><a href="#macos-apple-silicon-crash">MacOS, Apple Silicon: Build crashes when a controller is connected</a></li>
+      <li><a href="#macos-standalone-il2cpp">MacOS, IL2CPP: Rewired falls back to Unity input</a></li>
+      <li><a href="#macos-net46-initialization-exception">MacOS, .NET 4.6 experimental backend: Throws exception on initialization in Unity 2017.1 - Unity 2017.3</a></li>
+      <li><a href="#macos-game-controller-framework">MacOS: Game Controller Framework</a>
         <ul>
-          <li><a href="#osx-gccontroller-vibration-connection-bug">MacOS, Game Controller Framework: Controller vibration stops working on some controllers when another controller is connected or disconnected</a></li>
-          <li><a href="#osx-gccontroller-sony-controller-problems">MacOS, Game Controller Framework: Sony Dual Shock 4 and Dual Sense controller issues</a></li>
+          <li><a href="#macos-gccontroller-vibration-connection-bug">MacOS, Game Controller Framework: Controller vibration stops working on some controllers when another controller is connected or disconnected</a></li>
+          <li><a href="#macos-gccontroller-sony-controller-problems">MacOS, Game Controller Framework: Sony Dual Shock 4 and Dual Sense controller issues</a></li>
     </ul>
       </li>
       </ul>
@@ -257,6 +259,19 @@
 <p>Rewired is not compatible with Unity's new input system. If you enable the new input system by setting this value to &quot;Input System&quot; or &quot;Both&quot;, Rewired and/or Unity's input system may not function at all or parts of each system may not function correctly. While some platforms may work, others may not.</p>
 <p>The only setting supported by Rewired is:<br />
   Player Settings -&gt; Active Input Handling -&gt; Input Manager</p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="unity-physical-keys" id="unity-physical-keys"></a>Unity Physical Keys setting</h3>
+<p>Unity added the Physical Key option in Unity 2021.2 and made it enabled by default in 2022.0.<br />
+  <a href="https://docs.unity.cn/Manual/class-InputManager.html" target="_blank" rel="nofollow">https://docs.unity.cn/Manual/class-InputManager.html</a></p>
+<p>If enabled, keyboard keys will map to their physical location on a US 101-key keyboard regardless of the keyboard layout being used (AZERTY for exampe). This is useful for making a locale-independent input layout. Example: WASD to move.</p>
+<p>The problem is, if enabled, the KeyCode returned for a key will match the US 101-key layout, and glyphs and help text will display incorrect information to the user. For example, the A key on a AZERTY keyboard is located where the Q key is on a US 101-key keyboard, and the KeyCode returned for the A key will be KeyCode.Q. Unity added the Physical Keys setting but neglected to add a function which would get the key label for the key code. This makes it impossible to display accurate help text or glpys to the user if this option is enabled. This affects anything that might need to display a key name including Control Mapper.</p>
+<p>Because of the above issue, it is recommended to disable Physical Keys in the Unity Input Manager settings. A toggle box has been added to the <a href="RewiredEditor.html#Settings">Rewired Input Manager -&gt; Settings</a> page for easy access to this setting (Unity 2021.2+).</p>
+<p>If you choose to use Physical Keys, native keyboard handling will be automatically disabled on all platforms that support it because it does not support Physical Key mapping and Unity fallback keyboard handling will be used instead, allowing you to use Physical Key mapping.</p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="keyboard-key-names-incorrect" id="keyboard-key-names-incorrect"></a>Keyboard key names are incorrect on non-US 101-key keyboards</h3>
+<p>This happens when the Unity &quot;Physical Keys&quot; option is enabled and cannot be fixed. <a href="#unity-physical-keys">See this for more information</a>.</p>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="windows-standalone-il2cpp-vs2019-hang" id="windows-standalone-il2cpp-vs2019-hang"></a>All platforms compiled with IL2CPP on Windows: Builds never finish, build fails with errors, builds crash, built exe hangs at launch, or builds throw exceptions about duplicate Actions</h3>
@@ -626,9 +641,9 @@ Catastrophic failure while running rrw: Mono.Cecil.AssemblyResolutionException: 
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
-<h2><a name="osx" id="osx"></a>MacOS:</h2>
+<h2><a name="osx" id="osx"></a><a name="macos" id="macos"></a>MacOS:</h2>
 <p>&nbsp;</p>
-<h3><a name="osx-application-freeze-on-initialize" id="osx-application-freeze-on-initialize"></a>OSX: Application freezes forever when initializing Rewired</h3>
+<h3><a name="osx-application-freeze-on-initialize" id="osx-application-freeze-on-initialize"></a><a name="macos-application-freeze-on-initialize" id="macos-application-freeze-on-initialize"></a>MacOS: Application freezes forever when initializing Rewired</h3>
 <ul>
   <li>This is actually a Unity bug that happens to affect Rewired. It cannot be fixed or worked around by Rewired.</li>
   <li>The bug is present in the latest versions of Unity as of this writing: Unity 2022.3.12f1 and 2023.1.18f1, Apple M1, MacOS 14.0. The bug has been reported to Unity.</li>
@@ -638,17 +653,17 @@ Catastrophic failure while running rrw: Mono.Cecil.AssemblyResolutionException: 
 </ul>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="osx-apple-silicon-crash" id="osx-apple-silicon-crash"></a>OSX, Apple Silicon: Build crashes when a controller is connected</h3>
+<h3><a name="osx-apple-silicon-crash" id="osx-apple-silicon-crash"></a><a name="macos-apple-silicon-crash" id="macos-apple-silicon-crash"></a>MacOS, Apple Silicon: Build crashes when a controller is connected</h3>
 <p>Unity has a bug that causes a crash when any native code calls back into managed code. This cannot be fixed or worked around. Only Unity can fix this bug and Rewired's native input cannot function without this feature. The only way to get around this issue is to build to IL2CPP.</p>
 <p><a href="https://issuetracker.unity3d.com/issues/macos-aot-dot-monopinvokecallback-native-to-managed-callback-fails-with-apple-silicon-when-scripting-backend-is-mono">More information about the Mono bug can be found at the Unity bug tracker</a>.</p>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="osx-standalone-il2cpp" id="osx-standalone-il2cpp2"></a>OSX, IL2CPP: Rewired falls back to Unity input</h3>
+<h3><a name="osx-standalone-il2cpp" id="osx-standalone-il2cpp2"></a><a name="macos-standalone-il2cpp" id="macos-standalone-il2cpp"></a>MacOS, IL2CPP: Rewired falls back to Unity input</h3>
 <p>Support for IL2CPP on desktop platforms was added in Rewired 1.1.22.0.</p>
 <p><strong>Solution:</strong> <a href="Updating.html">Update Rewired</a>.</p>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="osx-net46-initialization-exception" id="osx-net46-initialization-exception"></a>OSX, .NET 4.6 experimental backend: Throws exception on initialization  in Unity 2017.1 - 2017.3</h3>
+<h3><a name="osx-net46-initialization-exception" id="osx-net46-initialization-exception"></a><a name="macos-net46-initialization-exception" id="macos-net46-initialization-exception"></a>MacOS, .NET 4.6 experimental backend: Throws exception on initialization  in Unity 2017.1 - 2017.3</h3>
 <p><strong>Update:</strong> The Unity bug was fixed in Unity 2017.4.1f1. Any version of Unity after that should work correctly.</p>
 <p><strong>Solution:</strong> Update to Unity 2017.4.1f1+.</p>
 <p>As of Unity 2017.2.0f3, when the .NET 4.6 experimental backend is enabled in OSX, an exception will be thrown on initialization causing Rewired to not function. This exception is due to a bug in the .NET 4.6 experimental backend that prevents all P/Invoke calls from functioning, always throwing a DllNotFoundException. The exact same call works using the .NET 3.5 backend while the 4.6 backend fails. This bug has been reported to Unity.</p>
@@ -667,11 +682,11 @@ Catastrophic failure while running rrw: Mono.Cecil.AssemblyResolutionException: 
 <hr />
 <h2><a name="osx-game-controller-framework" id="osx-game-controller-framework"></a>MacOS: Game Controller Framework</h2>
 <p>&nbsp;</p>
-<h3><a name="osx-gccontroller-vibration-connection-bug" id="osx-gccontroller-vibration-connection-bug"></a>MacOS, Game Controller Framework: Controller vibration stops working on some controllers when another controller is connected or disconnected</h3>
+<h3><a name="osx-gccontroller-vibration-connection-bug" id="osx-gccontroller-vibration-connection-bug"></a><a name="macos-gccontroller-vibration-connection-bug" id="macos-gccontroller-vibration-connection-bug"></a>MacOS, Game Controller Framework: Controller vibration stops working on some controllers when another controller is connected or disconnected</h3>
 <p>When using the Game Controller Framework, controller vibration can stop working randomly when any Game Controller Framework compatible controller is connected to or disconnected from the system. This is a bug on Apple's end and cannot be fixed by Rewired. Once the vibration motors stop working on the connected controller(s), the only way to make them work again is to disconnect and reconnect the controller.</p>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="osx-gccontroller-sony-controller-problems" id="osx-gccontroller-sony-controller-problems"></a>MacOS, Game Controller Framework: Sony Dual Shock 4 and Dual Sense controller issues</h3>
+<h3><a name="osx-gccontroller-sony-controller-problems" id="osx-gccontroller-sony-controller-problems"></a><a name="macos-gccontroller-sony-controller-problems" id="macos-gccontroller-sony-controller-problems"></a>MacOS, Game Controller Framework: Sony Dual Shock 4 and Dual Sense controller issues</h3>
 <p>Based on my testing, there are numerous issues with the Dual Shock 4 and Dual Sense controllers when using the Game Controller Framework. These issues are not caused by Rewired but by Apple's Game Controller Framework. There are no software fixes possible.</p>
 <p>Issues I have experienced when testing on an M1 Mac connecting wirelessly:</p>
 <ul>

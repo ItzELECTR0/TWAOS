@@ -148,7 +148,7 @@
 			<p>Rewired supports most USB and Bluetooth controllers available, many with extended support. <span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications">1</a>]</span></p>
 			<h3>Controllers with Extended Support</h3>
 			<p>Controllers with hardware definitions are recognized on each platform and are fully mappable by element name, have standardized axis directions, and may be compatible with a <a href="ControllerTemplates.html">Controller Template</a> for easy mapping. For all other controllers that do not appear in the following tables, <a href="#controllers-without-definitions">please see this important note</a>.</p>
-			<p><strong>Rewired currently includes extended support for the following game controllers as of version 1.1.47.0:</strong></p>
+			<p><strong>Rewired currently includes extended support for the following game controllers as of version 1.1.48.0:</strong></p>
 			<table width="100%" border="0" class="supported-controllers-table">
               <tr>
                 <td valign="top">&nbsp;</td>
@@ -402,12 +402,14 @@ MacOS: <span class="yes">Yes</span></td>
                 <td valign="top">Sony DualShock 4 <span class="note">(Wired)</span></td>
                 <td align="center" valign="top"><p><span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Raw Input + Enhanced Device Support</span></p></td>
-                <td align="center" valign="top"><span class="yes">Yes</span><br/>
-                <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Enhanced Device Support)</span></td>
+                <td align="center" valign="top"><p><span class="yes">Yes</span><br/>
+                <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Enhanced Device Support)</span></p>
+                <p>Game Controller Framework: <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a>)</span></p></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
-                <td align="center" valign="top"><span class="yes">Yes</span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><br />
+                <span class="note">(Only vibration supported of special features)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="partial">Android Fallback</span></td>
@@ -421,12 +423,13 @@ MacOS: <span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Raw Input + Enhanced Device Support)</span></td>
                 <td align="center" valign="top"><p><span class="yes">Yes</span><br />
-                  <span class="note">(Special features not supported on IO Kit [<a href="#clarifications">18</a>])</span></p>
-                  <p><span class="note">(Special features supported on Game Controller Framework)</span></p></td>
+                  <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Enhanced Device Support)</span></p>
+                <p>Game Controller Framework: <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a>)</span></p></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
-                <td align="center" valign="top"><span class="yes">Yes</span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><br />
+                <span class="note">(Only vibration supported of special features)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
@@ -441,12 +444,14 @@ MacOS: <span class="yes">Yes</span></td>
                 <td valign="top">Sony DualShock 4 <span class="note">(USB Wireless Adaptor)</span></td>
                 <td align="center" valign="top"><p><span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Raw Input + Enhanced Device Support)</span></p></td>
-                <td align="center" valign="top"><span class="yes">Yes</span><br/>
-                  <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Enhanced Device Support)</span></td>
+                <td align="center" valign="top"><p><span class="yes">Yes</span><br/>
+                  <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a> with Enhanced Device Support)</span></p>
+                  <p>Game Controller Framework: <span class="note">(<a href="HowTos.html#dualshock-4-special-features">All features supported</a>)</span></p></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
-                <td align="center" valign="top"><span class="yes">Yes</span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><br />
+                <span class="note">(Only vibration supported of special features)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="partial">Android Fallback</span></td>
@@ -457,9 +462,9 @@ MacOS: <span class="yes">Yes</span></td>
               <tr>
                 <td valign="top"><a href="#template-legend" class="template-icon template-icon-gamepad" title="Compatible with the Gamepad Template"></a></td>
                 <td valign="top">Sony DualSense <span class="note">(Wired)</span></td>
-                <td align="center" valign="top"><p><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-24">24</a>]</span></strong></span><br/>
+                <td align="center" valign="top"><p><span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Raw Input + Enhanced Device Support)</span></p></td>
-                <td align="center" valign="top"><p>IO Kit: <span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-24">24</a>]</span></strong></span><br/>
+                <td align="center" valign="top"><p>IO Kit: <span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Enhanced Device Support)<br />
                 </span><br/>
                 Game Controller Framework: <span class="note">(<a href="HowTos.html#dualsense-special-features">All features except haptic triggers</a>)</span></p></td>
@@ -468,7 +473,8 @@ MacOS: <span class="yes">Yes</span></td>
                 <span class="note">(untested)</span></td>
                 <td align="center" valign="top"><span class="maybe">Maybe</span><br />
                 <span class="note">(untested)</span></td>
-                <td align="center" valign="top"><span class="yes">Yes</span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><span class="yes"> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-18">18</a>]</span></strong></span><br />
+                <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Enhanced Device Support)</span></td>
                 <td align="center" valign="top" class="yes">Yes</td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="partial">Android Fallback</span></td>
@@ -479,15 +485,16 @@ MacOS: <span class="yes">Yes</span></td>
               <tr>
                 <td valign="top"><a href="#template-legend" class="template-icon template-icon-gamepad" title="Compatible with the Gamepad Template"></a></td>
                 <td valign="top">Sony DualSense <span class="note">(Bluetooth)</span></td>
-                <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-24">24</a>]</span></strong></span><br/>
+                <td align="center" valign="top"><span class="yes">Yes</span><br/>
                 <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Raw Input + Enhanced Device Support)</span></td>
-                <td align="center" valign="top"><p>IO Kit: <span class="yes">Yes</span><br />
-                  <span class="note">(Lights, vibration, haptic triggers, not supported)</span></p>
-                  <p>Game Controller Framework: <span class="note">(<a href="HowTos.html#dualsense-special-features">All features except trigger haptics supported</a>)</span></p></td>
+                <td align="center" valign="top"><p>IO Kit: <span class="yes">Yes</span><br/>
+                    <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Enhanced Device Support)</span></p>
+                <p>Game Controller Framework: <span class="note">(<a href="HowTos.html#dualsense-special-features">All features except trigger haptics supported</a>)</span></p></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
-                <td align="center" valign="top"><span class="yes">Yes</span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><span class="yes"> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-18">18</a>]</span></strong></span><br />
+                <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Enhanced Device Support)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="maybe">Maybe</span><br />
@@ -506,7 +513,8 @@ MacOS: <span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
-                <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><span class="yes"> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-18">18</a>]</span></strong></span><br />
+                <span class="note">(<a href="HowTos.html#dualsense-special-features">All features supported</a> with Enhanced Device Support)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
                 <td align="center" valign="top"><span class="partial">Partial</span> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong><br />
                   <span class="note">(ZL not working)</span></td>
@@ -525,7 +533,8 @@ MacOS: <span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
-                <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><span class="yes"> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-18">18</a>]</span></strong></span><br />
+                <span class="note">(Enhanced Device Suport Required for analog axis values and vibration)</span></td>
                 <td align="center" valign="top"><span class="yes">Yes <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong></span></td>
                 <td align="center" valign="top"><span class="partial">Partial</span> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-20">20</a>]</span></strong><br />
                   <span class="note">(ZR not working)</span></td>
@@ -542,7 +551,7 @@ MacOS: <span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
-                <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
                 <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
                 <td align="center" valign="top"><span class="partial">Android Fallback</span></td>
@@ -560,7 +569,8 @@ MacOS: <span class="yes">Yes</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
                 <td align="center" valign="top"><span class="no">No</span></td>
-                <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
+                <td align="center" valign="top"><span class="yes">Yes</span><span class="yes"> <strong><span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications-18">18</a>]</span></strong></span><br />
+                <span class="note">(Enhanced Device Suport Required for analog axis values and vibration)</span></td>
                 <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
                 <td align="center" valign="top"><span class="yes"><span class="maybe">Unknown</span></span></td>
                 <td align="center" valign="top"><span class="partial">Android Fallback</span></td>
@@ -3888,10 +3898,8 @@ MacOS: <span class="no">No</span></td>
             <p>HTC Vive  is only supported through Unity's input wrapper for the OpenVR API. Unity exposes the devices as 2 joysticks through UnityEngine.Input. They have exposed the controllers as joysticks with most functionality excluding positional/rotational information. <a href="https://docs.unity3d.com/Manual/OpenVRControllers.html" target="_blank">See this page for more information</a>.</p>
             <p>In order to use these devices with Rewired, you must disable native input in Windows <a href="RewiredEditor.html#settings-windows-input-source">by setting the Primary Input Source to &quot;Unity.&quot;</a> Be aware that by disabling native input in Rewired, you lose many important features for other devices <a href="RewiredEditor.html#settings-windows-input-source">as described here</a>. In addition, you cannot use XInput together with Unity input so you lose several important features  of XInput (universal XInput device support, vibration, etc.)</p>
             <p>An alternate way to support these controllers is by accessing the API directly and using that information to drive a <a href="CustomControllers.html">Custom Controller.</a> Using this method, you can leave native input enabled and retain access to all the important features that native input provides.</p>
-<h3><a name="ouya-controller-support" id="ouya-controller-support"></a>OUYA platform controller support</h3>
-            <p>On the OUYA platform, controllers are handled through the Ouya Everywhere SDK. Therefore, only controllers supported by Ouya's SDK are supported by Rewired. Common controllers which are known to work fully are  OUYA Game Controller and Sony DualShock 3.</p>
-            <h3><a name="webgl" id="webgl"></a>WebGL platform controller support</h3>
-            <p>At this time, most controllers on WebGL are only supported via manual user mapping of controls at runtime through the use of a system like <a href="ControlMapper.html">Control Mapper</a>. Please see <a href="FAQ.html#webgl-support">this for important information on the state of controllers support in web browsers</a>.</p>
+<h3><a name="webgl" id="webgl"></a>WebGL platform controller support</h3>
+<p>At this time, most controllers on WebGL are only supported via manual user mapping of controls at runtime through the use of a system like <a href="ControlMapper.html">Control Mapper</a>. Please see <a href="FAQ.html#webgl-support">this for important information on the state of controllers support in web browsers</a>.</p>
             <p>The information in the following table shows which controllers have been mapped for the different browsers running on different operating systems. The operating system and browser versions shown are the versions that have been tested. For gamepads that do not use the Standard Gamepad mapping mode, because at any time the browser manufacturer may decide to create a Standard Gamepad mapping for a controller causing the mapping layout to change, extended support cannot be guaranteed for any browser versions but the ones shown.</p>
             <table width="100%" border="0" class="supported-controllers-table">
               <tr>
@@ -5150,16 +5158,12 @@ MacOS: <span class="no">No</span></td>
 <p style="font-size: 60%">15 Linux native support has been tested under Ubuntu 12.04 amd64, Ubuntu 14.04 x86/amd64, Ubuntu 15.04 amd64, Ubuntu 17.04 amd64, Mint 17.2 amd64, and SteamOS. Compatibility with other distros is not guranteed or implied.</p>
 <p style="font-size: 60%">16 Unity 4.x Android returns a blank string for the name of this joystick. Unity also uses blank strings for any joystick that was previously attached and then removed. There is no way to identify that this controller is connected on Unity 4.x Android, therefore it is not supported. Unity 5+ works correctly, however.</p>
 <p style="font-size: 60%">17 Has definition, but device cannot be opened by HID system in Windows UWP for unknown reason. YMMV.</p>
-<p style="font-size: 60%">18 Sony Dual Shock 4 special features are not supported on MacOS via Bluetooth connection. There is no possible way to support these features of the DS4 via Bluetooth 
-  on MacOS because the HID reports sent by the device through MacOS I/O kit simply do not 
-  contain gyro or touchpad information and it does not accept output reports 
-  to set vibration or light color. This is a limitation of MacOS I/O kit.</p>
+<p style="font-size: 60%"><a name="clarifications-18" id="clarifications-18"></a>18 Enhanced Device Support on Linux requires UDEV rules to be set up by the end-user. <a href="HowTos.html#enhanced-device-support-linux">See this for more information</a>.</p>
 <p style="font-size: 60%"><a name="clarifications-19" id="clarifications-19"></a>19 Requires SteelSeries Engine 3+ to be installed and for the device to have the latest firmware as of 3/18/2017.</p>
 <p style="font-size: 60%"><a name="clarifications-20" id="clarifications-20"></a>20 Joy-Con sticks on non-Switch platforms without Enhanced Device Support enabled return digital hat values. Analog stick values, gyro, vibration, and other special features not available. Controller layout is based on the horizontal orientation.</p>
 <p style="font-size: 60%"><a name="clarifications-21" id="clarifications-21"></a>21  Gyro, vibration, and other special features not available.</p>
 <p style="font-size: 60%"><a name="clarifications-22" id="clarifications-22"></a>22 On MacOS, using X mode with a wired connection on Gamesir G3, G3s, G3v, and G3w can cause the entire OS input system to crash requiring a system reboot to fix. It may be related to the XInput driver version in use. YMMV.</p>
 <p style="font-size: 60%"><a name="clarifications-23" id="clarifications-23"></a>23 This device in MacOS mode emulates and appears to the system as a Sony DualShock 4 controller. However, if Enhanced Device Support is enabled, the controller will become unusable because the controller does not correctly emulate the Sony input/output report format, therefore Rewired's low-level Enhanced Device Support mode cannot properly communicate with the device. There is no way to determine that the connected device is an 8Bitdo gamepad and not a true Sony DualShock 4, so when Enhanced Device Support is enabled, the device cannot function in MacOS mode.</p>
-<p style="font-size: 60%"><a name="clarifications-24" id="clarifications-24"></a>24 The Sony DualSense controller on Windows and MacOS vibration motor intensities are not truly independent. The device seems to vibrate only at maximum intensity  no matter the value sent to the device. A workaround was put in place to vary the overall unified motor intensity based on the max of the two vibration intensities. This leads to some oddities because if one motor is at max and the other motor is at 1%, both motors will vibrate at max intensity. There is no known better workaround for the vibration intensity problem.</p>
 <p style="font-size: 60%">&nbsp;</p>
 <div class="bottom-pager clearfix">
   <a class="back-button" href="Documentation.html" title="Documentation"><span class="button-img"></span>Documentation</a>

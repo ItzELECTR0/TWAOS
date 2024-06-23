@@ -199,8 +199,14 @@
       <li><a href="#raildriver-special-features">Using P.I. Engineering Rail Driver special features</a></li>
       <li><a href="#xbox-one-controller-special-features">Using XBox One controller special features on XBox One platform</a></li>
       <li><a href="#apple-game-controller-framework">Apple Game Controller Framework special features</a></li>
-      <li><a href="#raw-input-controller-extension">Additional Raw Input controller information</a></li>
-      <li><a href="#direct-input-controller-extension">Additional Direct Input controller information</a></li>
+      <li><a href="#raw-input-controller-extension">Additional Windows Raw Input controller information</a></li>
+      <li><a href="#direct-input-controller-extension">Additional Windows Direct Input controller information</a></li>
+      <li><a href="#xinput-controller-extension">Additional Windows XInput controller information</a></li>
+      <li><a href="#wgi-controller-extension">Additional Windows Windows Gaming Input controller information</a></li>
+      <li><a href="#uwp-controller-extension">Additional Universal Windows Platform (UWP) controller information</a></li>
+      <li><a href="#macos-controller-extension">Additional MacOS controller information</a></li>
+      <li><a href="#linux-controller-extension">Additional Linux controller information</a></li>
+      <li><a href="#enhanced-device-support-linux">Enhanced Device Support permissions on Linux</a></li>
       <li><a href="#asmdef-files">Using asmdef files with Rewired</a></li>
     </ul>
     <p>&nbsp;</p>
@@ -2483,7 +2489,7 @@ using System.Collections.Generic;
   <p>&nbsp;</p>
 <hr />
   <h3><a name="dualshock-4-special-features"></a>Using Sony DualShock 4 special features</h3>
-  <p>The Sony DualShock 4 supports vibration, gyro/accelerometer, touchpad, and changing the light color on Windows Standalone and OSX* only at present (<a href="https://guavaman.com/projects/rewired/docs/RewiredEditor.html#Settings">Enhanced Device Support</a> option required.) If you're developing for the PlayStation 4, see the PS4 plugin documentation or <a href="#dualshock-4-special-features-common-interface">use the common interface to support both platforms simultaneously</a>. (* Special features are only supported on OSX via wired USB connection.)</p>
+  <p>The Sony DualShock 4 supports vibration, gyro/accelerometer, touchpad, and changing the light color on Windows Standalone and OSX only at present (<a href="https://guavaman.com/projects/rewired/docs/RewiredEditor.html#Settings">Enhanced Device Support</a> option required.) If you're developing for the PlayStation 4, see the PS4 plugin documentation or <a href="#dualshock-4-special-features-common-interface">use the common interface to support both platforms simultaneously</a>.</p>
 <p>The special features of this controller are accessible through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_ControllerExtensions_DualShock4Extension.htm">ControllerExtensions.DualShock4Extension</a> class.</p>
 <p><a href="Examples.html#dualshock-4-special-features">Also see the Dual Shock 4 Special Features example.</a></p>
 <p>An example on how to use this class is shown below:</p>
@@ -2554,19 +2560,19 @@ ds4.SetLightColor(Color.red);
 
 <span class="comment">// Cast to the concrete type to get access to the feature not available on the interface</span>
 if(ds4 is DualShock4Extension) { <span class="comment">// desktop version</span>
-    <span class="comment">// Desktop-only code</span>
-    DualShock4Extension desktopDs4 = (DualShock4Extension)ds4;
-    float batteryLevel = desktopDs4.batteryLevel;<span class="comment"></span>
+  <span class="comment">// Desktop-only code</span>
+  DualShock4Extension desktopDs4 = (DualShock4Extension)ds4;
+  float batteryLevel = desktopDs4.batteryLevel;<span class="comment"></span>
 
 } else if(ds4 is Rewired.Platforms.PS4.PS4GamepadExtension) { <span class="comment">// PS4 version</span>
-    <span class="comment">// PS4-only code</span>
-    Rewired.Platforms.PS4.PS4GamepadExtension ps4ds4 = (Rewired.Platforms.PS4.PS4GamepadExtension)ds4;
-	 <span class="comment">// PS4 platform code goes here...</span>
+  <span class="comment">// PS4-only code</span>
+  Rewired.Platforms.PS4.PS4GamepadExtension ps4ds4 = (Rewired.Platforms.PS4.PS4GamepadExtension)ds4;
+  <span class="comment">// PS4 platform code goes here...</span>
 }<br /></pre>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="dualsense-special-features" id="dualsense-special-features"></a>Using Sony DualSense special features</h3>
-<p>The Sony DualSense supports vibration, trigger effects, gyro/accelerometer, touchpad, and changing the light color on Windows Standalone and OSX* only at present (<a href="https://guavaman.com/projects/rewired/docs/RewiredEditor.html#Settings">Enhanced Device Support</a> option required.)  If you're developing for the PlayStation 5, see the PS5 plugin documentation or <a href="#dualsense-special-features-common-interface">use the common interface to support both platforms simultaneously</a>. (* Special features are only supported on OSX via wired USB connection.)</p>
+<p>The Sony DualSense supports vibration, trigger effects, gyro/accelerometer, touchpad, and changing the light color on Windows Standalone and OSX only at present (<a href="https://guavaman.com/projects/rewired/docs/RewiredEditor.html#Settings">Enhanced Device Support</a> option required.)  If you're developing for the PlayStation 5, see the PS5 plugin documentation or <a href="#dualsense-special-features-common-interface">use the common interface to support both platforms simultaneously</a>.</p>
 <p>The special features of this controller are accessible through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_ControllerExtensions_DualSenseExtension.htm">ControllerExtensions.DualSenseExtension</a> class.</p>
 <p>You can <a href="#dualshock-4-special-features-common-interface">use the common DS4 interface to support the DualShock 4 and DualSense simultaneously</a>.</p>
 <p><a href="Examples.html#dualshock-4-special-features">Also see the Dual Shock 4 Special Features example.</a></p>
@@ -2610,32 +2616,32 @@ class DualSenseTest {
       ds.SetVibration(1.0f, 1.0f); <span class="comment">// set vibration on both motors simultaneously</span>
       ds.StopVibration(); <span class="comment">// stop all vibration</span>
 
-		<span class="comment">// Trigger Effects</span>
-<span class="comment">		// Set a feedback trigger effect in the right trigger</span>
-		ds.SetTriggerEffect(DualSenseTriggerType.Right, new DualSenseTriggerEffectFeedback() {
-			position = 3,
-			strength = 8
-		});<span class="comment"></span>
+      <span class="comment">// Trigger Effects</span>
+      <span class="comment">// Set a feedback trigger effect in the right trigger</span>
+      ds.SetTriggerEffect(DualSenseTriggerType.Right, new DualSenseTriggerEffectFeedback() {
+        position = 3,
+        strength = 8
+      });<span class="comment"></span>
 
-<span class="comment">		// Set a multi-position feedback trigger effect in the left trigger</span>
-<span class="comment">		// Strength changes throughout trigger press</span>
-		var strength = new DualSenseTriggerEffectPositionValueSet();
-		strength[0] = 5;
-		strength[1] = 6;
-		strength[2] = 7;
-		strength[3] = 8;
-		strength[4] = 0;
-		strength[5] = 0;
-		strength[6] = 0;
-		strength[7] = 8;
-		strength[8] = 8;
-		strength[9] = 0;
-		ds.SetTriggerEffect(
-			DualSenseTriggerType.Left,
-			new DualSenseTriggerEffectMultiplePositionFeedback() {
-				strength = strength
-			}
-		);
+      <span class="comment">// Set a multi-position feedback trigger effect in the left trigger</span>
+      <span class="comment">// Strength changes throughout trigger press</span>
+      var strength = new DualSenseTriggerEffectPositionValueSet();
+      strength[0] = 5;
+      strength[1] = 6;
+      strength[2] = 7;
+      strength[3] = 8;
+      strength[4] = 0;
+      strength[5] = 0;
+      strength[6] = 0;
+      strength[7] = 8;
+      strength[8] = 8;
+      strength[9] = 0;
+      ds.SetTriggerEffect(
+        DualSenseTriggerType.Left,
+        new DualSenseTriggerEffectMultiplePositionFeedback() {
+          strength = strength
+        }
+      );
 
       <span class="comment">// Get the light color</span>
       Color lightColor = ds.GetLightColor();
@@ -2646,15 +2652,15 @@ class DualSenseTest {
       <span class="comment">// Set the player lights</span>
       ds.playerLights = DualSensePlayerLightFlags.Two | DualSensePlayerLightFlags.Four; <span class="comment">// enable lights 2 and 4 to signify Player 2</span>
       
-		<span class="comment">// Enable the microphone button light</span>
-		ds.microphoneLightMode = DualSenseMicrophoneLightMode.On;
+      <span class="comment">// Enable the microphone button light</span>
+      ds.microphoneLightMode = DualSenseMicrophoneLightMode.On;
 
-		<span class="comment">// Set the player lights and microphone light brigtness</span>
-		ds.otherLightBrightness = DualSenseOtherLightBrightness.Low;
+      <span class="comment">// Set the player lights and microphone light brigtness</span>
+      ds.otherLightBrightness = DualSenseOtherLightBrightness.Low;
 
-		<span class="comment">// Get battery information</span>
-		float battery = ds.batteryLevel;
-		bool batteryCharging = ds.batteryCharging;
+      <span class="comment">// Get battery information</span>
+      float battery = ds.batteryLevel;
+      bool batteryCharging = ds.batteryCharging;
     }
   }
 }</pre>
@@ -2672,16 +2678,15 @@ ds.SetLightColor(Color.red);
 
 <span class="comment">// Cast to the concrete type to get access to the feature not available on the interface</span>
 if(ds is DualSenseExtension) { <span class="comment">// desktop version</span>
-    <span class="comment">// Desktop-only code</span>
-    DualSenseExtension desktopDs = (DualSenseExtension)ds;
-    float batteryLevel = desktopDs.batteryLevel;<span class="comment"></span>
+  <span class="comment">// Desktop-only code</span>
+  DualSenseExtension desktopDs = (DualSenseExtension)ds;
+  float batteryLevel = desktopDs.batteryLevel;<span class="comment"></span>
 
 } else if(ds is Rewired.Platforms.PS5.PS5GamepadExtension) { <span class="comment">// PS5 version</span>
-    <span class="comment">// PS5-only code</span>
-    Rewired.Platforms.PS5.PS5GamepadExtension ps5ds = (Rewired.Platforms.PS5.PS5GamepadExtension)ds;
-    <span class="comment">// PS5 platform code goes here...</span>
-}<br />
-</pre>
+  <span class="comment">// PS5-only code</span>
+  Rewired.Platforms.PS5.PS5GamepadExtension ps5ds = (Rewired.Platforms.PS5.PS5GamepadExtension)ds;
+  <span class="comment">// PS5 platform code goes here...</span>
+}</pre>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="nintendo-switch-controller-special-features" id="nintendo-switch-controller-special-features"></a>Using Nintendo Switch controller special features</h3>
@@ -2814,12 +2819,12 @@ class XBoxOneTest {
   </ul>
 <p><strong>General Usage</strong></p>
 <p>Code that makes use of the Game Controller Framework should be enclosed in an #if directive for the specific build targets because these functions are not included on build targets that do not support the Game Controller Framework:</p>
-<pre class="code">#if UNITY_OSX
+<pre class="code">#if (UNITY_OSX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_OSX
     <span class="comment">// Some GCController specific code</span>
     GCControllerExtension gcControllerExtension = controller.GetExtension&lt;GCControllerExtension&gt;();
 #endif</pre>
 <p>All functions are in the namespace Rewired.Platforms.Apple.GameController. Add this in a using statement which is enclosed in an #if directive for the specific build targets.</p>
-<pre class="code">#if UNITY_OSX
+<pre class="code">#if (UNITY_OSX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_OSX
     using Rewired.Platforms.Apple.GameController;
 #endif</pre>
 <p><strong>Controller Extension</strong></p>
@@ -2844,8 +2849,10 @@ class XBoxOneTest {
 <p>Apple's Game Controller Framework has a number of serious issues. See <a href="KnownIssues.html#osx-gccontroller-vibration-connection-bug">Known Issues</a> for more information.</p>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="raw-input-controller-extension" id="raw-input-controller-extension"></a>Additional Raw Input controller information</h3>
+<h3><a name="raw-input-controller-extension" id="raw-input-controller-extension"></a>Additional Windows Raw Input controller information</h3>
 <p>Additional information about controllers on Windows Standalone when using Raw Input as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Windows_RawInput_RawInputControllerExtension.htm">RawInputControllerExtension</a>. This is only useful if you need to get some kind of low-level information about the controller for special purposes such as trying to support some special features (such as force feedback) of a controller through an SDK independently of Rewired while still using Rewired for input.</p>
+<p>If Use XInput is enabled, compatible controllers will implement XInputControllerExtension instead. <a href="#xinput-controller-extension">See this for more information</a>.</p>
+<p>If Use Windows Gaming Input is enabled, compatible controllers will implement WindowsGamingInputControllerExtension instead. <a href="#wgi-controller-extension">See this for more information</a>.</p>
 <p>Note that if Enhanced Device Support is enabled and the device is supported by Enhanced Device Support, it will have its own Controller Extension and will not implement RawInputControllerExtension.</p>
 <p>All classes are in the namespace Rewired.Platforms.Windows.RawInput.</p>
 <pre class="code">#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
@@ -2854,8 +2861,7 @@ class XBoxOneTest {
 <p>The RawInputControllerExtension is only available on the Windows Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the Windows Standalone platform.</p>
 <p>To access information, get the Controller Extension from the Joystick:</p>
 <pre class="code">
-<span class="comment">// Set vibration in all controllers in player</span>
-foreach(Joystick joystick in player.controllers.Joysticks) {
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
 
 #if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
     <span class="comment">// Get the ControllerExtension for Raw Input</span>
@@ -2868,8 +2874,10 @@ foreach(Joystick joystick in player.controllers.Joysticks) {
 </pre>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="direct-input-controller-extension" id="direct-input-controller-extension"></a>Additional Direct Input controller information</h3>
+<h3><a name="direct-input-controller-extension" id="direct-input-controller-extension"></a>Additional Windows Direct Input controller information</h3>
 <p>Additional information about controllers on Windows Standalone when using Direct Input as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Windows_DirectInput_DirectInputControllerExtension.htm">DirectInputControllerExtension</a>. This is only useful if you need to get some kind of low-level information about the controller for special purposes such as trying to support some special features (such as force feedback) of a controller through an SDK independently of Rewired while still using Rewired for input.</p>
+<p>If Use XInput is enabled, compatible controllers will implement XInputControllerExtension instead. <a href="#xinput-controller-extension">See this for more information</a>.</p>
+<p>If Use Windows Gaming Input is enabled, compatible controllers will implement WindowsGamingInputControllerExtension instead. <a href="#wgi-controller-extension">See this for more information</a>.</p>
 <p>All classes are in the namespace Rewired.Platforms.Windows.DirectInput.</p>
 <pre class="code">#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
     using Rewired.Platforms.Windows.DirectInput;
@@ -2877,11 +2885,10 @@ foreach(Joystick joystick in player.controllers.Joysticks) {
 <p>The DirectInputControllerExtension is only available on the Windows Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the Windows Standalone platform.</p>
 <p>To access information, get the Controller Extension from the Joystick:</p>
 <pre class="code">
-<span class="comment">// Set vibration in all controllers in player</span>
-foreach(Joystick joystick in player.controllers.Joysticks) {
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
 
 #if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
-    <span class="comment">// Get the ControllerExtension for Raw Input</span>
+    <span class="comment">// Get the ControllerExtension for Direct Input</span>
     var extension = joystick.GetExtension&lt;DirectInputControllerExtension&gt;();
     if(extension != null) {
         <span class="comment">// Log the interface path</span>
@@ -2889,6 +2896,158 @@ foreach(Joystick joystick in player.controllers.Joysticks) {
     }
 #endif
 }<br /></pre>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="xinput-controller-extension" id="xinput-controller-extension"></a>Additional Windows XInput controller information</h3>
+<p>Additional information about controllers on Windows Standalone when using XInput as the primary input source and when Use XInput is enabled when using Raw Input or Direct Input as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Windows_XInput_XInputControllerExtension.htm">XInputControllerExtension</a>. This is only useful if you need to get some kind of low-level information about the controller for special purposes.</p>
+<p>All classes are in the namespace Rewired.Platforms.Windows.XInput.</p>
+<pre class="code">#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
+    using Rewired.Platforms.Windows.XInput;
+#endif</pre>
+<p>The XInputControllerExtension is only available on the Windows Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the Windows Standalone platform.</p>
+<p>To access information, get the Controller Extension from the Joystick:</p>
+<pre class="code">
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
+
+#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
+    <span class="comment">// Get the ControllerExtension for XInput</span>
+    var extension = joystick.GetExtension&lt;XInputControllerExtension&gt;();
+    if(extension != null) {
+        <span class="comment">// Log the user index</span>
+        Debug.Log(extension.userIndex);
+    }
+#endif
+}<br />
+</pre>
+<p></p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="wgi-controller-extension" id="wgi-controller-extension"></a>Additional Windows Windows Gaming Input controller information</h3>
+<p>Additional information about controllers on Windows Standalone (when using Windows Gaming Input as the primary input source and when Use Windows Gaming Input is enabled when using Raw Input or Direct Input as the primary input source) and on Windows UWP (when Use Gamepad API is enabled) can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Microsoft_WindowsGamingInput_WindowsGamingInputControllerExtension.htm">WindowsGamingInputControllerExtension</a>. This is only useful if you need to get some kind of low-level information about the controller for special purposes.</p>
+<p>All classes are in the namespace Rewired.Platforms.Microsoft.WindowsGamingInput.</p>
+<pre class="code">#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || (UNITY_WSA &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
+    using Rewired.Platforms.Microsoft.WindowsGamingInput;
+#endif</pre>
+<p>The WindowsGamingInputControllerExtension is available on the Windows Standalone and Windows UWP platforms, and therefore any reference to the class must be enclosed in an #if directive that includes the code only on those platforms.</p>
+<p>To access information, get the Controller Extension from the Joystick:</p>
+<pre class="code">
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
+
+#if (UNITY_STANDALONE_WIN &amp;&amp; !UNITY_EDITOR) || (UNITY_WSA &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_WIN
+    <span class="comment">// Get the ControllerExtension for WindowsGamingInput</span>
+    var extension = joystick.GetExtension&lt;WindowsGamingInputControllerExtension&gt;();
+    if(extension != null) {
+        <span class="comment">// Log the WindowsGamingInput device type</span>
+        Debug.Log(extension.deviceType);
+    }
+#endif
+}<br /></pre>
+<p></p>
+<p></p>
+<hr />
+<h3><a name="uwp-controller-extension" id="uwp-controller-extension"></a>Additional Universal Windows Platform (UWP) controller information</h3>
+<p>Additional information about controllers on Universal Windows Platform when using Native as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_UWP_HID_HIDControllerExtension.htm">HIDControllerExtension</a> (if Use HID API is enabled) and <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Microsoft_WindowsGamingInput_WindowsGamingInputControllerExtension.htm">WindowsGamingInputControllerExtension</a> (if Use Gamepad API is enabled). This is only useful if you need to get some kind of low-level information about the controller for special purposes.</p>
+<p><a href="#wgi-controller-extension">See this for more information about using the WindowsGamingInputControllerExtension.</a></p>
+<p>To use the HIDControllerExtension, all classes are in the namespace Rewired.Platforms.UWP.HID.</p>
+<pre class="code">#if (UNITY_WSA &amp;&amp; !UNITY_EDITOR)
+    using Rewired.Platforms.UWP.HID;
+#endif</pre>
+<p>The IOKitControllerExtension is only available on the MacOS Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the MacOS Standalone platform.</p>
+<p>To access information, get the Controller Extension from the Joystick:</p>
+<pre class="code">
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
+
+#if (UNITY_WSA &amp;&amp; !UNITY_EDITOR)
+    <span class="comment">// Get the ControllerExtension for UWP HID</span>
+    var extension = joystick.GetExtension&lt;HIDControllerExtension&gt;();
+    if(extension != null) {
+        <span class="comment">// Log the product id</span>
+        Debug.Log(extension.productId);
+    }
+#endif
+}<br /></pre>
+<p></p>
+<p></p>
+<hr />
+<h3><a name="macos-controller-extension" id="macos-controller-extension"></a>Additional MacOS controller information</h3>
+<p>Additional information about controllers on MacOS Standalone when using Native as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_MacOS_IOKit_IOKitControllerExtension.htm">IOKitControllerExtension</a> and <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Apple_GameController_GCControllerExtension.htm">GCControllerExtension</a> (if Use Game Controller Framework is enabled.) This is only useful if you need to get some kind of low-level information about the controller for special purposes such as trying to support some special features (such as force feedback) of a controller through an SDK independently of Rewired while still using Rewired for input.</p>
+<p>If Use Game Controller Framework is enabled or the primary input is set to Game Controller Framework, compatible controllers will implement GCControllerExtension instead. <a href="#apple-game-controller-framework">See this for more information</a>.</p>
+<p>Note that if Enhanced Device Support is enabled and the device is supported by Enhanced Device Support, it will have its own Controller Extension and will not implement IOKitControllerExtension.</p>
+<p>All classes are in the namespace Rewired.Platforms.MacOS.IOKit.</p>
+<pre class="code">#if (UNITY_STANDALONE_OSX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_OSX
+    using Rewired.Platforms.MacOS.IOKit;
+#endif</pre>
+<p>The IOKitControllerExtension is only available on the MacOS Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the MacOS Standalone platform.</p>
+<p>To access information, get the Controller Extension from the Joystick:</p>
+<pre class="code">
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
+
+#if (UNITY_STANDALONE_OSX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_OSX
+    <span class="comment">// Get the ControllerExtension for IO Kit</span>
+    var extension = joystick.GetExtension&lt;IOKitControllerExtension&gt;();
+    if(extension != null) {
+        <span class="comment">// Log the device service</span>
+        Debug.Log(extension.deviceService);
+    }
+#endif
+}<br /></pre>
+<p></p>
+<p></p>
+<hr />
+<h3><a name="linux-controller-extension" id="linux-controller-extension"></a>Additional Linux controller information</h3>
+<p>Additional information about controllers on Linux Standalone when using Native as the primary input source can be obtained through the <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Properties_T_Rewired_Platforms_Linux_Udev_UdevControllerExtension.htm">UdevControllerExtension</a>. This is only useful if you need to get some kind of low-level information about the controller for special purposes such as trying to support some special features (such as force feedback) of a controller through an SDK independently of Rewired while still using Rewired for input.</p>
+<p>All classes are in the namespace Rewired.Platforms.Linux.Udev.</p>
+<pre class="code">#if (UNITY_STANDALONE_LINUX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_LINUX
+    using Rewired.Platforms.Linux.Udev;
+#endif</pre>
+<p>The UdevControllerExtension is only available on the Linux Standalone platform and therefore any reference to the class must be enclosed in an #if directive that includes the code only on the Linux Standalone platform.</p>
+<p>To access information, get the Controller Extension from the Joystick:</p>
+<pre class="code">
+<span class="comment"></span>foreach(Joystick joystick in player.controllers.Joysticks) {
+
+#if (UNITY_STANDALONE_LINUX &amp;&amp; !UNITY_EDITOR) || UNITY_EDITOR_LINUX
+    <span class="comment">// Get the ControllerExtension for Udev</span>
+    var extension = joystick.GetExtension&lt;UdevControllerExtension&gt;();
+    if(extension != null) {
+        <span class="comment">// Log the system path</span>
+        Debug.Log(extension.systemPath);
+    }
+#endif
+}<br /></pre>
+<p></p>
+<p></p>
+<hr />
+<h3><a name="enhanced-device-support-linux" id="enhanced-device-support-linux"></a>Enhanced Device Support permissions on Linux</h3>
+<p>In order for Enhanced Device Support to work on Linux, the end-user must set up UDEV rules to allow applications to access the raw HID device. Create a file named 99-rewired-permissions.rules in /etc/udev/rules.d/ with the following contents and reboot:</p>
+<pre class="code"># Sony DualShock 4
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;054c&quot;, ATTRS{idProduct}==&quot;05c4&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*054C:05C4*&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;054c&quot;, ATTRS{idProduct}==&quot;09cc&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*054C:09CC*&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;054c&quot;, ATTRS{idProduct}==&quot;0ba0&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*054C:0BA0*&quot;, MODE=&quot;0666&quot;
+
+# Sony DualSense
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;054c&quot;, ATTRS{idProduct}==&quot;0ce6&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*054C:0CE6*&quot;, MODE=&quot;0666&quot;
+
+# Sony DualSense Edge
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;054c&quot;, ATTRS{idProduct}==&quot;0df2&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*054C:0DF2*&quot;, MODE=&quot;0666&quot;
+
+# Nintendo Pro Controller
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;057e&quot;, ATTRS{idProduct}==&quot;2009&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*057E:2009*&quot;, MODE=&quot;0666&quot;
+
+# Nintendo Joy-Con (L)
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;057e&quot;, ATTRS{idProduct}==&quot;2006&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*057E:2006*&quot;, MODE=&quot;0666&quot;
+
+# Nintendo Joy-Con (R)
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, ATTRS{idVendor}==&quot;057e&quot;, ATTRS{idProduct}==&quot;2007&quot;, MODE=&quot;0666&quot;
+KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*057E:2007*&quot;, MODE=&quot;0666&quot;
+</pre>
+<p></p>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="asmdef-files" id="asmdef-files"></a>Using asmdef files with Rewired</h3>
@@ -2946,7 +3105,9 @@ foreach(Joystick joystick in player.controllers.Joysticks) {
     to also be added to an asmdef and a   reference added to the Rewired_CSharp 
     assembly.<br />
   </li>
-</ul>
+  </ul>
+<p><br />
+</p>
 <div class="bottom-pager clearfix">
   <a class="back-button" href="Documentation.html" title="Documentation"><span class="button-img"></span>Documentation</a>
 </div>

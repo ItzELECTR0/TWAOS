@@ -831,6 +831,25 @@ MonoBehaviour:
   directionalLightsOnly:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &-3637952447471355133
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621c3e3229f293f438b0e73b9d41cfdd, type: 3}
+  m_Name: Colorblindness
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
+  Type:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-2761495238673198437
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1336,8 +1355,8 @@ MonoBehaviour:
   - {fileID: 1687628465126613418}
   - {fileID: -5627560066211311539}
   - {fileID: -183930592663074470}
-  - {fileID: 7173947955320455338}
-  - {fileID: 6640381555979595559}
+  - {fileID: -3637952447471355133}
+  - {fileID: 3563163752408476387}
 --- !u!114 &448115243408767295
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1960,6 +1979,67 @@ MonoBehaviour:
   chromaticAbberationSampleCount:
     m_OverrideState: 1
     m_Value: 3
+--- !u!114 &3563163752408476387
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df29e7cc05fbec4aa43e06ea875565d, type: 3}
+  m_Name: ProceduralSky
+  m_EditorClassIdentifier: 
+  active: 1
+  rotation:
+    m_OverrideState: 1
+    m_Value: 0
+  skyIntensityMode:
+    m_OverrideState: 1
+    m_Value: 0
+  exposure:
+    m_OverrideState: 1
+    m_Value: 0
+  multiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  upperHemisphereLuxValue:
+    m_OverrideState: 1
+    m_Value: 1
+  upperHemisphereLuxColor:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
+  desiredLuxValue:
+    m_OverrideState: 1
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 1
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 1
+    m_Value: 0
+  includeSunInBaking:
+    m_OverrideState: 1
+    m_Value: 0
+  sunSize:
+    m_OverrideState: 1
+    m_Value: 0.04
+  sunSizeConvergence:
+    m_OverrideState: 1
+    m_Value: 5
+  atmosphereThickness:
+    m_OverrideState: 1
+    m_Value: 1
+  skyTint:
+    m_OverrideState: 1
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  groundColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.369, g: 0.349, b: 0.341, a: 1}
+  enableSunDisk:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &3668737320848697631
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2232,6 +2312,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 2efa14a049ef1fc49bcf18c90ebcab30, type: 2}
     - {fileID: 11400000, guid: a9e2fdd45db1cd248a51143525073d64, type: 2}
     - {fileID: 11400000, guid: 927cb1a1d4ddf2144bf125f3bbd836af, type: 2}
+    - {fileID: 11400000, guid: cb724139ea2be234da0b4c3fcd984446, type: 2}
 --- !u!114 &5105813387478065154
 MonoBehaviour:
   m_ObjectHideFlags: 3

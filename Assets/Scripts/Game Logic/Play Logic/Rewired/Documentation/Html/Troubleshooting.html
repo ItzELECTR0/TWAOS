@@ -192,12 +192,19 @@
       <li><a href="#windows-nintendo-switch-pro-controller-usb">Windows: Nintendo Switch Pro Controller doesn't work</a></li>
       <li><a href="#windows-uwp-serialization-errors">Windows 10 Universal: Serialization errors</a></li>
       </ul>
-    <h3><a href="#osx">OSX:</a></h3>
+    <h3><a href="#macos">MacOS:</a></h3>
     <ul>
-      <li><a href="#osx-xbox-one-controller-vibration">OSX: XBox One Controller vibration doesn't work</a></li>
-      <li><a href="#osx-mac-app-store-joysticks-dont-work">OSX, Mac App Store: Joysticks don't work</a></li>
-    </ul>
-    <h3><a href="#android">Android:</a></h3>
+      <li><a href="#macos-app-store-entitlements-error">MacOS: Mac App Store submission rejected due to Invalid Code Signing Entitlements error</a></li>
+      <li><a href="#macos-bundle-quarantine-error">MacOS: &quot;Rewired_MacOS.bundle&quot; can't be opened because Apple cannot check it for malicious software</a></li>
+      
+      <li><a href="#macos-rewired-macos-bundle-errors">MacOS: Errors that mention Rewired_MacOS.bundle</a></li>
+      <li><a href="#macos-xbox-one-controller-vibration">MacOS: XBox One Controller vibration doesn't work</a></li>
+      <li><a href="#macos-mac-app-store-joysticks-dont-work">MacOS Mac App Store: Joysticks don't work</a></li>
+      </ul>
+    <h3><a href="#linux">Linux:</a></h3>
+    <ul>
+      <li><a href="#linux-enhanced-device-support">Linux: Enhanced Device Support doesn't work</a></li></ul>
+<h3><a href="#android">Android:</a></h3>
     <ul>
       <li><a href="#android-joystick-keyboard-keys">Joystick buttons  activate keyboard keys on Android</a>    </li>
     </ul>
@@ -212,7 +219,7 @@
       <li><a href="#tvos-joystick-keyboard-keys">Joystick buttons  activate keyboard keys on tvOS</a></li>
       <li><a href="#tvos-playermouse-pointer-siri-remote">PlayerMouse software pointer does not work with Apple TV Siri Remote</a></li>
     </ul>
-<h3><a href="#xbox-one">Xbox One:</a></h3>
+<h3><a href="#xbox-one">Xbox One (XDK):</a></h3>
 <ul>
   <li><a href="#xbox-one-crash-on-start">XBox One: Crash/blank screen on start in game build</a></li>
   <li><a href="#xbox-one-profiler">XBox One: High CPU usage in profiler</a></li>
@@ -864,20 +871,65 @@ Int64* args, IntPtr method)
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
-<h2><a name="osx" id="osx"></a>OSX</h2>
+<h2><a name="osx" id="osx"></a><a name="macos" id="macos"></a>MacOS</h2>
+<h3><a name="macos-app-store-entitlements-error" id="macos-app-store-entitlements-error"></a>MacOS: Mac App Store submission rejected due to Invalid Code Signing Entitlements error</h3>
+<p>Mac App store has specific code signing requirements that your application must meet to pass testing. I have been getting reports of projects containing Rewired failing testing with the following errors:</p>
+<pre class="code">ITMS-90288: Invalid Code Signing Entitlements - The entitlements in
+your app bundle signature do not match the ones that are contained in
+the provisioning profile. According to the provisioning profile, the
+bundle contains a key value that is not allowed: '' for the key
+'com.apple.application-identifier' in
+'APPLICATION_NAME.app/Contents/PlugIns/Rewired_MacOS.bundle'
+
+ITMS-90286: Invalid Code Signing Entitlements - Your application
+bundle's signature contains code signing entitlements that are not
+supported on macOS. Specifically, value '' for key
+'com.apple.application-identifier' in
+'APPLICATION_NAME.app/Contents/PlugIns/Rewired_MacOS.bundle' is not
+supported. This value should be a string starting with your TEAMID,
+followed by a dot '.', followed by the bundle identifier .</pre>
 <p></p>
-<h3><a name="osx-xbox-one-controller-vibration" id="osx-xbox-one-controller-vibration"></a>OSX: XBox One Controller vibration doesn't work</h3>
-<p>In order for vibration to work on the Xbox One Controller on OSX, the <a href="RewiredEditor.html#Settings">input source must be set to Native</a> and you must have <a href="https://github.com/360Controller/360Controller/releases" target="_blank">this driver installed</a> (at least v0.16).</p>
+<p>This Unity documentation on Mac code recommends running codesign on the project with the --deep flag enabled, which would presumably cause it to sign all the binaries inside the project which would include Rewired_MacOS.bundle:<br />
+  <a href="https://docs.unity3d.com/2022.1/Documentation/Manual/macos-building-notarization.html" target="_blank" rel="nofollow">https://docs.unity3d.com/2022.1/Documentation/Manual/macos-building-notarization.html</a></p>
+<pre class="code">codesign --deep --force --verify --verbose --timestamp --options runtime --entitlements "application_name.entitlements" --sign "Developer ID Application : XXX (YYY)" "application_name.app"
+</pre>
 <p>&nbsp;</p>
 <hr />
-<h3><a name="osx-mac-app-store-joysticks-dont-work" id="osx-mac-app-store-joysticks-dont-work"></a>OSX, Mac App Store: Joysticks don't work</h3>
+<h3><a name="macos-bundle-quarantine-error" id="macos-bundle-quarantine-error"></a>MacOS: &quot;Rewired_MacOS.bundle&quot; can't be opened because Apple cannot check it for malicious software</h3>
+<p>All files downloaded from the internet in a web browser will be flagged by the OS with the &quot;com.apple.quarantine&quot; attribute. This causes the downloaded file, and any files contained within an archive, to be quarantined if they contain non-notarized executable code. Rewired on MacOS contains Rewired_MacOS.bundle, a library required to support the Game Controller Framework on MacOS. This library is ad-hoc signed, and is therefore automatically quarantined if Rewired was downloaded from a web browser. (This should not happen when Rewired is downloaded from the Unity Asset Store.) Every time you press Play in the Unity Editor, Rewired_MacOS.bundle will be blocked from loading and a security message displayed.</p>
+<p>The quarantine attribute can be removed by using the following command in a terminal:</p>
+<pre class="code">xattr -r -d com.apple.quarantine [FullPathToDir]/Rewired_MacOS.bundle</pre>
+<p><span class="code">Rewired_MacOS.bundle is located in the Unity project's Assets folder under Rewired/Internal/Libraries/Runtime/Native/MacOSStandalone</span>/.</p>
+<p>Games published to Steam and the Mac App Store will not display this warning as the developer is required to notarize their submission including all libraries before publishing.</p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="macos-rewired-macos-bundle-errors" id="macos-rewired-macos-bundle-errors"></a>MacOS: Errors that mention Rewired_MacOS.bundle</h3>
+<p>Various errors can occur due to  the Rewired_MacOS.bundle version being out of sync with the installed version of Rewired. This can occur because Unity may not attempt to upgrade the Rewired_MacOS.bundle file when updating Rewired from the Unity Asset Store.</p>
+<p>Install Rewired from the Asset Store and ensure that Rewired/Assets/Internal/Libraries/Runtime/Native/MacOS/Rewired_MacOS.bundle is checked.</p>
+<p>If problems persist, delete the Rewired/Assets/Internal/Libraries/Runtime/Native/MacOS/Rewired_MacOS.bundle and associated .meta files in the project and reinstall Rewired from the Unity Asset Store. If an error occurs when trying to delete the file, close the Unity Editor, delete the file, re-open it, and install Rewired again.</p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="osx-xbox-one-controller-vibration" id="osx-xbox-one-controller-vibration"></a><a name="macos-xbox-one-controller-vibration" id="macos-xbox-one-controller-vibration"></a>MacOS: XBox One Controller vibration doesn't work</h3>
+<p>Enable <a href="RewiredEditor.html#Settings">Use Game Controller Framework</a> for best device and feature support.</p>
+<p>If Use Game Controller Framework is disabled, in order for vibration to work on the Xbox One Controller on MacOS, the <a href="RewiredEditor.html#Settings">input source must be set to Native</a>. Older versions of MacOS may require <a href="https://github.com/360Controller/360Controller/releases" target="_blank">this driver be installed</a> (at least v0.16).</p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="osx-mac-app-store-joysticks-dont-work" id="osx-mac-app-store-joysticks-dont-work"></a><a name="macos-mac-app-store-joysticks-dont-work" id="macos-mac-app-store-joysticks-dont-work"></a>MacOS, Mac App Store: Joysticks don't work</h3>
 <p>To access USB or Bluetooth devices in the Mac App Store sandbox, your application must request specific entitlements.</p>
 <p>  Enable the follow entitlements for your application:</p>
 <ul>
   <li>com.apple.security.device.bluetooth</li>
   <li>com.apple.security.device.usb</li>
-</ul>
+  </ul>
+<p>These entitlements may not be required if the primary input source is set to <a href="RewiredEditor.html#Settings">Game Controller Framework</a>.</p>
 <p>See the <a href="https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW1" target="_blank">Mac App Store entitlements documentation</a> for more information.</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<h2><a name="linux" id="linux"></a>Linux</h2>
+<p></p>
+<h3><a name="linux-enhanced-device-support" id="linux-enhanced-device-support"></a>Linux: Enhanced Device Support doesn't work</h3>
+<p>Enhanced Device Support on Linux requires UDEV rules to be set up by the end-user. <a href="HowTos.html#enhanced-device-support-linux">See this for more information</a>.</p>
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
@@ -956,7 +1008,7 @@ Int64* args, IntPtr method)
 <p>&nbsp;</p>
 <hr />
 <p>&nbsp;</p>
-<h2><a name="xbox-one" id="xbox-one"></a>Xbox One</h2>
+<h2><a name="xbox-one" id="xbox-one"></a>Xbox One (XDK)</h2>
 <p></p>
 <h3><a name="xbox-one-crash-on-start" id="rewired-standalone-input-module-issues2"></a>XBox One: Crash/blank screen on start in game build</h3>
 <p>This is always due to improper setup of the required dependencies. See <a href="SpecialPlatformSupport.html#xbox-one">Special Platform Support - XBox One</a> for details on setting up the required dependencies.</p>
@@ -1032,13 +1084,14 @@ Int64* args, IntPtr method)
 <p><strong>Rewired Mappings</strong><br />
   It is recommended you always create a Joystick Map for the <a href="ControllerTemplates.html#gamepad-template">Gamepad Template</a> in the Rewired Editor. This will cover the Steam Controller and <a href="#steam-configured-controllers">Steam-configured controllers</a> on all platforms.</p>
 <p><strong>Windows<br />
-</strong>The Steam Controller works best with Raw Input + XInput or Direct Input + XInput. Unity Input should generally not be set as the Primary Input Source and Disable Native Input should not be checked.</p>
+</strong>The Steam Controller works best with Raw Input + Windows Gaming Input or Direct Input + Windows Gaming Input. Unity Input should generally not be set as the Primary Input Source and Disable Native Input should not be checked.</p>
 <ul>
-  <li>When Use XInput is enabled, the Steam Controller will use the Xbox 360 Controller profile (XInput device).</li>
-  <li>When Use XInput is disabled and Raw Input or Direct Input is the Primary Input Source, the Steam Controller will use the Steam Controller profile and must be mapped using the <a href="ControllerTemplates.html#gamepad-template">Gamepad Template</a>.</li>
+  <li>When Use Windows Gaming Input is enabled, the Steam Controller will use the Steam Controller profile.</li>
+  <li>When Use XInput is enabled but Use Windows Gaming Input is disabled, the Steam Controller will use the Xbox 360 Controller profile (XInput device).</li>
+  <li>When both Use Windows Gaming Input and Use XInput are disabled and Raw Input or Direct Input is the Primary Input Source, the Steam Controller will use the Steam Controller profile and must be mapped using the <a href="ControllerTemplates.html#gamepad-template">Gamepad Template</a>.</li>
   <li>If Unity is the Primary Input Source, the Steam Controller will use the Xbox 360 Controller profile.</li>
   </ul>
-<p>Note: When using XInput devices with XInput enabled, Windows is limited to a maximum of 4 devices. This is a limitation of XInput, not Rewired. <a href="KnownIssues.html#more-than-4-xbox-controllers">See this for information on supporting more than 4 XInput devices</a>.</p>
+<p>Note: When using XInput devices with XInput enabled and Use Windows Gaming Input disabled, Windows is limited to a maximum of 4 devices. This is a limitation of XInput, not Rewired. <a href="KnownIssues.html#more-than-4-xbox-controllers">See this for information on supporting more than 4 XInput devices</a>.</p>
 <p><a href="#steam-windows-steam-controller-unity-editor">See this for important information on using the Steam Controller and Steam-configured devices in the Unity Editor on Windows</a>.</p>
 <p><strong>OSX<br />
 </strong>It is recommended that you leave the input source set to Native for the best device support. The Steam Controller will use the Steam Controller profile and must be mapped using the <a href="ControllerTemplates.html#gamepad-template">Gamepad Template</a>.</p>
@@ -1066,11 +1119,12 @@ Int64* args, IntPtr method)
 <p>In general, it is recommended the end user not enable configuration support for any of these controllers as long as your game provides support for them through Rewired.</p>
 <p><img src="files/images/troubleshooting_steam-big-picture-controller-config.png" alt="Steam Big Picture controller configuration support" /></p>
 <p><strong><a name="steam-configured-controllers-recommendations" id="steam-configured-controllers-recommendations"></a>Should I opt in to Steam Controller Configuration?</strong></p>
-<p>In general, it is recommended that you <strong>do not opt in</strong> to controller configuration for any controllers in the Steam developer backend. Rewired already supports more controllers out of the box than Steam with special features for some controllers such as the Dual Shock 4. As long as your game supports controllers using the Gamepad Template, Rewired will support all of the most important controllers. The user can always opt in themselves if needed.</p>
+<p>In general, it is recommended that you <strong>do not opt in</strong> to controller configuration for any controllers in the Steam developer backend. Rewired already supports more controllers out of the box than Steam with special features for some controllers such as the Dual Shock 4 and DualSense. As long as your game supports controllers using the Gamepad Template, Rewired will support all of the most important controllers. The user can always opt in themselves if needed.</p>
+<p>IMPORTANT: Be aware that Steam Controller Configuration is required to support Steam Link and Steam Remote Play. Whether you choose to opt-in by default or leave it up to the user depends on the specific needs of your game.</p>
 <p>For any of the following reasons, it is recommended you do not opt in to controller configuration  in the developer backend and inform your users to disable this option in the Steam client controller configuration settings:</p>
 <ul>
   <li>If your game needs to support more than just gamepads. (See <a href="#steam-configured-controllers-generic-gamepad">Generic Gamepad Configuration Support</a> below.)</li>
-  <li>If your game needs to support more than 4 players at once. (XInput is limited to 4 controllers and if Steam is allowed configure all controllers, there will be a hard limit of 4 controllers if using XInput.)</li>
+  <li>(Note: This is no longer an issue if Use Windows Gaming Input is enabled.) If your game needs to support more than 4 players at once. (XInput is limited to 4 controllers and if Steam is allowed configure all controllers, there will be a hard limit of 4 controllers if using XInput.)</li>
   <li>If you want to support <a href="SupportedControllers.html">all the recognized gamepads or other devices Rewired supports</a>. When Steam takes over and turns devices into virtual devices, Rewired cannot see the real HID device and instead just sees the virtual device. In current testing, there are a number of devices that Steam either does not support (meaning a dead device) or supports improperly (has certain broken elements). Disable &quot;Generic Gamepad&quot; configuration to prevent these devices from being configured by Steam.</li>
   <li>If you want to support the special features of certain controllers like the Dual Shock 4 like gyro and lights, make sure Dual Shock 4 is excluded from configuration.</li>
   <li>If you display glyps or names for buttons or controller elements in-game or allow remapping of controls in-game. Allowing Steam to configure these controllers allows the user to remap their controls within Steam's interface. This will lead to incorrect element identification in-game as the user may have rebound the A button to the Y button, for example, and there is no way for Rewired to know this.</li>
@@ -1112,7 +1166,7 @@ Int64* args, IntPtr method)
 <hr />
 <h3><a name="steam-controller-not-detected-windows" id="steam-controller-not-detected-windows"></a>Steam Controller is not detected</h3>
 <p><strong>Windows:</strong> <a href="#steam-controller">(See this topic for information on each OS</a>.)</p>
-<p>The Steam Controller automatically emulates an XInput gampad (XBox 360)  on Windows and is supported by XInput, Raw Input, and Direct Input. Unity Input should not be set as the Primary Input Source and Disable Native Input should not be checked. <a href="#steam-controller">Steam Controller settings must be properly configured in Steam in order to expose the Steam Controller as a gamepad.</a> In addition, Steam must be initialized through the Steam API before the Steam Controller can be detected.</p>
+<p>The Steam Controller automatically emulates an XInput gampad (XBox 360)  on Windows and is supported by Windows Gaming Input, XInput, Raw Input, and Direct Input. Unity Input should not be set as the Primary Input Source and Disable Native Input should not be checked. <a href="#steam-controller">Steam Controller settings must be properly configured in Steam in order to expose the Steam Controller as a gamepad.</a> In addition, Steam must be initialized through the Steam API before the Steam Controller can be detected.</p>
 <p><a href="#steam-windows-steam-controller-unity-editor">See this for important information on using the Steam Controller in the Unity Editor on Windows</a>.</p>
 <p>&nbsp;</p>
 <hr />
@@ -1148,7 +1202,7 @@ Int64* args, IntPtr method)
 <h3><a name="steam-streaming-linux" id="steam-streaming-linux"></a><a name="steam-streaming" id="steam-streaming"></a><a name="steam-remote-play" id="steam-remote-play"></a>Steam Remote Play controller support</h3>
 <p>Steam Remote Play only works with devices Steam recognizes<a href="#steam-configured-controllers"></a> and has explicit support for and the <a href="#steam-controller">Steam Controller</a>. It is not possible to use other devices over these Steam features unless Steam has specifically added emulation support for that device. This is not a limitation of Rewired, it is a limitation of Steam.</p>
 <p><strong>Windows<br />
-</strong>Steam Remote Play exposes virtual controllers to the application for all supported remote controllers. Rewired will see these controllers as Steam Controllers when using Raw Input or Direct Input or as XInput controllers when using XInput. Note: When using XInput devices with XInput enabled, Windows is limited to a maximum of 4 devices. This is a limitation of XInput, not Rewired. <a href="KnownIssues.html#more-than-4-xbox-controllers">See this for information on supporting more than 4 XInput devices</a>.</p>
+</strong>Steam Remote Play exposes virtual controllers to the application for all supported remote controllers. Rewired will see these controllers as Steam Controllers when using Raw Input or Direct Input, as XInput controllers when using XInput, and as various different controllers when using Windows Gaming Input (WGI will identify some specific controllers individually such as DS4, Dual Sense, Nintendo Switch Controllers, Xbox 360, and Xbox One. Others will be identified as Steam Controller). Note: When using XInput devices with XInput enabled and Use Windows Gaming Input disabled, Windows is limited to a maximum of 4 devices. This is a limitation of XInput, not Rewired. <a href="KnownIssues.html#more-than-4-xbox-controllers">See this for information on supporting more than 4 XInput devices</a>.</p>
 <p><a href="#steam-windows-steam-controller-unity-editor">See this for important information on using the Steam Controller and Steam-configured devices in the Unity Editor on Windows</a>.</p>
 <p><strong>OSX<br />
 </strong>It is recommended that you leave the input source set to Native for the best device support. </p>

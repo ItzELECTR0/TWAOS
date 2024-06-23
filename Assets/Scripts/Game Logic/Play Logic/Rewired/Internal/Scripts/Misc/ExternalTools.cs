@@ -91,13 +91,21 @@
 namespace Rewired.Utils {
 
     using UnityEngine;
-    using System.Collections;
+    using System;
     using System.Collections.Generic;
     using Rewired.Utils.Interfaces;
 
     /// <exclude></exclude>
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public class ExternalTools : IExternalTools {
+
+#if !UNITY_2021_PLUS || (!UNITY_STANDALONE_WIN && !UNITY_EDITOR) || !UNITY_EDITOR_WIN
+        // Provide an empty implementation if the platform is not Windows Standalone or the required version
+        public void WindowsStandalone_ForwardRawInput(IntPtr rawInputHeaderIndices, IntPtr rawInputDataIndices, uint indicesCount, IntPtr rawInputData, uint rawInputDataSize)
+        {
+
+        }
+#endif
 
         private static System.Func<object> _getPlatformInitializerDelegate;
         public static System.Func<object> getPlatformInitializerDelegate {
@@ -201,10 +209,11 @@ namespace Rewired.Utils {
             return string.Empty;
 #endif
         }
+        
 
         public bool IsEditorSceneViewFocused() {
 #if UNITY_EDITOR
-            ArrayList sceneViews = UnityEditor.SceneView.sceneViews;
+            System.Collections.ArrayList sceneViews = UnityEditor.SceneView.sceneViews;
             if (sceneViews == null) return false;
             string focusedWindowTitle = GetFocusedEditorWindowTitle();
             for (int i = 0; i < sceneViews.Count; i++) {
