@@ -55,7 +55,7 @@ I wish to finish the first one by 2027, the rest following along not too long af
 
 ## MATURE CONTENT
 
-The Wonderful Adventures of Sip contains intense battles, strong language, moments of gore, and psychological horror elements.
+The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
 
 ## CREATOR's SOCIALS
 
