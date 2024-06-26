@@ -1,0 +1,20 @@
+﻿
+#include "./../../../GPUInstancer/Resources/Compute/Include/PlatformDefines.hlsl"
+
+#pragma kernel CSAsyncBoneUpdate
+
+uniform RWStructuredBuffer<float4x4> asyncBoneUpdateDataBuffer;
+uniform StructuredBuffer<float4x4> gpuiAnimationBuffer;
+uniform StructuredBuffer<int> asyncBoneUpdateFilterBuffer;
+uniform uint totalNumberOfBones;
+uniform uint instanceCount;
+uniform uint boneFilterCount;
+
+[numthreads(GPUI_THREADS_2D, GPUI_THREADS_2D, 1)]
+void CSAsyncBoneUpdate(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= instanceCount || id.y >= boneFilterCount)
+        return;
+    
+    asyncBoneUpdateDataBuffer[id.x * boneFilterCount + id.y] = gpuiAnimationBuffer[id.x * totalNumberOfBones + asyncBoneUpdateFilterBuffer[id.y]];
+}

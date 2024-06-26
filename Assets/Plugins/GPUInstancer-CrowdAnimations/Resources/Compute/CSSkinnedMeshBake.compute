@@ -1,0 +1,48 @@
+﻿
+#include "./../../../GPUInstancer/Resources/Compute/Include/PlatformDefines.hlsl"
+
+#pragma kernel CSAnimationToTexture
+#pragma kernel CSAnimationTextureToBuffer
+
+RWTexture2D<float4> outputTexture;
+Texture2D<float4> inputTexture;
+RWStructuredBuffer<float4x4> boneData;
+uniform uint dataCount;
+uniform uint2 textureSize;
+
+[numthreads(GPUI_THREADS, 1, 1)]
+void CSAnimationToTexture(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= dataCount)
+        return;
+    
+    uint indexX = id.x % textureSize.x;
+    uint indexY = floor(id.x / float(textureSize.x)) * 4;
+    
+    float4x4 bone = boneData[id.x];
+
+    outputTexture[uint2(indexX, indexY + 0)] = bone._11_21_31_41;
+    outputTexture[uint2(indexX, indexY + 1)] = bone._12_22_32_42;
+    outputTexture[uint2(indexX, indexY + 2)] = bone._13_23_33_43;
+    outputTexture[uint2(indexX, indexY + 3)] = bone._14_24_34_44;
+}
+
+[numthreads(GPUI_THREADS, 1, 1)]
+void CSAnimationTextureToBuffer(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= dataCount)
+        return;
+    
+    uint indexX = id.x % textureSize.x;
+    uint indexY = floor(id.x / float(textureSize.x)) * 4;
+    
+    float4x4 bone;
+    bone._11_21_31_41 = inputTexture[uint2(indexX, indexY + 0)];
+    bone._12_22_32_42 = inputTexture[uint2(indexX, indexY + 1)];
+    bone._13_23_33_43 = inputTexture[uint2(indexX, indexY + 2)];
+    bone._14_24_34_44 = inputTexture[uint2(indexX, indexY + 3)];
+
+    boneData[id.x] = bone;
+
+    
+}

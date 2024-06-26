@@ -6,7 +6,15 @@
 
 # Deliberately ignored directories
 [Aa]ssets/3D/Licensed/
+[Aa]ssets/Plugins/FMOD/Cache/
 [Uu]serSettings/
+
+# Deliberately ignored files
+[Aa]ssets/Plugins/FMOD/Cache.meta
+[Aa]ssets/3D/Licensed.meta
+[Aa]ssets/StreamingAssets/**/*.bank
+[Aa]ssets/StreamingAssets/**/*.bank.meta
+fmod_editor.log
 
 # Ignore VS Code directory
 .vscode/

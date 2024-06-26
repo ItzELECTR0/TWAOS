@@ -1,0 +1,18 @@
+﻿
+#include "./../../../GPUInstancer/Resources/Compute/Include/PlatformDefines.hlsl"
+
+#pragma kernel CSOptionalRendererBufferCopy
+
+uniform RWStructuredBuffer<float4x4> childInstanceData;
+uniform StructuredBuffer<float4x4> parentInstanceData;
+uniform uint instanceCount;
+
+[numthreads(GPUI_THREADS, 1, 1)]
+void CSOptionalRendererBufferCopy(uint3 id : SV_DispatchThreadID)
+{
+    if (id.x >= instanceCount)
+        return;
+    
+    if (length(childInstanceData[id.x]._11_12_13) > 0)
+        childInstanceData[id.x] = parentInstanceData[id.x];
+}
