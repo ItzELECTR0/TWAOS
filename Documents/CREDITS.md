@@ -2,7 +2,7 @@
 
 # <div>The Wonderful Adventures Of Sip<br>Credits and Attributions</div>
 
-<div><h2>[ELECTRO]</h2>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>
+<div><b>[ELECTRO]</b><br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>
 <br>
 <diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
