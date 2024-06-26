@@ -1,3 +1,5 @@
+<div align="center">
+
 # The Wonderful Adventures Of Sip - Credits and Attributions
 
 [ELECTRO]
@@ -57,3 +59,5 @@ Yenikholic
 
 Sketchfab Models are under fair use of the CC BY 4.0 License
 Credits to their creators above
+
+</div>
