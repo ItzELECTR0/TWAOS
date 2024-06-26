@@ -2,10 +2,7 @@
 
 # <div>The Wonderful Adventures Of Sip<br>Credits and Attributions</div>
 
-<div>[ELECTRO]<br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>  
-
-
-<diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
+<div>[ELECTRO]<br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div><br><diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
 # |Voice Actors|
 <div>Kiera Rhodes - Voice Of Neon<br>Abbie Frushour - Voice Of Chloe</div>
