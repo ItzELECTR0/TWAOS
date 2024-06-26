@@ -258,7 +258,7 @@
         "com.unity.render-pipelines.core": "10.2.2",
         "com.unity.shadergraph": "10.2.2"
       },
-      "hash": "ddbd7fe7ec9aeef54377ee79d128e46c1eeb183e"
+      "hash": "c5c1b749b38686ec007a4715319e2e6dfeee652a"
     },
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
@@ -458,6 +458,43 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.microsoft.gdk": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.microsoft.gdk.tools": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.muse.common": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0",
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.muse.texture": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.muse.common": "1.0.0",
+        "com.unity.shadergraph": "14.0.7"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.mono-cecil": {
@@ -737,6 +774,16 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.toolchain.macos-arm64-linux-x86_64": {
+      "version": "2.0.3",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.sysroot": "2.0.10",
+        "com.unity.sysroot.linux-x86_64": "2.0.9"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.toolchain.macos-x86_64-linux-x86_64": {
       "version": "2.0.9",
       "depth": 0,
@@ -810,21 +857,21 @@
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.vrmc.vrmshaders": "0.123.0",
-        "com.vrmc.gltf": "0.123.0",
+        "com.vrmc.vrmshaders": "0.124.0",
+        "com.vrmc.gltf": "0.124.0",
         "com.unity.ugui": "1.0.0"
       },
-      "hash": "3104b4c75511032765a21ca4365e2d3fe78030fc"
+      "hash": "1e98f1e7832b4eba86c2c1c06c0598bed743d688"
     },
     "com.vrmc.vrm": {
       "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM10",
       "depth": 0,
       "source": "git",
       "dependencies": {
-        "com.vrmc.vrmshaders": "0.123.0",
-        "com.vrmc.gltf": "0.123.0"
+        "com.vrmc.vrmshaders": "0.124.0",
+        "com.vrmc.gltf": "0.124.0"
       },
-      "hash": "3104b4c75511032765a21ca4365e2d3fe78030fc"
+      "hash": "1e98f1e7832b4eba86c2c1c06c0598bed743d688"
     },
     "com.vrmc.vrmshaders": {
       "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders",
@@ -833,7 +880,7 @@
       "dependencies": {
         "com.unity.modules.imageconversion": "1.0.0"
       },
-      "hash": "3104b4c75511032765a21ca4365e2d3fe78030fc"
+      "hash": "1e98f1e7832b4eba86c2c1c06c0598bed743d688"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
