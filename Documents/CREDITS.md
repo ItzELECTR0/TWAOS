@@ -4,7 +4,7 @@
 
 <div><b>[ELECTRO]</b><br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>
 <br>
-<diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
+<diV><b>[Varrow]</b><br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
 ## |Voice Actors|
 <div>Kiera Rhodes - Voice Of Neon<br>Abbie Frushour - Voice Of Chloe</div>
