@@ -4,6 +4,7 @@
 
 <div>[ELECTRO]<br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>  
 
+
 <diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
 # |Voice Actors|
