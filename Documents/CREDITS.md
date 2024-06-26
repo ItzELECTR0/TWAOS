@@ -1,6 +1,7 @@
 <div align="center">
 
-# The Wonderful Adventures Of Sip - Credits and Attributions
+# The Wonderful Adventures Of Sip 
+# Credits and Attributions
 
 [ELECTRO]
 Voice Of Sip
