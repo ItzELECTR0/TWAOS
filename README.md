@@ -29,12 +29,24 @@ The characters of the game are spheres. The world they live in is one of powers.
 
 ## THE STORY
 
-Short placeholder explination: Sip is one rejected by the world and his family, with what is considered the weakest power of all. He partakes in the biggest tragedy of his life and is forced to run away.
-The story is undergoing major rewriting. Consider the Steam and Itch.io descriptions invalid for now. 
+Welcome to 2066, where every individual is born with a unique power.
+You take on the role of Sip Dorian, a boy who appears to be cursed with the weakest of all abilities: lightning.
+A gift from the Electrinity, a deity who praises itself for what it created in Sip.
+Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him by the Electrinity.
+After what it told him, he just wanted a peaceful existence. But it refused.
+Guided by mystery, Sip tries to avoid confrontation, and unnecessary attention, but that doesn't last long.
+And he is forced to face the dark truths about his world and himself.
+Will he rise to become the hero the world needs, will he finally feel the way he wants to? Or will he remain the same, forever.
 
 ## THE GAMEPLAY
 
-The player is set in a 3D world controlled with a third-person camera. The environment is closed down and partially interactable. You will unlock the use of Sip's supernatural lightning powers and be able to use them at will to either be the hero or become the very thing you swore to destroy. The game will make you experience Sip's life from that point forward, and it is up to you to guide him.
+Immerse yourself in a richly detailed 3D world from a third-person perspective, where every choice shapes Sip's destiny.
+Explore closed environments filled with interactive elements and hidden secrets.
+Unlock and master Sip's supernatural lightning powers, capable of manipulating any form of energy.
+Engage in combat and explore, using Sip's abilities to either protect the innocent or unleash havoc.
+Your decisions will determine whether Sip becomes a beacon of hope or a force of destruction.
+Experience a gripping narrative that blends heart-wrenching drama with psychological horror.
+As Sip's enigmatic mind and mysterious smile unveil the true extent of his power. 
 
 ## DEVELOPMENT PLANS
 
@@ -43,8 +55,7 @@ I wish to finish the first one by 2027, the rest following along not too long af
 
 ## MATURE CONTENT
 
-The game contains battles, constant profanity, and some gore that can be disabled.
-Some aspects may be classified as light psychological horror.
+The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
 
 ## CREATOR's SOCIALS
 
