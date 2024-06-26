@@ -2,25 +2,25 @@
 
 # <div>The Wonderful Adventures Of Sip<br>Credits and Attributions</div>
 
-<div>[ELECTRO]<br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>
+<div><h2>[ELECTRO]</h2><br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>
 <br>
 <diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
-# |Voice Actors|
+## |Voice Actors|
 <div>Kiera Rhodes - Voice Of Neon<br>Abbie Frushour - Voice Of Chloe</div>
 
-# |Soundtrack Composers|  
+## |Soundtrack Composers|  
 Quentin Charbit  
 
-# |2D Artists|  
+## |2D Artists|  
 Quixel  
 
-# |3D Artists|  
+## |3D Artists|  
 WTF Fox
 
-# |Sketchfab Creators|  
+## |Sketchfab Creators|  
 <div>Allay Design<br>Algirdas Lalys<br>Ankledot<br>Ap3design<br>Daniel Cardona<br>Doaa Sheha<br>Dylanheyes<br>Edouard Angebault<br>Faheem Yusuf<br>Janexx<br>Mehdi Shahsavan<br>Misha.Yast71<br>₦₥₵ ฿₵<br>Polybean<br>Slls666<br>Smoothie 3D<br>T-Art<br>Tobei<br>Townhill<br>TriosStudents<br>Warkarma<br>Yanez Designs<br>Yenikholic</div>
 
-# <div>Sketchfab Models are under fair use of the CC BY 4.0 License<br>Credits to their creators above</div>  
+### <div>Sketchfab Models are under fair use of the CC BY 4.0 License<br>Credits to their creators above</div>
 
 </div>
