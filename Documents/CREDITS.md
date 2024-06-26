@@ -1,64 +1,26 @@
 <div align="center">
 
-# The Wonderful Adventures Of Sip 
-# Credits and Attributions
+# <div>The Wonderful Adventures Of Sip<br>Credits and Attributions</div>
 
-[ELECTRO]
-Voice Of Sip
-Solo Developer
-Story Writer
-Video Editor
+<div>[ELECTRO]<br>Voice Of Sip<br>Solo Developer<br>Story Writer<br>Video Editor</div>  
 
-
-[Varrow]
-Marketing
-Story Writer
-Video Editor
-Web Developer
-
+<diV>[Varrow]<br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
 # |Voice Actors|
-Kiera Rhodes - Voice Of Neon
-Abbie Frushour - Voice Of Chloe
+<div>Kiera Rhodes - Voice Of Neon<br>Abbie Frushour - Voice Of Chloe</div>
 
+# |Soundtrack Composers|  
+Quentin Charbit  
 
-# |Soundtrack Composers|
-Quentin Charbit
+# |2D Artists|  
+Quixel  
 
-
-# |2D Artists|
-Quixel
-
-
-# |3D Artists|
+# |3D Artists|  
 WTF Fox
 
-# |Sketchfab Creators|
-Allay Design
-Algirdas Lalys
-Ankledot
-Ap3design
-Daniel Cardona
-Doaa Sheha
-Dylanheyes
-Edouard Angebault
-Faheem Yusuf
-Janexx
-Mehdi Shahsavan
-Misha.Yast71
-₦₥₵ ฿₵
-Polybean
-Slls666
-Smoothie 3D
-T-Art
-Tobei
-Townhill
-TriosStudents
-Warkarma
-Yanez Designs
-Yenikholic
+# |Sketchfab Creators|  
+<div>Allay Design<br>Algirdas Lalys<br>Ankledot<br>Ap3design<br>Daniel Cardona<br>Doaa Sheha<br>Dylanheyes<br>Edouard Angebault<br>Faheem Yusuf<br>Janexx<br>Mehdi Shahsavan<br>Misha.Yast71<br>₦₥₵ ฿₵<br>Polybean<br>Slls666<br>Smoothie 3D<br>T-Art<br>Tobei<br>Townhill<br>TriosStudents<br>Warkarma<br>Yanez Designs<br>Yenikholic</div>
 
-Sketchfab Models are under fair use of the CC BY 4.0 License
-Credits to their creators above
+# <div>Sketchfab Models are under fair use of the CC BY 4.0 License<br>Credits to their creators above</div>  
 
 </div>
