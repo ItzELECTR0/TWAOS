@@ -57,7 +57,7 @@ I wish to finish the first one by 2027, the rest following along not too long af
 
 The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
 
-## Documents
+## Documentation
 
 [License](LICENSE.md)
 
