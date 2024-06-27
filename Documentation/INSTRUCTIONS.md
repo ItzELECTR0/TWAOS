@@ -3,7 +3,7 @@
 ## HOW TO BUILD FROM SOURCE
 
 <div>1 - Clone the project.
-<br>2 - Install all dependencies specified [here](./DEPENDENCIES.md)
+<br>2 - Install all dependencies specified [here](https://github.com/ItzELECTR0/TWAOS/blob/main/Documentation/DEPENDENCIES.md)
 <br>3 - Add the project to Unity Hub to open it
 <br>4 - Once inside the project, you might want to disable the steam DRM
 <br>4.1 - To disable the DRM, first go to File > Build Settings to see all of the active scenes
