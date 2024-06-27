@@ -29,14 +29,14 @@ The characters of the game are spheres. The world they live in is one of powers.
 
 ## THE STORY
 
-Welcome to 2066, where every individual is born with a unique power.
-You take on the role of Sip Dorian, a boy who appears to be cursed with the weakest of all abilities: lightning.
-A gift from the Electrinity, a deity who praises itself for what it created in Sip.
+Welcome to <b>2066</b>, where every individual is born with a unique <b>power</b>.
+You take on the role of <b>Sip</b> Dorian, a boy who appears to be cursed with the weakest of all abilities: <b>lightning</b>.
+A gift from the <b>Electrinity</b>, a deity who praises itself for what it created in Sip.
 Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him by the Electrinity.
 After what it told him, he just wanted a peaceful existence. But it refused.
-Guided by mystery, Sip tries to avoid confrontation, and unnecessary attention, but that doesn't last long.
+Guided by the <b>mystery</b> of his mind, Sip tries to avoid confrontation, and unnecessary attention, but that doesn't last long.
 And he is forced to face the dark truths about his world and himself.
-Will he rise to become the hero the world needs, will he finally feel the way he wants to? Or will he remain the same, forever.
+Will he rise to become the hero the world needs? Will he finally <b>feel</b> the way he wants to? Or will he remain the <b>same</b>. Forever.
 
 ## THE GAMEPLAY
 
