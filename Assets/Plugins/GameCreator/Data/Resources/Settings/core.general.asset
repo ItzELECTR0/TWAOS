@@ -22,7 +22,7 @@ MonoBehaviour:
       data:
         m_Save:
           m_System:
-            rid: 1362763433269526672
+            rid: 2259345312571195524
           m_Load: 0
           m_Scene:
             m_Property:
@@ -33,9 +33,12 @@ MonoBehaviour:
           musicMixer: {fileID: -4537087872476962920, guid: 808a9b61b62971b4d96ff81751d0cbc9, type: 2}
           speechMixer: {fileID: 0}
           userInterfaceMixer: {fileID: 7964425826882677398, guid: 808a9b61b62971b4d96ff81751d0cbc9, type: 2}
-    - rid: 1362763433269526672
-      type: {class: StoragePlayerPrefs, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
-      data: 
     - rid: 1362763433269526673
       type: {class: GetSceneActive, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
       data: 
+    - rid: 2259345312571195524
+      type: {class: StorageJsonFile, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
+      data:
+        m_Encrypt:
+          m_IsEnabled: 0
+          m_Value: Colloportus
