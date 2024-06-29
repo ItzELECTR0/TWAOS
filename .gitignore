@@ -9,12 +9,11 @@
 [Aa]ssets/Plugins/FMOD/Cache/
 [Uu]serSettings/
 
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/[Aa]ssets/**/*.meta
+
 # Deliberately ignored files
-[Aa]ssets/Plugins/FMOD/Cache.meta
-[Aa]ssets/3D/Licensed.meta
 [Aa]ssets/StreamingAssets/**/*.bank
-[Aa]ssets/StreamingAssets/**/*.bank.meta
-fmod_editor.log
 
 # Ignore VS Code directory
 .vscode/
