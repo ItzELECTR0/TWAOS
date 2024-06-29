@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -70,7 +70,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -100,6 +100,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -122,20 +123,20 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
             <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Deployment<!-- InstanceEndEditable -->
@@ -169,6 +170,69 @@
 </ul>
 <p>For Linux, after installing the libraries above, you can copy the libSDL2-2.0.so.0 file from the Assets/Plugins/x86 or Assets/Plugins/x86_64 folder. Unity will automatically copy the Windows and OSX libraries on build to the right locations.</p>
     <p>NOTE: Unity 4.x free does not officially allow you to include native libraries while Unity 5+ does. There are workarounds available for Unity 4.x that involve placing the library in the root folder of your editor project and manually copying the library to your final game build. The exact procedure depends on your target platform. There are resources available by searching the Unity forums. Or <a href="https://guavaman.com/rewired#support">contact support</a> for more information.</p>
+    <p>&nbsp;</p>
+    <hr />
+<h2>Build Minimum OS Version Requirements    </h2>
+<p>&nbsp;</p>
+    <table width="100%" border="1">
+      <tr>
+        <td><strong>Windows Standalone</strong></td>
+        <td>&nbsp;</td>
+        </tr>
+      <tr>
+        <td>Raw Input</td>
+        <td>Unity base requirements</td>
+      </tr>
+      <tr>
+        <td>Direct Input</td>
+        <td>Windows 10 version 1803 (Build 17134)</td>
+        </tr>
+      <tr>
+        <td>Windows Gaming Input</td>
+        <td>Windows 10 version 1809 (Build 17763)</td>
+        </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+      <tr>
+        <td><strong>Windows Universal</strong></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Native</td>
+        <td>Windows 10 version 1709 (Build 16299)</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><strong>MacOS</strong></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Native</td>
+        <td>Unity base requirements</td>
+      </tr>
+      <tr>
+        <td>Game Controller Framework</td>
+        <td>MacOS 10.11</td>
+        </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        </tr>
+      <tr>
+        <td><strong>Linux</strong></td>
+        <td>&nbsp;</td>
+        </tr>
+      <tr>
+        <td>Native</td>
+        <td>Ubuntu 12.04</td>
+        </tr>
+  </table>
+    <p>&nbsp;</p>
     <div class="bottom-pager clearfix">
       <a class="back-button" href="BasicUsage.html" title="Basic Usage"><span class="button-img"></span>Basic Usage</a>
       <a class="forward-button" href="BestPractices.html" title="Best Practices"><span class="button-img"></span>Best Practices</a>
@@ -179,8 +243,8 @@
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>

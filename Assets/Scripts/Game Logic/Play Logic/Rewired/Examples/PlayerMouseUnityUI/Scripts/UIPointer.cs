@@ -1,7 +1,7 @@
 ﻿// Copyright (c) 2018 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
 
 #region Defines
-#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_2024 || UNITY_2025
+#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_6000 || UNITY_6000_0_OR_NEWER
 #define UNITY_2020_PLUS
 #endif
 #if UNITY_2019 || UNITY_2020_PLUS
@@ -47,6 +47,7 @@
 #pragma warning disable 0618
 #pragma warning disable 0649
 #pragma warning disable 0067
+#pragma warning disable 0414
 #endregion
 
 namespace Rewired.Demos {

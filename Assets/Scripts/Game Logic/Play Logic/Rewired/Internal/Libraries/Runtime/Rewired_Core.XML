@@ -6188,6 +6188,21 @@
             Updates in the OnGUI loop.
             </summary>
         </member>
+        <member name="T:Rewired.Config.UpdateMode">
+            <summary>
+            Rewired update mode.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.UpdateMode.Automatic">
+            <summary>
+            Update is called automatically.
+            </summary>
+        </member>
+        <member name="F:Rewired.Config.UpdateMode.Manual">
+            <summary>
+            Update must be called manually.
+            </summary>
+        </member>
         <member name="T:Rewired.Config.ThrottleCalibrationMode">
             <summary>
             Throttle calibration mode.
@@ -7552,6 +7567,35 @@
             </summary>
             <param name="elementId">The id of the Button. The id can be found in the Rewired Input Manager Custom Controller properties.</param>
         </member>
+        <member name="T:Rewired.ControllerExtensions.CustomControllerExtension">
+            <summary>
+            Base class for a user-defined controller extension.
+            </summary>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.CustomControllerExtension.OnUpdateData(Rewired.UpdateLoopType)">
+            <summary>
+            Called when data is updated.
+            </summary>
+            <param name="updateLoop">The current update loop type.</param>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.CustomControllerExtension.OnSourceUpdated(Rewired.Interfaces.IControllerExtensionSource)">
+            <summary>
+            Called when the source is updated.
+            </summary>
+            <param name="source">The source.</param>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.CustomControllerExtension.GetSource">
+            <summary>
+            Get the Controller Extension source.
+            </summary>
+            <returns>Controller Extension source</returns>
+        </member>
+        <member name="M:Rewired.ControllerExtensions.CustomControllerExtension.ShallowCopy">
+            <summary>
+            Makes a shallow copy of the object.
+            </summary>
+            <returns>Shallow copy of the object.</returns>
+        </member>
         <member name="T:Rewired.ControllerExtensions.IDualSenseExtension">
             <summary>
             Common interface for PS5 platform and desktop platform DualSense Controller Extensions.
@@ -8794,6 +8838,11 @@
             Battery level as a percentage. [0 - 100]
             </summary>
         </member>
+        <member name="P:Rewired.ControllerExtensions.DualShock4Extension.batteryCharging">
+            <summary>
+            Is the battery charging?
+            </summary>
+        </member>
         <member name="P:Rewired.ControllerExtensions.DualShock4Extension.Rewired#ControllerExtensions#IHIDControllerExtension#vendorId">
             <summary>
             The vendor id of the device.
@@ -9698,7 +9747,7 @@
             DOES check whether any buttons or axes have been assigned though.
             </summary>
         </member>
-        <member name="P:Rewired.Data.Mapping.HardwareJoystickMap.Platform.variants_base">
+        <member name="M:Rewired.Data.Mapping.HardwareJoystickMap.Platform.GetVariants">
             <summary>
             Gets a list of all Variants. NOT NULL FILTERED! Safe to use to get varaint index.
             </summary>
@@ -9713,6 +9762,26 @@
         </member>
         <member name="T:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base">
             <exclude></exclude>
+        </member>
+        <member name="F:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base.axisCount">
+            <summary>
+            The number of axes reported by the controller. If the value reported by the controller differs from this value, the controller is not a match. [-1 to match to any number of axes]
+            </summary>
+        </member>
+        <member name="F:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base.buttonCount">
+            <summary>
+            The number of buttons reported by the controller. If the value reported by the controller differs from this value, the controller is not a match. [-1 to match to any number of buttons]
+            </summary>
+        </member>
+        <member name="F:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base.disabled">
+            <summary>
+            If checked, this entire platform map will be skipped and will not match to any controller.
+            </summary>
+        </member>
+        <member name="F:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base.tag">
+            <summary>
+            User-defined string. May have functionality on some input sources but not on others.
+            </summary>
         </member>
         <member name="P:Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base.isAllowed">
             <summary>
@@ -9900,6 +9969,11 @@
         </member>
         <member name="T:Rewired.Data.Mapping.HardwareJoystickMap.Platform_Custom.MatchingCriteria">
             <exclude></exclude>
+        </member>
+        <member name="F:Rewired.Data.Mapping.HardwareJoystickMap.Platform_Custom.MatchingCriteria.alwaysMatch">
+            <summary>
+            If enabled, this will match to every controller regardless of other matching criteria.
+            </summary>
         </member>
         <member name="T:Rewired.Data.Mapping.HardwareJoystickMap.Platform_Custom.Elements">
             <exclude></exclude>
@@ -10358,6 +10432,22 @@
             Configuration variables for the Input Manager.
             </summary>
             <exclude></exclude>
+        </member>
+        <member name="F:Rewired.Data.ConfigVars.PlatformVars.disableKeyboard">
+            <summary>
+            Determines if the Keyboard is disabled on start.
+            </summary>
+        </member>
+        <member name="F:Rewired.Data.ConfigVars.PlatformVars.disableMouse">
+            <summary>
+            Determines if the Mouse is disabled on start.
+            </summary>
+        </member>
+        <member name="F:Rewired.Data.ConfigVars.PlatformVars.ignoreInputWhenAppNotInFocus">
+            <summary>
+            Determines if input should be ignored when the application is not in focus.
+            This may have no effect on some platforms.
+            </summary>
         </member>
         <member name="T:Rewired.Data.ConfigVars.EditorVars">
             <summary>
@@ -12378,22 +12468,759 @@
             </summary>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource">
-            <exclude></exclude>
+            <summary>
+            Custom input source base class.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.#ctor(System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="inputSource">Input source id.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.#ctor(System.Int32,Rewired.Interfaces.IUnifiedKeyboardSource,Rewired.Interfaces.IUnifiedMouseSource)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="inputSource">Input source id.</param>
+            <param name="unifiedKeyboardSource">Unified keyboard source. If null, UnityEngine.Input will be used for keyboard input.</param>
+            <param name="unifiedMouseSource">Unified mouse source.  If null, UnityEngine.Input will be used for mouse input.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.OnInitialize">
+            <summary>
+            This is called once automatically during Rewired initialization.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.AddJoystick(Rewired.Platforms.Custom.CustomInputSource.Joystick)">
+            <summary>
+            Adds a joystick to the list of joysticks.
+            </summary>
+            <param name="joystick">The joystick to add.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.RemoveJoystick(Rewired.Platforms.Custom.CustomInputSource.Joystick)">
+            <summary>
+            Removes a joystick from the list of joysticks.
+            </summary>
+            <param name="joystick">The joystick to remove.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.GetJoysticks">
+            <summary>
+            Gets a read-only list of all joysticks.
+            </summary>
+            <returns>Read-only list of all joysticks.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.OnJoystickConnected">
+            <summary>
+            Event to call when a joystick is connected.
+            This must be called by a subclass when a joystick is disconnected.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.OnJoystickDisconnected">
+            <summary>
+            Event to call when a joystick is disconnected.
+            This must be called by a subclass when a joystick is disconnected.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Dispose">
+            <summary>
+            Dispose.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Finalize">
+            <summary>
+            Destructor.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Dispose(System.Boolean)">
+            <summary>
+            Dispose.
+            </summary>
+            <param name="disposing">Value that determines if dispose was called by Dispose or by the destructor.</param>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.isReady">
+            <summary>
+            Determines if the input source is ready.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Update">
+            <summary>
+            Called once per enabled update loop frame.
+            </summary>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource.Controller">
-            <exclude></exclude>
+            <summary>
+            Custom input source Controller base class.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Controller.customName">
+            <summary>
+            Custom name for this controller, if any.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Controller.isConnected">
+            <summary>
+            Determines if the controller is connected.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Controller.deviceName">
+            <summary>
+            The device name of the controller.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Controller.customIdentifier">
+            <summary>
+            A user-defined object containing identifying information for this controller.
+            This can be used to match to a controller definition.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Controller.deviceInstanceGuid">
+            <summary>
+            Unique persistent device guid of the controller.
+            Only set this if controllers can be uniquely identified on this platform across application sessions and system power cycles.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Controller.#ctor(System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="deviceName">The name of this device.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Controller.Disconnect">
+            <summary>
+            Disconnect the controller.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Controller.Connect">
+            <summary>
+            Connect the controller.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Controller.Update">
+            <summary>
+            Update function. Called when input should be updated.
+            </summary>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource.Joystick">
-            <exclude></exclude>
+            <summary>
+            Joystick base class.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.systemId">
+            <summary>
+            The system id of the joystick.
+            This value represents a unique device identifier, either assigned directly by the system or
+            a derived value based on some unique system-defined identifier.
+            Example: If the system provides a string path for a particular device, a long value can be
+            derived from the path by assigining an id to each unique path string.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.unityId">
+            <summary>
+            The UnityEngine.Input joystick id (1-based index) of this joystick, if any.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.Axes">
+            <summary>
+            The list of Axes. Generally this should not be used.
+            Use <see cref="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.GetAxisValue(System.Int32)"/> and <see cref="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.SetAxisValue(System.Int32,System.Single)"/> instead.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.Buttons">
+            <summary>
+            The list of Buttons. Generally this should not be used.
+            Use <see cref="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.GetButtonValue(System.Int32)"/> and <see cref="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.SetButtonValue(System.Int32,System.Boolean)"/> instead.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.supportsVibration">
+            <summary>
+            Determines whether this joystick supports vibration.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.extension">
+            <summary>
+            The Controller Extension.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.buttonCount">
+            <summary>
+            The number of buttons.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Joystick.axisCount">
+            <summary>
+            The number of axes.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.#ctor(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="deviceName">The name of the controller.</param>
+            <param name="systemId">The system id.</param>
+            <param name="axisCount">The number of axes.</param>
+            <param name="buttonCount">The number of buttons.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomInputSource.Joystick.#ctor(System.String,System.Nullable{System.Int64},System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Constructor.
+            For UnityEngine.Input joystick input source.
+            </summary>
+            <param name="deviceName">The name of the controller.</param>
+            <param name="systemId">The system id.</param>
+            <param name="unityId">The unity joystick id, if any.</param>
+            <param name="axisCount">The number of axes.</param>
+            <param name="buttonCount">The number of buttons.</param>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource.Element">
-            <exclude></exclude>
+            <summary>
+            Controller element base class.
+            </summary>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource.Axis">
-            <exclude></exclude>
+            <summary>
+            Controller axis element.
+            </summary>
         </member>
         <member name="T:Rewired.Platforms.Custom.CustomInputSource.Button">
-            <exclude></exclude>
+            <summary>
+            Controller button element.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomInputSource.Button.value">
+            <summary>
+            The current value.
+            Deprecated. Use <see cref="P:Rewired.Platforms.Custom.CustomInputSource.Button.boolValue"/> instead.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Button.boolValue">
+            <summary>
+            Gets or sets the value.
+            This can be called multiple times per update if processing a queue of input events.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomInputSource.Button.floatValue">
+            <summary>
+            Floating-point value of the button.
+            This is only used if the button type is Pressure Sensitive.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformInitOptions">
+            <summary>
+            Options required to configure a custom platform.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInitOptions.platformId">
+            <summary>
+            (Required) A value that identifies the custom plaform. This is returned in callbacks so the platform can be identified by your code.
+            All values are valid except -1.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInitOptions.platformIdentifierString">
+            <summary>
+            (Required) String value used to identify the platform in hardware identifier strings most commonly used for saving Controller Maps for unrecognized controllers.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInitOptions.inputSource">
+            <summary>
+            (Required) The custom input source implementation.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInitOptions.hardwareJoystickMapCustomPlatformMapProvider">
+            <summary>
+            (Required) An object that gets the controller definition platform map. When a controller is detected, the controller definitions will be searched to find
+            a matching definition. This delegate provides the hardware matching criteria to determine if the device matches and the element mapping information
+            to map from hardware elements to Element Identifiers.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInitOptions.configVars">
+            <summary>
+            (Required) Various configuration variables for the current platform.
+            If no value is set, default values will be used.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformInitOptions.#ctor">
+            <summary>
+            Contstructor.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformInitOptions.#ctor(Rewired.Platforms.Custom.CustomPlatformInitOptions)">
+            <summary>
+            Copy constructor.
+            </summary>
+            <param name="other">Options to copy.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if other is null.</exception>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformConfigVars">
+            <summary>
+            Platform vars for a custom platform
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformConfigVars.useNativeKeyboard">
+            <summary>
+            Should native keyboard input be used, if available.
+            If false, fallback keyboard input handling will be used.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformConfigVars.useNativeMouse">
+            <summary>
+            Should native mouse input be used, if available.
+            If false, fallback mouse input handling will be used.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.ICustomPlatformInitializer">
+            <summary>
+            Interface for initializing a custom platform.
+            Add a Component on the Rewired Input Manager GameObject that implements this interface
+            to initialize custom platforms.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.ICustomPlatformInitializer.GetCustomPlatformInitOptions">
+            <summary>
+            Gets custom platform initialization options.
+            </summary>
+            <returns>Custom platform initialization options</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformInputSource">
+            <summary>
+            Custom platform input source base class.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformInputSource.#ctor(Rewired.Platforms.Custom.CustomPlatformConfigVars,Rewired.Platforms.Custom.CustomPlatformInputSource.InitOptions)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="configVars">Config vars</param>
+            <param name="initOptions">Initialization options for the custom platform input source.</param>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformInputSource.Joystick">
+            <summary>
+            Joystick base class.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformInputSource.Joystick.#ctor(System.String,System.Int64,System.Int32,System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="deviceName">The name of the controller.</param>
+            <param name="systemId">The system id.</param>
+            <param name="axisCount">The number of axes.</param>
+            <param name="buttonCount">The number of buttons.</param>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformInputSource.InitOptions">
+            <summary>
+            Initialization options for the custom platform input source.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInputSource.InitOptions.unifiedKeyboardSource">
+            <summary>
+            Unified keyboard input source. If null, UnityEngine.Input will be used for keyboard input.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.CustomPlatformInputSource.InitOptions.unifiedMouseSource">
+            <summary>
+            Unified mouse input source.  If null, UnityEngine.Input will be used for mouse input.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="axisCount">Number of axes.</param>
+            <param name="buttonCount">Number of buttons.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.Update">
+            <summary>
+            Called once per enabled update loop frame.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.axisCount">
+            <summary>
+            Number of axes.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.buttonCount">
+            <summary>
+            Number of buttons / keys.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.controllerExtension">
+            <summary>
+            Controller extension.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.OnInitialize">
+            <summary>
+            This is called once automatically during Rewired initialization.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.Clear">
+            <summary>
+            Clears input values.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.GetAxisValue(System.Int32)">
+            <summary>
+            Gets the axis value at the index.
+            </summary>
+            <param name="index">Axis index</param>
+            <returns>Axis value at the index</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.GetButtonValue(System.Int32)">
+            <summary>
+            Gets the button value at the index.
+            </summary>
+            <param name="index">Button index</param>
+            <returns>Button value at the index</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.SetAxisValue(System.Int32,System.Single)">
+            <summary>
+            Sets the axis value at the index.
+            </summary>
+            <param name="index">Axis index</param>
+            <param name="value">Axis value</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.SetAxisValues(System.Collections.Generic.IList{System.Single})">
+            <summary>
+            Sets all axis values at once.
+            </summary>
+            <param name="values">Axis values</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.SetButtonValue(System.Int32,System.Boolean)">
+            <summary>
+            Sets the button value at the index.
+            This can be called multiple times per update if processing a queue of input events.
+            </summary>
+            <param name="index">Button index</param>
+            <param name="value">Button value</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedControllerSource.SetButtonValues(System.Collections.Generic.IList{System.Boolean})">
+            <summary>
+            Sets all button values at once.
+            This can be called multiple times per update if processing a queue of input events.
+            </summary>
+            <param name="values">Button values</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedMouseSource.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatformUnifiedMouseSource.mousePosition">
+            <summary>
+            Mouse screen position in pixels.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.#ctor">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.keyPropertyMap">
+            <summary>
+            Gets or sets the current key property map.
+            </summary>
+            <returns>The current key property map.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.SetKeyValue(Rewired.KeyboardKeyCode,System.Boolean)">
+            <summary>
+            Sets a key value.
+            </summary>
+            <param name="keyCode">KeyCode of the key.</param>
+            <param name="value">Value</param>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap">
+            <summary>
+            A map of key properties.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.#ctor">
+            <summary>
+            Constructor.
+            Creates a default key property map.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.#ctor(Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap)">
+            <summary>
+            Copy constructor.
+            </summary>
+            <param name="other">KeyPropertyMap to copy.</param>
+            <exception cref="T:System.ArgumentNullException">other is null</exception>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Get(Rewired.KeyboardKeyCode)">
+            <summary>
+            Get properties for the specified key.
+            </summary>
+            <param name="keyCode">Key code of the key.</param>
+            <returns>Properties for the specified key.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Set(Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Key)">
+            <summary>
+            Set properties for the specified key.
+            </summary>
+            <param name="key">Keys.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Get">
+            <summary>
+            Gets all key properties.
+            </summary>
+            <returns>Array of all key properties</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Set(System.Collections.Generic.ICollection{Rewired.Platforms.Custom.CustomPlatformUnifiedKeyboardSource.KeyPropertyMap.Key})">
+            <summary>
+            Set key properties in bulk.
+            </summary>
+            <param name="keys">Collection of key properties.</param>
+            <exception cref="T:System.ArgumentNullException">keys is null</exception>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.IHardwareJoystickMapCustomPlatformMapProvider">
+            <summary>
+            User-defined joystick platform map provider.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.IHardwareJoystickMapCustomPlatformMapProvider.GetPlatformMap(System.Int32,System.Guid)">
+            <summary>
+            Get the HardwareJoysickMap platform map for a specific controller on a custom platform.
+            </summary>
+            <param name="customPlatformId">The custom platform id.</param>
+            <param name="hardwareTypeGuid">The hardware type guid of the joystick.</param>
+            <returns>HardwareJoystickMap Platform map</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap">
+            <summary>
+            Base class for HardwareJoystickMap custom platform map.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.elements">
+            <summary>
+            The elements object.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.assignedButtonCount">
+            <summary>
+            Gets the number of assigned buttons.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.assignedAxisCount">
+            <summary>
+            Gets the number of assigned axes.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.Elements">
+            <summary>
+            Contains controller element maps.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.Button">
+            <summary>
+            A button element.
+            Maps from device element to a Rewired Controller button.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.Axis">
+            <summary>
+            An axis element.
+            Maps from device element to a Rewired Controller axis.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria">
+            <summary>
+            Base class for HardwareJoystickMap custom platform Matching Criteria.
+            Determines if a controller matches.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.nameUseRegex">
+            <summary>
+            If enabled, name strings can contain regular expressions for matching.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.name">
+            <summary>
+            A list of string names to match on. If defined, any matching name will result in a match.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.Matches(System.Object)">
+            <summary>
+            Determines if the controller matches to this platform map based on user-defined identifying information.
+            Override this function to match on custom matching criteria.
+            </summary>
+            <param name="customIdentifier">User-defined identifying information supplied to the Controller on creation.</param>
+            <returns>True if identifying information matches, false if not.</returns>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.hasData">
+            <summary>
+            Determines if any matching criteria has been defined.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.isAllowed">
+            <summary>
+            Determines if this is allowed to match to any controllers.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.CreateInstance">
+            <summary>
+            Creates a new instance of this object.
+            Every subclass class must implement this.
+            </summary>
+            <returns>A new instance of this object.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.DeepClone(System.Object)">
+            <summary>
+            Called when object is deep cloned.
+            Override this function to clone local data the class, if any.
+            </summary>
+            <param name="destination">The object which will receive the cloned data.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.MatchingCriteria.CopyVars(Rewired.Data.Mapping.HardwareJoystickMap.MatchingCriteria_Base)">
+            <summary>
+            Deep-copies data to destination.
+            </summary>
+            <param name="destination">The destination to which data will be copied.</param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.CreateInstance">
+            <summary>
+            Creates a new instance of this object.
+            Every subclass class must implement this.
+            </summary>
+            <returns>A new instance of this object.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap.DeepClone(System.Object)">
+            <summary>
+            Called when object is deep cloned.
+            Override this function to clone local data the class, if any.
+            </summary>
+            <param name="destination">The object which will receive the cloned data.</param>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap`1">
+            <summary>
+            Base class for HardwareJoystickMap custom platform map.
+            </summary>
+            <typeparam name="TMatchingCriteria">The user-defined matching criteria type. Must be serializable and inherit from HardwareJoystickMapCustomPlatformMatchingCriteria&lt;TCustomData&gt;.</typeparam>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMap`1.matchingCriteria">
+            <summary>
+            The user-defined matching criteria object.
+            Determines whether this platform map matches to a particular controller.
+            </summary>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleBase">
+            <summary>
+            Platform map interim base class required to support variants in subclasses.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleBase.CreateInstance">
+            <summary>
+            Creates a new instance of this object.
+            Every subclass class must implement this.
+            </summary>
+            <returns>A new instance of this object.</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleBase.MatchingCriteria">
+            <summary>
+            Determines if a controller matches.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleBase.MatchingCriteria.CreateInstance">
+            <summary>
+            Creates a new instance of this object.
+            Every subclass class must implement this.
+            </summary>
+            <returns>A new instance of this object.</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimple">
+            <summary>
+            A simple HardwareJoystickMap platform map implementation
+            that matches on the device name string.
+            Use this if you do not need to match on other user-defined properties.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimple.variants">
+            <summary>
+            Platform map variants.
+            Each variant defines an independent set of matching criteria and a list of axes and buttons.
+            This allows matching multiple different controllers or variants of controller hardware to the same Rewired Joystick type.
+            Example: You may want to match other controller types to the Xbox One controller definition.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimple.GetVariants">
+            <summary>
+            Gets the list of variants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimple.CreateInstance">
+            <summary>
+            Creates a new instance of this object.
+            Every subclass class must implement this.
+            </summary>
+            <returns>A new instance of this object.</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSO">
+            <summary>
+            Base class for custom platform map serialized data.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSO.hardwareJoystickMap">
+            <summary>
+            The joystick to which this platform map belongs.
+            This must be assigned a HardwareJoystickMap (controller definition).
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSO.Matches(System.Guid)">
+            <summary>
+            Determines if the platform map matches the hardware type guid.
+            </summary>
+            <param name="hardwareTypeGuid">Hardware type guid of the Controller.</param>
+            <returns>True on match, otherwise false.</returns>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSO.GetPlatformMap">
+            <summary>
+            Gets the platform map.
+            </summary>
+            <returns>Platform map</returns>
+        </member>
+        <member name="T:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleSO">
+            <summary>
+            The simplest implementation of custom platform map serialized data.
+            Matches to devices on the device name string.
+            Use this if you do not need to match on other user-defined properties.
+            </summary>
+        </member>
+        <member name="F:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleSO.platformMap">
+            <summary>
+            The platform map.
+            This contains all the serialized data.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.HardwareJoystickMapCustomPlatformMapSimpleSO.GetPlatformMap">
+            <summary>
+            Returns the Platform Map.
+            </summary>
+            <returns>Platform Map</returns>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatform.platformId">
+            <summary>
+            Gets the current custom platform id.
+            Returns -1 if custom platform is not in use.
+            </summary>
+        </member>
+        <member name="P:Rewired.Platforms.Custom.CustomPlatform.isCustomPlatform">
+            <summary>
+            Determines if custom platform is in use.
+            </summary>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatform.Initialize(Rewired.Platforms.Custom.CustomPlatformInitOptions)">
+            <summary>
+            Sets the current platform to a custom platform based on options.
+            This value must be set before Rewired is initialized.
+            This is a static value and is not cleared when Rewired is reset.
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:Rewired.Platforms.Custom.CustomPlatform.Clear">
+            <summary>
+            Clears custom platform settings.
+            This can only be called when Rewired is not initialized.
+            </summary>
         </member>
         <member name="T:Rewired.Platforms.Platform">
             <exclude></exclude>
@@ -22146,6 +22973,47 @@
             Is the input system ready?
             </summary>
         </member>
+        <member name="M:Rewired.ReInput.Update">
+             <summary>
+             This can be used to update the system state manually.
+             Controller input values will be updated, Action values updated, button frame events reset and recalculated,
+             and various other events triggered (controller connect / disconnect, etc.)
+             The Manual update must be enabled in the Rewired Input Manager settings for this function to have any effect.
+             Each time this function is called, a new input frame will begin.
+             Input and button events will remain valid until the next input frame.
+             Button up/down events of all types (double click, etc) and axis delta values (mouse axes, etc.) are frame values. That is, they exist
+             for one input frame and then are cleared on the next frame. Because of this, when and how often Update is called is
+             very important for consumers of input using the polling method. Input should be updated on a 1:1 ratio with polling consumers of input,
+             and update should occur in the loop before input is consumed.
+             Automatic mode  allows you to choose multiple update loops and each will track frame values independently, but when using Manual update mode,
+             it is only possible to track these values for one input update loop. This means you cannot reliably consume input in multiple loops
+             that may update at different rates, such as consuming input in both MonoBehaviour.Update and MonoBehaviour.FixedUpdate.
+             Calling this function immediately before consuming input will have no effect on input latency on those platforms,
+             input sources, or devices that do not support multi-threaded input or those for which Rewired doesn't have a
+             multi-threaded implementation.
+             
+             NOTE: If you are attempting to update input manually in order to reduce input latency, realize that not all platforms,
+             input sources, or devices can be updated at an arbitrary time.
+            
+             WARNING: This must be called only from the main thread!
+            
+             WARNING: All Rewired addons (integrations, RewiredStandaloneInputModule, Control Mapper, Touch Controls, Player Mouse, etc.) require
+             input to be calculated correctly in the MonoBehaviour.Update loop. Specifically, button up/down events, and for some, mouse axis delta values, must be available
+             for the entire Update frame in order for these addons to read button events correctly. When you choose to manually handle
+             updating, Rewired cannot run the normal update in the Update loop when Manual update mode is used, so these addons may not function correctly depending on when or
+             how often you choose to update input. If you update input multiple times in a Unity frame, for example, button up/down events
+             may be reset before the MonoBehaviour.Update is called in these various addons, causing missed button events and incorrect axis delta values.
+             Because of this, addons may not function correctly if you choose to use manual updating.
+             
+             WARNING: Rewired has different dependencies for input on different platforms depending on the input sources in use and the devices in use.
+             If the input API in use for the device in question is unable to provide new input values by the time you call ReInput.Update, there will
+             be at least a 1-frame lag in input. This depends entirely on when you choose to update input and the specific input API in use for connected
+             input devices. For example, if you are using this to support updating input in an ECS System that you have set to run before UnityEngine.Input's
+             update executes, any devices on platforms that rely on UnityEngine.Input will retrieve an outdated value from UnityEngine.Input because it hasn't updated yet.
+             Whether this is an issue is dependent on order of execution. Unity has exposed low level functionality (PlayerLoop) that allows changing execution
+             order of various events. You must know exactly what you are doing if you intend to run the Rewired update manually any earlier than MonoBehaviour.Update.
+             </summary>
+        </member>
         <member name="M:Rewired.ReInput.Reset">
             <summary>
             Completely clears and reinitializes the Input Manager.
@@ -22251,6 +23119,12 @@
         <member name="P:Rewired.ReInput.ConfigHelper.useWindowsGamingInput">
             <summary>
             Toggles the use of WindowsGamingInput in Windows Standalone and Windows UWP during runtime. Rewired will be completely reset if this value is changed.
+            </summary>
+        </member>
+        <member name="P:Rewired.ReInput.ConfigHelper.updateMode">
+            <summary>
+            Changes the Update Mode setting during runtime.
+            Rewired will be completely reset if this value is changed.
             </summary>
         </member>
         <member name="P:Rewired.ReInput.ConfigHelper.updateLoop">

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -70,7 +70,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -100,6 +100,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -122,20 +123,20 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
           <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->How To's
@@ -1379,8 +1380,10 @@ namespace Rewired.Demos {
       <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Overload_Rewired_ReInput_MappingHelper_GetJoystickMapInstance.htm">ReInput.mapping.GetJoystickMapInstance</a></p>
     <p>Controller Template Maps:<br />
       <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Overload_Rewired_ReInput_MappingHelper_GetControllerTemplateMapInstance.htm">ReInput.mapping.GetControllerTemplateMapInstance</a></p>
-    <p>Use the information from the returned maps to determine the mappings and display the information.</p>
-    <p>&nbsp;</p>
+    <p>If you need to display gylphs for saved user mappings:<br />
+      <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/Overload_Rewired_ReInput_MappingHelper_GetJoystickMapInstanceSavedOrDefault.htm">ReInput.mapping.GetJoystickMapInstanceSavedOrDefault</a></p>
+<p>Use the information from the returned maps to determine the mappings and display the information.</p>
+<p>&nbsp;</p>
     <hr />
     <h3><a name="get-contributing-input-sources" id="get-contributing-input-sources"></a>Getting contributing input sources for an Action</h3>
 <p>You can get information about all the input sources currently contributing to the value of an <a href="Actions.html">Action</a> in a <a href="Players.html">Player</a>. There are several methods available to get this information:</p>
@@ -1646,6 +1649,7 @@ if(modifier &amp;&amp; primary) { <span class="comment">// modifier was held or 
 </ul>
 <p>This will get the value of each <a href="Actions.html">Action</a> from Player 0 for all GetButton, GetButtonDown, GetButtonUp, GetAxis, and GetAxisRaw calls.</p>
 <p>You will also need to create the <a href="Actions.html">Actions</a> in the Rewired Input Manager that match the string names expected in the code. And of course you will have to create <a href="ControllerMaps.html">Keyboard, Mouse, Joystick, and/or Custom Controller Maps</a> and assign them to <a href="Players.html">Players</a> as is standard Rewired practice.</p>
+<p>Mouse Sensitivity: If the script you are using processes Mouse X/Y axis values such as a mouse-look script, be sure to <a href="RewiredEditor.html#InputBehaviors">set the Mouse XY Axis Sensitivity in the Input Behavior</a> assigned to the Actions to 0.1 instead of Rewired's default value of 1. Unity defaults to 0.1 sensitivity for mouse axes, so you should change this value to match if you want the scripts to behave the same way they would when using Unity input.</p>
 <p>If your code has Input.GetKey calls, if you want those to instead use Rewired <a href="Actions.html">Actions</a>, you will want to change these to &quot;Rewired.ReInput.players.GetPlayer(0).GetButton&quot; and replace the Unity KeyCode with the name or id of the <a href="Actions.html">Action</a> you want to use.</p>
 <p>You could also cache the <a href="Players.html">Player</a> object on Awake for the <a href="Players.html">Player</a> in question and use that variable in the find/replace operation, but the above example provides a quick method to convert most scripts that use UnityEngine.Input to Rewired.</p>
 <p>&nbsp;</p>
@@ -3117,8 +3121,8 @@ KERNEL==&quot;hidraw*&quot;, SUBSYSTEM==&quot;hidraw&quot;, KERNELS==&quot;*057E
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>

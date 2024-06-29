@@ -1,6 +1,6 @@
 ﻿// Copyright (c) 2014 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
 
-#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_2024 || UNITY_2025
+#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_6000 || UNITY_6000_0_OR_NEWER
 #define UNITY_2020_PLUS
 #endif
 
@@ -66,17 +66,7 @@
 
 namespace Rewired {
 
-    using UnityEngine;
-    using System.Collections.Generic;
-    using Rewired.Platforms;
-    using Rewired.Utils;
-    using Rewired.Utils.Interfaces;
-    using System;
-#if SUPPORTS_SCENE_MANAGEMENT
-    using UnityEngine.SceneManagement;
-#endif
-
-    [AddComponentMenu("Rewired/Input Manager")]
+    [UnityEngine.AddComponentMenu("Rewired/Input Manager")]
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public sealed class InputManager : InputManager_Base {
 
@@ -98,40 +88,40 @@ namespace Rewired {
             ignoreRecompile = (ScriptChangesDuringPlayOptions)UnityEditor.EditorPrefs.GetInt("ScriptCompilationDuringPlay", 0) == ScriptChangesDuringPlayOptions.RecompileAfterFinishedPlaying;
 #endif
 
-            scriptingBackend = ScriptingBackend.Mono;
-            scriptingAPILevel = ScriptingAPILevel.Net20;
-            editorPlatform = EditorPlatform.None;
-            platform = Platform.Unknown;
-            webplayerPlatform = WebplayerPlatform.None;
+            scriptingBackend = Rewired.Platforms.ScriptingBackend.Mono;
+            scriptingAPILevel = Rewired.Platforms.ScriptingAPILevel.Net20;
+            editorPlatform = Rewired.Platforms.EditorPlatform.None;
+            platform = Rewired.Platforms.Platform.Unknown;
+            webplayerPlatform = Rewired.Platforms.WebplayerPlatform.None;
             isEditor = false;
-            string deviceName = SystemInfo.deviceName ?? string.Empty;
-            string deviceModel = SystemInfo.deviceModel ?? string.Empty;
+            string deviceName = UnityEngine.SystemInfo.deviceName ?? string.Empty;
+            string deviceModel = UnityEngine.SystemInfo.deviceModel ?? string.Empty;
 
 #if UNITY_EDITOR
             isEditor = true;
-            editorPlatform = EditorPlatform.Unknown;
+            editorPlatform = Rewired.Platforms.EditorPlatform.Unknown;
 #endif
 
 #if UNITY_EDITOR_WIN
-            editorPlatform = EditorPlatform.Windows;
+            editorPlatform = Rewired.Platforms.EditorPlatform.Windows;
 #endif
 
 #if UNITY_EDITOR_LINUX
-            editorPlatform = EditorPlatform.Linux;
+            editorPlatform = Rewired.Platforms.EditorPlatform.Linux;
 #endif
 
 #if UNITY_EDITOR_OSX
-            editorPlatform = EditorPlatform.OSX;
+            editorPlatform = Rewired.Platforms.EditorPlatform.OSX;
 #endif
 
 #if UNITY_EDITOR && REWIRED_DEBUG_MOCK_BUILD_PLAYER
-        Debug.LogWarning("Rewired is mocking the build player in the editor");
-        isEditor = false;
-        editorPlatform = EditorPlatform.None;
+            UnityEngine.Debug.LogWarning("Rewired is mocking the build player in the editor");
+            isEditor = false;
+            editorPlatform = Rewired.Platforms.EditorPlatform.None;
 #endif
 
 #if UNITY_STANDALONE_OSX
-            platform = Platform.OSX;
+            platform = Rewired.Platforms.Platform.OSX;
 #endif
 
 #if UNITY_DASHBOARD_WIDGET
@@ -139,161 +129,161 @@ namespace Rewired {
 #endif
 
 #if UNITY_STANDALONE_WIN
-            platform = Platform.Windows;
+            platform = Rewired.Platforms.Platform.Windows;
 #endif
 
 #if UNITY_STANDALONE_LINUX
-            platform = Platform.Linux;
+            platform = Rewired.Platforms.Platform.Linux;
 #endif
 
 #if UNITY_ANDROID
-            platform = Platform.Android;
+            platform = Rewired.Platforms.Platform.Android;
 #if !UNITY_EDITOR
             // Handle special Android platforms
             if(CheckDeviceName("OUYA", deviceName, deviceModel)) {
-                platform = Platform.Ouya;
+                platform = Rewired.Platforms.Platform.Ouya;
             } else if(CheckDeviceName("Amazon AFT.*", deviceName, deviceModel)) {
-                platform = Platform.AmazonFireTV;
+                platform = Rewired.Platforms.Platform.AmazonFireTV;
             } else if(CheckDeviceName("razer Forge", deviceName, deviceModel)) {
 #if REWIRED_OUYA && REWIRED_USE_OUYA_SDK_ON_FORGETV
-                platform = Platform.Ouya;
+                platform = Rewired.Platforms.Platform.Ouya;
 #else
-                platform = Platform.RazerForgeTV;
+                platform = Rewired.Platforms.Platform.RazerForgeTV;
 #endif
             }
 #endif
 #endif
 
 #if UNITY_BLACKBERRY
-            platform = Platform.Blackberry;
+            platform = Rewired.Platforms.Platform.Blackberry;
 #endif
 
 #if UNITY_IPHONE || UNITY_IOS
-            platform = Platform.iOS;
+            platform = Rewired.Platforms.Platform.iOS;
 #endif
 
 #if UNITY_TVOS
-            platform = Platform.tvOS;
+            platform = Rewired.Platforms.Platform.tvOS;
 #endif
 
 #if UNITY_PS3
-            platform = Platform.PS3;
+            platform = Rewired.Platforms.Platform.PS3;
 #endif
 
 #if UNITY_PS4
-            platform = Platform.PS4;
+            platform = Rewired.Platforms.Platform.PS4;
 #endif
 
 #if UNITY_PS5
-            platform = Platform.PS5;
+            platform = Rewired.Platforms.Platform.PS5;
 #endif
 
 #if UNITY_PSP2
-            platform = Platform.PSVita;
+            platform = Rewired.Platforms.Platform.PSVita;
 #endif
 
 #if UNITY_PSM
-            platform = Platform.PSMobile;
+            platform = Rewired.Platforms.Platform.PSMobile;
 #endif
 
 #if UNITY_XBOX360
-            platform = Platform.Xbox360;
+            platform = Rewired.Platforms.Platform.Xbox360;
 #endif
 
 #if UNITY_GAMECORE_XBOXONE
-            platform = Platform.GameCoreXboxOne;
+            platform = Rewired.Platforms.Platform.GameCoreXboxOne;
 #elif UNITY_XBOXONE
-            platform = Platform.XboxOne;
+            platform = Rewired.Platforms.Platform.XboxOne;
 #endif
 
 #if UNITY_GAMECORE_SCARLETT
-            platform = Platform.GameCoreScarlett;
+            platform = Rewired.Platforms.Platform.GameCoreScarlett;
 #endif
 
 #if UNITY_WII
-            platform = Platform.Wii;
+            platform = Rewired.Platforms.Platform.Wii;
 #endif
 
 #if UNITY_WIIU
-            platform = Platform.WiiU;
+            platform = Rewired.Platforms.Platform.WiiU;
 #endif
 
 #if UNITY_N3DS
-            platform = Platform.N3DS;
+            platform = Rewired.Platforms.Platform.N3DS;
 #endif
 
 #if UNITY_SWITCH
-            platform = Platform.Switch;
+            platform = Rewired.Platforms.Platform.Switch;
 #endif
 
 #if UNITY_FLASH
-            platform = Platform.Flash;
+            platform = Rewired.Platforms.Platform.Flash;
 #endif
 
 #if UNITY_METRO || UNITY_WSA || UNITY_WSA_8_0
-            platform = Platform.WindowsAppStore;
+            platform = Rewired.Platforms.Platform.WindowsAppStore;
 #endif
 
 #if UNITY_WSA_8_1
-            platform = Platform.Windows81Store;
+            platform = Rewired.Platforms.Platform.Windows81Store;
 #endif
 
             // Windows 8.1 Universal
 #if UNITY_WINRT_8_1 && !UNITY_WSA_8_1 // this seems to be the only way to detect this
-    platform = Platform.Windows81Store;
+            platform = Rewired.Platforms.Platform.Windows81Store;
 #endif
 
             // Windows Phone overrides Windows Store -- this is not set when doing Universal 8.1 builds
 #if UNITY_WP8 || UNITY_WP8_1 || UNITY_WP_8 || UNITY_WP_8_1 // documentation error on format of WP8 defines, so include both
-            platform = Platform.WindowsPhone8;
+            platform = Rewired.Platforms.Platform.WindowsPhone8;
 #endif
 
 #if UNITY_WSA_10_0
-            platform = Platform.WindowsUWP;
+            platform = Rewired.Platforms.Platform.WindowsUWP;
 #endif
 
 #if UNITY_WEBGL
-            platform = Platform.WebGL;
+            platform = Rewired.Platforms.Platform.WebGL;
 #endif
 
 #if UNITY_STADIA
-            platform = Platform.Stadia;
+            platform = Rewired.Platforms.Platform.Stadia;
 #endif
 
             // Check if Webplayer
 #if UNITY_WEBPLAYER
 
-            webplayerPlatform = UnityTools.DetermineWebplayerPlatformType(platform, editorPlatform); // call this BEFORE you change the platform so we still know what base system this is
-            platform = Platform.Webplayer;
+            webplayerPlatform = Rewired.Utils.UnityTools.DetermineWebplayerPlatformType(platform, editorPlatform); // call this BEFORE you change the platform so we still know what base system this is
+            platform = Rewired.Platforms.Platform.Webplayer;
 
 #endif
 
 #if ENABLE_MONO
-            scriptingBackend = ScriptingBackend.Mono;
+            scriptingBackend = Rewired.Platforms.ScriptingBackend.Mono;
 #endif
 
 #if ENABLE_DOTNET
-            scriptingBackend = ScriptingBackend.DotNet;
+            scriptingBackend = Rewired.Platforms.ScriptingBackend.DotNet;
 #endif
 
 #if ENABLE_IL2CPP
-            scriptingBackend = ScriptingBackend.IL2CPP;
+            scriptingBackend = Rewired.Platforms.ScriptingBackend.IL2CPP;
 #endif
 
 #if NET_2_0
-            scriptingAPILevel = ScriptingAPILevel.Net20;
+            scriptingAPILevel = Rewired.Platforms.ScriptingAPILevel.Net20;
 #endif
 
 #if NET_2_0_SUBSET
-            scriptingAPILevel = ScriptingAPILevel.Net20Subset;
+            scriptingAPILevel = Rewired.Platforms.ScriptingAPILevel.Net20Subset;
 #endif
 
 #if NET_4_6
-            scriptingAPILevel = ScriptingAPILevel.Net46;
+            scriptingAPILevel = Rewired.Platforms.ScriptingAPILevel.Net46;
 #endif
 
 #if NET_STANDARD_2_0
-            scriptingAPILevel = ScriptingAPILevel.NetStandard20;
+            scriptingAPILevel = Rewired.Platforms.ScriptingAPILevel.NetStandard20;
 #endif
         }
 
@@ -318,8 +308,8 @@ namespace Rewired {
 #endif
         }
 
-        protected override IExternalTools GetExternalTools() {
-            return new ExternalTools();
+        protected override Rewired.Utils.Interfaces.IExternalTools GetExternalTools() {
+            return new Rewired.Utils.ExternalTools();
         }
 
         private bool CheckDeviceName(string searchPattern, string deviceName, string deviceModel) {
@@ -330,19 +320,19 @@ namespace Rewired {
         private void SubscribeEvents() {
             UnsubscribeEvents();
 #if SUPPORTS_SCENE_MANAGEMENT
-            SceneManager.sceneLoaded += OnSceneLoaded;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
 #endif
         }
 
         private void UnsubscribeEvents() {
 #if SUPPORTS_SCENE_MANAGEMENT
-            SceneManager.sceneLoaded -= OnSceneLoaded;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
 #endif
         }
 
 #if SUPPORTS_SCENE_MANAGEMENT
       
-        private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode) {
             OnSceneLoaded();
         }
 

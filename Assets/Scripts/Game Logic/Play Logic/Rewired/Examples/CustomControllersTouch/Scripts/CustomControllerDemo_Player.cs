@@ -3,7 +3,6 @@
 namespace Rewired.Demos {
 
     using UnityEngine;
-    using System.Collections.Generic;
     using Rewired;
 
     [AddComponentMenu("")]
@@ -43,7 +42,12 @@ namespace Rewired.Demos {
             if(player.GetButtonDown("Fire")) {
                 Vector3 offset = Vector3.Scale(new Vector3(1, 0, 0), transform.right);
                 GameObject bullet = (GameObject)Instantiate(bulletPrefab, transform.position + offset, Quaternion.identity);
-                bullet.GetComponent<Rigidbody>().linearVelocity = new Vector3(bulletSpeed * transform.right.x, 0, 0);
+                Vector3 velocity = new Vector3(bulletSpeed * transform.right.x, 0, 0);
+#if UNITY_6000_0_OR_NEWER
+                bullet.GetComponent<Rigidbody>().linearVelocity = velocity;
+#else
+                bullet.GetComponent<Rigidbody>().velocity = velocity;
+#endif
             }
 
             if(player.GetButtonDown("Change Color")) {

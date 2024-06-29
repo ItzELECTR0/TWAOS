@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -70,7 +70,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -100,6 +100,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -122,22 +123,22 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
-          <h1>
+            <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Known Issues
       <!-- InstanceEndEditable -->
             </h1>
@@ -226,7 +227,7 @@
     <h3><a href="#android">Android:</a></h3>
     <ul>
       <li><a href="#android-remotes">Remotes are not detected (Nexus Player, Amazon Fire TV, Razer Forge TV, etc.)</a></li>
-      <li><a href="#android-unity-joystick-bugs-v5_5">Joysticks do not sent connect/disconnect events, multiple joysticks appear when the same joystick is unplugged and re-plugged</a></li>
+      <li><a href="#android-unity-joystick-bugs-v5_5">Joysticks do not send connect/disconnect events, multiple joysticks appear when the same joystick is unplugged and re-plugged</a></li>
       <li><a href="#android-il2cpp-ndk-compiler-bug">IL2CPP: Editor crashes or takes a very long time to compile or stalls forever</a></li>
       </ul>
     <h3><a href="ios-tvos">iOS/tvOS:</a></h3>
@@ -363,7 +364,7 @@ On Windows, another easier way to disable the optimizer is to add an   environme
 <p>&nbsp;</p>
 <hr />
 <h3><a name="windows-10-second-stall" id="windows-10-second-stall"></a>Windows Standalone: Extra 10 second stall when pressing Play in the Unity editor and when running a build</h3>
-<p>Reorts have been coming in recently of a 10 second stall when pressing Play in the Unity editor and when launching the game build. Every single instance of this has turned out to be a problem getting information from some piece of hardware attached to the system. This has happened with Corsair keyboards and a Mayflower Electronics headphone amplifier so far, but could potentially be caused by any HID device.</p>
+<p>Reports have been coming in recently of a 10 second stall when pressing Play in the Unity editor and when launching the game build. Every single instance of this has turned out to be a problem getting information from some piece of hardware attached to the system. This has happened with Corsair keyboards and a Mayflower Electronics headphone amplifier so far, but could potentially be caused by any HID device.</p>
 <p>When a problem device is present, a 5-second stall happens when certain information is queried about the HID device such as getting the Product Name using the Windows API function HidD_GetProductString. This function may be called twice leading to a 10 second stall. This is a problem at the device / driver level and cannot be fixed in Rewired. Because of the sudden influx of reports like this, I can only make the educated guess that this is directly due to a new change in Windows in a recent update resulting in the 5-second stall with these devices. There is no other explanation because none of this code has changed in years, and before 2020, there were zero reports of anything like this from Rewired users.</p>
 <p>This issue is not isolated to Rewired. Every single application that calls HidD_GetProductString on these devices will experience this stall. This has been reproduced using a HID library with one of these devices. Microsoft's Direct Input itself is also subject to this issue when getting the list of devices, with reports of this happening on the web. Even Microsoft's USB Game Controller tool in Windows apparently is affected by this, causing stalls and even crashing. There are also reports of this happening with SDL2, a hugely-popular cross-platform library.</p>
 <p>This issue cannot be &quot;fixed&quot; because it is not an issue in Rewired but in the underlying device/driver/Windows API. The best way to resolve it is to identify the device or driver causing it and remove it or disable it in Device Manager. Some devices like the Mayflower Electronics headphone amplifier expose a HID device in Device Manager that can be disabled without affecting the functionality of the device itself.</p>
@@ -421,7 +422,8 @@ On Windows, another easier way to disable the optimizer is to add an   environme
   <li>Vibration is not supported.</li>
 </ol>
 <p><strong>OSX Standalone</strong><br />
-  XBox 360 controllers on OSX require <a href="https://github.com/360Controller/360Controller/releases" target="_blank"> this XBox 360 driver</a>. This driver also imposes the 4-device limit just like XInput. It is currently not possible to use more than 4 XInput devices simultaneously on OSX. Again, you can mix and match non-XInput controllers to achieve a total count greater than 4. Because the driver is required for the controller to be detected, there is no way to disable the use of this driver and get around this issue.</p>
+  NOTE: This information is outdated. Modern Xbox controllers connected via Bluetooth do not need a driver to be installed. Old Xbox 360 Controllers may, but if using Game Controller Framework, no drivers need to be installed.</p>
+<p>XBox 360 controllers on OSX require <a href="https://github.com/360Controller/360Controller/releases" target="_blank"> this XBox 360 driver</a>. This driver also imposes the 4-device limit just like XInput. It is currently not possible to use more than 4 XInput devices simultaneously on OSX. Again, you can mix and match non-XInput controllers to achieve a total count greater than 4. Because the driver is required for the controller to be detected, there is no way to disable the use of this driver and get around this issue.</p>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="windows-xinput-xbox-one-bluetooth-vibration-disconnect-lag" id="windows-xinput-xbox-one-bluetooth-vibration-disconnect-lag"></a>Windows Standalone (Use XInput enabled): Wireless Bluetooth Xbox One Controllers cause frame rate drop when disconnected during vibration</h3>
@@ -984,7 +986,7 @@ public class RewiredCustomController_AndroidRemote : MonoBehaviour {
 <p></p>
 <hr />
 <p></p>
-<h3><a name="android-unity-joystick-bugs-v5_5" id="android-unity-joystick-bugs-v5_5"></a>Joysticks do not sent connect/disconnect events, multiple joysticks appear when the same joystick is unplugged and re-plugged</h3>
+<h3><a name="android-unity-joystick-bugs-v5_5" id="android-unity-joystick-bugs-v5_5"></a>Joysticks do not send connect/disconnect events, multiple joysticks appear when the same joystick is unplugged and re-plugged</h3>
 <p>Unity introduced new bugs in Unity 5.5.0 that cause joysticks to not disappear on disconnect and create new additional joysticks every re-connect. This bug was fixed in 5.5.2p2 and 5.6.0b6. Upgrade to any Unity version after those and the issue will not be present.</p>
 <p>&nbsp;</p>
 <hr />
@@ -1056,8 +1058,8 @@ public class RewiredCustomController_AndroidRemote : MonoBehaviour {
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>

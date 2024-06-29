@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -70,7 +70,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -100,6 +100,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -122,20 +123,20 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
             <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Control Mapper
@@ -340,18 +341,23 @@
     <ul>
       <li>UI auto navigation will find other  UI elements outside Control Mapper and try to navigate to them when a direction is pressed. If you have other UI elements behind Control Mapper, you must disable interactability on them. The easiest way to do that is with a Canvas Group setting CanvasGroup.interactable to false.</li>
       <li>If you have multiple Canvases in your scene and you want auto navigation to work between elements on the different Canvases, all Canvases must have the same Render Mode.</li>
-    </ul>
+  </ul>
     <p><strong>Opening and closing the screen</strong></p>
 <p>The easiest way to control the screen is by assigning Actions in the <a href="#screen-control-actions">Screen Control Actions section of the inspector</a>.</p>
-    <p>Another way is by using a Unity UI button and assigning ControlMapper.Open() to the OnClick event.</p>
+    <p>Another way is by using a Unity UI button and assigning ControlMapper.Open to the OnClick event.</p>
     <p>You can also control the screen through scripting:</p>
     <ul>
-      <li>Opening the screen: ControlMapper.Open();</li>
-      <li>Closing the screen: ControlMapper.Close();</li>
+      <li>Opening the screen: ControlMapper.Open</li>
+      <li>Closing the screen: ControlMapper.Close</li>
       </ul>
     <p>Control Mapper also has events for when the screen is opened and closed should you need that information.</p>
 <p><strong>Changing settings through scripting</strong></p>
     <p> Certain Control Mapper options can be changed through scripting, but not in real-time while the screen is open. This can be useful should you need to make changes based on some criteria such as platform-specific settings. For example, before initializing the Control Mapper (before opening it), you could disable keyboard support. This may be useful if you're publishing your game on a platform that doesn't support keyboards, but you don't want to create a separate Control Mapper for this.    </p>
+    <p>The ControlMapper class inherits from UnityEngine.MonoBehaviour, and like any other MonoBehavior subclass, you must get a reference to the ControlMapper instance in order to call any methods in the class.</p>
+    <pre class="code">var controlMapper = UnityEngine.Object.FindObjectOfType&lt;Rewired.UI.ControlMapper.ControlMapper&gt;();
+if(controlMapper != null) {
+    controlMapper.Open();
+}</pre>
     <p><strong>Screen scale</strong></p>
     <p>Scale of the Control Mapper by default is handled by the Canvas Scaler Fitter component on the Canvas below the main Control Mapper game object. The Canvas Scaler Fitter component controls the scale settings for the display based on the current aspect ratio of the screen. Breakpoints have been predefined to help keep the display usable at various screen aspect ratios.</p>
     <p>&nbsp;</p>
@@ -821,8 +827,8 @@ Even if your game doesn't use analog input, your players may still use physical 
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>

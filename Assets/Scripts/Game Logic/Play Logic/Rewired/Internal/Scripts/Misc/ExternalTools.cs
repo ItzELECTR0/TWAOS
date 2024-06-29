@@ -1,8 +1,8 @@
-﻿#if UNITY_2024 || UNITY_2025 || UNITY_2026 || UNITY_2027 || UNITY_2028 || UNITY_2029 || UNITY_2030
-#define UNITY_2024_PLUS
+﻿#if UNITY_6000 || UNITY_6000_0_OR_NEWER
+#define UNITY_6000_PLUS
 #endif
 
-#if UNITY_2023 || UNITY_2024_PLUS
+#if UNITY_2023 || UNITY_6000_PLUS
 #define UNITY_2023_PLUS
 #endif
 
@@ -91,21 +91,13 @@
 namespace Rewired.Utils {
 
     using UnityEngine;
-    using System;
+    using System.Collections;
     using System.Collections.Generic;
     using Rewired.Utils.Interfaces;
 
     /// <exclude></exclude>
     [System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]
     public class ExternalTools : IExternalTools {
-
-#if !UNITY_2021_PLUS || (!UNITY_STANDALONE_WIN && !UNITY_EDITOR) || !UNITY_EDITOR_WIN
-        // Provide an empty implementation if the platform is not Windows Standalone or the required version
-        public void WindowsStandalone_ForwardRawInput(IntPtr rawInputHeaderIndices, IntPtr rawInputDataIndices, uint indicesCount, IntPtr rawInputData, uint rawInputDataSize)
-        {
-
-        }
-#endif
 
         private static System.Func<object> _getPlatformInitializerDelegate;
         public static System.Func<object> getPlatformInitializerDelegate {
@@ -209,11 +201,10 @@ namespace Rewired.Utils {
             return string.Empty;
 #endif
         }
-        
 
         public bool IsEditorSceneViewFocused() {
 #if UNITY_EDITOR
-            System.Collections.ArrayList sceneViews = UnityEditor.SceneView.sceneViews;
+            ArrayList sceneViews = UnityEditor.SceneView.sceneViews;
             if (sceneViews == null) return false;
             string focusedWindowTitle = GetFocusedEditorWindowTitle();
             for (int i = 0; i < sceneViews.Count; i++) {

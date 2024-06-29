@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -72,7 +72,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -102,6 +102,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -124,20 +125,20 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
             <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Supported Controllers
@@ -3866,7 +3867,7 @@ MacOS: <span class="no">No</span></td>
           <p>&nbsp;</p>
           <h3><a name="controllers-without-definitions" id="controllers-without-definitions"></a>All other controllers</strong> not listed above</h3>
 			<p>Any controller which does not have a hardware definition  will be usable only through user mapping or by mapping actions to numbered axes and buttons in the <a href="ControllerMaps.html#unknown-controllers">Unknown Controller</a> map. These unrecognized controllers can only be supported if you provide your users a way to remap their controls, such as by using the included <a href="ControlMapper.html">Control Mapper</a> or by creating a <a href="HowTos.html#controller-mapping-screen">custom control remapping screen</a>. If you do not provide users with a way to map their controls, only the above listed recognized controllers will be usable. If you do provide your users a way to map their controls, virtually any controller will be usable.</p>
-			<p>You can also create your own controller definitions to add extended support for more controllers, but the process can be involved, especially if you want to support all platforms. (See <a href="HowTos.html#new-controller-definitions">Creating new controller definitions</a> for more information.) However, be advised that not all controllers are candidates for controller recognition. (See <a href="FAQ.html#addding-controller-definitions">Can I add support for this controller?</a> for more information.) Instead of adding a new controller definition yourself, I recommend that you  send me the controller you wish to add a definition for and I will add it Rewired to be included in subsequent updates. And of course, I'll mail it back. :) You can contact me through the <a href="https://guavaman.com/projects/rewired#support">support form on the website</a>.</p>
+			<p>You can also create your own controller definitions to add extended support for more controllers, but the process can be involved, especially if you want to support all platforms. (See <a href="HowTos.html#new-controller-definitions">Creating new controller definitions</a> for more information.) However, be advised that not all controllers are candidates for controller recognition. (See <a href="FAQ.html#addding-controller-definitions">Can I add support for this controller?</a> for more information.)</p>
 			<h3>Controllers that map to the keyboard</h3>
 			<p>Controllers such as the X-Arcade Tankstick that map to keyboard keys are supported only through keyboard maps at this time. The process for mapping one of these controllers is identical to mapping keyboard keys. You have to identify which keyboard key each controller element maps to (see the documentation for your controller), then assign actions to those keys in the keyboard map. If you have a user control mapping screen, users can map their controls directly.</p>
 			<h3>Controllers not directly supported (yet)</h3>
@@ -5173,8 +5174,8 @@ MacOS: <span class="no">No</span></td>
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>

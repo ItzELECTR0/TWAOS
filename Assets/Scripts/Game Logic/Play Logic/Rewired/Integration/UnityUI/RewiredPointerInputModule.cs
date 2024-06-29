@@ -4,7 +4,7 @@
 // Heavily modified to add multiple pointer support, interchangeable touch and mouse input sources, and 128 buttons per mouse.
 
 #region Defines
-#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_2024 || UNITY_2025
+#if UNITY_2020 || UNITY_2021 || UNITY_2022 || UNITY_2023 || UNITY_6000 || UNITY_6000_0_OR_NEWER
 #define UNITY_2020_PLUS
 #endif
 #if UNITY_2019 || UNITY_2020_PLUS

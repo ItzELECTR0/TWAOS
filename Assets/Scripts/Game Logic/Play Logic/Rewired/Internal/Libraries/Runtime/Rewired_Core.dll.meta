@@ -19,7 +19,7 @@ labels:
 - DirectInput
 PluginImporter:
   externalObjects: {}
-  serializedVersion: 3
+  serializedVersion: 2
   iconMap: {}
   executionOrder:
     Rewired.Initializer: -31999
@@ -30,11 +30,9 @@ PluginImporter:
   isExplicitlyReferenced: 0
   validateReferences: 1
   platformData:
-    Android:
-      enabled: 1
-      settings:
-        CPU: ARMv7
-    Any:
+  - first:
+      : Any
+    second:
       enabled: 0
       settings:
         Exclude Android: 0
@@ -51,37 +49,134 @@ PluginImporter:
         Exclude WindowsStoreApps: 1
         Exclude iOS: 0
         Exclude tvOS: 0
-    Editor:
+  - first:
+      : BlackBerry
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      : WP8
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+  - first:
+      Android: Android
+    second:
+      enabled: 1
+      settings:
+        CPU: ARMv7
+  - first:
+      Any: 
+    second:
+      enabled: 0
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
       enabled: 1
       settings:
         CPU: AnyCPU
         DefaultValueInitialized: true
         OS: AnyOS
-    Linux64:
+  - first:
+      Facebook: WebGL
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Facebook: Win
+    second:
       enabled: 1
       settings:
         CPU: AnyCPU
-    OSXUniversal:
-      enabled: 1
-      settings: {}
-    PS4:
-      enabled: 1
-      settings: {}
-    Switch:
-      enabled: 1
-      settings: {}
-    WebGL:
-      enabled: 1
-      settings: {}
-    Win:
+  - first:
+      Facebook: Win64
+    second:
       enabled: 1
       settings:
         CPU: AnyCPU
-    Win64:
+  - first:
+      Nintendo Switch: Switch
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      PS4: PS4
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Stadia: Stadia
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Standalone: Linux
+    second:
+      enabled: 1
+      settings:
+        CPU: x86
+  - first:
+      Standalone: Linux64
+    second:
       enabled: 1
       settings:
         CPU: AnyCPU
-    WindowsStoreApps:
+  - first:
+      Standalone: LinuxUniversal
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Standalone: OSXIntel
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXIntel64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Standalone: Win
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Web: Web
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Web: WebStreamed
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      WebGL: WebGL
+    second:
+      enabled: 1
+      settings: {}
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
       enabled: 0
       settings:
         CPU: AnyCPU
@@ -89,12 +184,16 @@ PluginImporter:
         PlaceholderPath: 
         SDK: AnySDK
         ScriptingBackend: AnyScriptingBackend
-    iOS:
+  - first:
+      iPhone: iOS
+    second:
       enabled: 1
       settings:
         CompileFlags: 
         FrameworkDependencies: 
-    tvOS:
+  - first:
+      tvOS: tvOS
+    second:
       enabled: 1
       settings:
         CompileFlags: 
@@ -102,3 +201,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 21676
+  packageName: Rewired
+  packageVersion: 1.1.55.0
+  assetPath: Assets/Scripts/Game Logic/Play Logic/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll
+  uploadId: 659836

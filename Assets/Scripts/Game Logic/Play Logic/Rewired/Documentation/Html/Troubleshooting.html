@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
@@ -70,7 +70,7 @@
               <li><a href="Deployment.html">Deployment</a></li>
               <li><a href="BestPractices.html">Best Practices</a></li>
               <li><a href="RewiredEditor.html">Rewired Editor</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs/api-reference" target="_blank">API Reference</a></li>
             </ol>
             <strong>Concepts:</strong>
             <ul>
@@ -100,6 +100,7 @@
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
+	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -122,20 +123,20 @@
             </ul>
             <strong>Unity Help:</strong>
             <ul>
-              <li><a href="https://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
-              <li><a href="https://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
-              <li><a href="https://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
+              <li><a href="http://docs.unity3d.com/Manual/" target="_blank">Unity Manual</a></li>
+              <li><a href="http://docs.unity3d.com/ScriptReference/" target="_blank">Unity Script Reference</a></li>
+              <li><a href="http://unity3d.com/learn/tutorials/modules" target="_blank">Unity Tutorials</a></li>
             </ul>
             <strong>Links:</strong>
             <ul>
-              <li><a href="https://guavaman.com/projects/rewired">Rewired Website</a></li>
-              <li><a href="https://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
+              <li><a href="http://guavaman.com/projects/rewired">Rewired Website</a></li>
+              <li><a href="http://guavaman.com/projects/rewired/docs">Web Documentation</a></li>
             </ul>
         </div>
         
     
     	<div class="main-body">
-	        <div class="logo"><a href="https://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
+	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
           <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Troubleshooting <!-- InstanceEndEditable -->
@@ -873,6 +874,9 @@ Int64* args, IntPtr method)
 <p>&nbsp;</p>
 <h2><a name="osx" id="osx"></a><a name="macos" id="macos"></a>MacOS</h2>
 <h3><a name="macos-app-store-entitlements-error" id="macos-app-store-entitlements-error"></a>MacOS: Mac App Store submission rejected due to Invalid Code Signing Entitlements error</h3>
+<p><strong>IMPORTANT:</strong><br />
+This issue is fundamentally a Mac App Store issue and not a Rewired issue. Rewired happens to contain a native library on MacOS, just as Unity contains many native libraries, and as any application may contain many libraries. The Mac App Store requires that the package be notarized and all binaries be code signed by the developer prior to uploading. You should refer to the Apple documentation on how to notarize a package and code sign binaries. Any information provided here is only for your convienience and may be incorrect. Nothing in this section is authoritative on the subject. I cannot provide additional information on how to notarize your package or code sign binaries for Mac App Store submission.</p>
+<p>-------</p>
 <p>Mac App store has specific code signing requirements that your application must meet to pass testing. I have been getting reports of projects containing Rewired failing testing with the following errors:</p>
 <pre class="code">ITMS-90288: Invalid Code Signing Entitlements - The entitlements in
 your app bundle signature do not match the ones that are contained in
@@ -896,6 +900,10 @@ followed by a dot '.', followed by the bundle identifier .</pre>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="macos-bundle-quarantine-error" id="macos-bundle-quarantine-error"></a>MacOS: &quot;Rewired_MacOS.bundle&quot; can't be opened because Apple cannot check it for malicious software</h3>
+<p><strong>IMPORTANT:</strong><br />
+  The following information is provided only for your convenience and the information may be incorrect. Refer to Apple's documentation on how to manage file security on MacOS.
+I cannot provide additional information on how to deal with MacOS file quarantine issues.</p>
+<p>-------</p>
 <p>All files downloaded from the internet in a web browser will be flagged by the OS with the &quot;com.apple.quarantine&quot; attribute. This causes the downloaded file, and any files contained within an archive, to be quarantined if they contain non-notarized executable code. Rewired on MacOS contains Rewired_MacOS.bundle, a library required to support the Game Controller Framework on MacOS. This library is ad-hoc signed, and is therefore automatically quarantined if Rewired was downloaded from a web browser. (This should not happen when Rewired is downloaded from the Unity Asset Store.) Every time you press Play in the Unity Editor, Rewired_MacOS.bundle will be blocked from loading and a security message displayed.</p>
 <p>The quarantine attribute can be removed by using the following command in a terminal:</p>
 <pre class="code">xattr -r -d com.apple.quarantine [FullPathToDir]/Rewired_MacOS.bundle</pre>
@@ -1249,8 +1257,8 @@ followed by a dot '.', followed by the bundle identifier .</pre>
         
     </div>
   <div class="footer clearfix">
-   	<p class="left">Copyright &copy;2014-2021 <a href="https://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
-  	<p class="right"><a href="https://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
+   	<p class="left">Copyright &copy;2014-2021 <a href="http://guavaman.com" title="Guavaman Enterprises">Guavaman Enterprises</a>. All rights reserved. No materials may be reproduced without permission.</p>
+  	<p class="right"><a href="http://guavaman.com/projects/rewired" title="Return to Rewired Website">Return to Rewired Website</a></p>
   </div>
   <!-- end .content --></div>
   <!-- end .container --></div>
