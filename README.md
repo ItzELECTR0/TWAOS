@@ -40,13 +40,13 @@ Will he rise to become the hero the world needs? Will he finally <b>feel</b> the
 
 ## THE GAMEPLAY
 
-Immerse yourself in a richly detailed 3D world from a third-person perspective, where every choice shapes Sip's destiny.
-Explore closed environments filled with interactive elements and hidden secrets.
-Unlock and master Sip's supernatural lightning powers, capable of manipulating any form of energy.
-Engage in combat and explore, using Sip's abilities to either protect the innocent or unleash havoc.
-Your decisions will determine whether Sip becomes a beacon of hope or a force of destruction.
-Experience a gripping narrative that blends heart-wrenching drama with psychological horror.
-As Sip's enigmatic mind and mysterious smile unveil the true extent of his power. 
+Immerse yourself in a richly detailed <b>3D world</b> from a </b>third-person</b> perspective, where every </b>choice</b> shapes Sip's destiny.
+Explore closed environments filled with interactive elements and hidden <b>secrets</b>.
+Unlock and master Sip's supernatural <b>lightning powers</b>, capable of manipulating any form of </b>energy</b>.
+Engage in combat and explore, using Sip's abilities to either <b>protect</b> the innocent or unleash <b>havoc</b>.
+Your decisions will determine whether Sip becomes a <b>beacon of hope</b> or a <b>force of destruction</b>.
+Experience a gripping narrative that blends <b>heart-wrenching drama</b> with <b>psychological horror</b>.
+As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of his power. 
 
 ## DEVELOPMENT PLANS
 
