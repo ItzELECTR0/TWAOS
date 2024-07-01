@@ -92,7 +92,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 015a14b7d73294d4785a258dd17b606a, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2b5bfe1fabf113c46b3231e63564b7dc, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -2992,9 +2992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
-  rigidBody: {fileID: 0}
-  rigidBody2D: {fileID: 0}
 --- !u!1001 &106460102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11373,7 +11370,10 @@ MonoBehaviour:
   m_Script: {fileID: 302352438}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
+  m_Entries:
+  - id: 0
+    category: 0
+    gameObject: {fileID: 1148749356}
 --- !u!4 &401590418
 Transform:
   m_ObjectHideFlags: 19
@@ -20242,6 +20242,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2675717779409970673, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427856745340595040, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
+      propertyPath: _userData.configVars.updateLoop
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427856745340595040, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
+      propertyPath: _userData.configVars.unityUsePhysicalKeys
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4366917923613437620, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
@@ -32051,7 +32059,7 @@ MonoBehaviour:
     cubeResolution:
       m_Override: 128
       m_UseOverride: 0
-      m_Level: 2
+      m_Level: 0
     cameraSettings:
       customRenderingSettings: 1
       renderingPathCustomFrameSettings:
@@ -32280,7 +32288,7 @@ MonoBehaviour:
     'sh[24]': 0
     'sh[25]': 0
     'sh[26]': 0
-  m_SHValidForCapturePosition: {x: 0, y: 0, z: 0}
+  m_SHValidForCapturePosition: {x: -Infinity, y: -Infinity, z: -Infinity}
   m_SHValidForSourcePosition: {x: 0, y: 0, z: 0}
   m_HDProbeVersion: 9
   m_ObsoleteInfiniteProjection: 1
@@ -75462,7 +75470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729610699742882288, guid: 45301d630bdb7ad4aaf8b58e5db61896, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5919411499759075732, guid: 45301d630bdb7ad4aaf8b58e5db61896, type: 3}
       propertyPath: m_LocalPosition.x
