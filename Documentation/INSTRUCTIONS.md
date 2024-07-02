@@ -2,8 +2,10 @@
 
 ## HOW TO BUILD FROM SOURCE
 
-<div>1 - Clone the project.
-<br>2 - Install all dependencies specified in the DEPENDECIES.md file
+<div>
+  
+1 - Clone the project.
+<br>2 - Install all dependencies specified in the [DEPENDECIES.md](Documentation/DEPENDENCIES.md) file
 <br>3 - Add the project to Unity Hub to open it
 <br>4 - Once inside the project, you might want to disable the steam DRM
 <br>4.1 - To disable the DRM, first go to File > Build Settings to see all of the active scenes
@@ -13,6 +15,7 @@
 <br>5 - Once you have disable the DRM, go back to the build settings, and press the build button
 <br>6 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
 <br>7 - Now just wait
+
 </div>
 
 ### Disclaimer: Building will take a really long time, since the game's shader variants aren't included, and will have to be built from scratch
