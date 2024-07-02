@@ -20,8 +20,10 @@
 
 Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. I hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and my cloud backup of the game.
 
-I want to make it clear that while the first chapter is free, the rest won't be.
-Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
+<div>I want to make it clear that while the first chapter is free, the rest won't be.
+<br>However, everything will remain open source, nothing will be locked away.
+<br>Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
+</div>
 
 ##  THE PREMISE
 
@@ -59,13 +61,11 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 ## Documentation
 
-[Instructions](Documentation/INSTRUCTIONS.md)
-
-[Dependencies](Documentation/DEPENDENCIES.md)
-
-[License](LICENSE.md)
-
-[Credits](Documentation/CREDITS.md)
+<div>[Instructions](Documentation/INSTRUCTIONS.md)
+<br>[Dependencies](Documentation/DEPENDENCIES.md)
+<br>[License](LICENSE.md)
+<br>[Credits](Documentation/CREDITS.md)
+</div>
 
 ## CREATOR's SOCIALS
 
