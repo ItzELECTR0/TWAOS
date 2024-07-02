@@ -5,7 +5,7 @@
 <div>
   
 1 - Clone the project.
-<br>2 - Install all dependencies specified in the [DEPENDECIES.md](Documentation/DEPENDENCIES.md) file
+<br>2 - Install all [dependencies](DEPENDENCIES.md) required
 <br>3 - Add the project to Unity Hub to open it
 <br>4 - Once inside the project, you might want to disable the steam DRM
 <br>4.1 - To disable the DRM, first go to File > Build Settings to see all of the active scenes
