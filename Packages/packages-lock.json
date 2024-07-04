@@ -15,54 +15,54 @@
       "hash": "d52ef7bf27547802c41d527c936ee7f8799e2652"
     },
     "com.spoiledcat.environment": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.spoiledcat.logging": "2.2.6",
-        "com.spoiledcat.simpleio": "2.2.6",
-        "com.spoiledcat.simplejson": "2.2.6"
+        "com.spoiledcat.logging": "2.2.8",
+        "com.spoiledcat.simpleio": "2.2.8",
+        "com.spoiledcat.simplejson": "2.2.8"
       },
       "url": "https://registry.spoiledcat.com"
     },
     "com.spoiledcat.logging": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.spoiledcat.com"
     },
     "com.spoiledcat.simpleio": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.spoiledcat.com"
     },
     "com.spoiledcat.simplejson": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://registry.spoiledcat.com"
     },
     "com.spoiledcat.threading": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.spoiledcat.logging": "2.2.6",
-        "com.spoiledcat.simpleio": "2.2.6",
-        "com.spoiledcat.environment": "2.2.6"
+        "com.spoiledcat.logging": "2.2.8",
+        "com.spoiledcat.simpleio": "2.2.8",
+        "com.spoiledcat.environment": "2.2.8"
       },
       "url": "https://registry.spoiledcat.com"
     },
     "com.spoiledcat.ui": {
-      "version": "2.2.6",
+      "version": "2.2.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.spoiledcat.threading": "2.2.6"
+        "com.spoiledcat.threading": "2.2.8"
       },
       "url": "https://registry.spoiledcat.com"
     },
@@ -222,7 +222,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
-      "version": "2.3.1",
+      "version": "2.4.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -473,27 +473,6 @@
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.muse.common": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.imageconversion": "1.0.0",
-        "com.unity.modules.unitywebrequesttexture": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.muse.texture": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.muse.common": "1.0.0",
-        "com.unity.shadergraph": "14.0.7"
       },
       "url": "https://packages.unity.com"
     },
