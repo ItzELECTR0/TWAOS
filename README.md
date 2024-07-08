@@ -62,10 +62,11 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 ## Documentation
 
 <div align="left">
-  
-**[Instructions](Documentation/INSTRUCTIONS.md)**  
-**[Dependencies](Documentation/DEPENDENCIES.md)**  
-**[License](LICENSE.md)**  
+
+**[Instructions](Documentation/INSTRUCTIONS.md)**
+**[Dependencies](Documentation/DEPENDENCIES.md)**
+**[License](LICENSE.md)**
+**[Asset Store Disclaimer](Documentation/ASSET-DISCLAIMER.md)**
 **[Credits](Documentation/CREDITS.md)**
 
 </div>
