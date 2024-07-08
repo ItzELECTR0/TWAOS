@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2>Disclaimr for Unity Asset Store packages</h2>
+<h2>Disclaimer for Unity Asset Store packages</h2>
 
 While this project is governed by a Creative Commons license
 <br>Packages from the unity store aren't
