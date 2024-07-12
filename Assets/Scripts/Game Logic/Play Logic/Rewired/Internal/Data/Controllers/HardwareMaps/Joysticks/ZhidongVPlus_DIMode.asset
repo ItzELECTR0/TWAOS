@@ -15,6 +15,7 @@ MonoBehaviour:
   editorControllerName: Zhidong V+ (DI mode)
   description: Direct Input mode
   controllerGuid: 3f146646-34da-4f9d-9946-a6e405a8640b
+  controllerKey: zhidong_v_plus_direct_input
   templateGuids:
   - 83b427e4-086f-47f3-bb06-be266abd1ca5
   hideInLists: 0
@@ -24,140 +25,218 @@ MonoBehaviour:
     _name: Left Stick X
     _positiveName: Left Stick Right
     _negativeName: Left Stick Left
+    _key: left_stick/horizontal
+    _positiveKey: left_stick/right
+    _negativeKey: left_stick/left
     _elementType: 0
     _compoundElementType: 0
   - _id: 1
     _name: Left Stick Y
     _positiveName: Left Stick Up
     _negativeName: Left Stick Down
+    _key: left_stick/vertical
+    _positiveKey: left_stick/up
+    _negativeKey: left_stick/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 2
     _name: Right Stick X
     _positiveName: Right Stick Right
     _negativeName: Right Stick Left
+    _key: right_stick/horizontal
+    _positiveKey: right_stick/right
+    _negativeKey: right_stick/left
     _elementType: 0
     _compoundElementType: 0
   - _id: 3
     _name: Right Stick Y
     _positiveName: Right Stick Up
     _negativeName: Right Stick Down
+    _key: right_stick/vertical
+    _positiveKey: right_stick/up
+    _negativeKey: right_stick/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 6
     _name: A
     _positiveName: 
     _negativeName: 
+    _key: a
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 7
     _name: B
     _positiveName: 
     _negativeName: 
+    _key: b
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 8
     _name: X
     _positiveName: 
     _negativeName: 
+    _key: x
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 9
     _name: Y
     _positiveName: 
     _negativeName: 
+    _key: y
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 10
     _name: L1
     _positiveName: 
     _negativeName: 
+    _key: l1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 4
     _name: L2
     _positiveName: 
     _negativeName: 
+    _key: l2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 11
     _name: R1
     _positiveName: 
     _negativeName: 
+    _key: r1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 5
     _name: R2
     _positiveName: 
     _negativeName: 
+    _key: r2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 12
     _name: Back
     _positiveName: 
     _negativeName: 
+    _key: back
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 13
     _name: Start
     _positiveName: 
     _negativeName: 
+    _key: start
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 14
     _name: V+ Button
     _positiveName: 
     _negativeName: 
+    _key: v+_button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 15
     _name: Left Stick Button
     _positiveName: 
     _negativeName: 
+    _key: left_stick/button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 16
     _name: Right Stick Button
     _positiveName: 
     _negativeName: 
+    _key: right_stick/button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 17
     _name: D-Pad Up
     _positiveName: 
     _negativeName: 
+    _key: dpad/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 18
     _name: D-Pad Right
     _positiveName: 
     _negativeName: 
+    _key: dpad/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 19
     _name: D-Pad Down
     _positiveName: 
     _negativeName: 
+    _key: dpad/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 20
     _name: D-Pad Left
     _positiveName: 
     _negativeName: 
+    _key: dpad/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 21
     _name: Left Stick
     _positiveName: 
     _negativeName: 
+    _key: left_stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 100
     _compoundElementType: 0
   - _id: 22
     _name: Right Stick
     _positiveName: 
     _negativeName: 
+    _key: right_stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 100
     _compoundElementType: 0
+  - _id: 23
+    _name: D-Pad
+    _positiveName: 
+    _negativeName: 
+    _key: dpad
+    _positiveKey: 
+    _negativeKey: 
+    _elementType: 100
+    _compoundElementType: 10
   compoundElements:
   - type: 0
     elementIdentifier: 21
@@ -165,6 +244,9 @@ MonoBehaviour:
   - type: 0
     elementIdentifier: 22
     componentElementIdentifiers: 0200000003000000
+  - type: 10
+    elementIdentifier: 23
+    componentElementIdentifiers: 11000000120000001300000014000000
   directInput:
     description: 
     matchingCriteria:
@@ -173,6 +255,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName: []
       productGUID: []
@@ -190,6 +273,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 1
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - ZD - V
@@ -213,6 +297,9 @@ MonoBehaviour:
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
+        alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -234,6 +321,9 @@ MonoBehaviour:
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
+        alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -255,6 +345,9 @@ MonoBehaviour:
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
+        alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -276,6 +369,9 @@ MonoBehaviour:
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
+        alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -600,6 +696,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
+  windowsWGI:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
+    variants: []
   osx:
     description: 
     matchingCriteria:
@@ -608,6 +722,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 1
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - ZD - V
@@ -629,9 +744,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -649,9 +767,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -669,9 +790,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -689,9 +813,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1013,6 +1140,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 1
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       systemName_useRegex: 0
@@ -1034,9 +1162,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1052,9 +1183,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1070,9 +1204,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1088,9 +1225,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1362,12 +1502,14 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 1
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       manufacturer: []
       productName:
       - ZD - V
       productGUID: []
+      deviceType: 0
     elements:
       axes:
       - elementIdentifier: 0
@@ -1380,9 +1522,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1398,9 +1543,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1416,9 +1564,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1434,9 +1585,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1714,6 +1868,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -1731,9 +1888,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -1749,9 +1909,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -1767,9 +1930,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -1785,9 +1951,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -2187,6 +2356,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -2205,6 +2377,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -2222,9 +2397,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -2240,9 +2418,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -2258,9 +2439,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -2276,9 +2460,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -2703,6 +2890,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -2720,9 +2910,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -2738,9 +2931,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -2756,9 +2952,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -2774,9 +2973,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -3176,6 +3378,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3194,6 +3399,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -3211,9 +3419,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -3229,9 +3440,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -3247,9 +3461,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -3265,9 +3482,12 @@ MonoBehaviour:
         axisZero: 0
         axisMin: 0
         axisMax: 0
+        alternateCalibrations: []
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
+          _specialAxisType: 0
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -3667,57 +3887,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Blackberry:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WindowsPhone8:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_XBox360:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3735,23 +3907,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_PS3:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3769,9 +3927,27 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
+    variants: []
+  ps5:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   fallback_PSM:
     description: 
@@ -3786,6 +3962,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3803,40 +3982,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Wii:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WiiU:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3854,23 +4002,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_RazerForgeTV:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3893,18 +4027,6 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  ouya:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   xboxOne:
     description: 
     matchingCriteria:
@@ -3918,6 +4040,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  gameCore:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      gamepadSubType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   ps4:
     description: 
@@ -4020,4 +4161,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  elementIdentifierIdCounter: 23
+  appleGCController:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productCategory_useRegex: 0
+      productCategory: []
+      productName_useRegex: 0
+      productName: []
+      primaryProfileType: 0
+      profileSubTypes: 
+    elements:
+      axes: []
+      buttons: []
+      compoundElements: []
+    controllerName: 
+    variants: []
+  elementIdentifierIdCounter: 24

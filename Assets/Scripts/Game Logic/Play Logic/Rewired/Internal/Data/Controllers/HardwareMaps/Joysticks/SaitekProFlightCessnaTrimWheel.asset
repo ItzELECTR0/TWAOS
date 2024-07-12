@@ -15,6 +15,7 @@ MonoBehaviour:
   editorControllerName: 
   description: 
   controllerGuid: 079e4f58-557a-4013-94b6-4c5f97853ad5
+  controllerKey: saitek_pro_flight_cessna_trim_wheel
   templateGuids: []
   hideInLists: 0
   joystickTypes: 19000000
@@ -23,6 +24,9 @@ MonoBehaviour:
     _name: Wheel
     _positiveName: Wheel Up
     _negativeName: Wheel Down
+    _key: wheel
+    _positiveKey: wheel/up
+    _negativeKey: wheel/down
     _elementType: 0
     _compoundElementType: 0
   compoundElements: []
@@ -34,6 +38,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - Saitek Pro Flight Cessna Trim Wheel
@@ -59,6 +64,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -68,6 +74,13 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -83,6 +96,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - Pro Flight Cessna Trim Wheel
@@ -108,6 +122,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -117,6 +132,13 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -137,6 +159,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
+  windowsWGI:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
+    variants: []
   osx:
     description: 
     matchingCriteria:
@@ -145,6 +185,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - Pro Flight Cessna Trim Wheel
@@ -175,10 +216,18 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -194,6 +243,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       systemName_useRegex: 0
@@ -224,10 +274,18 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -243,6 +301,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       manufacturer: []
@@ -250,6 +309,7 @@ MonoBehaviour:
       - Pro Flight Cessna Trim Wheel
       productGUID:
       - 0bd406a3
+      deviceType: 0
     elements:
       axes:
       - elementIdentifier: 0
@@ -271,10 +331,18 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -296,6 +364,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -322,10 +393,18 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons: []
     variants: []
   fallback_WindowsUWP:
@@ -341,6 +420,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -359,6 +441,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -385,10 +470,18 @@ MonoBehaviour:
             _zero: .5
             _min: 0
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons: []
     variants: []
   fallback_Linux:
@@ -405,6 +498,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -431,10 +527,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -1
             _max: 0
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons: []
     variants: []
   fallback_Linux_PreConfigured:
@@ -450,6 +554,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -467,6 +574,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -484,57 +594,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Blackberry:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WindowsPhone8:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_XBox360:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -552,23 +614,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_PS3:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -586,9 +634,27 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
+    variants: []
+  ps5:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   fallback_PSM:
     description: 
@@ -603,6 +669,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -620,40 +689,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Wii:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WiiU:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -671,23 +709,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_RazerForgeTV:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -710,18 +734,6 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  ouya:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   xboxOne:
     description: 
     matchingCriteria:
@@ -735,6 +747,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  gameCore:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      gamepadSubType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   ps4:
     description: 
@@ -836,5 +867,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  appleGCController:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productCategory_useRegex: 0
+      productCategory: []
+      productName_useRegex: 0
+      productName: []
+      primaryProfileType: 0
+      profileSubTypes: 
+    elements:
+      axes: []
+      buttons: []
+      compoundElements: []
+    controllerName: 
     variants: []
   elementIdentifierIdCounter: 1

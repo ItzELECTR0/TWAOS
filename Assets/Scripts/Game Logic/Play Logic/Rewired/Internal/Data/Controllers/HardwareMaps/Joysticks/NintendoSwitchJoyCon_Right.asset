@@ -15,6 +15,7 @@ MonoBehaviour:
   editorControllerName: Nintendo Switch Joy-Con (R)
   description: 
   controllerGuid: 605dc720-1b38-473d-a459-67d5857aa6ea
+  controllerKey: nintendo_switch_joy_con_right
   templateGuids:
   - 83b427e4-086f-47f3-bb06-be266abd1ca5
   hideInLists: 0
@@ -24,84 +25,126 @@ MonoBehaviour:
     _name: Stick X
     _positiveName: Stick Right
     _negativeName: Stick Left
+    _key: stick/horizontal
+    _positiveKey: stick/right
+    _negativeKey: stick/left
     _elementType: 0
     _compoundElementType: 0
   - _id: 1
     _name: Stick Y
     _positiveName: Stick Up
     _negativeName: Stick Down
+    _key: stick/vertical
+    _positiveKey: stick/up
+    _negativeKey: stick/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 2
     _name: A
     _positiveName: 
     _negativeName: 
+    _key: a
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 3
     _name: X
     _positiveName: 
     _negativeName: 
+    _key: x
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 4
     _name: B
     _positiveName: 
     _negativeName: 
+    _key: b
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 5
     _name: Y
     _positiveName: 
     _negativeName: 
+    _key: y
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 6
     _name: SL
     _positiveName: 
     _negativeName: 
+    _key: sl
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 7
     _name: SR
     _positiveName: 
     _negativeName: 
+    _key: sr
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 8
     _name: R
     _positiveName: 
     _negativeName: 
+    _key: r
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 9
     _name: ZR
     _positiveName: 
     _negativeName: 
+    _key: zr
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 10
     _name: HOME
     _positiveName: 
     _negativeName: 
+    _key: home
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 11
     _name: + Button
     _positiveName: 
     _negativeName: 
+    _key: plus
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 12
     _name: Stick
     _positiveName: 
     _negativeName: 
+    _key: stick/button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 13
     _name: Stick
     _positiveName: 
     _negativeName: 
+    _key: stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 100
     _compoundElementType: 0
   compoundElements:
@@ -3028,21 +3071,6 @@ MonoBehaviour:
         buttonInfo:
           _excludeFromPolling: 0
           _isPressureSensitive: 0
-    variants: []
-  stadia:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-    elements:
-      axes: []
-      buttons: []
-    controllerName: 
     variants: []
   internalDriver:
     description: 

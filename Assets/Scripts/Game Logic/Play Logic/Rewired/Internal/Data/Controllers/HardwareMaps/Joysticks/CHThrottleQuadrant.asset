@@ -15,6 +15,7 @@ MonoBehaviour:
   editorControllerName: 
   description: 
   controllerGuid: 807fb2c8-9c0e-448e-a364-b80bd08faaec
+  controllerKey: ch_throttle_quadrant
   templateGuids: []
   hideInLists: 0
   joystickTypes: 1800000014000000
@@ -23,108 +24,162 @@ MonoBehaviour:
     _name: Throttle 1
     _positiveName: Throttle 1 Up
     _negativeName: Throttle 1 Down
+    _key: throttle_1
+    _positiveKey: throttle_1/up
+    _negativeKey: throttle_1/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 1
     _name: Throttle 2
     _positiveName: Throttle 2 Up
     _negativeName: Throttle 2 Down
+    _key: throttle_2
+    _positiveKey: throttle_2/up
+    _negativeKey: throttle_2/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 2
     _name: Throttle 3
     _positiveName: Throttle 3 Up
     _negativeName: Throttle 3 Down
+    _key: throttle_3
+    _positiveKey: throttle_3/up
+    _negativeKey: throttle_3/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 3
     _name: Throttle 4
     _positiveName: Throttle 4 Up
     _negativeName: Throttle 4 Down
+    _key: throttle_4
+    _positiveKey: throttle_4/up
+    _negativeKey: throttle_4/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 4
     _name: Throttle 5
     _positiveName: Throttle 5 Up
     _negativeName: Throttle 5 Down
+    _key: throttle_5
+    _positiveKey: throttle_5/up
+    _negativeKey: throttle_5/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 5
     _name: Throttle 6
     _positiveName: Throttle 6 Up
     _negativeName: Throttle 6 Down
+    _key: throttle_6
+    _positiveKey: throttle_6/up
+    _negativeKey: throttle_6/down
     _elementType: 0
     _compoundElementType: 0
   - _id: 6
     _name: Switch 1 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_1/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 7
     _name: Switch 1 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_1/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 8
     _name: Switch 2 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_2/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 9
     _name: Switch 2 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_2/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 10
     _name: Switch 3 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_3/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 11
     _name: Switch 3 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_3/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 12
     _name: Switch 4 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_4/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 13
     _name: Switch 4 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_4/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 14
     _name: Switch 5 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_5/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 15
     _name: Switch 5 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_5/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 16
     _name: Switch 6 Up
     _positiveName: 
     _negativeName: 
+    _key: switch_6/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 17
     _name: Switch 6 Down
     _positiveName: 
     _negativeName: 
+    _key: switch_6/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   compoundElements: []
@@ -136,6 +191,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName: []
       productGUID: []
@@ -153,6 +209,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - CH THROTTLE QUADRANT
@@ -178,6 +235,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -187,6 +245,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -209,6 +274,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -218,6 +284,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -240,6 +313,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -249,6 +323,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -271,6 +352,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -280,6 +362,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: -.839999974
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -302,6 +391,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -311,6 +401,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: -.980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -333,6 +430,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         alternateCalibrations:
         - key: 1
           calibration:
@@ -342,6 +440,13 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -590,6 +695,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
+  windowsWGI:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
+    variants: []
   osx:
     description: 
     matchingCriteria:
@@ -598,6 +721,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       productName_useRegex: 0
       productName:
       - CH THROTTLE QUADRANT
@@ -628,10 +752,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -658,10 +790,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -688,10 +828,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -718,10 +866,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -748,10 +904,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -778,10 +942,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1013,6 +1185,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       systemName_useRegex: 0
@@ -1043,10 +1216,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1067,6 +1248,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1087,6 +1269,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1107,6 +1290,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1127,6 +1311,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1147,6 +1332,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1354,6 +1540,7 @@ MonoBehaviour:
       disabled: 0
       tag: 
       hatCount: 0
+      alternateElementCounts: []
       manufacturer_useRegex: 0
       productName_useRegex: 0
       manufacturer: []
@@ -1361,6 +1548,7 @@ MonoBehaviour:
       - CH THROTTLE QUADRANT
       productGUID:
       - 00fa068e
+      deviceType: 0
     elements:
       axes:
       - elementIdentifier: 0
@@ -1382,10 +1570,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1410,10 +1606,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1438,10 +1642,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1466,10 +1678,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1494,10 +1714,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1522,10 +1750,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1739,6 +1975,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -1765,10 +2004,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -1793,10 +2040,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -1821,10 +2076,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -1849,10 +2112,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 4
         sourceType: 1
         sourceAxis: 5
@@ -1877,10 +2148,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 5
         sourceType: 1
         sourceAxis: 6
@@ -1905,10 +2184,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -2212,6 +2499,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -2230,6 +2520,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -2256,10 +2549,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -2284,10 +2585,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -2312,10 +2621,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -2340,10 +2657,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 4
         sourceType: 1
         sourceAxis: 5
@@ -2368,10 +2693,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 5
         sourceType: 1
         sourceAxis: 6
@@ -2396,10 +2729,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -2704,6 +3045,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -2730,10 +3074,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -2758,10 +3110,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -2786,10 +3146,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 4
@@ -2814,10 +3182,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 4
         sourceType: 1
         sourceAxis: 5
@@ -2842,10 +3218,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 5
         sourceType: 1
         sourceAxis: 6
@@ -2870,10 +3254,18 @@ MonoBehaviour:
             _zero: -.5
             _min: -.949999988
             _max: 1
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -3177,6 +3569,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3195,6 +3590,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes:
       - elementIdentifier: 0
@@ -3221,10 +3619,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 1
         sourceType: 1
         sourceAxis: 2
@@ -3249,10 +3655,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 2
         sourceType: 1
         sourceAxis: 3
@@ -3277,10 +3691,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 3
         sourceType: 1
         sourceAxis: 14
@@ -3305,10 +3727,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 4
         sourceType: 1
         sourceAxis: 15
@@ -3333,10 +3763,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       - elementIdentifier: 5
         sourceType: 1
         sourceAxis: 4
@@ -3361,10 +3799,18 @@ MonoBehaviour:
             _zero: 0
             _min: -.839999974
             _max: .980000019
+            _sensitivityType: 0
+            _sensitivity: 1
+            _sensitivityCurve:
+              serializedVersion: 2
+              m_Curve: []
+              m_PreInfinity: 2
+              m_PostInfinity: 2
         axisInfo:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 1
+          _pollingDeadZone: -1
       buttons:
       - elementIdentifier: 6
         sourceType: 0
@@ -3668,57 +4114,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Blackberry:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WindowsPhone8:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_XBox360:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3736,23 +4134,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_PS3:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3770,9 +4154,27 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
+    variants: []
+  ps5:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   fallback_PSM:
     description: 
@@ -3787,6 +4189,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3804,40 +4209,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_Wii:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WiiU:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3855,23 +4229,9 @@ MonoBehaviour:
       matchUnityVersion: 0
       matchUnityVersion_min: 
       matchUnityVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_RazerForgeTV:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
+      matchSysVersion: 0
+      matchSysVersion_min: 
+      matchSysVersion_max: 
     elements:
       axes: []
       buttons: []
@@ -3894,18 +4254,6 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  ouya:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   xboxOne:
     description: 
     matchingCriteria:
@@ -3919,6 +4267,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  gameCore:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      gamepadSubType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   ps4:
     description: 
@@ -4020,5 +4387,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  appleGCController:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productCategory_useRegex: 0
+      productCategory: []
+      productName_useRegex: 0
+      productName: []
+      primaryProfileType: 0
+      profileSubTypes: 
+    elements:
+      axes: []
+      buttons: []
+      compoundElements: []
+    controllerName: 
     variants: []
   elementIdentifierIdCounter: 18

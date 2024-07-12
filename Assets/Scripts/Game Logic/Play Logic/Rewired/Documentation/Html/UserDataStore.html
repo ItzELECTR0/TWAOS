@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -150,9 +152,9 @@
     <p><strong>Usage</strong></p>
     <p>Just add a component derived from UserDataStore (such as UserDataStore_PlayerPrefs) to your Rewired Input Manager Game Object. When the Rewired Input Manager initializes, it will automatically initialize the UserDataStore component and make a reference to it accessible via the ReInput.UserDataStore property.</p>
     <ul>
-      <li>To save all user data: <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/M_Rewired_Data_UserDataStore_Save.htm">ReInput.userDataStore.Save()</a></li>
-      <li> To load all user data: <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/M_Rewired_Data_UserDataStore_Load.htm">ReInput.userDataStore.Load()</a></li>
-      <li><a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_Data_UserDataStore.htm">UserDataStore API reference</a></li>
+      <li>To save all user data: <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/M_Rewired_Interfaces_IUserDataStore_Save.htm">ReInput.userDataStore.Save()</a></li>
+      <li> To load all user data: <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/M_Rewired_Interfaces_IUserDataStore_Load.htm">ReInput.userDataStore.Load()</a></li>
+      <li><a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_Interfaces_IUserDataStore.htm">UserDataStore API reference</a></li>
       </ul>
     <p>If you need to add any custom members to your UserDataStore-based class, you can do so and simply cast the returned IUserDataStore object from ReInput.userDataStore to your concrete class and then access your custom members.</p>
 <pre class="code"><span class="comment">// A custom class that extends UserDataStore</span>

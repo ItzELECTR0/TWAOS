@@ -4,6 +4,116 @@
         <name>Rewired_Windows</name>
     </assembly>
     <members>
+        <member name="F:Rewired.InputSources.SDL2.SDL.SDL_EventType.SDL_USEREVENT">
+            Events ::SDL_USEREVENT through ::SDL_LASTEVENT are for your use,
+            and should be allocated with SDL_RegisterEvents()
+        </member>
+        <member name="F:Rewired.InputSources.SDL2.SDL.SDL_EventType.SDL_LASTEVENT">
+            This last event is only for bounding internal arrays
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_CommonEvent">
+            \brief Fields shared by every event
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_WindowEvent">
+            \brief Window state change event data (event.window.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_KeyboardEvent">
+            \brief Keyboard button event structure (event.key.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_TextEditingEvent">
+            \brief Keyboard text editing event structure (event.edit.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_MouseMotionEvent">
+            \brief Mouse motion event structure (event.motion.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_MouseButtonEvent">
+            \brief Mouse button event structure (event.button.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_MouseWheelEvent">
+            \brief Mouse wheel event structure (event.wheel.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_JoyAxisEvent">
+            \brief Joystick axis motion event structure (event.jaxis.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_JoyBallEvent">
+            \brief Joystick trackball motion event structure (event.jball.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_JoyHatEvent">
+            \brief Joystick hat position change event structure (event.jhat.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_JoyButtonEvent">
+            \brief Joystick button event structure (event.jbutton.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_JoyDeviceEvent">
+            \brief Joystick device event structure (event.jdevice.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_ControllerAxisEvent">
+            \brief Game controller axis motion event structure (event.caxis.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_ControllerButtonEvent">
+            \brief Game controller button event structure (event.cbutton.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_ControllerDeviceEvent">
+            \brief Controller device event structure (event.cdevice.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_TouchFingerEvent">
+            \brief Touch finger event structure (event.tfinger.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_MultiGestureEvent">
+            \brief Multiple Finger Gesture Event (event.mgesture.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_DollarGestureEvent">
+            \brief Dollar Gesture Event (event.dgesture.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_DropEvent">
+            \brief An event used to request a file open by the system (event.drop.*)
+                   This event is disabled by default, you can enable it with SDL_EventState()
+            \note If you enable this event, you must free the filename in the event.
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_QuitEvent">
+            \brief The "quit requested" event
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_OSEvent">
+            \brief OS Specific event
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_UserEvent">
+            \brief A user-defined event type (event.user.*)
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_SysWMEvent">
+              \brief A video driver dependent system event (event.syswm.*)
+                     This event is disabled by default, you can enable it with SDL_EventState()
+            
+              \note If you want to use this event, you should include SDL_syswm.h.
+        </member>
+        <member name="T:Rewired.InputSources.SDL2.SDL.SDL_Event">
+            \brief General event structure
+        </member>
+        <member name="F:Rewired.InputSources.SDL2.SDL.SDL_Scancode.SDL_SCANCODE_A">
+              \name Usage page 0x07
+            
+              These values are from usage page 0x07 (USB keyboard page).
+        </member>
+        <member name="F:Rewired.InputSources.SDL2.SDL.SDL_Scancode.SDL_SCANCODE_AUDIONEXT">
+              \name Usage page 0x0C
+            
+              These values are mapped from usage page 0x0C (USB consumer page).
+        </member>
+        <member name="F:Rewired.InputSources.SDL2.SDL.SDL_Scancode.SDL_SCANCODE_BRIGHTNESSDOWN">
+              \name Walther keys
+            
+              These are values that Christian Walther added (for mac keyboard?).
+        </member>
+        <member name="M:Rewired.InputSources.SDL2.SDL2InputSource.GetGameControllerCount">
+            <summary>
+            The value returned cannot be used to iterate! Always use GetJoystickCount!
+            </summary>
+            <returns>Number of Game Controllers</returns>
+        </member>
+        <member name="M:Rewired.InputSources.SDL2.SDL2Joystick.ProcessAxisValue(System.Int32)">
+            <summary>
+            Convert from +/- 32768 to +/- 1.0f
+            </summary>
+        </member>
         <member name="T:Rewired.Platforms.Microsoft.WindowsGamingInput.DeviceType">
             <summary>
             Windows Gaming Input device type.

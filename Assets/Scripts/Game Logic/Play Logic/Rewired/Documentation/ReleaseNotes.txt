@@ -1,3 +1,84 @@
+1.1.56.0:
+
+    Changes:
+      - Added string localization system.
+      - Added glyph system.
+      - Added key fields to most objects in Rewired Input Manager and Controller and Controller Template definitions.
+      - Added Cinemachine 3 integration. (Unity 6+)
+      - Control Mapper:
+        - Added glyph support.
+        - Added support of localization system.
+        - Theme can now be changed at runtime.
+        - Dropped support in Unity 4.x.
+      - Removed Stadia platform support.
+
+    API Changes:
+      - Added Rewired.Interfaces.ILocalizedStringProvider interface.
+      - Added Rewired.Interfaces.IGlyphProvider interface.
+      - Added Rewired.ReInput.LocalizationHelper class.
+      - Added Rewired.ReInput.GlyphHelper class.
+      - Added Rewired.ReInput.localization property.
+      - Added Rewired.ReInput.glyphs property.
+      - Added Rewired.Keyboard.GetModifierKeyName method.
+      - Added Rewired.Keyboard.GetModifierKeyGlyph method.
+      - Added Rewired.ControllerElementIdentifier.key property.
+      - Added Rewired.ControllerElementIdentifier.positiveKey property.
+      - Added Rewired.ControllerElementIdentifier.negativeKey property.
+      - Added Rewired.ControllerElementIdentifier.glyph property.
+      - Added Rewired.ControllerElementIdentifier.positiveGlyph property.
+      - Added Rewired.ControllerElementIdentifier.negativeGlyph property.
+      - Added Rewired.ControllerElementIdentifier.GetGlyph method.
+      - Added Rewired.ControllerElementIdentifier.GetFinalGlyphKey method.
+      - Added Rewired.ControllerTemplateElementIdentifier.key property.
+      - Added Rewired.ControllerTemplateElementIdentifier.positiveKey property.
+      - Added Rewired.ControllerTemplateElementIdentifier.negativeKey property.
+      - Added Rewired.ControllerTemplateElementIdentifier.glyph property.
+      - Added Rewired.ControllerTemplateElementIdentifier.positiveGlyph property.
+      - Added Rewired.ControllerTemplateElementIdentifier.negativeGlyph property.
+      - Added Rewired.ControllerTemplateElementIdentifier.GetGlyph method.
+      - Added Rewired.ControllerTemplateElementIdentifier.GetFinalGlyphKey method.
+      - Added Rewired.ActionElementMap.elementIdentifierGlyph property.
+      - Added Rewired.ActionElementMap.elementIdentifierGlyphCount property.
+      - Added Rewired.ActionElementMap.GetElementIdentifierFinalGlyphKeys method.
+      - Added Rewired.ActionElementMap.GetElementIdentifierGlyphs method.
+      - Added Rewired.ActionElementMap.TryGetCombinedElementIdentifierName function.
+      - Added Rewired.ActionElementMap.TryGetCombinedElementIdentifierGlyph function.
+      - Added Rewired.ActionElementMap.TryGetCombinedElementIdentifierFinalGlyphKey function.
+      - Added Rewired.Controller.DirectionalPad class.
+      - Added Rewired.Joystick.directionalPadCount property.
+      - Added Rewired.Joystick.DirectionalPads property.
+      - Added Rewired.CompoundControllerElementType.DPad value.
+      - Added Rewired.InputAction.GetDisplayName method.
+      - Added Rewired.UI.ControlMapper.themeSettings property.
+      - Added Rewired.UI.ControlMapper.showGlyphs property.
+      - Added Rewired.Glyphs.ControllerElementGlyphProvider class.
+      - Added Rewired.Glyphs.ControllerElementGlyphSelectorOptions class.
+      - Added Rewired.Glyphs.ControllerElementGlyphSelectorOptionsSO class.
+      - Added Rewired.Glyphs.ControllerElementGlyphSelectorOptionsSOBase class.
+      - Added Rewired.Glyphs.ControllerElementGlyphSetCollectionSO class.
+      - Added Rewired.Glyphs.ControllerElementGlyphSetSO class.
+      - Added Rewired.Glyphs.ControllerElementSpriteGlyphSetSO class.
+      - Added Rewired.Glyphs.UnityUI.GlobalUnityUIControllerElementGlyphSettings
+      - Added Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyph
+      - Added Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyphBase
+      - Added Rewired.Glyphs.UnityUI.UnityUIGlyphOrText
+      - Added Rewired.Glyphs.UnityUI.UnityUIGlyphOrTextBase
+      - Added Rewired.Glyphs.UnityUI.UnityUIGlyphOrTextTMPro
+      - Added Rewired.Glyphs.UnityUI.UnityUIPlayerControllerElementGlyphBase
+      - Bug fix: Added Controller.GetCompoundElementById method and deprecated Controller.GetCompundElementById method.
+      - Bug fix: Changed Rewired.Platforms.XInputDeviceSubType.FlightSick to FlightStick.
+      - Removed all Stadia-related members.
+    
+    Controller Definition Changes:
+      - Changed Left Stick Button and Right Stick Button names to L3 / R3 on all Sony controllers.
+      - Added element identifier keys to all controllers and controller templates.
+      - Added D-Pad compound elements to all controllers with D-Pads.
+      - Changed Lever 1-3 lever press element identifier string from "Lever # Down" to "Lever # Press" to avoid conflicts with lever axis names on Saitek Pro Flight Quadrant and Saitek Pro Flight Yoke.
+      - Removed redundant R2 element identifier on Stadia Controller.
+    
+    Bug Fixes:
+      - Controller.Element.compoundElement property now returns the parent Controller.CompoundElement instead of null.
+   
 1.1.55.0:
 
    Changes:

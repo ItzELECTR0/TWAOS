@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -149,7 +151,8 @@
     <ul>
       <li><a href="#BehaviorDesigner">Behavior Designer</a></li>
       <li><a href="#Bolt">Bolt</a></li>
-      <li><a href="#Cinemachine">Cinemachine</a></li>
+      <li><a href="#Cinemachine2">Cinemachine 2</a></li>
+      <li><a href="#Cinemachine3">Cinemachine 3</a></li>
       <li><a href="#CorgiEngine">Corgi Engine - 2D + 2.5D Platformer</a></li>
       <li><a href="#Deftly">Deftly: Top Down Shooter Framework</a></li>
       <li><a href="#DialogueSystem">Dialogue System for Unity</a></li>
@@ -250,14 +253,15 @@
     <p>There is no Bolt-specific documentation. Bolt Units are direct analogues to the methods, properties, fields, and events in the <a href="https://guavaman.com/projects/rewired/docs/api-reference" target="_blank">Rewired API</a>. All the standard <a href="Documentation.html">Rewired documentation</a> applies.</p>
     <p>&nbsp;</p>
     <hr />
-    <h3><a name="Cinemachine" id="Cinemachine"></a>Cinemachine</h3>
-    <p><a href="https://assetstore.unity.com/packages/essentials/cinemachine-79898?aid=1011l3LkF">Cinemachine</a> by <a href="https://assetstore.unity.com/publishers/1?aid=1011l3LkF">Unity Technologies</a> is unified procedural camera system for in-game cameras, cinematics and cutscenes, film pre-visualization and virtual cinematography eSports solutions.<br />
+    <h3><a name="Cinemachine" id="Cinemachine"></a><a name="Cinemachine2" id="Cinemachine2"></a>Cinemachine 2</h3>
+    <p>NOTE: The Cinemachine 2 integration is not compatible with Cinemachine 3. See the <a href="#Cinemachine3">Cinemachine 3 integration instructions</a> if you are using Cinemachine 3.</p>
+    <p><a href="https://assetstore.unity.com/packages/essentials/cinemachine-79898?aid=1011l3LkF">Cinemachine 2</a> by <a href="https://assetstore.unity.com/publishers/1?aid=1011l3LkF">Unity Technologies</a> is unified procedural camera system for in-game cameras, cinematics and cutscenes, film pre-visualization and virtual cinematography eSports solutions.<br />
     </p>
-    <p><strong>To install the Cinemachine Integration Pack, do the following:</strong></p>
+<p><strong>To install the Cinemachine Integration Pack, do the following:</strong></p>
     <ol>
       <li>Download and install Cinemachine.</li>
       <li>Run the following menu item in the Unity editor:<br />
-        <strong>Window -&gt; Rewired -&gt; Integration -&gt; Cinemachine -&gt; Install Integration Pack</strong></li>
+        <strong>Window -&gt; Rewired -&gt; Integration -&gt; Cinemachine 2 -&gt; Install Integration Pack</strong></li>
   </ol>
     <p><strong>To Uninstall:</strong></p>
     <ol>
@@ -277,6 +281,35 @@
       <li>See the the image below for an example:</li>
     </ol>
 <p><img src="files/images/integration_cinemachine_inspector.png" alt="Cinemachine Inspector" /></p>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="Cinemachine3" id="Cinemachine3"></a>Cinemachine 3</h3>
+<p>Cinemachine 3 by <a href="https://assetstore.unity.com/publishers/1?aid=1011l3LkF">Unity Technologies</a> is unified procedural camera system for in-game cameras, cinematics and cutscenes, film pre-visualization and virtual cinematography eSports solutions.<br />
+</p>
+<p><strong>Requirements:</strong></p>
+<ul>
+  <li>Unity 6+</li>
+  <li>Cinemachine 3<br />
+    (This integration was built for Cinemachine 3.11. No guarantee of compatibility with past or future versions of Cinemachine is implied.)</li>
+</ul>
+<p><strong>To install the Cinemachine 3 Integration Pack, do the following:</strong></p>
+<ol>
+  <li>Install Cinemachine 3 from the Package Manager.</li>
+  <li>Run the following menu item in the Unity editor:<br />
+    <strong>Window -&gt; Rewired -&gt; Integration -&gt; Cinemachine 3 -&gt; Install Integration Pack</strong></li>
+</ol>
+<p><strong>To Uninstall:</strong></p>
+<ol>
+  <li>Delete the Rewired/Integration/Cinemachine3 folder</li>
+</ol>
+<p><strong>Usage:</strong></p>
+<ol>
+  <li>Add a Rewired Cinemachine Input Axis Controller to your Cinemachine Camera from the menu:<br />
+    <strong>Components -&gt; Rewired -&gt; Integrations -&gt; Cinemachine 3 -&gt; Rewired Cinemachine Input Axis Controller</strong></li>
+  <li>All axis string names used by Cinemachine must match exactly to Action names you specify in the Rewired Cinemachine Bridge inspector.</li>
+</ol>
+<p><strong>Advanced Users:</strong></p>
+<p>It is possible to use <a href="HowTos.html#exporting-constants">exported Player and Action constants</a> in the Rewired Cinemachine Input Axis Controller inspector so you can select Actions and Players from <a href="HowTos.html#actionid-property-drawer">drop-down lists</a> instead of having to type strings. Two script templates are included which you can copy and edit for this purpose. They are located in the Cinmachine3/Scripts/Templates and Cinemachine3/Scripts/Templates/Editor directories. There is one runtime script file and one editor script. Instructions are included in the scripts. Add the new axis controller component instead of the default one on your Cinemachine Cameras.</p>
 <p>&nbsp;</p>
 <hr />
     <h3><a name="CorgiEngine" id="CorgiEngine"></a>Corgi Engine - 2D + 2.5D Platformer</h3>

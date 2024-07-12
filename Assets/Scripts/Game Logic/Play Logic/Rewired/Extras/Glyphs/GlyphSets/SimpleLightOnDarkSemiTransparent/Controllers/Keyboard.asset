@@ -1,0 +1,286 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09563feea35117444a4feb79bda24352, type: 3}
+  m_Name: Keyboard
+  m_EditorClassIdentifier: 
+  _baseKeys:
+  - controller/keyboard
+  _glyphs:
+  - _key: a
+    _value: {fileID: 21300292, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: b
+    _value: {fileID: 21300332, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: c
+    _value: {fileID: 21300328, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: d
+    _value: {fileID: 21300296, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: e
+    _value: {fileID: 21300264, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f
+    _value: {fileID: 21300298, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: g
+    _value: {fileID: 21300300, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: h
+    _value: {fileID: 21300302, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: i
+    _value: {fileID: 21300274, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: j
+    _value: {fileID: 21300304, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: k
+    _value: {fileID: 21300306, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: l
+    _value: {fileID: 21300308, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: m
+    _value: {fileID: 21300336, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: n
+    _value: {fileID: 21300334, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: o
+    _value: {fileID: 21300276, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: p
+    _value: {fileID: 21300278, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: q
+    _value: {fileID: 21300260, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: r
+    _value: {fileID: 21300266, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: s
+    _value: {fileID: 21300294, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: t
+    _value: {fileID: 21300268, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: u
+    _value: {fileID: 21300272, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: v
+    _value: {fileID: 21300330, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: w
+    _value: {fileID: 21300262, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: x
+    _value: {fileID: 21300326, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: y
+    _value: {fileID: 21300270, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: z
+    _value: {fileID: 21300324, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_0
+    _value: {fileID: 21300246, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_1
+    _value: {fileID: 21300228, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_2
+    _value: {fileID: 21300230, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_3
+    _value: {fileID: 21300232, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_4
+    _value: {fileID: 21300234, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_5
+    _value: {fileID: 21300236, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_6
+    _value: {fileID: 21300238, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_7
+    _value: {fileID: 21300240, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_8
+    _value: {fileID: 21300242, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alpha_9
+    _value: {fileID: 21300244, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_0
+    _value: {fileID: 21300526, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_1
+    _value: {fileID: 21300506, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_2
+    _value: {fileID: 21300508, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_3
+    _value: {fileID: 21300510, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_4
+    _value: {fileID: 21300484, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_5
+    _value: {fileID: 21300486, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_6
+    _value: {fileID: 21300488, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_7
+    _value: {fileID: 21300462, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_8
+    _value: {fileID: 21300464, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_9
+    _value: {fileID: 21300466, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_period
+    _value: {fileID: 21300528, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_slash
+    _value: {fileID: 21300456, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_asterisk
+    _value: {fileID: 21300458, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_minus
+    _value: {fileID: 21300460, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_plus
+    _value: {fileID: 21300468, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_enter
+    _value: {fileID: 21300490, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: keypad_equals
+    _value: {fileID: 21300512, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: space
+    _value: {fileID: 21300374, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: backspace
+    _value: {fileID: 21300314, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: tab
+    _value: {fileID: 21300258, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: clear
+    _value: {fileID: 21300252, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: return
+    _value: {fileID: 21300348, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: pause
+    _value: {fileID: 21300030, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: escape
+    _value: {fileID: 21300000, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: exclamation_point
+    _value: {fileID: 21300416, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: double_quote
+    _value: {fileID: 21300444, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: hash
+    _value: {fileID: 21300420, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: dollar_sign
+    _value: {fileID: 21300424, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: ampersand
+    _value: {fileID: 21300426, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: quote
+    _value: {fileID: 21300312, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_parenthesis
+    _value: {fileID: 21300430, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_parenthesis
+    _value: {fileID: 21300432, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: asterisk
+    _value: {fileID: 21300428, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: plus
+    _value: {fileID: 21300436, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: comma
+    _value: {fileID: 21300338, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: minus
+    _value: {fileID: 21300248, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: period
+    _value: {fileID: 21300340, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: slash
+    _value: {fileID: 21300342, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: colon
+    _value: {fileID: 21300446, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: semicolon
+    _value: {fileID: 21300310, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: less_than
+    _value: {fileID: 21300450, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: equals
+    _value: {fileID: 21300250, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: greater_than
+    _value: {fileID: 21300452, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: question_mark
+    _value: {fileID: 21300448, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: at
+    _value: {fileID: 21300418, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_bracket
+    _value: {fileID: 21300280, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: backslash
+    _value: {fileID: 21300344, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_bracket
+    _value: {fileID: 21300282, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: caret
+    _value: {fileID: 21300422, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: underscore
+    _value: {fileID: 21300434, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: back_quote
+    _value: {fileID: 21300226, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: delete
+    _value: {fileID: 21300316, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: up_arrow
+    _value: {fileID: 21300350, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: down_arrow
+    _value: {fileID: 21300380, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_arrow
+    _value: {fileID: 21300352, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_arrow
+    _value: {fileID: 21300378, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: insert
+    _value: {fileID: 21300284, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: home
+    _value: {fileID: 21300286, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: end
+    _value: {fileID: 21300318, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: page_up
+    _value: {fileID: 21300288, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: page_down
+    _value: {fileID: 21300320, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f1
+    _value: {fileID: 21300002, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f2
+    _value: {fileID: 21300004, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f3
+    _value: {fileID: 21300006, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f4
+    _value: {fileID: 21300008, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f5
+    _value: {fileID: 21300010, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f6
+    _value: {fileID: 21300012, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f7
+    _value: {fileID: 21300014, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f8
+    _value: {fileID: 21300016, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f9
+    _value: {fileID: 21300018, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f10
+    _value: {fileID: 21300020, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f11
+    _value: {fileID: 21300022, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f12
+    _value: {fileID: 21300024, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f13
+    _value: {fileID: 21300530, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f14
+    _value: {fileID: 21300532, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: f15
+    _value: {fileID: 21300534, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: num_lock
+    _value: {fileID: 21300454, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: caps_lock
+    _value: {fileID: 21300290, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: scroll_lock
+    _value: {fileID: 21300028, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_shift
+    _value: {fileID: 21300412, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_shift
+    _value: {fileID: 21300410, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_control
+    _value: {fileID: 21300384, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_control
+    _value: {fileID: 21300382, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_alt
+    _value: {fileID: 21300388, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_alt
+    _value: {fileID: 21300386, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_command
+    _value: {fileID: 21300396, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_command
+    _value: {fileID: 21300394, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_windows
+    _value: {fileID: 21300390, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_windows
+    _value: {fileID: 21300392, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alt_gr
+    _value: {fileID: 21300372, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: help
+    _value: {fileID: 21300254, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: print_screen
+    _value: {fileID: 21300026, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: sys_req
+    _value: {fileID: 21300538, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: break
+    _value: {fileID: 21300256, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: menu
+    _value: {fileID: 21300368, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: control
+    _value: {fileID: 21300354, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: alt
+    _value: {fileID: 21300356, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: shift
+    _value: {fileID: 21300322, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: command
+    _value: {fileID: 21300360, guid: 99cbc473450af4147999e9e68398877b, type: 3}

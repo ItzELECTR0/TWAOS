@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -609,7 +611,20 @@
   </tr>
   <tr>
     <td valign="top">Compact Ids</td>
-    <td valign="top">This  renumbers all id's so they start at 0 and have no gaps.</td>
+    <td valign="top">Re-number all id's so they start at 0 and are sequential with no missing values.</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><strong>Misc:</strong></p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top"><a name="tools-export-keys" id="tools-export-keys"></a>Export Keys for Localization</td>
+    <td valign="top"><p>Export keys for all objects in the Rewired Input Manager and Controller Data Files to a JSON file.</p>
+      <p>You can export  keys to a JSON file, then provide a localized string for each key you want translated. Remove any keys for which you do not provide a localized value to save memory and CPU usage during lookups.</p></td>
+  </tr>
+  <tr>
+    <td width="19%" valign="top">Export Keys for Reference</td>
+    <td width="81%" valign="top">Export keys for all objects in the Rewired Input Manager and Controller Data Files to a text file.</td>
   </tr>
 </table>
 <p>&nbsp;</p>
@@ -632,6 +647,10 @@
   <tr>
     <td valign="top">Descriptive Name</td>
     <td valign="top">The descriptive name which can be shown to players.</td>
+  </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Player. This is used for localization and glyph lookup.</td>
   </tr>
   <tr>
     <td valign="top">Is Playing on Start</td>
@@ -772,8 +791,12 @@
 <p><img src="files/images/rewirededitor_actions_properties.png" alt="Action Properties" /></p>
  <table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
+    <td valign="top">Category</td>
+    <td valign="top">The Action Category to which the Action belongs.</td>
+  </tr>
+  <tr>
     <td width="17%" valign="top">Action Id</td>
-    <td width="83%" valign="top">Can be used to get the value of the action via scripting.</td>
+    <td width="83%" valign="top">Unique identifier for the Action. Can be used to get the value of the action via scripting.</td>
   </tr>
   <tr>
     <td valign="top">Name</td>
@@ -782,6 +805,10 @@
   <tr>
     <td valign="top">Descriptive Name</td>
     <td valign="top">The descriptive name that can be shown to players when mapping controls. This name is shown for axes (when not mapped as a split axis) and for buttons.</td>
+  </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Action. This is used for localization and glyph lookup.</td>
   </tr>
   <tr>
     <td valign="top">Type</td>
@@ -936,6 +963,10 @@
     <td valign="top">The descriptive name that can be shown to players.</td>
   </tr>
   <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Map Category. This is used for localization and glyph lookup.</td>
+  </tr>
+  <tr>
     <td valign="top">Tag</td>
     <td valign="top">Allows you to tag a group of categories and search for categories by tag in scripting.</td>
   </tr>
@@ -975,6 +1006,10 @@
     <td valign="top">The descriptive name that can be shown to players.</td>
   </tr>
   <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Action Category. This is used for localization and glyph lookup.</td>
+  </tr>
+  <tr>
     <td valign="top">Tag</td>
     <td valign="top">Allows you to tag a group of categories and search for categories by tag in scripting.</td>
   </tr>
@@ -1010,6 +1045,10 @@
     <td valign="top">The descriptive name that can be shown to players.</td>
   </tr>
   <tr>
+    <td valign="top">Key</td>
+    <td valign="top">The controller key. This is used for localization and glyph lookup.</td>
+  </tr>
+  <tr>
     <td valign="top">Type Guid</td>
     <td valign="top">The controller type guid. This is used to uniquely identify Custom Controller type using Controller.hardwareTypeGuid. Each Custom Controller should have a different Guid.</td>
   </tr>
@@ -1023,8 +1062,28 @@
     <td width="87%" valign="top">The element identifier id of the element. Can be used in scripting.</td>
   </tr>
   <tr>
-    <td valign="top">Name</td>
-    <td valign="top">The name of the element. This can be used in scripting and shown to players. Must be unique.</td>
+    <td valign="top">Descriptive Name</td>
+    <td valign="top">The descriptive name of the element. This can be used in scripting and can be shown to players. Must be unique.</td>
+  </tr>
+  <tr>
+    <td valign="top">Positive Descriptive Name</td>
+    <td valign="top">The descriptive name of the element's positive axis. (Optional)</td>
+  </tr>
+  <tr>
+    <td valign="top">Negative Descriptive Name</td>
+    <td valign="top">The descriptive name of the element's negative axis. (Optional)</td>
+  </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the element. This is used for localization and glyph lookup.</td>
+  </tr>
+  <tr>
+    <td valign="top"><p>Positive Key</p></td>
+    <td valign="top">Key to identify the element's positive axis direction. This is used for localization and glyph lookup.</td>
+  </tr>
+  <tr>
+    <td valign="top">Negative Key</td>
+    <td valign="top">Key to identify the element's negative axis direction. This is used for localization and glyph lookup.</td>
   </tr>
   <tr>
     <td valign="top">Range</td>
@@ -1094,7 +1153,11 @@
     <td valign="top">Name</td>
     <td valign="top">The name of the element. This can be used in scripting and shown to players. Must be unique.</td>
   </tr>
-</table>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the element. This is used for localization and glyph lookup.</td>
+  </tr>
+ </table>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="JoystickLayouts" id="JoystickLayouts"></a>Joystick Layouts</h3>
@@ -1115,7 +1178,11 @@
     <td valign="top">Description</td>
     <td valign="top">The descriptive name that can be shown to players.</td>
   </tr>
-</table>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Layout. This is used for localization and glyph lookup.</td>
+  </tr>
+ </table>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="KeyboardLayouts" id="KeyboardLayouts"></a>Keyboard Layouts</h3>
@@ -1135,6 +1202,10 @@
   <tr>
     <td valign="top">Description</td>
     <td valign="top">The descriptive name that can be shown to players.</td>
+  </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Layout. This is used for localization and glyph lookup.</td>
   </tr>
 </table>
 <p></p>
@@ -1158,6 +1229,10 @@
     <td valign="top">Description</td>
     <td valign="top">The descriptive name that can be shown to players.</td>
   </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Layout. This is used for localization and glyph lookup.</td>
+  </tr>
 </table>
 <p></p>
 <p></p>
@@ -1179,6 +1254,10 @@
   <tr>
     <td valign="top">Description</td>
     <td valign="top">The descriptive name that can be shown to players.</td>
+  </tr>
+  <tr>
+    <td valign="top">Key</td>
+    <td valign="top">Key to identify the Layout. This is used for localization and glyph lookup.</td>
   </tr>
 </table>
 <p></p>

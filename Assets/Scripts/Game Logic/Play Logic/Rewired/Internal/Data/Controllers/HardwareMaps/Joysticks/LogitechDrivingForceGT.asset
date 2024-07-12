@@ -15,6 +15,7 @@ MonoBehaviour:
   editorControllerName: 
   description: 
   controllerGuid: a6b952df-1dee-4b0b-92d2-d124f230e9b1
+  controllerKey: logitech_driving_force_gt
   templateGuids:
   - 104e31d8-9115-4dd5-a398-2e54d35e6c83
   hideInLists: 0
@@ -24,171 +25,267 @@ MonoBehaviour:
     _name: Wheel
     _positiveName: Wheel Right
     _negativeName: Wheel Left
+    _key: wheel
+    _positiveKey: wheel/right
+    _negativeKey: wheel/left
     _elementType: 0
     _compoundElementType: 0
   - _id: 1
     _name: Accelerator
     _positiveName: Accelerator
     _negativeName: 
+    _key: accelerator
+    _positiveKey: accelerator
+    _negativeKey: 
     _elementType: 0
     _compoundElementType: 0
   - _id: 2
     _name: Brake
     _positiveName: Brake
     _negativeName: 
+    _key: brake
+    _positiveKey: brake
+    _negativeKey: 
     _elementType: 0
     _compoundElementType: 0
   - _id: 4
     _name: Left Paddle
     _positiveName: 
     _negativeName: 
+    _key: left_paddle
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 5
     _name: Right Paddle
     _positiveName: 
     _negativeName: 
+    _key: right_paddle
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 6
     _name: Cross
     _positiveName: 
     _negativeName: 
+    _key: cross
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 7
     _name: Circle
     _positiveName: 
     _negativeName: 
+    _key: circle
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 8
     _name: Square
     _positiveName: 
     _negativeName: 
+    _key: square
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 9
     _name: Triangle
     _positiveName: 
     _negativeName: 
+    _key: triangle
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 10
     _name: L2
     _positiveName: 
     _negativeName: 
+    _key: l2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 11
     _name: R2
     _positiveName: 
     _negativeName: 
+    _key: r2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 12
     _name: L3
     _positiveName: 
     _negativeName: 
+    _key: l3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 13
     _name: R3
     _positiveName: 
     _negativeName: 
+    _key: r3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 14
     _name: Select
     _positiveName: 
     _negativeName: 
+    _key: select
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 15
     _name: Start
     _positiveName: 
     _negativeName: 
+    _key: start
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 16
     _name: Plus
     _positiveName: 
     _negativeName: 
+    _key: plus
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 17
     _name: Minus
     _positiveName: 
     _negativeName: 
+    _key: minus
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 18
     _name: Return
     _positiveName: 
     _negativeName: 
+    _key: return
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 19
     _name: Dial Left
     _positiveName: 
     _negativeName: 
+    _key: dial/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 20
     _name: Dial Right
     _positiveName: 
     _negativeName: 
+    _key: dial/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 22
     _name: GT
     _positiveName: 
     _negativeName: 
+    _key: gt
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 23
     _name: PS
     _positiveName: 
     _negativeName: 
+    _key: ps
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 24
     _name: Shift Up
     _positiveName: 
     _negativeName: 
+    _key: shift/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 25
     _name: Shift Down
     _positiveName: 
     _negativeName: 
+    _key: shift/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 26
     _name: D-Pad Up
     _positiveName: 
     _negativeName: 
+    _key: dpad/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 27
     _name: D-Pad Right
     _positiveName: 
     _negativeName: 
+    _key: dpad/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 28
     _name: D-Pad Down
     _positiveName: 
     _negativeName: 
+    _key: dpad/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
   - _id: 29
     _name: D-Pad Left
     _positiveName: 
     _negativeName: 
+    _key: dpad/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _compoundElementType: 0
-  compoundElements: []
+  - _id: 30
+    _name: D-Pad
+    _positiveName: 
+    _negativeName: 
+    _key: dpad
+    _positiveKey: 
+    _negativeKey: 
+    _elementType: 100
+    _compoundElementType: 10
+  compoundElements:
+  - type: 10
+    elementIdentifier: 30
+    componentElementIdentifiers: 1a0000001b0000001c0000001d000000
   directInput:
     description: 
     matchingCriteria:
@@ -223,6 +320,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -268,6 +366,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -313,6 +412,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -805,6 +905,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -851,6 +952,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -897,6 +999,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         alternateCalibrations: []
         sourceButton: 0
         buttonAxisContribution: 0
@@ -1393,6 +1496,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
+  windowsWGI:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
+    variants: []
   osx:
     description: 
     matchingCriteria:
@@ -1446,6 +1567,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1466,6 +1588,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1486,6 +1609,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1909,6 +2033,7 @@ MonoBehaviour:
       - Driving Force GT
       productGUID:
       - c29a046d
+      deviceType: 0
     elements:
       axes:
       - elementIdentifier: 0
@@ -1926,6 +2051,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1946,6 +2072,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -1966,6 +2093,7 @@ MonoBehaviour:
           _dataFormat: 0
           _excludeFromPolling: 0
           _specialAxisType: 0
+          _pollingDeadZone: -1
         sourceButton: 0
         buttonAxisContribution: 0
         sourceHat: 0
@@ -2513,87 +2641,7 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  fallback_Blackberry:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WindowsPhone8:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_XBox360:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   fallback_XBoxOne:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_PS3:
     description: 
     matchingCriteria:
       axisCount: 0
@@ -2632,6 +2680,21 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  ps5:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   fallback_PSM:
     description: 
@@ -2673,67 +2736,7 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  fallback_Wii:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_WiiU:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   fallback_AmazonFireTV:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-      productName_useRegex: 0
-      productName: []
-      matchUnityVersion: 0
-      matchUnityVersion_min: 
-      matchUnityVersion_max: 
-      matchSysVersion: 0
-      matchSysVersion_min: 
-      matchSysVersion_max: 
-    elements:
-      axes: []
-      buttons: []
-    variants: []
-  fallback_RazerForgeTV:
     description: 
     matchingCriteria:
       axisCount: 0
@@ -2771,18 +2774,6 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  ouya:
-    description: 
-    matchingCriteria:
-      axisCount: 0
-      buttonCount: 0
-      disabled: 0
-      tag: 
-      alwaysMatch: 0
-    elements:
-      axes: []
-      buttons: []
-    variants: []
   xboxOne:
     description: 
     matchingCriteria:
@@ -2796,6 +2787,25 @@ MonoBehaviour:
     elements:
       axes: []
       buttons: []
+    variants: []
+  gameCore:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productName_useRegex: 0
+      productName: []
+      vidPid: []
+      deviceType: 0
+      gamepadSubType: 0
+      hatCount: 0
+    elements:
+      axes: []
+      buttons: []
+    controllerName: 
     variants: []
   ps4:
     description: 
@@ -2898,4 +2908,24 @@ MonoBehaviour:
       axes: []
       buttons: []
     variants: []
-  elementIdentifierIdCounter: 30
+  appleGCController:
+    description: 
+    matchingCriteria:
+      axisCount: 0
+      buttonCount: 0
+      disabled: 0
+      tag: 
+      alwaysMatch: 0
+      productCategory_useRegex: 0
+      productCategory: []
+      productName_useRegex: 0
+      productName: []
+      primaryProfileType: 0
+      profileSubTypes: 
+    elements:
+      axes: []
+      buttons: []
+      compoundElements: []
+    controllerName: 
+    variants: []
+  elementIdentifierIdCounter: 31

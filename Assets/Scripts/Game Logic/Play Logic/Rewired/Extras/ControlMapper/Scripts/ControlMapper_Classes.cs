@@ -2,8 +2,6 @@
 
 #define REWIRED_CONTROL_MAPPER_USE_TMPRO
 
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper
@@ -12,9 +10,7 @@ namespace Rewired.UI.ControlMapper
     using UnityEngine;
     using UnityEngine.UI;
     using UnityEngine.EventSystems;
-    using System;
     using System.Collections.Generic;
-    using System.Collections.ObjectModel;
     using Rewired;
     using Rewired.Utils;
 #if REWIRED_CONTROL_MAPPER_USE_TMPRO
@@ -175,7 +171,6 @@ namespace Rewired.UI.ControlMapper
 
         private class GUIInputField : GUIElement
         {
-
             protected Button button { get { return selectable as Button; } }
             public InputFieldInfo fieldInfo { get { return uiElementInfo as InputFieldInfo; } }
             public bool hasToggle { get { return toggle != null; } }
@@ -205,10 +200,12 @@ namespace Rewired.UI.ControlMapper
             public GUIInputField(GameObject gameObject)
                 : base(gameObject) {
                 if(!Init()) return;
+                fieldInfo.glyphOrText = UnityTools.GetComponentInSelfOrChildren<Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyph>(gameObject);
             }
             public GUIInputField(Button button, Text label)
                 : base(button, label) {
                 if(!Init()) return;
+                fieldInfo.glyphOrText = UnityTools.GetComponentInSelfOrChildren<Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyph>(button.gameObject);
             }
 
             public void SetFieldInfoData(int actionId, AxisRange axisRange, ControllerType controllerType, int intData) {
@@ -964,6 +961,5 @@ namespace Rewired.UI.ControlMapper
                 }
             }
         }
-
     }
 }

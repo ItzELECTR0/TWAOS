@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -160,6 +162,8 @@
       <li>Get input in Update, Fixed Update, and OnGUI -- you choose which loops update runs in, one or multiple as needed.</li>
       <li>Customizable and saveable controller maps -- export mappings to XML or JSON and save how you choose (example included using PlayerPrefs, but save however you like.)</li>
       <li>Included Control Mapper system using Unity GUI allows your players to rebind controls at runtime.</li>
+      <li>Display glyphs or text for controller elements for UI help. Create your own glyphs or use the included ones.</li>
+      <li>User-defined localization of all strings including controller and controller element names.</li>
       <li>Unlimited mapping layouts per controller.</li>
       <li>Controller Templates (see Controllers section).</li>
       <li>Included on-screen touch controls for mobile platforms. (Unity 5.0+)</li>
@@ -249,8 +253,6 @@
     <ul>
       <li>Input Manager is self-contained so you can actually have separate input managers for different levels if you choose with entirely different mappings, etc. (Not necessary but interesting!)</li>
       <li>Functions for mapping conflict checking</li>
-      <li>Identify joysticks by button press in Unity Fallback mode.</li>
-      <li>Included example of mapping screen using Unity GUI (will update when new GUI system comes out) including saving and loading of maps per-player.</li>
       <li>Documentation</li>
     </ul>
     <h4>Performance:</h4>
@@ -267,7 +269,8 @@
     <h4>Requirements:</h4>
     <ul>
 	    <li><a href="https://unity3d.com" target="_blank">Unity 4.3</a> or later, Free or Pro.</li>
-        <li><a href="https://unity3d.com" target="_blank">Unity 4.6</a> or later required for Control Mapper.</li>
+        <li><a href="https://unity3d.com" target="_blank">Unity 5.0</a> or later required for Control Mapper.</li>
+        <li><a href="https://unity3d.com" target="_blank">Unity 5.0</a> or later required for Glyphs.</li>
         <li><a href="https://unity3d.com" target="_blank">Unity 5.0</a> or later required for WebGL native input and Touch Controls.</li>
 	    <li>OSX 10.5 or later is required for the OSX Unity editor and OSX Standalone builds.</li>
 	    </ul>

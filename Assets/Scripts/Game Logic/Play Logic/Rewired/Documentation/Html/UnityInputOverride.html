@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -146,6 +148,7 @@
 			<!-- InstanceBeginEditable name="MainBody" -->
 
     <p>The Unity Input Override script  reroutes calls to Unity input from most scripts over to Rewired. Simply install it and every script that calls Input.GetButton, Input.GetAxis, etc. will now use Rewired instead of Unity input. This allows you to use Rewired for input without having to change any code in the scripts. This will even work for most assets downloaded from the Unity Asset Store, allowing you to use Rewired as the input source instead of Unity input.</p>
+    <p><strong>IMPORTANT:</strong> Unity Input Override only works for scripts that  were written for the legacy UnityEngine.Input system. This does not apply to scripts written for Unity's new Input System.</p>
     <p><strong><a name="usage" id="usage"></a>Usage</strong></p>
     <ul>
       <li><a href="#installation">Install the Unity Input Override script</a>.</li>

@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -150,14 +152,16 @@
     <p><strong>Usage</strong></p>
 <p>The basic process is as follows:</p>
 <ol>
-  <li>Create an Input Mapper.</li>
-  <li>Configure Options.</li>
-  <li>Subscribe to events.</li>
-  <li>Create a mapping Context.</li>
-  <li>Start listening for input.</li>
-  <li>Handle assignment conflicts (optional).</li>
-</ol>
-<p><strong>1. Create an Input Mapper</strong></p>
+  <li><a href="#create">Create an Input Mapper.</a></li>
+  <li><a href="#options">Configure Options.</a></li>
+  <li><a href="#events">Subscribe to events.</a></li>
+  <li><a href="#context">Create a mapping Context.</a></li>
+  <li><a href="#listen">Start listening for input.</a></li>
+  <li><a href="#conflicts">Handle assignment conflicts (optional).</a></li>
+  <li><a href="#advanced">Advanced operations (optional).</a></li>
+  </ol>
+<p>For additional issues, see the <a href="#faq">FAQ</a>.</p>
+<p><strong><a name="create" id="create"></a>1. Create an Input Mapper</strong></p>
 <p>You can either create a new instance of an Input Mapper or use the Default instance as shown below:</p>
 <pre class="code"><span class="comment">// Create a new instance</span>
 InputMapper inputMapper = new InputMapper();
@@ -165,24 +169,24 @@ inputMapper.Start(context);
 
 <span class="comment">// Or you can use the Default instance instead if you only need one Input Mapper</span> 
 InputMapper.Default.Start(context);</pre>
-<p><strong>2. Configure Options</strong></p>
+<p><strong><a name="options" id="options"></a>2. Configure Options</strong></p>
 <p>Each Input Mapper has an <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_InputMapper_Options.htm">Options</a> object which allows you to configure various settings to fit your needs. These settings should be configured before starting the Input Mapper. <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/T_Rewired_InputMapper_Options.htm">Each available option is described in the class documentation.</a></p>
 <pre class="code">inputMapper.options.timeout = 5f; <span class="comment">// set the timeout to 5 seconds</span>
 inputMapper.options.ignoreMouseXAxis = true; <span class="comment">// ignore the mouse X axis when polling for input</span>
 inputMapper.options.ignoreMouseYAxis = true; <span class="comment">// ignore the mouse Y axis when polling for input</span><br /></pre>
-<p><strong>3. Subscribe to events</strong></p>
+<p><strong><a name="events" id="events"></a>3. Subscribe to events</strong></p>
 <p>There are numerous events to which you can subscribe to receive notifications when important events take place such as when an input assignment is made or when an assignment conflict is found.</p>
 <pre class="code">
 inputMapper.InputMappedEvent += OnInputMapped;
 inputMapper.ConflictFoundEvent += OnConflictFound;<span class="comment"></span><span class="comment"></span>
 </pre>
-<p><strong>4. Create a mapping Context</strong></p>
+<p><strong><a name="context" id="context"></a>4. Create a mapping Context</strong></p>
 <p>A mapping context provides information about the current mapping session. The mapping context is just a few pieces of information that informs the Input Mapper about what is being mapped.</p>
 <pre class="code">
 InputMapper.Context context = new InputMapper.Context() {
   actionId = action.id, <span class="comment">// the id of the Action being mapped</span><br />  controllerMap = controllerMap, <span class="comment">// the Controller Map which will have the new mapping added</span><br />  actionRange = AxisRange.Full, <span class="comment">// the range of the Action being mapped</span><br />  actionElementMapToReplace = actionElementMap <span class="comment">// the Action Element Map to be replaced (optional)</span><br />};
 </pre>
-<p><strong>5. Start listening for input</strong></p>
+<p><strong><a name="listen" id="listen"></a>5. Start listening for input</strong></p>
 <pre class="code">
 inputMapper.Start(context);
 </pre>
@@ -215,7 +219,7 @@ void OnConflictFound(InputMapper.ConflictFoundEventData data) {
     }
 }</pre>
 <p>If you do not subscribe to the ConflictsFoundEvent and you have left conflict checking enabled in the Options.checkForConflicts property, the default action specified in Options.defaultActionWhenConflictFound will be used to resolve the conflict(s).</p>
-<p><strong>7. Advanced operations (optional)</strong></p>
+<p><strong><a name="advanced" id="advanced"></a>7. Advanced operations (optional)</strong></p>
 <p>Ignoring certain controller elements:</p>
 <pre class="code">
 void Setup() {
@@ -252,6 +256,13 @@ inputMapper_mouse.Start(
         actionElementMapToReplace = mouseMap.GetElementMap(actionElementMapToReplaceId)
     }
 );    </pre>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<h3><a name="faq" id="faq"></a>Frequently Asked Questions</h3>
+<p class="question">Why is binding replacement not working?</p>
+<p>You must pass the ActionElementMap to be replaced in <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/P_Rewired_InputMapper_Context_actionElementMapToReplace.htm">InputMapper.Context.actionElementMapToReplace</a> when calling <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/M_Rewired_InputMapper_Start.htm">InputMapper.Start</a>. After an ActionElementMap is replaced, a new ActionElementMap is created. If you are storing a reference to the ActionElementMap and then it is replaced, the reference to the old ActionElementMap is no longer valid because itpoints to an ActionElementMap that is no longer present in the Controller Map. If you are storing a reference to the ActionElementMap, you must update your reference to the new ActionElementMap after it is replaced.</p>
+<p>In addition, whether replacement happens automatically when a mapping conflict is found is determined by <a href="https://guavaman.com/projects/rewired/docs/api-reference/html/P_Rewired_InputMapper_Options_defaultActionWhenConflictFound.htm">InputMapper.Options.defaultActionWhenConflictFound</a>. You can also <a href="#conflicts">handle conflicts manually</a> and determine what happens to conflicting bindings.</p>
 <div class="bottom-pager clearfix">
   <a class="back-button" href="Documentation.html" title="Actions"><span class="button-img"></span>Documentation</a></div>
 <!-- InstanceEndEditable -->

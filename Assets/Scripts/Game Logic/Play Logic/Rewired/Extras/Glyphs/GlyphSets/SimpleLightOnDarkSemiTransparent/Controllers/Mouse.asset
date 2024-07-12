@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09563feea35117444a4feb79bda24352, type: 3}
+  m_Name: Mouse
+  m_EditorClassIdentifier: 
+  _baseKeys:
+  - controller/mouse
+  _glyphs:
+  - _key: move
+    _value: {fileID: 21300504, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/horizontal
+    _value: {fileID: 21300498, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/right
+    _value: {fileID: 21300502, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/left
+    _value: {fileID: 21300500, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/vertical
+    _value: {fileID: 21300492, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/up
+    _value: {fileID: 21300494, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: move/down
+    _value: {fileID: 21300496, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/vertical
+    _value: {fileID: 21300514, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/up
+    _value: {fileID: 21300516, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/down
+    _value: {fileID: 21300518, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/horizontal
+    _value: {fileID: 21300520, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/right
+    _value: {fileID: 21300524, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: wheel/left
+    _value: {fileID: 21300522, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: left_button
+    _value: {fileID: 21300470, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: right_button
+    _value: {fileID: 21300472, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: middle_button
+    _value: {fileID: 21300474, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: button_4
+    _value: {fileID: 21300476, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: button_5
+    _value: {fileID: 21300478, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: button_6
+    _value: {fileID: 21300480, guid: 99cbc473450af4147999e9e68398877b, type: 3}
+  - _key: button_7
+    _value: {fileID: 21300482, guid: 99cbc473450af4147999e9e68398877b, type: 3}

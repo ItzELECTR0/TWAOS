@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -143,7 +145,7 @@
       <!-- InstanceEndEditable -->
             </h1>
             
-		  <!-- InstanceBeginEditable name="MainBody" -->
+			<!-- InstanceBeginEditable name="MainBody" -->
 
     <p>The following information was written under the assumption that you have already completely read and understood all documentation topics under Essentials and Concepts in the <a href="Documentation.html">Documentation</a>. If you have not done so, please do before continuing.</p>
     <p><strong>Topics:</strong></p>
@@ -843,11 +845,16 @@ for(int i = 0; i &lt; targetCount; i++) {
     <p>&nbsp;</p>
     <hr />
     <h3><a name="display-glyph-for-action" id="display-glyph-for-action"></a>Displaying a glyph for a Controller element mapped to an Action    </h3>
+    <p><strong>As of Rewired 1.1.56.0, displaying glyphs can be more easily handled by using the built-in glyph system. <a href="Glyphs.html">See this for more information</a>.</strong> Specifically, <a href="Glyphs.html#unity-ui-player-controller-element-glyph">this component can display the glyph(s) for controller elements mapped to an Action for a Player</a>.</p>
+    <p>The following information is considered outdated, but remains for reference.</p>
+    <p>&nbsp;</p>
+    <hr style="width: 50%; margin: 0 auto;"/>
+    <p>&nbsp;</p>
     <ul>
       <li><a href="#display-glyph-for-action-joystick">Joysticks</a></li>
       <li><a href="#display-glyph-for-action-keyboard">Keyboard</a></li>
       <li><a href="#display-glyph-for-action-mouse">Mouse</a></li>
-    </ul>
+</ul>
     <p><strong><a name="display-glyph-for-action-joystick" id="display-glyph-for-action-joystick"></a>Joysticks:</strong></p>
     <p>There are two different types of glyphs you can display for a Joystick:</p>
     <ol>
@@ -1296,7 +1303,12 @@ namespace Rewired.Demos {
 <p>&nbsp;</p>
 <hr />
     <h3><a name="display-glyph-for-active-elements" id="display-glyph-for-active-elements"></a>Displaying a glyph for the currently active Controller elements</h3>
-<p>Very similar to <a href="#display-glyph-for-action">the previous example</a>, this is a slightly modified process:</p>
+    <p><strong>As of Rewired 1.1.56.0, displaying glyphs can be more easily handled by using <a href="Glyphs.html">the built-in glyph system</a>. </strong>Specifically, <a href="Glyphs.html#unity-ui-controller-element-glyph">this component can display a glyph for a specific controller element.</a> You will still need to select the controller element(s) you want to display however, so the below information may be useful.</p>
+    <p>The following information is considered outdated, but remains for reference.</p>
+    <p>&nbsp;</p>
+    <hr style="width: 50%; margin: 0 auto;"/>
+    <p>&nbsp;</p>
+    <p>Very similar to <a href="#display-glyph-for-action">the previous example</a>, this is a slightly modified process:</p>
 <pre class="code">using UnityEngine;
 using System.Collections;
 
@@ -1639,6 +1651,7 @@ if(modifier &amp;&amp; primary) { <span class="comment">// modifier was held or 
 <p>&nbsp;</p>
 <hr />
 <h3><a name="converting-scripts" id="converting-scripts"></a>Converting scripts from UnityEngine.Input to Rewired</h3>
+<p><strong>IMPORTANT:</strong> This documentation applies to scripts that were written for the legacy UnityEngine.Input system. This does not apply to scripts written for Unity's new Input System.</p>
 <p><strong>Unity Input Override (the easy way):</strong></p>
 <p> Rewired includes the <a href="UnityInputOverride.html">Unity Input Override</a> script to make converting most scripts from Unity input to Rewired effortless and automatic, requiring no code changes to work. It even works with most assets downloaded from the Unity Asset Store. <a href="UnityInputOverride.html">See Unity Input Override for more information</a>.</p>
 <p><strong>Modifying script code to use Rewired instead of Unity input (the harder way):</strong></p>

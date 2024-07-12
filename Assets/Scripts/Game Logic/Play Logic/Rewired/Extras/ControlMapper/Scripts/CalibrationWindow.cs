@@ -34,18 +34,13 @@
 #define UNITY_5_3_PLUS
 #endif
 
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper {
 
     using UnityEngine;
     using UnityEngine.UI;
-    using UnityEngine.EventSystems;
-    using UnityEngine.Events;
     using System.Collections.Generic;
-    using System.Collections;
     using Rewired;
     using Rewired.Utils;
     using Rewired.Integration.UnityUI;
@@ -207,8 +202,16 @@ namespace Rewired.UI.ControlMapper {
                 GameObject instance = UITools.InstantiateGUIObject<Button>(axisButtonPrefab, axisScrollAreaContent, "Axis" + i);
                 Button button = instance.GetComponent<Button>();
                 button.onClick.AddListener(() => { OnAxisSelected(index, button); });
-                Text text = UnityTools.GetComponentInSelfOrChildren<Text>(instance);
-                if (text != null) text.text = ControlMapper.GetLanguage().GetElementIdentifierName(joystick, joystick.AxisElementIdentifiers[i].id, AxisRange.Full);
+                Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyph glyphOrText = UnityTools.GetComponentInSelfOrChildren<Rewired.Glyphs.UnityUI.UnityUIControllerElementGlyph>(instance);
+                if (glyphOrText != null) {
+                    glyphOrText.allowedTypes = ControlMapper.current.showGlyphs ?
+                        Glyphs.UnityUI.UnityUIControllerElementGlyphBase.AllowedTypes.All :
+                        Glyphs.UnityUI.UnityUIControllerElementGlyphBase.AllowedTypes.Text;
+                    glyphOrText.controllerElementIdentifier = joystick.AxisElementIdentifiers[i];
+                } else {
+                    Text text = UnityTools.GetComponentInSelfOrChildren<Text>(instance);
+                    if (text != null) text.text = ControlMapper.GetLanguage().GetElementIdentifierName(joystick, joystick.AxisElementIdentifiers[i].id, AxisRange.Full);
+                }
                 if (buttonHeight == 0.0f) buttonHeight = UnityTools.GetComponentInSelfOrChildren<LayoutElement>(instance).minHeight;
                 axisButtons.Add(button);
             }

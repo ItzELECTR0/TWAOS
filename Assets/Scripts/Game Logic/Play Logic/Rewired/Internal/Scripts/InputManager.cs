@@ -246,10 +246,6 @@ namespace Rewired {
             platform = Rewired.Platforms.Platform.WebGL;
 #endif
 
-#if UNITY_STADIA
-            platform = Rewired.Platforms.Platform.Stadia;
-#endif
-
             // Check if Webplayer
 #if UNITY_WEBPLAYER
 

@@ -91,16 +91,18 @@
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
-              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
             <strong>Misc:</strong>
             <ul>
+              <li><a href="RewiredStandaloneInputModule.html">Rewired Standalone Input Module</a></li>
 	          <li><a href="ComponentControls.html" title="Component Controls">Component Controls</a></li>
 	          <li><a href="PlayerControllers.html" title="Player Controllers">Player Controllers</a></li>
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
+              <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
             <ul>
@@ -158,6 +160,7 @@
       <li><a href="#saving-and-loading">Saving and Loading User Data</a></li>
       <li><a href="#conflict-checking">Conflict Checking</a></li>
       <li><a href="#theming">Theming</a></li>
+      <li><a href="#glyphs">Glyphs</a></li>
       <li><a href="#language">Lanugage</a></li>
       <li><a href="#misc-notes">Misc Notes</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -165,7 +168,7 @@
   </ul>
     <p>&nbsp;</p>
     <h2><a name="overview" id="overview"></a>Overview</h2>
-    <p>Control Mapper is a customizable, responsive control mapping system included with Rewired that you can use in your games. This system provides complete controller remapping including keyboard, mouse, and joystick support, axis calibration, joystick and mouse sensitivity, single or multiple players, controller maps, and much more. Control Mapper can be fully controlled with keyboard, mouse, joystick, and/or touch controls. Control Mapper uses Unity's new GUI system and therefore requires Unity 4.6+.</p>
+    <p>Control Mapper is a customizable, responsive control mapping system included with Rewired that you can use in your games. This system provides complete controller remapping including keyboard, mouse, and joystick support, axis calibration, joystick and mouse sensitivity, single or multiple players, controller maps, and much more. Control Mapper can be fully controlled with keyboard, mouse, joystick, and/or touch controls. Control Mapper uses Unity's new GUI system and requires Unity 5.0+.</p>
 <p>Control Mapper has many options which you can customize to fit your game's needs:</p>
     <ul>
       <li>Optional display of Players for multiplayer games.</li>
@@ -177,13 +180,14 @@
       <li>Optional Keyboard, Mouse, and Controller support.</li>
       <li>Choose the number of alternate fields per controller type.</li>
       <li>Customizable theme settings for changing colors and button styles.</li>
+      <li>Optional display of controller element glyphs.</li>
       <li>Customizable language settings for changing button and window labels and messages.</li>
       <li>Menu control by your choice of Rewired Player(s).</li>
       <li>Customizable Actions for opening, closing, and canceling.</li>
     </ul>
-    <p>Example screen showing multiple players, multiple controllers per-player, sensitivity settings, multiple map categories, with keyboard, mouse, and controller support.</p>
-<p><img src="files/images/controlmapper_screen1.png" width="600" height="526" alt="Control Mapper" /></p>
-    <p>Example screen showing a view of a simple 1-player game with only one map category, one controller, keyboard support with 1 mapping per keyboard key, and using a different theme.</p>
+    <p>Example screen showing multiple players, multiple controllers per-player, sensitivity settings, multiple map categories, with keyboard, mouse, and controller support with glyphs.</p>
+<p><img src="files/images/controlmapper_screen3.png" width="600" height="594" alt="Control Mapper" /></p>
+    <p>Example screen showing a view of a simple 1-player game with only one map category, one controller, keyboard support with 1 mapping per keyboard key, text-only, and using a different theme.</p>
     <p><img src="files/images/controlmapper_screen2.png" width="400" height="518" alt="Control Mapper" /></p>
     <p>&nbsp;</p>
     <p>The information that follows assumes you are familiar with working with input in Rewired. If you are not, read through the <a href="Documentation.html">documentation</a> first. Step by step basics of how to use Rewired will not be covered here.</p>
@@ -309,6 +313,10 @@
     <p>These theme options  just mirror the various options available on Unity UI components such as Image, Button, Slider, etc. If you don't understand what these options mean, see the Unity UI documentation on these components.</p>
     <p>&nbsp;</p>
     <hr />
+    <h2><a name="glyphs" id="glyphs"></a>Glyphs</h2>
+    <p>Glyphs will be displayed instead of text for controller elements, where avaiable, as long as a Glyph Provider has been set up and <a href="#inspector-style-options">Show Glyphs</a> is enabled in the inspector. See the <a href="Glyphs.html">Glyphs documentation</a> for more details.</p>
+    <p>&nbsp;</p>
+    <hr />
     <h2><a name="language" id="language"></a>Language</h2>
 <p></p>
     <p>Control Mapper has a basic language system which you can use to customize button and section labels, window titles, and more.</p>
@@ -320,7 +328,9 @@
     </ol>
     <p><strong>Editing the language:</strong></p>
     <p>Edit the language file in the inspector. There is no user-friendly inspector for this language editing process, but the names of the fields should be self-explanatory. Make your changes and they will show up when you launch the game. (Language setting changes can not be viewed in real-time in the editor.)</p>
-    <p><strong>Translating strings of Rewired objects (Players, Actions, Controller names, Controller elements, etc.):</strong><strong>ADVANCED USERS ONLY</strong></p>
+    <p><strong>Translating strings of Rewired objects (Players, Actions, Controller names, Controller elements, etc.):</strong></p>
+    <p><strong>As of Rewired 1.1.56.0,  strings for these objects can be localized using the built-in localization system. <a href="PlayerControllers.html">See this for more information.</a>    The below information has been left for legacy reference purposes.</strong></p>
+    <p><strong>ADVANCED USERS ONLY</strong>    </p>
     <p>Do not attempt to do this if you are inexperienced at C# or are a beginner with Unity. This is an unsupported feature and step-by-step guidance will not be provided.</p>
     <p>Rewired does not presently have a localization system built in where all strings in the system can be translated into different languages. Because I have been asked numerous times about how to translate these strings when using Control Mapper, I have added an interim translation framework to Control Mapper for you to be able to translate these items when displayed through the Control Mapper interface. If at some point in the future a core localization system is developed, this Control Mapper translation of these elements is likely to become obsolete.</p>
     <p>The LanguageData class provides framework for translating all the Rewired elements, but it does not provide a way to store the translation data. You will have to provide that part in an extended class. LanguageData merely provides an interface for Control Mapper to call into for all strings.</p>
@@ -760,9 +770,9 @@ Even if your game doesn't use analog input, your players may still use physical 
     </table>
     <p>&nbsp;</p>
     <hr />
-    <p><strong><a name="inspector-theme-options" id="inspector-theme-options"></a>Theme Options</strong></p>
-    <p><img src="files/images/controlmapper_inspector_theme-options.png" alt="" width="687" height="92" /></p>
-    <p>UI theme options.</p>
+    <p><strong><a name="inspector-theme-options" id="inspector-theme-options"></a><a name="inspector-style-options" id="inspector-style-options"></a>Style Options</strong></p>
+    <p><img src="files/images/controlmapper_inspector_style-options.png" alt="" /></p>
+    <p>UI style and theme options.</p>
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td valign="top">Use Theme Settings</td>
@@ -771,6 +781,10 @@ Even if your game doesn't use analog input, your players may still use physical 
       <tr>
         <td width="22%" valign="top">Theme Settings</td>
         <td width="78%" valign="top"><p>Must be assigned a ThemeSettings object. Used to theme UI elements.</p></td>
+      </tr>
+      <tr>
+        <td valign="top">Show Glyphs</td>
+        <td valign="top">Show glyphs if available. Glyph Provider must be configured for glyphs to be displayed. See <a href="Glyphs.html">Glyphs documentation</a> for more information.</td>
       </tr>
     </table>
     <p>&nbsp;</p>

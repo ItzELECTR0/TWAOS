@@ -332,7 +332,7 @@ namespace Rewired.Demos {
 
             // Keyboard
             prevValue = selectedController.type == ControllerType.Keyboard;
-            value = GUILayout.Toggle(prevValue, "Keyboard", "Button", GUILayout.ExpandWidth(false));
+            value = GUILayout.Toggle(prevValue, ReInput.controllers.Keyboard.name, "Button", GUILayout.ExpandWidth(false));
             if(value != prevValue) {
                 selectedController.Set(0, ControllerType.Keyboard); // set current selected device to this
                 ControllerSelectionChanged();
@@ -341,7 +341,7 @@ namespace Rewired.Demos {
             // Mouse
             if(!selectedPlayer.controllers.hasMouse) GUI.enabled = false; // disable mouse if player doesn't have mouse assigned
             prevValue = selectedController.type == ControllerType.Mouse;
-            value = GUILayout.Toggle(prevValue, "Mouse", "Button", GUILayout.ExpandWidth(false));
+            value = GUILayout.Toggle(prevValue, ReInput.controllers.Mouse.name, "Button", GUILayout.ExpandWidth(false));
             if(value != prevValue) {
                 selectedController.Set(0, ControllerType.Mouse); // set current selected device to this
                 ControllerSelectionChanged();

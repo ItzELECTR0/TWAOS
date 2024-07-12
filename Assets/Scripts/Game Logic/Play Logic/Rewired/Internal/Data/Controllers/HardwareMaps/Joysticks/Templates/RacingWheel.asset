@@ -14,12 +14,16 @@ MonoBehaviour:
   controllerName: Racing Wheel
   description: 
   templateGuid: 104e31d8-9115-4dd5-a398-2e54d35e6c83
+  templateKey: racing_wheel
   className: RacingWheelTemplate
   elementIdentifiers:
   - _id: 0
     _name: Wheel
     _positiveName: Wheel Right
     _negativeName: Wheel Left
+    _key: wheel
+    _positiveKey: wheel/right
+    _negativeKey: wheel/left
     _elementType: 0
     _scriptingName: wheel
     _alternateScriptingName: 
@@ -30,6 +34,9 @@ MonoBehaviour:
     _name: Accelerator
     _positiveName: 
     _negativeName: 
+    _key: accelerator
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: accelerator
     _alternateScriptingName: 
@@ -40,6 +47,9 @@ MonoBehaviour:
     _name: Brake
     _positiveName: 
     _negativeName: 
+    _key: brake
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: brake
     _alternateScriptingName: 
@@ -50,6 +60,9 @@ MonoBehaviour:
     _name: Clutch
     _positiveName: 
     _negativeName: 
+    _key: clutch
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: clutch
     _alternateScriptingName: 
@@ -60,6 +73,9 @@ MonoBehaviour:
     _name: Shift Down
     _positiveName: 
     _negativeName: 
+    _key: shift/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shiftDown
     _alternateScriptingName: 
@@ -70,6 +86,9 @@ MonoBehaviour:
     _name: Shift Up
     _positiveName: 
     _negativeName: 
+    _key: shift/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shiftUp
     _alternateScriptingName: 
@@ -80,6 +99,9 @@ MonoBehaviour:
     _name: Wheel Button 1
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton1
     _alternateScriptingName: 
@@ -90,6 +112,9 @@ MonoBehaviour:
     _name: Wheel Button 2
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton2
     _alternateScriptingName: 
@@ -100,6 +125,9 @@ MonoBehaviour:
     _name: Wheel Button 3
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton3
     _alternateScriptingName: 
@@ -110,6 +138,9 @@ MonoBehaviour:
     _name: Wheel Button 4
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton4
     _alternateScriptingName: 
@@ -120,6 +151,9 @@ MonoBehaviour:
     _name: Wheel Button 5
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton5
     _alternateScriptingName: 
@@ -130,6 +164,9 @@ MonoBehaviour:
     _name: Wheel Button 6
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton6
     _alternateScriptingName: 
@@ -140,6 +177,9 @@ MonoBehaviour:
     _name: Wheel Button 7
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton7
     _alternateScriptingName: 
@@ -150,6 +190,9 @@ MonoBehaviour:
     _name: Wheel Button 8
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton8
     _alternateScriptingName: 
@@ -160,6 +203,9 @@ MonoBehaviour:
     _name: Wheel Button 9
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton9
     _alternateScriptingName: 
@@ -170,6 +216,9 @@ MonoBehaviour:
     _name: Wheel Button 10
     _positiveName: 
     _negativeName: 
+    _key: wheel/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: wheelButton10
     _alternateScriptingName: 
@@ -180,6 +229,9 @@ MonoBehaviour:
     _name: Console Button 1
     _positiveName: 
     _negativeName: 
+    _key: console/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton1
     _alternateScriptingName: 
@@ -190,6 +242,9 @@ MonoBehaviour:
     _name: Console Button 2
     _positiveName: 
     _negativeName: 
+    _key: console/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton2
     _alternateScriptingName: 
@@ -200,6 +255,9 @@ MonoBehaviour:
     _name: Console Button 3
     _positiveName: 
     _negativeName: 
+    _key: console/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton3
     _alternateScriptingName: 
@@ -210,6 +268,9 @@ MonoBehaviour:
     _name: Console Button 4
     _positiveName: 
     _negativeName: 
+    _key: console/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton4
     _alternateScriptingName: 
@@ -220,6 +281,9 @@ MonoBehaviour:
     _name: Console Button 5
     _positiveName: 
     _negativeName: 
+    _key: console/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton5
     _alternateScriptingName: 
@@ -230,6 +294,9 @@ MonoBehaviour:
     _name: Console Button 6
     _positiveName: 
     _negativeName: 
+    _key: console/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton6
     _alternateScriptingName: 
@@ -240,6 +307,9 @@ MonoBehaviour:
     _name: Console Button 7
     _positiveName: 
     _negativeName: 
+    _key: console/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton7
     _alternateScriptingName: 
@@ -250,6 +320,9 @@ MonoBehaviour:
     _name: Console Button 8
     _positiveName: 
     _negativeName: 
+    _key: console/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton8
     _alternateScriptingName: 
@@ -260,6 +333,9 @@ MonoBehaviour:
     _name: Console Button 9
     _positiveName: 
     _negativeName: 
+    _key: console/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton9
     _alternateScriptingName: 
@@ -270,6 +346,9 @@ MonoBehaviour:
     _name: Console Button 10
     _positiveName: 
     _negativeName: 
+    _key: console/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: consoleButton10
     _alternateScriptingName: 
@@ -280,6 +359,9 @@ MonoBehaviour:
     _name: Shifter 1
     _positiveName: 
     _negativeName: 
+    _key: shifter_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter1
     _alternateScriptingName: 
@@ -290,6 +372,9 @@ MonoBehaviour:
     _name: Shifter 2
     _positiveName: 
     _negativeName: 
+    _key: shifter_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter2
     _alternateScriptingName: 
@@ -300,6 +385,9 @@ MonoBehaviour:
     _name: Shifter 3
     _positiveName: 
     _negativeName: 
+    _key: shifter_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter3
     _alternateScriptingName: 
@@ -310,6 +398,9 @@ MonoBehaviour:
     _name: Shifter 4
     _positiveName: 
     _negativeName: 
+    _key: shifter_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter4
     _alternateScriptingName: 
@@ -320,6 +411,9 @@ MonoBehaviour:
     _name: Shifter 5
     _positiveName: 
     _negativeName: 
+    _key: shifter_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter5
     _alternateScriptingName: 
@@ -330,6 +424,9 @@ MonoBehaviour:
     _name: Shifter 6
     _positiveName: 
     _negativeName: 
+    _key: shifter_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter6
     _alternateScriptingName: 
@@ -340,6 +437,9 @@ MonoBehaviour:
     _name: Shifter 7
     _positiveName: 
     _negativeName: 
+    _key: shifter_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter7
     _alternateScriptingName: 
@@ -350,6 +450,9 @@ MonoBehaviour:
     _name: Shifter 8
     _positiveName: 
     _negativeName: 
+    _key: shifter_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter8
     _alternateScriptingName: 
@@ -360,6 +463,9 @@ MonoBehaviour:
     _name: Shifter 9
     _positiveName: 
     _negativeName: 
+    _key: shifter_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter9
     _alternateScriptingName: 
@@ -370,6 +476,9 @@ MonoBehaviour:
     _name: Shifter 10
     _positiveName: 
     _negativeName: 
+    _key: shifter_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: shifter10
     _alternateScriptingName: 
@@ -380,6 +489,9 @@ MonoBehaviour:
     _name: Reverse Gear
     _positiveName: 
     _negativeName: 
+    _key: reverse_gear
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: reverseGear
     _alternateScriptingName: 
@@ -390,6 +502,9 @@ MonoBehaviour:
     _name: Select
     _positiveName: 
     _negativeName: 
+    _key: select
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: select
     _alternateScriptingName: 
@@ -400,6 +515,9 @@ MonoBehaviour:
     _name: Start
     _positiveName: 
     _negativeName: 
+    _key: start
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: start
     _alternateScriptingName: 
@@ -410,6 +528,9 @@ MonoBehaviour:
     _name: System Button
     _positiveName: 
     _negativeName: 
+    _key: system_button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: systemButton
     _alternateScriptingName: 
@@ -420,6 +541,9 @@ MonoBehaviour:
     _name: Horn
     _positiveName: 
     _negativeName: 
+    _key: horn
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: horn
     _alternateScriptingName: 
@@ -430,6 +554,9 @@ MonoBehaviour:
     _name: D-Pad Up
     _positiveName: 
     _negativeName: 
+    _key: dpad/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadUp
     _alternateScriptingName: 
@@ -440,6 +567,9 @@ MonoBehaviour:
     _name: D-Pad Right
     _positiveName: 
     _negativeName: 
+    _key: dpad/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadRight
     _alternateScriptingName: 
@@ -450,6 +580,9 @@ MonoBehaviour:
     _name: D-Pad Down
     _positiveName: 
     _negativeName: 
+    _key: dpad/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadDown
     _alternateScriptingName: 
@@ -460,6 +593,9 @@ MonoBehaviour:
     _name: D-Pad Left
     _positiveName: 
     _negativeName: 
+    _key: dpad/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadLeft
     _alternateScriptingName: 
@@ -470,6 +606,9 @@ MonoBehaviour:
     _name: D-Pad
     _positiveName: 
     _negativeName: 
+    _key: dpad
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 4
     _scriptingName: dPad
     _alternateScriptingName: 

@@ -1,6 +1,4 @@
 ﻿// Copyright (c) 2015 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper {
@@ -10,6 +8,7 @@ namespace Rewired.UI.ControlMapper {
 
     [Serializable]
     public abstract class LanguageDataBase : ScriptableObject {
+        public bool isLocalizationSystemEnabled { get { return ReInput.localization.localizedStringProvider != null; } }
         public abstract void Initialize();
         public abstract string GetCustomEntry(string key);
         public abstract bool ContainsCustomEntryKey(string key);

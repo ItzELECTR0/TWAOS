@@ -15,12 +15,16 @@ MonoBehaviour:
   description: Template for a dual stick game pad with up to 6 action buttons, 2 shoulder
     buttons, 2 triggers, and 3 center buttons.
   templateGuid: 83b427e4-086f-47f3-bb06-be266abd1ca5
+  templateKey: gamepad
   className: GamepadTemplate
   elementIdentifiers:
   - _id: 0
     _name: Left Stick X
     _positiveName: Left Stick Right
     _negativeName: Left Stick Left
+    _key: left_stick/horizontal
+    _positiveKey: left_stick/right
+    _negativeKey: left_stick/left
     _elementType: 0
     _scriptingName: leftStickX
     _alternateScriptingName: 
@@ -31,6 +35,9 @@ MonoBehaviour:
     _name: Left Stick Y
     _positiveName: Left Stick Up
     _negativeName: Left Stick Down
+    _key: left_stick/vertical
+    _positiveKey: left_stick/up
+    _negativeKey: left_stick/down
     _elementType: 0
     _scriptingName: leftStickY
     _alternateScriptingName: 
@@ -41,6 +48,9 @@ MonoBehaviour:
     _name: Right Stick X
     _positiveName: Right Stick Right
     _negativeName: Right Stick Left
+    _key: right_stick/horizontal
+    _positiveKey: right_stick/right
+    _negativeKey: right_stick/left
     _elementType: 0
     _scriptingName: rightStickX
     _alternateScriptingName: 
@@ -51,6 +61,9 @@ MonoBehaviour:
     _name: Right Stick Y
     _positiveName: Right Stick Up
     _negativeName: Right Stick Down
+    _key: right_stick/vertical
+    _positiveKey: right_stick/up
+    _negativeKey: right_stick/down
     _elementType: 0
     _scriptingName: rightStickY
     _alternateScriptingName: 
@@ -61,6 +74,9 @@ MonoBehaviour:
     _name: Action Bottom Row 1
     _positiveName: 
     _negativeName: 
+    _key: action/bottom_row_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionBottomRow1
     _alternateScriptingName: a
@@ -71,6 +87,9 @@ MonoBehaviour:
     _name: Action Bottom Row 2
     _positiveName: 
     _negativeName: 
+    _key: action/bottom_row_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionBottomRow2
     _alternateScriptingName: b
@@ -81,6 +100,9 @@ MonoBehaviour:
     _name: Action Bottom Row 3
     _positiveName: 
     _negativeName: 
+    _key: action/bottom_row_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionBottomRow3
     _alternateScriptingName: c
@@ -91,6 +113,9 @@ MonoBehaviour:
     _name: Action Top Row 1
     _positiveName: 
     _negativeName: 
+    _key: action/top_row_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionTopRow1
     _alternateScriptingName: x
@@ -101,6 +126,9 @@ MonoBehaviour:
     _name: Action Top Row 2
     _positiveName: 
     _negativeName: 
+    _key: action/top_row_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionTopRow2
     _alternateScriptingName: y
@@ -111,6 +139,9 @@ MonoBehaviour:
     _name: Action Top Row 3
     _positiveName: 
     _negativeName: 
+    _key: action/top_row_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: actionTopRow3
     _alternateScriptingName: z
@@ -121,6 +152,9 @@ MonoBehaviour:
     _name: Left Shoulder 1
     _positiveName: 
     _negativeName: 
+    _key: left_shoulder
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: leftShoulder1
     _alternateScriptingName: leftBumper
@@ -129,8 +163,11 @@ MonoBehaviour:
     _editorElementTypeOverride: 0
   - _id: 11
     _name: Left Shoulder 2
-    _positiveName: Left Shoulder 2
+    _positiveName: 
     _negativeName: 
+    _key: left_trigger
+    _positiveKey: left_trigger
+    _negativeKey: 
     _elementType: 0
     _scriptingName: leftShoulder2
     _alternateScriptingName: leftTrigger
@@ -141,6 +178,9 @@ MonoBehaviour:
     _name: Right Shoulder 1
     _positiveName: 
     _negativeName: 
+    _key: right_shoulder
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: rightShoulder1
     _alternateScriptingName: rightBumper
@@ -149,8 +189,11 @@ MonoBehaviour:
     _editorElementTypeOverride: 0
   - _id: 13
     _name: Right Shoulder 2
-    _positiveName: Right Shoulder 2
+    _positiveName: 
     _negativeName: 
+    _key: right_trigger
+    _positiveKey: right_trigger
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rightShoulder2
     _alternateScriptingName: rightTrigger
@@ -161,6 +204,9 @@ MonoBehaviour:
     _name: Center 1
     _positiveName: 
     _negativeName: 
+    _key: center_button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: center1
     _alternateScriptingName: back
@@ -171,6 +217,9 @@ MonoBehaviour:
     _name: Center 2
     _positiveName: 
     _negativeName: 
+    _key: center_button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: center2
     _alternateScriptingName: start
@@ -181,6 +230,9 @@ MonoBehaviour:
     _name: Center 3
     _positiveName: 
     _negativeName: 
+    _key: center_button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: center3
     _alternateScriptingName: guide
@@ -191,6 +243,9 @@ MonoBehaviour:
     _name: Left Stick Button
     _positiveName: 
     _negativeName: 
+    _key: left_stick/button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: leftStickButton
     _alternateScriptingName: 
@@ -201,6 +256,9 @@ MonoBehaviour:
     _name: Right Stick Button
     _positiveName: 
     _negativeName: 
+    _key: right_stick/button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: rightStickButton
     _alternateScriptingName: 
@@ -211,6 +269,9 @@ MonoBehaviour:
     _name: D-Pad Up
     _positiveName: 
     _negativeName: 
+    _key: dpad/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadUp
     _alternateScriptingName: 
@@ -221,6 +282,9 @@ MonoBehaviour:
     _name: D-Pad Right
     _positiveName: 
     _negativeName: 
+    _key: dpad/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadRight
     _alternateScriptingName: 
@@ -231,6 +295,9 @@ MonoBehaviour:
     _name: D-Pad Down
     _positiveName: 
     _negativeName: 
+    _key: dpad/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadDown
     _alternateScriptingName: 
@@ -241,6 +308,9 @@ MonoBehaviour:
     _name: D-Pad Left
     _positiveName: 
     _negativeName: 
+    _key: dpad/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: dPadLeft
     _alternateScriptingName: 
@@ -251,6 +321,9 @@ MonoBehaviour:
     _name: Left Stick
     _positiveName: 
     _negativeName: 
+    _key: left_stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 2
     _scriptingName: leftStick
     _alternateScriptingName: 
@@ -261,6 +334,9 @@ MonoBehaviour:
     _name: Right Stick
     _positiveName: 
     _negativeName: 
+    _key: right_stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 2
     _scriptingName: rightStick
     _alternateScriptingName: 
@@ -271,6 +347,9 @@ MonoBehaviour:
     _name: D-Pad
     _positiveName: 
     _negativeName: 
+    _key: dpad
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 4
     _scriptingName: dPad
     _alternateScriptingName: 
@@ -367,6 +446,18 @@ MonoBehaviour:
       joystickId: 5
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 1
     name: Logitech Dual Action
     joystickGuid: 886dd9d4-58ce-4212-90f5-2967676e7823
@@ -452,6 +543,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 2
     name: GGE909 Recoil
     joystickGuid: d74cc9ec-a991-4e27-b6c2-b2f50e86f9cf
@@ -535,6 +638,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 3
@@ -626,6 +741,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 4
     name: Saitek P880
     joystickGuid: d57b39e3-3d12-4750-84b0-7a28c5341e88
@@ -705,6 +832,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 5
@@ -796,6 +935,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
+      joystickId2: 0
+      splitAxis: 0
   - id: 6
     name: Logitech F310 (X)
     joystickGuid: d9623ff0-6911-4028-b7a5-b98faa6d2c55
@@ -883,6 +1034,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 7
@@ -974,6 +1137,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 8
     name: Logitech F710 (X)
     joystickGuid: 80f1d64b-b462-41cc-8c6d-452e72a2dee6
@@ -1061,6 +1236,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 9
@@ -1152,89 +1339,16 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
-  - id: 10
-    name: Sabrent 12 Button Gamepad
-    joystickGuid: 64803b30-552d-4846-b16b-c16105b46a87
-    fileGuid: 0a099d60095729a4c824d288142da34b
-    elementIdentifierMappings:
-    - templateId: 0
-      joystickId: 0
+    - templateId: 23
+      joystickId: 20
       joystickId2: 0
       splitAxis: 0
-    - templateId: 1
-      joystickId: 1
+    - templateId: 24
+      joystickId: 21
       joystickId2: 0
       splitAxis: 0
-    - templateId: 2
-      joystickId: 2
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 3
-      joystickId: 3
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 4
-      joystickId: 6
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 5
-      joystickId: 7
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 6
-      joystickId: 9
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 7
-      joystickId: 4
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 8
-      joystickId: 5
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 9
-      joystickId: 8
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 10
-      joystickId: 10
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 11
-      joystickId: 11
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 12
-      joystickId: 12
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 13
-      joystickId: 13
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 17
-      joystickId: 14
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 18
-      joystickId: 15
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 19
-      joystickId: 16
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 20
-      joystickId: 17
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 21
-      joystickId: 18
-      joystickId2: 0
-      splitAxis: 0
-    - templateId: 22
-      joystickId: 19
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 19
@@ -1320,6 +1434,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 11
@@ -1411,6 +1537,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 12
     name: Sony DualShock 4
     joystickGuid: cd9718bf-a87a-44bc-8716-60a0def28a9f
@@ -1498,6 +1636,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
       joystickId2: 0
       splitAxis: 0
   - id: 13
@@ -1589,6 +1739,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 14
     name: Sony Playstation Vita
     joystickGuid: d2aef070-7caa-42ff-b2dc-daac7e4a62b4
@@ -1656,6 +1818,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 15
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 18
       joystickId2: 0
       splitAxis: 0
   - id: 15
@@ -1743,6 +1917,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 16
     name: Red Samurai Wireless Gamepad
     joystickGuid: f73916b4-2936-40e3-8964-4180d4eb17ea
@@ -1828,6 +2014,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 17
     name: iOS Mfi Gamepad
     joystickGuid: 3d919cfa-468e-49f4-bce9-f6c43f2e7e62
@@ -1911,6 +2109,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
       joystickId2: 0
       splitAxis: 0
   - id: 18
@@ -2002,6 +2212,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 26
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 27
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 29
+      joystickId2: 0
+      splitAxis: 0
   - id: 81
     name: Nvidia Shield Controller (2017 model)
     joystickGuid: 041eed16-8846-4c94-9e38-addd4b9ce00b
@@ -2091,6 +2313,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 26
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 27
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 28
+      joystickId2: 0
+      splitAxis: 0
   - id: 20
     name: OUYA Gamepad
     joystickGuid: df6fcab5-d1fb-4797-ace1-580617ddc45e
@@ -2170,6 +2404,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 21
       joystickId2: 0
       splitAxis: 0
   - id: 21
@@ -2255,6 +2501,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 22
@@ -2346,6 +2604,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 23
     name: idroid:con Snakebyte (M1)
     joystickGuid: 098e3f17-e7be-445c-8426-5929d538e9b1
@@ -2431,6 +2701,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 24
     name: idroid:con Snakebyte (M2)
     joystickGuid: 4c97e729-2c5f-41fb-9548-e475c2e857f4
@@ -2514,6 +2796,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 25
@@ -2605,6 +2899,18 @@ MonoBehaviour:
       joystickId: 24
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 26
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 27
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 32
+      joystickId2: 0
+      splitAxis: 0
   - id: 26
     name: Google Nexus Player Gamepad
     joystickGuid: 5354a895-5a9d-45a2-8800-4f8f5dacb148
@@ -2694,6 +3000,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 27
     name: GameStick Controller
     joystickGuid: 47aaa5a4-617e-4650-a38a-1ad2e44f6335
@@ -2767,6 +3085,18 @@ MonoBehaviour:
       joystickId: 17
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
   - id: 28
     name: ipega Wireless Gamepad Controller
     joystickGuid: a3e49a2f-b952-429f-b940-d4c6b5a81298
@@ -2834,6 +3164,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 15
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 18
       joystickId2: 0
       splitAxis: 0
   - id: 29
@@ -2921,6 +3263,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 30
     name: 8Bitdo NES30
     joystickGuid: 7939b1e7-3422-475c-ba5a-c47b303de2e3
@@ -2964,6 +3318,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 15
       joystickId: 11
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 12
       joystickId2: 0
       splitAxis: 0
   - id: 34
@@ -3051,6 +3409,18 @@ MonoBehaviour:
       joystickId: 17
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 35
     name: SteelSeries Free
     joystickGuid: 064116a9-00d3-42c6-8875-e671b003dd0e
@@ -3118,6 +3488,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 15
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 18
       joystickId2: 0
       splitAxis: 0
   - id: 36
@@ -3205,6 +3587,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 37
     name: Nyko Playpad
     joystickGuid: d16498f7-43b9-45c5-875a-83840f918e29
@@ -3286,6 +3680,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 38
     name: Gamecube Controller (Mayflash USB 2-port)
     joystickGuid: e420e480-00bb-4bd4-b871-95f5f9f1a90d
@@ -3355,6 +3761,18 @@ MonoBehaviour:
       joystickId: 17
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
   - id: 39
     name: Buffalo BGCFC801 NES Gamepad
     joystickGuid: 7b244879-85b5-4b91-bcab-81c92f94d818
@@ -3398,6 +3816,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 15
       joystickId: 11
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 12
       joystickId2: 0
       splitAxis: 0
   - id: 40
@@ -3489,6 +3911,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 41
     name: Buffalo BSGP801 SNES Gamepad
     joystickGuid: b25f3e47-d587-4d7c-8ccb-d834e35213fa
@@ -3532,6 +3966,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 15
       joystickId: 11
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 12
       joystickId2: 0
       splitAxis: 0
   - id: 42
@@ -3623,6 +4061,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 45
     name: Samsung Smartphone GamePad
     joystickGuid: a97355b3-3c44-4f03-ad96-03a9e804c777
@@ -3694,6 +4144,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 19
       joystickId2: 0
       splitAxis: 0
   - id: 47
@@ -3785,6 +4247,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
+      joystickId2: 0
+      splitAxis: 0
   - id: 48
     name: Moga Hero Power
     joystickGuid: 6cb24ae0-a911-48ea-b11c-36bfeaa54fba
@@ -3870,6 +4344,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 49
     name: Moga Pro Power
     joystickGuid: 7e615592-9d24-4aa0-b12d-a854a726f37c
@@ -3953,6 +4439,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 50
@@ -4044,6 +4542,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 51
     name: '[STANDARDIZED GAMEPAD]'
     joystickGuid: 04c23ab3-2b99-4404-a5c4-f0df7e62938f
@@ -4131,6 +4641,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 52
@@ -4222,6 +4744,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 25
+      joystickId2: 0
+      splitAxis: 0
   - id: 53
     name: SteelSeries Stratus XL (MFi)
     joystickGuid: 7ab64ae8-6c60-4fb5-850b-2ca9d245c887
@@ -4295,6 +4829,18 @@ MonoBehaviour:
       joystickId: 16
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
   - id: 54
     name: SteelSeries Nimbus (MFi)
     joystickGuid: 09747016-5765-45a1-ac7b-fbf9c9ec3e2a
@@ -4366,6 +4912,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 19
       joystickId2: 0
       splitAxis: 0
   - id: 95
@@ -4457,6 +5015,18 @@ MonoBehaviour:
       joystickId: 16
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 55
     name: Thrustmaster Score-A
     joystickGuid: f8d438bf-b248-4ff6-810c-084db03a5f7f
@@ -4540,6 +5110,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 56
@@ -4631,6 +5213,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 57
     name: Horipad Ultimate (MFi)
     joystickGuid: 9c2ba5e1-d64d-4559-bbd6-09250ab87c9c
@@ -4702,6 +5296,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 17
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 19
       joystickId2: 0
       splitAxis: 0
   - id: 58
@@ -4789,6 +5395,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 72
     name: 8Bitdo SNES30 and SFC30
     joystickGuid: 7939b1e7-3422-475c-ba5a-c47b303de2e4
@@ -4834,6 +5452,10 @@ MonoBehaviour:
       joystickId: 11
       joystickId2: 0
       splitAxis: 0
+    - templateId: 25
+      joystickId: 12
+      joystickId2: 0
+      splitAxis: 0
   - id: 60
     name: 8Bitdo Zero (wireless)
     joystickGuid: 549c2612-815f-4656-a242-815f36e62bf4
@@ -4876,6 +5498,10 @@ MonoBehaviour:
       joystickId2: 0
       splitAxis: 0
     - templateId: 15
+      joystickId: 11
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
       joystickId: 11
       joystickId2: 0
       splitAxis: 0
@@ -4962,6 +5588,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 61
@@ -5053,6 +5691,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 67
     name: Zhidong N (Android Mode)
     joystickGuid: 5fd2d100-cf24-463a-8292-b571955d97e5
@@ -5140,6 +5790,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 66
@@ -5231,6 +5893,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 68
     name: Zhidong V+ (XInput mode)
     joystickGuid: cc7eb367-06ed-4992-a67b-ee90e83d177b
@@ -5318,6 +5992,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 69
@@ -5409,6 +6095,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 70
     name: Thrustmaster Dual Analog 3
     joystickGuid: 8bf3582e-cc1c-4c09-9c69-a8ea04050d16
@@ -5492,6 +6190,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 18
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
       joystickId2: 0
       splitAxis: 0
   - id: 73
@@ -5579,6 +6289,18 @@ MonoBehaviour:
       joystickId: 18
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 74
     name: Oculus Touch - Left
     joystickGuid: af791365-96f2-4160-9ed6-b0b4f59259d0
@@ -5616,6 +6338,10 @@ MonoBehaviour:
       joystickId: 11
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
   - id: 75
     name: Oculus Touch - Right
     joystickGuid: bea8fcd6-2b0e-47d5-b690-ee611d811ed4
@@ -5649,6 +6375,10 @@ MonoBehaviour:
       joystickId: 11
       joystickId2: 0
       splitAxis: 0
+    - templateId: 24
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
   - id: 76
     name: Oculus Remote
     joystickGuid: c372a74c-32b5-4926-94e1-b74cc6cf20c3
@@ -5668,6 +6398,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 5
       joystickId: 5
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 6
       joystickId2: 0
       splitAxis: 0
   - id: 77
@@ -5699,6 +6433,10 @@ MonoBehaviour:
       joystickId: 3
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 8
+      joystickId2: 0
+      splitAxis: 0
   - id: 78
     name: OpenVR Controller - Right (Unity)
     joystickGuid: 3eaa61f6-1f57-4d16-ab11-af7fc74b5640
@@ -5726,6 +6464,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 5
       joystickId: 3
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 8
       joystickId2: 0
       splitAxis: 0
   - id: 79
@@ -5785,6 +6527,10 @@ MonoBehaviour:
       joystickId: 9
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 13
+      joystickId2: 0
+      splitAxis: 0
   - id: 80
     name: Nintendo Switch Joy-Con (R)
     joystickGuid: 605dc720-1b38-473d-a459-67d5857aa6ea
@@ -5840,6 +6586,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 12
       joystickId: 9
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 13
       joystickId2: 0
       splitAxis: 0
   - id: 83
@@ -5931,8 +6681,20 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 28
+      joystickId2: 0
+      splitAxis: 0
   - id: 84
-    name: Nintendo Switch Joy-Con (Attached)
+    name: Nintendo Switch Joy-Con (Handheld)
     joystickGuid: 1fbdd13b-0795-4173-8a95-a2a75de9d204
     fileGuid: c2c9ba16ad481a743b4a1857caf45c8c
     elementIdentifierMappings:
@@ -6018,6 +6780,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
       joystickId2: 0
       splitAxis: 0
   - id: 82
@@ -6109,6 +6883,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
+      joystickId2: 0
+      splitAxis: 0
   - id: 85
     name: Atari Jaguar Gamepad
     joystickGuid: f1a9b442-f42a-450a-bc75-5e7998658fd3
@@ -6140,6 +6926,10 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 15
       joystickId: 5
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 23
       joystickId2: 0
       splitAxis: 0
   - id: 86
@@ -6209,6 +6999,14 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 15
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 17
       joystickId2: 0
       splitAxis: 0
   - id: 87
@@ -6300,6 +7098,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 88
     name: GameSir G4 Series
     joystickGuid: fb783f0c-18d9-4eda-add6-b5f57d9e9918
@@ -6389,6 +7199,18 @@ MonoBehaviour:
       joystickId: 20
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 89
     name: 8Bitdo RB8-64
     joystickGuid: 9236c24c-5b45-40fb-b6bc-5b5269fa33dc
@@ -6456,6 +7278,14 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 15
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 16
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 17
       joystickId2: 0
       splitAxis: 0
   - id: 90
@@ -6543,6 +7373,18 @@ MonoBehaviour:
       joystickId: 19
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
   - id: 91
     name: 8Bitdo SN30 Pro / SF30 Pro
     joystickGuid: 6d33fb97-9b0b-4100-a015-668acb50eeeb
@@ -6626,6 +7468,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 19
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
       joystickId2: 0
       splitAxis: 0
   - id: 92
@@ -6717,6 +7571,18 @@ MonoBehaviour:
       joystickId: 18
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 20
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
   - id: 93
     name: Stadia Gamepad
     joystickGuid: cadc4137-a139-4baa-bcbc-faddb8fd03b1
@@ -6804,6 +7670,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 24
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 25
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 26
       joystickId2: 0
       splitAxis: 0
   - id: 94
@@ -6895,6 +7773,18 @@ MonoBehaviour:
       joystickId: 21
       joystickId2: 0
       splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 24
+      joystickId2: 0
+      splitAxis: 0
   - id: 96
     name: Sony DualSense
     joystickGuid: 5286706d-19b4-4a45-b635-207ce78d8394
@@ -6982,6 +7872,18 @@ MonoBehaviour:
       splitAxis: 0
     - templateId: 22
       joystickId: 21
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 23
+      joystickId: 22
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 24
+      joystickId: 23
+      joystickId2: 0
+      splitAxis: 0
+    - templateId: 25
+      joystickId: 25
       joystickId2: 0
       splitAxis: 0
   specialElements:

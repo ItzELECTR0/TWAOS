@@ -14,12 +14,16 @@ MonoBehaviour:
   controllerName: Flight Pedals
   description: 
   templateGuid: f6fe76f8-be2a-4db2-b853-9e3652075913
+  templateKey: flight_pedals
   className: FlightPedalsTemplate
   elementIdentifiers:
   - _id: 0
     _name: Left Pedal
     _positiveName: 
     _negativeName: 
+    _key: left_pedal
+    _positiveKey: left_pedal
+    _negativeKey: 
     _elementType: 0
     _scriptingName: leftPedal
     _alternateScriptingName: 
@@ -30,6 +34,9 @@ MonoBehaviour:
     _name: Right Pedal
     _positiveName: 
     _negativeName: 
+    _key: right_pedal
+    _positiveKey: right_pedal
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rightPedal
     _alternateScriptingName: 
@@ -40,6 +47,9 @@ MonoBehaviour:
     _name: Slide
     _positiveName: 
     _negativeName: 
+    _key: slide
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: slide
     _alternateScriptingName: 

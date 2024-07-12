@@ -14,12 +14,16 @@ MonoBehaviour:
   controllerName: HOTAS
   description: 
   templateGuid: 061a00cf-d8c2-4f8d-8cb5-a15a010bc53e
+  templateKey: hotas
   className: HOTASTemplate
   elementIdentifiers:
   - _id: 0
     _name: Stick X
     _positiveName: Stick Right
     _negativeName: Stick Left
+    _key: stick/horizontal
+    _positiveKey: stick/right
+    _negativeKey: stick/left
     _elementType: 0
     _scriptingName: stickX
     _alternateScriptingName: 
@@ -30,6 +34,9 @@ MonoBehaviour:
     _name: Stick Y
     _positiveName: Stick Up
     _negativeName: Stick Down
+    _key: stick/vertical
+    _positiveKey: stick/up
+    _negativeKey: stick/down
     _elementType: 0
     _scriptingName: stickY
     _alternateScriptingName: 
@@ -40,6 +47,9 @@ MonoBehaviour:
     _name: Stick Rotate
     _positiveName: 
     _negativeName: 
+    _key: stick/rotate
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: stickRotate
     _alternateScriptingName: 
@@ -50,6 +60,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 1 X
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_1/horizontal
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: stickMiniStick1X
     _alternateScriptingName: 
@@ -60,6 +73,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 1 Y
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_1/vertical
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: stickMiniStick1Y
     _alternateScriptingName: 
@@ -70,6 +86,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 1 Press
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_1/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickMiniStick1Press
     _alternateScriptingName: 
@@ -80,6 +99,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 2 X
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_2/horizontal
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: stickMiniStick2X
     _alternateScriptingName: 
@@ -90,6 +112,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 2 Y
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_2/vertical
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: stickMiniStick2Y
     _alternateScriptingName: 
@@ -100,6 +125,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 2 Press
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_2/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickMiniStick2Press
     _alternateScriptingName: 
@@ -110,6 +138,9 @@ MonoBehaviour:
     _name: Stick Trigger
     _positiveName: 
     _negativeName: 
+    _key: stick/trigger
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickTrigger
     _alternateScriptingName: 
@@ -120,6 +151,9 @@ MonoBehaviour:
     _name: Stick Trigger (Stage 2)
     _positiveName: 
     _negativeName: 
+    _key: stick/trigger/stage_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickTriggerStage2
     _alternateScriptingName: 
@@ -130,6 +164,9 @@ MonoBehaviour:
     _name: Stick Pinky Button
     _positiveName: 
     _negativeName: 
+    _key: stick/pinky_button
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickPinkyButton
     _alternateScriptingName: 
@@ -140,6 +177,9 @@ MonoBehaviour:
     _name: Stick Pinky Trigger
     _positiveName: 
     _negativeName: 
+    _key: stick/pinky_trigger
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickPinkyTrigger
     _alternateScriptingName: 
@@ -150,6 +190,9 @@ MonoBehaviour:
     _name: Stick Button 1
     _positiveName: 
     _negativeName: 
+    _key: stick/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton1
     _alternateScriptingName: 
@@ -160,6 +203,9 @@ MonoBehaviour:
     _name: Stick Button 2
     _positiveName: 
     _negativeName: 
+    _key: stick/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton2
     _alternateScriptingName: 
@@ -170,6 +216,9 @@ MonoBehaviour:
     _name: Stick Button 3
     _positiveName: 
     _negativeName: 
+    _key: stick/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton3
     _alternateScriptingName: 
@@ -180,6 +229,9 @@ MonoBehaviour:
     _name: Stick Button 4
     _positiveName: 
     _negativeName: 
+    _key: stick/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton4
     _alternateScriptingName: 
@@ -190,6 +242,9 @@ MonoBehaviour:
     _name: Stick Button 5
     _positiveName: 
     _negativeName: 
+    _key: stick/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton5
     _alternateScriptingName: 
@@ -200,6 +255,9 @@ MonoBehaviour:
     _name: Stick Button 6
     _positiveName: 
     _negativeName: 
+    _key: stick/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton6
     _alternateScriptingName: 
@@ -210,6 +268,9 @@ MonoBehaviour:
     _name: Stick Button 7
     _positiveName: 
     _negativeName: 
+    _key: stick/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton7
     _alternateScriptingName: 
@@ -220,6 +281,9 @@ MonoBehaviour:
     _name: Stick Button 8
     _positiveName: 
     _negativeName: 
+    _key: stick/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton8
     _alternateScriptingName: 
@@ -230,6 +294,9 @@ MonoBehaviour:
     _name: Stick Button 9
     _positiveName: 
     _negativeName: 
+    _key: stick/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton9
     _alternateScriptingName: 
@@ -240,6 +307,9 @@ MonoBehaviour:
     _name: Stick Button 10
     _positiveName: 
     _negativeName: 
+    _key: stick/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickButton10
     _alternateScriptingName: 
@@ -250,6 +320,9 @@ MonoBehaviour:
     _name: Stick Base Button 1
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton1
     _alternateScriptingName: 
@@ -260,6 +333,9 @@ MonoBehaviour:
     _name: Stick Base Button 2
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton2
     _alternateScriptingName: 
@@ -270,6 +346,9 @@ MonoBehaviour:
     _name: Stick Base Button 3
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton3
     _alternateScriptingName: 
@@ -280,6 +359,9 @@ MonoBehaviour:
     _name: Stick Base Button 4
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton4
     _alternateScriptingName: 
@@ -290,6 +372,9 @@ MonoBehaviour:
     _name: Stick Base Button 5
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton5
     _alternateScriptingName: 
@@ -300,6 +385,9 @@ MonoBehaviour:
     _name: Stick Base Button 6
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton6
     _alternateScriptingName: 
@@ -310,6 +398,9 @@ MonoBehaviour:
     _name: Stick Base Button 7
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton7
     _alternateScriptingName: 
@@ -320,6 +411,9 @@ MonoBehaviour:
     _name: Stick Base Button 8
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton8
     _alternateScriptingName: 
@@ -330,6 +424,9 @@ MonoBehaviour:
     _name: Stick Base Button 9
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton9
     _alternateScriptingName: 
@@ -340,6 +437,9 @@ MonoBehaviour:
     _name: Stick Base Button 10
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton10
     _alternateScriptingName: 
@@ -350,6 +450,9 @@ MonoBehaviour:
     _name: Stick Base Button 11
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_11
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton11
     _alternateScriptingName: 
@@ -360,6 +463,9 @@ MonoBehaviour:
     _name: Stick Base Button 12
     _positiveName: 
     _negativeName: 
+    _key: stick/base/button_12
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickBaseButton12
     _alternateScriptingName: 
@@ -370,6 +476,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Up
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1Up
     _alternateScriptingName: 
@@ -380,6 +489,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1UpRight
     _alternateScriptingName: 
@@ -390,6 +502,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1Right
     _alternateScriptingName: 
@@ -400,6 +515,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1DownRight
     _alternateScriptingName: 
@@ -410,6 +528,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Down
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1Down
     _alternateScriptingName: 
@@ -420,6 +541,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1DownLeft
     _alternateScriptingName: 
@@ -430,6 +554,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1Left
     _alternateScriptingName: 
@@ -440,6 +567,9 @@ MonoBehaviour:
     _name: Stick Hat 1 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat1Up_Left
     _alternateScriptingName: 
@@ -450,6 +580,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Up
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Up
     _alternateScriptingName: 
@@ -460,6 +593,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Up-right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Up_right
     _alternateScriptingName: 
@@ -470,6 +606,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Right
     _alternateScriptingName: 
@@ -480,6 +619,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Down_Right
     _alternateScriptingName: 
@@ -490,6 +632,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Down
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Down
     _alternateScriptingName: 
@@ -500,6 +645,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Down_Left
     _alternateScriptingName: 
@@ -510,6 +658,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Left
     _alternateScriptingName: 
@@ -520,6 +671,9 @@ MonoBehaviour:
     _name: Stick Hat 2 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat2Up_Left
     _alternateScriptingName: 
@@ -530,6 +684,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Up
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Up
     _alternateScriptingName: 
@@ -540,6 +697,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Up_Right
     _alternateScriptingName: 
@@ -550,6 +710,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Right
     _alternateScriptingName: 
@@ -560,6 +723,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Down_Right
     _alternateScriptingName: 
@@ -570,6 +736,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Down
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Down
     _alternateScriptingName: 
@@ -580,6 +749,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Down_Left
     _alternateScriptingName: 
@@ -590,6 +762,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Left
     _alternateScriptingName: 
@@ -600,6 +775,9 @@ MonoBehaviour:
     _name: Stick Hat 3 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat3Up_Left
     _alternateScriptingName: 
@@ -610,6 +788,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Up
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Up
     _alternateScriptingName: 
@@ -620,6 +801,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Up_Right
     _alternateScriptingName: 
@@ -630,6 +814,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Right
     _alternateScriptingName: 
@@ -640,6 +827,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Down_Right
     _alternateScriptingName: 
@@ -650,6 +840,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Down
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Down
     _alternateScriptingName: 
@@ -660,6 +853,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Down_Left
     _alternateScriptingName: 
@@ -670,6 +866,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Left
     _alternateScriptingName: 
@@ -680,6 +879,9 @@ MonoBehaviour:
     _name: Stick Hat 4 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: stickHat4Up_Left
     _alternateScriptingName: 
@@ -690,6 +892,9 @@ MonoBehaviour:
     _name: Mode 1
     _positiveName: 
     _negativeName: 
+    _key: mode_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: mode1
     _alternateScriptingName: 
@@ -700,6 +905,9 @@ MonoBehaviour:
     _name: Mode 2
     _positiveName: 
     _negativeName: 
+    _key: mode_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: mode2
     _alternateScriptingName: 
@@ -710,6 +918,9 @@ MonoBehaviour:
     _name: Mode 3
     _positiveName: 
     _negativeName: 
+    _key: mode_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: mode3
     _alternateScriptingName: 
@@ -720,6 +931,9 @@ MonoBehaviour:
     _name: Throttle 1
     _positiveName: 
     _negativeName: 
+    _key: throttle_1/axis
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttle1Axis
     _alternateScriptingName: 
@@ -730,6 +944,9 @@ MonoBehaviour:
     _name: Throttle 2
     _positiveName: 
     _negativeName: 
+    _key: throttle_2/axis
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttle2Axis
     _alternateScriptingName: 
@@ -740,6 +957,9 @@ MonoBehaviour:
     _name: Throttle 1 Min Detent
     _positiveName: 
     _negativeName: 
+    _key: throttle/1/min_detent
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttle1MinDetent
     _alternateScriptingName: 
@@ -750,6 +970,9 @@ MonoBehaviour:
     _name: Throttle 2 Min Detent
     _positiveName: 
     _negativeName: 
+    _key: throttle/2/min_detent
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttle2MinDetent
     _alternateScriptingName: 
@@ -760,6 +983,9 @@ MonoBehaviour:
     _name: Throttle Button 1
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton1
     _alternateScriptingName: 
@@ -770,6 +996,9 @@ MonoBehaviour:
     _name: Throttle Button 2
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton2
     _alternateScriptingName: 
@@ -780,6 +1009,9 @@ MonoBehaviour:
     _name: Throttle Button 3
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton3
     _alternateScriptingName: 
@@ -790,6 +1022,9 @@ MonoBehaviour:
     _name: Throttle Button 4
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton4
     _alternateScriptingName: 
@@ -800,6 +1035,9 @@ MonoBehaviour:
     _name: Throttle Button 5
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton5
     _alternateScriptingName: 
@@ -810,6 +1048,9 @@ MonoBehaviour:
     _name: Throttle Button 6
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton6
     _alternateScriptingName: 
@@ -820,6 +1061,9 @@ MonoBehaviour:
     _name: Throttle Button 7
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton7
     _alternateScriptingName: 
@@ -830,6 +1074,9 @@ MonoBehaviour:
     _name: Throttle Button 8
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton8
     _alternateScriptingName: 
@@ -840,6 +1087,9 @@ MonoBehaviour:
     _name: Throttle Button 9
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton9
     _alternateScriptingName: 
@@ -850,6 +1100,9 @@ MonoBehaviour:
     _name: Throttle Button 10
     _positiveName: 
     _negativeName: 
+    _key: throttle/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleButton10
     _alternateScriptingName: 
@@ -860,6 +1113,9 @@ MonoBehaviour:
     _name: Throttle Base Button 1
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton1
     _alternateScriptingName: 
@@ -870,6 +1126,9 @@ MonoBehaviour:
     _name: Throttle Base Button 2
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton2
     _alternateScriptingName: 
@@ -880,6 +1139,9 @@ MonoBehaviour:
     _name: Throttle Base Button 3
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton3
     _alternateScriptingName: 
@@ -890,6 +1152,9 @@ MonoBehaviour:
     _name: Throttle Base Button 4
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton4
     _alternateScriptingName: 
@@ -900,6 +1165,9 @@ MonoBehaviour:
     _name: Throttle Base Button 5
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton5
     _alternateScriptingName: 
@@ -910,6 +1178,9 @@ MonoBehaviour:
     _name: Throttle Base Button 6
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton6
     _alternateScriptingName: 
@@ -920,6 +1191,9 @@ MonoBehaviour:
     _name: Throttle Base Button 7
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton7
     _alternateScriptingName: 
@@ -930,6 +1204,9 @@ MonoBehaviour:
     _name: Throttle Base Button 8
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton8
     _alternateScriptingName: 
@@ -940,6 +1217,9 @@ MonoBehaviour:
     _name: Throttle Base Button 9
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton9
     _alternateScriptingName: 
@@ -950,6 +1230,9 @@ MonoBehaviour:
     _name: Throttle Base Button 10
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton10
     _alternateScriptingName: 
@@ -960,6 +1243,9 @@ MonoBehaviour:
     _name: Throttle Base Button 11
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_11
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton11
     _alternateScriptingName: 
@@ -970,6 +1256,9 @@ MonoBehaviour:
     _name: Throttle Base Button 12
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_12
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton12
     _alternateScriptingName: 
@@ -980,6 +1269,9 @@ MonoBehaviour:
     _name: Throttle Base Button 13
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_13
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton13
     _alternateScriptingName: 
@@ -990,6 +1282,9 @@ MonoBehaviour:
     _name: Throttle Base Button 14
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_14
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton14
     _alternateScriptingName: 
@@ -1000,6 +1295,9 @@ MonoBehaviour:
     _name: Throttle Base Button 15
     _positiveName: 
     _negativeName: 
+    _key: throttle/base/button_15
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleBaseButton15
     _alternateScriptingName: 
@@ -1010,6 +1308,9 @@ MonoBehaviour:
     _name: Throttle Slider 1
     _positiveName: 
     _negativeName: 
+    _key: throttle/slider_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleSlider1
     _alternateScriptingName: 
@@ -1020,6 +1321,9 @@ MonoBehaviour:
     _name: Throttle Slider 2
     _positiveName: 
     _negativeName: 
+    _key: throttle/slider_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleSlider2
     _alternateScriptingName: 
@@ -1030,6 +1334,9 @@ MonoBehaviour:
     _name: Throttle Slider 3
     _positiveName: 
     _negativeName: 
+    _key: throttle/slider_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleSlider3
     _alternateScriptingName: 
@@ -1040,6 +1347,9 @@ MonoBehaviour:
     _name: Throttle Slider 4
     _positiveName: 
     _negativeName: 
+    _key: throttle/slider_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleSlider4
     _alternateScriptingName: 
@@ -1050,6 +1360,9 @@ MonoBehaviour:
     _name: Throttle Dial 1
     _positiveName: 
     _negativeName: 
+    _key: throttle/dial_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleDial1
     _alternateScriptingName: 
@@ -1060,6 +1373,9 @@ MonoBehaviour:
     _name: Throttle Dial 2
     _positiveName: 
     _negativeName: 
+    _key: throttle/dial_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleDial2
     _alternateScriptingName: 
@@ -1070,6 +1386,9 @@ MonoBehaviour:
     _name: Throttle Dial 3
     _positiveName: 
     _negativeName: 
+    _key: throttle/dial_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleDial3
     _alternateScriptingName: 
@@ -1080,6 +1399,9 @@ MonoBehaviour:
     _name: Throttle Dial 4
     _positiveName: 
     _negativeName: 
+    _key: throttle/dial_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleDial4
     _alternateScriptingName: 
@@ -1090,6 +1412,9 @@ MonoBehaviour:
     _name: Throttle Mini Stick X
     _positiveName: 
     _negativeName: 
+    _key: throttle/mini_stick/horizontal
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleMiniStickX
     _alternateScriptingName: 
@@ -1100,6 +1425,9 @@ MonoBehaviour:
     _name: Throttle Mini Stick Y
     _positiveName: 
     _negativeName: 
+    _key: throttle/mini_stick/vertical
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: throttleMiniStickY
     _alternateScriptingName: 
@@ -1110,6 +1438,9 @@ MonoBehaviour:
     _name: Throttle Mini Stick Press
     _positiveName: 
     _negativeName: 
+    _key: throttle/mini_stick/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleMiniStickPress
     _alternateScriptingName: 
@@ -1120,6 +1451,9 @@ MonoBehaviour:
     _name: Throttle Wheel 1 Forward
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_1/forward
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel1Forward
     _alternateScriptingName: 
@@ -1130,6 +1464,9 @@ MonoBehaviour:
     _name: Throttle Wheel 1 Back
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_1/back
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel1Back
     _alternateScriptingName: 
@@ -1140,6 +1477,9 @@ MonoBehaviour:
     _name: Throttle Wheel 1 Press
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_1/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel1Press
     _alternateScriptingName: 
@@ -1150,6 +1490,9 @@ MonoBehaviour:
     _name: Throttle Wheel 2 Forward
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_2/forward
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel2Forward
     _alternateScriptingName: 
@@ -1160,6 +1503,9 @@ MonoBehaviour:
     _name: Throttle Wheel 2 Back
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_2/back
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel2Back
     _alternateScriptingName: 
@@ -1170,6 +1516,9 @@ MonoBehaviour:
     _name: Throttle Wheel 2 Press
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_2/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel2Press
     _alternateScriptingName: 
@@ -1180,6 +1529,9 @@ MonoBehaviour:
     _name: Throttle Wheel 3 Forward
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_3/forward
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel3Forward
     _alternateScriptingName: 
@@ -1190,6 +1542,9 @@ MonoBehaviour:
     _name: Throttle Wheel 3 Back
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_3/back
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel3Back
     _alternateScriptingName: 
@@ -1200,6 +1555,9 @@ MonoBehaviour:
     _name: Throttle Wheel 3 Press
     _positiveName: 
     _negativeName: 
+    _key: throttle/wheel_3/press
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleWheel3Press
     _alternateScriptingName: 
@@ -1210,6 +1568,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Up
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Up
     _alternateScriptingName: 
@@ -1220,6 +1581,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Up_Right
     _alternateScriptingName: 
@@ -1230,6 +1594,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Right
     _alternateScriptingName: 
@@ -1240,6 +1607,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Down_Right
     _alternateScriptingName: 
@@ -1250,6 +1620,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Down
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Down
     _alternateScriptingName: 
@@ -1260,6 +1633,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Down_Left
     _alternateScriptingName: 
@@ -1270,6 +1646,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Left
     _alternateScriptingName: 
@@ -1280,6 +1659,9 @@ MonoBehaviour:
     _name: Throttle Hat 1 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat1Up_Left
     _alternateScriptingName: 
@@ -1290,6 +1672,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Up
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Up
     _alternateScriptingName: 
@@ -1300,6 +1685,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Up_Right
     _alternateScriptingName: 
@@ -1310,6 +1698,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Right
     _alternateScriptingName: 
@@ -1320,6 +1711,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Down_Right
     _alternateScriptingName: 
@@ -1330,6 +1724,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Down
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Down
     _alternateScriptingName: 
@@ -1340,6 +1737,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Down_Left
     _alternateScriptingName: 
@@ -1350,6 +1750,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Left
     _alternateScriptingName: 
@@ -1360,6 +1763,9 @@ MonoBehaviour:
     _name: Throttle Hat 2 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat2Up_Left
     _alternateScriptingName: 
@@ -1370,6 +1776,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Up
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Up
     _alternateScriptingName: 
@@ -1380,6 +1789,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Up_Right
     _alternateScriptingName: 
@@ -1390,6 +1802,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Right
     _alternateScriptingName: 
@@ -1400,6 +1815,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Down_Right
     _alternateScriptingName: 
@@ -1410,6 +1828,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Down
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Down
     _alternateScriptingName: 
@@ -1420,6 +1841,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Down_Left
     _alternateScriptingName: 
@@ -1430,6 +1854,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Left
     _alternateScriptingName: 
@@ -1440,6 +1867,9 @@ MonoBehaviour:
     _name: Throttle Hat 3 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat3Up_Left
     _alternateScriptingName: 
@@ -1450,6 +1880,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Up
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Up
     _alternateScriptingName: 
@@ -1460,6 +1893,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Up_Right
     _alternateScriptingName: 
@@ -1470,6 +1906,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Right
     _alternateScriptingName: 
@@ -1480,6 +1919,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Down_Right
     _alternateScriptingName: 
@@ -1490,6 +1932,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Down
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Down
     _alternateScriptingName: 
@@ -1500,6 +1945,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Down_Left
     _alternateScriptingName: 
@@ -1510,6 +1958,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Left
     _alternateScriptingName: 
@@ -1520,6 +1971,9 @@ MonoBehaviour:
     _name: Throttle Hat 4 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttleHat4Up_Left
     _alternateScriptingName: 
@@ -1530,6 +1984,9 @@ MonoBehaviour:
     _name: Left Pedal
     _positiveName: 
     _negativeName: 
+    _key: left_pedal
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: leftPedal
     _alternateScriptingName: 
@@ -1540,6 +1997,9 @@ MonoBehaviour:
     _name: Right Pedal
     _positiveName: 
     _negativeName: 
+    _key: right_pedal
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rightPedal
     _alternateScriptingName: 
@@ -1550,6 +2010,9 @@ MonoBehaviour:
     _name: Slide Pedals
     _positiveName: 
     _negativeName: 
+    _key: slide_pedals
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: slidePedals
     _alternateScriptingName: 
@@ -1560,6 +2023,9 @@ MonoBehaviour:
     _name: Stick
     _positiveName: 
     _negativeName: 
+    _key: stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 5
     _scriptingName: stick
     _alternateScriptingName: 
@@ -1570,6 +2036,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 1
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 2
     _scriptingName: stickMiniStick1
     _alternateScriptingName: 
@@ -1580,6 +2049,9 @@ MonoBehaviour:
     _name: Stick Mini Stick 2
     _positiveName: 
     _negativeName: 
+    _key: stick/mini_stick_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 2
     _scriptingName: stickMiniStick2
     _alternateScriptingName: 
@@ -1590,6 +2062,9 @@ MonoBehaviour:
     _name: Stick Hat 1
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: stickHat1
     _alternateScriptingName: 
@@ -1600,6 +2075,9 @@ MonoBehaviour:
     _name: Stick Hat 2
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: stickHat2
     _alternateScriptingName: 
@@ -1610,6 +2088,9 @@ MonoBehaviour:
     _name: Stick Hat 3
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: stickHat3
     _alternateScriptingName: 
@@ -1620,6 +2101,9 @@ MonoBehaviour:
     _name: Stick Hat 4
     _positiveName: 
     _negativeName: 
+    _key: stick/hat_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: stickHat4
     _alternateScriptingName: 
@@ -1630,6 +2114,9 @@ MonoBehaviour:
     _name: Throttle 1
     _positiveName: 
     _negativeName: 
+    _key: throttle_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 6
     _scriptingName: throttle1
     _alternateScriptingName: 
@@ -1640,6 +2127,9 @@ MonoBehaviour:
     _name: Throttle 2
     _positiveName: 
     _negativeName: 
+    _key: throttle_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 6
     _scriptingName: throttle2
     _alternateScriptingName: 
@@ -1650,6 +2140,9 @@ MonoBehaviour:
     _name: Throttle Mini Stick
     _positiveName: 
     _negativeName: 
+    _key: throttle/mini_stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 2
     _scriptingName: throttleMiniStick
     _alternateScriptingName: 
@@ -1660,6 +2153,9 @@ MonoBehaviour:
     _name: Throttle Hat 1
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: throttleHat1
     _alternateScriptingName: 
@@ -1670,6 +2166,9 @@ MonoBehaviour:
     _name: Throttle Hat 2
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: throttleHat2
     _alternateScriptingName: 
@@ -1680,6 +2179,9 @@ MonoBehaviour:
     _name: Throttle Hat 3
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: throttleHat3
     _alternateScriptingName: 
@@ -1690,6 +2192,9 @@ MonoBehaviour:
     _name: Throttle Hat 4
     _positiveName: 
     _negativeName: 
+    _key: throttle/hat_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: throttleHat4
     _alternateScriptingName: 

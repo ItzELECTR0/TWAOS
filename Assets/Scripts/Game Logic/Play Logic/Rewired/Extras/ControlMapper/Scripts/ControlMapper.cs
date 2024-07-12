@@ -62,18 +62,13 @@
 #define SUPPORTS_UNITY_UI
 #endif
 
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper
 {
-
     using UnityEngine;
     using UnityEngine.UI;
     using UnityEngine.Events;
-    using UnityEngine.Serialization;
-    using System.Collections;
     using System.Collections.Generic;
     using UnityEngine.EventSystems;
     using Rewired;
@@ -192,6 +187,9 @@ namespace Rewired.UI.ControlMapper
             "In addition, these assignments may cause conflicts when trying to remap the same elements to Actions."
         )]
         private bool _showSplitAxisInputFields = true;
+        [SerializeField]
+        [Tooltip("Show glyphs if available. Glyph Provider must be configured for glyphs to be displayed. See Glyphs documentation for more information.")]
+        private bool _showGlyphs = true;
 
         [SerializeField]
         [Tooltip("If enabled, when an element assignment conflict is found, an option will be displayed that allows the user to make the conflicting assignment anyway.")]
@@ -336,6 +334,7 @@ namespace Rewired.UI.ControlMapper
         private System.Action _PopupWindowClosedEvent;
         private System.Action _InputPollingStartedEvent;
         private System.Action _InputPollingEndedEvent;
+        private System.Action _ThemeAppliedEvent;
 
         /// <summary>
         /// Event sent when the UI is closed.
@@ -537,30 +536,46 @@ namespace Rewired.UI.ControlMapper
 
         private static ControlMapper Instance;
 
+        [System.NonSerialized]
         private bool initialized;
+        [System.NonSerialized]
         private int playerCount;
 
         private InputGrid inputGrid;
         private WindowManager windowManager;
+        [System.NonSerialized]
         private int currentPlayerId;
+        [System.NonSerialized]
         private int currentMapCategoryId;
+        [System.NonSerialized]
         private List<GUIButton> playerButtons;
+        [System.NonSerialized]
         private List<GUIButton> mapCategoryButtons;
+        [System.NonSerialized]
         private List<GUIButton> assignedControllerButtons;
         private GUIButton assignedControllerButtonsPlaceholder;
+        [System.NonSerialized]
         private List<GameObject> miscInstantiatedObjects;
+        [System.NonSerialized]
         private GameObject canvas;
+        [System.NonSerialized]
         private GameObject lastUISelection;
+        [System.NonSerialized]
         private int currentJoystickId = -1;
+        [System.NonSerialized]
         private float blockInputOnFocusEndTime;
+        [System.NonSerialized]
         private bool isPollingForInput;
+        [System.NonSerialized]
+        private List<ThemedElement> themedElements = new List<ThemedElement>();
 
+        [System.NonSerialized]
         private InputMapping pendingInputMapping;
+        [System.NonSerialized]
         private AxisCalibrator pendingAxisCalibration;
 
         private System.Action<InputFieldInfo> inputFieldActivatedDelegate;
         private System.Action<ToggleInfo, bool> inputFieldInvertToggleStateChangedDelegate;
-
         private System.Action _restoreDefaultsDelegate;
 
         #endregion
@@ -590,6 +605,7 @@ namespace Rewired.UI.ControlMapper
         public int controllerInputFieldCount { get { return _controllerInputFieldCount; } set { _controllerInputFieldCount = value; InspectorPropertyChanged(true); } }
         public bool showFullAxisInputFields { get { return _showFullAxisInputFields; } set { _showFullAxisInputFields = value; InspectorPropertyChanged(true); } }
         public bool showSplitAxisInputFields { get { return _showSplitAxisInputFields; } set { _showSplitAxisInputFields = value; InspectorPropertyChanged(true); } }
+        public bool showGlyphs { get { return _showGlyphs; } set { _showGlyphs = value; InspectorPropertyChanged(true); } }
         public bool allowElementAssignmentConflicts { get { return _allowElementAssignmentConflicts; } set { _allowElementAssignmentConflicts = value; InspectorPropertyChanged(); } }
         public bool allowElementAssignmentSwap { get { return _allowElementAssignmentSwap; } set { _allowElementAssignmentSwap = value; InspectorPropertyChanged(); } }
         public int actionLabelWidth { get { return _actionLabelWidth; } set { _actionLabelWidth = value; InspectorPropertyChanged(true); } }
@@ -614,7 +630,8 @@ namespace Rewired.UI.ControlMapper
         //public int universalCancelAction { get { return _universalCancelAction; } set { _universalCancelAction = value; InspectorPropertyChanged(); } }
         public bool universalCancelClosesScreen { get { return _universalCancelClosesScreen; } set { _universalCancelClosesScreen = value; InspectorPropertyChanged(); } }
         public bool showInputBehaviorSettings { get { return _showInputBehaviorSettings; } set { _showInputBehaviorSettings = value; InspectorPropertyChanged(true); } }
-        public bool useThemeSettings { get { return _useThemeSettings; } set { _useThemeSettings = value; InspectorPropertyChanged(true); } }
+        public bool useThemeSettings { get { return _useThemeSettings; } set { _useThemeSettings = value; InspectorPropertyChanged(true); if(value) ApplyTheme(); } }
+        public ThemeSettings themeSettings { get { return _themeSettings; } set { _themeSettings = value; InspectorPropertyChanged(true); ApplyTheme(); } }
         public LanguageDataBase language { get { return _language; } set { _language = value; if(_language != null) _language.Initialize(); InspectorPropertyChanged(true); } }
 
         public bool showPlayersGroupLabel { get { return _showPlayersGroupLabel; } set { _showPlayersGroupLabel = value; InspectorPropertyChanged(true); } }
@@ -2250,6 +2267,7 @@ namespace Rewired.UI.ControlMapper
 
                 GUIInputField field = CreateInputField(hLayoutGroup.transform, Vector2.zero, "", action.id, axisRange, controllerType, fieldIndex);
                 field.SetFirstChildObjectWidth(LayoutElementSizeType.PreferredSize, fieldWidth - toggleWidth); // set max width so buttons will stay equal widths
+                field.SetFirstChildObjectWidth(LayoutElementSizeType.MinSize, 0); // set min width so modifier key chains are constrained
                 inputGrid.AddInputField(mapCategoryId, action, axisRange, controllerType, fieldIndex, field); // add to the system
 
                 if(axisRange == AxisRange.Full) {
@@ -2701,6 +2719,7 @@ namespace Rewired.UI.ControlMapper
             field.SetFieldInfoData(actionId, axisRange, controllerType, fieldIndex);
             field.SetOnClickCallback(inputFieldActivatedDelegate);
             field.fieldInfo.OnSelectedEvent += OnUIElementSelected;
+            if(field.fieldInfo.glyphOrText != null) field.fieldInfo.glyphOrText.allowedTypes = _showGlyphs ? Glyphs.UnityUI.UnityUIControllerElementGlyphBase.AllowedTypes.All : Glyphs.UnityUI.UnityUIControllerElementGlyphBase.AllowedTypes.Text;
             return field;
         }
         private GUIInputField CreateInputField(Transform parent, Vector2 offset) {
@@ -3118,6 +3137,7 @@ namespace Rewired.UI.ControlMapper
             if(!initialized) return; // failed to init
             if(!force && isOpen) return;
             Clear();
+            if(Instance == null) Instance = this; // set the singleton
             canvas.SetActive(true);
             OnPlayerSelected(0, false);
             SelectDefaultMapCategory(false);
@@ -3136,6 +3156,7 @@ namespace Rewired.UI.ControlMapper
             Clear();
             canvas.SetActive(false);
             SetUISelection(null); // deselect
+            if(Instance == this) Instance = null; // clear the singleton
             if(_ScreenClosedEvent != null) _ScreenClosedEvent();
             if(_onScreenClosed != null) _onScreenClosed.Invoke();
         }
@@ -3197,7 +3218,7 @@ namespace Rewired.UI.ControlMapper
 
         private void ClearAllVars() {
             initialized = false;
-            Instance = null; // clear singleton instance
+            if(Instance == this) Instance = null; // clear singleton instance
             playerCount = 0;
 
             inputGrid = null;
@@ -3222,9 +3243,11 @@ namespace Rewired.UI.ControlMapper
 
         public void Reset() {
             if(!initialized) return;
+            bool wasOpen = isOpen;
+            Close(false);
             ClearCompletely();
             Initialize();
-            if(isOpen) Open(true);
+            if(wasOpen) Open(true);
         }
 
         #endregion
@@ -3571,6 +3594,13 @@ namespace Rewired.UI.ControlMapper
             return false;
         }
 
+        private void ApplyTheme() {
+            for(int i = 0; i < themedElements.Count; i++) {
+                if(themedElements == null) continue;
+                themedElements[i].ApplyTheme();
+            }
+        }
+
         #endregion
 
         #region Editor Recompile
@@ -3600,6 +3630,19 @@ namespace Rewired.UI.ControlMapper
 
         #region Static Methods
 
+        public static void Register(ThemedElement themedElement) {
+            if(themedElement == null) return;
+            if(Instance == null) return;
+            if(Instance.themedElements.Contains(themedElement)) return;
+            Instance.themedElements.Add(themedElement);
+        }
+
+        public static void Unregister(ThemedElement themedElement) {
+            if(themedElement == null) return;
+            if(Instance == null) return;
+            Instance.themedElements.Remove(themedElement);
+        }
+
         public static void ApplyTheme(ThemedElement.ElementInfo[] elementInfo) {
             if(Instance == null) return;
             if(Instance._themeSettings == null) return;
@@ -3610,6 +3653,12 @@ namespace Rewired.UI.ControlMapper
         public static UI.ControlMapper.LanguageDataBase GetLanguage() {
             if(Instance == null) return null;
             return Instance._language;
+        }
+
+        public static ControlMapper current {
+            get {
+                return Instance;
+            }
         }
 
         #endregion

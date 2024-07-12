@@ -15,12 +15,16 @@ MonoBehaviour:
   description: 'A controller that allows up to 6-degrees of freedom: Translate X,
     Y, Z and rotate X, Y, Z.'
   templateGuid: 2599beb3-522b-43dd-a4ef-93fd60e5eafa
+  templateKey: six_dof_controller
   className: SixDofControllerTemplate
   elementIdentifiers:
   - _id: 1
     _name: Horizontal
     _positiveName: Right
     _negativeName: Left
+    _key: horizontal
+    _positiveKey: right
+    _negativeKey: left
     _elementType: 0
     _scriptingName: positionX
     _alternateScriptingName: 
@@ -31,6 +35,9 @@ MonoBehaviour:
     _name: Vertical
     _positiveName: Up
     _negativeName: Down
+    _key: vertical
+    _positiveKey: up
+    _negativeKey: down
     _elementType: 0
     _scriptingName: positionY
     _alternateScriptingName: 
@@ -41,6 +48,9 @@ MonoBehaviour:
     _name: Forward/Back
     _positiveName: Forward
     _negativeName: Back
+    _key: forward_back
+    _positiveKey: forward
+    _negativeKey: back
     _elementType: 0
     _scriptingName: positionZ
     _alternateScriptingName: 
@@ -51,6 +61,9 @@ MonoBehaviour:
     _name: Rotate X
     _positiveName: 
     _negativeName: 
+    _key: rotate/x
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rotationX
     _alternateScriptingName: 
@@ -61,6 +74,9 @@ MonoBehaviour:
     _name: Rotate Y
     _positiveName: 
     _negativeName: 
+    _key: rotate/y
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rotationY
     _alternateScriptingName: 
@@ -71,6 +87,9 @@ MonoBehaviour:
     _name: Rotate Z
     _positiveName: 
     _negativeName: 
+    _key: rotate/z
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: rotationZ
     _alternateScriptingName: 
@@ -81,6 +100,9 @@ MonoBehaviour:
     _name: Throttle 1
     _positiveName: Throttle 1 Up
     _negativeName: Throttle 1 Down
+    _key: throttle_1/axis
+    _positiveKey: throttle_1/axis/up
+    _negativeKey: throttle_1/axis/down
     _elementType: 0
     _scriptingName: throttle1Axis
     _alternateScriptingName: 
@@ -91,6 +113,9 @@ MonoBehaviour:
     _name: Throttle 1 Min Detent
     _positiveName: 
     _negativeName: 
+    _key: throttle_1/min_detent
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttle1MinDetent
     _alternateScriptingName: 
@@ -101,6 +126,9 @@ MonoBehaviour:
     _name: Throttle 2
     _positiveName: Throttle 2 Up
     _negativeName: Throttle 2 Down
+    _key: throttle_2/axis
+    _positiveKey: throttle_2/axis/up
+    _negativeKey: throttle_2/axis/down
     _elementType: 0
     _scriptingName: throttle2Axis
     _alternateScriptingName: 
@@ -111,6 +139,9 @@ MonoBehaviour:
     _name: Throttle 2 Min Detent
     _positiveName: 
     _negativeName: 
+    _key: throttle_2/min_detent
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: throttle2MinDetent
     _alternateScriptingName: 
@@ -121,6 +152,9 @@ MonoBehaviour:
     _name: Extra Axis 1
     _positiveName: 
     _negativeName: 
+    _key: extra_axis_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: extraAxis1
     _alternateScriptingName: 
@@ -131,6 +165,9 @@ MonoBehaviour:
     _name: Extra Axis 2
     _positiveName: 
     _negativeName: 
+    _key: extra_axis_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: extraAxis2
     _alternateScriptingName: 
@@ -141,6 +178,9 @@ MonoBehaviour:
     _name: Extra Axis 3
     _positiveName: 
     _negativeName: 
+    _key: extra_axis_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: extraAxis3
     _alternateScriptingName: 
@@ -151,6 +191,9 @@ MonoBehaviour:
     _name: Extra Axis 4
     _positiveName: 
     _negativeName: 
+    _key: extra_axis_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 0
     _scriptingName: extraAxis4
     _alternateScriptingName: 
@@ -161,6 +204,9 @@ MonoBehaviour:
     _name: Button 1
     _positiveName: 
     _negativeName: 
+    _key: button_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button1
     _alternateScriptingName: 
@@ -171,6 +217,9 @@ MonoBehaviour:
     _name: Button 2
     _positiveName: 
     _negativeName: 
+    _key: button_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button2
     _alternateScriptingName: 
@@ -181,6 +230,9 @@ MonoBehaviour:
     _name: Button 3
     _positiveName: 
     _negativeName: 
+    _key: button_3
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button3
     _alternateScriptingName: 
@@ -191,6 +243,9 @@ MonoBehaviour:
     _name: Button 4
     _positiveName: 
     _negativeName: 
+    _key: button_4
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button4
     _alternateScriptingName: 
@@ -201,6 +256,9 @@ MonoBehaviour:
     _name: Button 5
     _positiveName: 
     _negativeName: 
+    _key: button_5
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button5
     _alternateScriptingName: 
@@ -211,6 +269,9 @@ MonoBehaviour:
     _name: Button 6
     _positiveName: 
     _negativeName: 
+    _key: button_6
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button6
     _alternateScriptingName: 
@@ -221,6 +282,9 @@ MonoBehaviour:
     _name: Button 7
     _positiveName: 
     _negativeName: 
+    _key: button_7
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button7
     _alternateScriptingName: 
@@ -231,6 +295,9 @@ MonoBehaviour:
     _name: Button 8
     _positiveName: 
     _negativeName: 
+    _key: button_8
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button8
     _alternateScriptingName: 
@@ -241,6 +308,9 @@ MonoBehaviour:
     _name: Button 9
     _positiveName: 
     _negativeName: 
+    _key: button_9
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button9
     _alternateScriptingName: 
@@ -251,6 +321,9 @@ MonoBehaviour:
     _name: Button 10
     _positiveName: 
     _negativeName: 
+    _key: button_10
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button10
     _alternateScriptingName: 
@@ -261,6 +334,9 @@ MonoBehaviour:
     _name: Button 11
     _positiveName: 
     _negativeName: 
+    _key: button_11
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button11
     _alternateScriptingName: 
@@ -271,6 +347,9 @@ MonoBehaviour:
     _name: Button 12
     _positiveName: 
     _negativeName: 
+    _key: button_12
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button12
     _alternateScriptingName: 
@@ -281,6 +360,9 @@ MonoBehaviour:
     _name: Button 13
     _positiveName: 
     _negativeName: 
+    _key: button_13
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button13
     _alternateScriptingName: 
@@ -291,6 +373,9 @@ MonoBehaviour:
     _name: Button 14
     _positiveName: 
     _negativeName: 
+    _key: button_14
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button14
     _alternateScriptingName: 
@@ -301,6 +386,9 @@ MonoBehaviour:
     _name: Button 15
     _positiveName: 
     _negativeName: 
+    _key: button_15
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button15
     _alternateScriptingName: 
@@ -311,6 +399,9 @@ MonoBehaviour:
     _name: Button 16
     _positiveName: 
     _negativeName: 
+    _key: button_16
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button16
     _alternateScriptingName: 
@@ -321,6 +412,9 @@ MonoBehaviour:
     _name: Button 17
     _positiveName: 
     _negativeName: 
+    _key: button_17
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button17
     _alternateScriptingName: 
@@ -331,6 +425,9 @@ MonoBehaviour:
     _name: Button 18
     _positiveName: 
     _negativeName: 
+    _key: button_18
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button18
     _alternateScriptingName: 
@@ -341,6 +438,9 @@ MonoBehaviour:
     _name: Button 19
     _positiveName: 
     _negativeName: 
+    _key: button_19
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button19
     _alternateScriptingName: 
@@ -351,6 +451,9 @@ MonoBehaviour:
     _name: Button 20
     _positiveName: 
     _negativeName: 
+    _key: button_20
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button20
     _alternateScriptingName: 
@@ -361,6 +464,9 @@ MonoBehaviour:
     _name: Button 21
     _positiveName: 
     _negativeName: 
+    _key: button_21
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button21
     _alternateScriptingName: 
@@ -371,6 +477,9 @@ MonoBehaviour:
     _name: Button 22
     _positiveName: 
     _negativeName: 
+    _key: button_22
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button22
     _alternateScriptingName: 
@@ -381,6 +490,9 @@ MonoBehaviour:
     _name: Button 23
     _positiveName: 
     _negativeName: 
+    _key: button_23
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button23
     _alternateScriptingName: 
@@ -391,6 +503,9 @@ MonoBehaviour:
     _name: Button 24
     _positiveName: 
     _negativeName: 
+    _key: button_24
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button24
     _alternateScriptingName: 
@@ -401,6 +516,9 @@ MonoBehaviour:
     _name: Button 25
     _positiveName: 
     _negativeName: 
+    _key: button_25
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button25
     _alternateScriptingName: 
@@ -411,6 +529,9 @@ MonoBehaviour:
     _name: Button 26
     _positiveName: 
     _negativeName: 
+    _key: button_26
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button26
     _alternateScriptingName: 
@@ -421,6 +542,9 @@ MonoBehaviour:
     _name: Button 27
     _positiveName: 
     _negativeName: 
+    _key: button_27
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button27
     _alternateScriptingName: 
@@ -431,6 +555,9 @@ MonoBehaviour:
     _name: Button 28
     _positiveName: 
     _negativeName: 
+    _key: button_28
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button28
     _alternateScriptingName: 
@@ -441,6 +568,9 @@ MonoBehaviour:
     _name: Button 29
     _positiveName: 
     _negativeName: 
+    _key: button_29
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button29
     _alternateScriptingName: 
@@ -451,6 +581,9 @@ MonoBehaviour:
     _name: Button 30
     _positiveName: 
     _negativeName: 
+    _key: button_30
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button30
     _alternateScriptingName: 
@@ -461,6 +594,9 @@ MonoBehaviour:
     _name: Button 31
     _positiveName: 
     _negativeName: 
+    _key: button_31
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button31
     _alternateScriptingName: 
@@ -471,6 +607,9 @@ MonoBehaviour:
     _name: Button 32
     _positiveName: 
     _negativeName: 
+    _key: button_32
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: button32
     _alternateScriptingName: 
@@ -481,6 +620,9 @@ MonoBehaviour:
     _name: Hat 1 Up
     _positiveName: 
     _negativeName: 
+    _key: hat_1/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1Up
     _alternateScriptingName: 
@@ -491,6 +633,9 @@ MonoBehaviour:
     _name: Hat 1 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: hat_1/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1UpRight
     _alternateScriptingName: 
@@ -501,6 +646,9 @@ MonoBehaviour:
     _name: Hat 1 Right
     _positiveName: 
     _negativeName: 
+    _key: hat_1/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1Right
     _alternateScriptingName: 
@@ -511,6 +659,9 @@ MonoBehaviour:
     _name: Hat 1 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: hat_1/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1DownRight
     _alternateScriptingName: 
@@ -521,6 +672,9 @@ MonoBehaviour:
     _name: Hat 1 Down
     _positiveName: 
     _negativeName: 
+    _key: hat_1/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1Down
     _alternateScriptingName: 
@@ -531,6 +685,9 @@ MonoBehaviour:
     _name: Hat 1 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: hat_1/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1DownLeft
     _alternateScriptingName: 
@@ -541,6 +698,9 @@ MonoBehaviour:
     _name: Hat 1 Left
     _positiveName: 
     _negativeName: 
+    _key: hat_1/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1Left
     _alternateScriptingName: 
@@ -551,6 +711,9 @@ MonoBehaviour:
     _name: Hat 1 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: hat_1/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat1UpLeft
     _alternateScriptingName: 
@@ -561,6 +724,9 @@ MonoBehaviour:
     _name: Hat 2 Up
     _positiveName: 
     _negativeName: 
+    _key: hat_2/up
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2Up
     _alternateScriptingName: 
@@ -571,6 +737,9 @@ MonoBehaviour:
     _name: Hat 2 Up-Right
     _positiveName: 
     _negativeName: 
+    _key: hat_2/up_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2UpRight
     _alternateScriptingName: 
@@ -581,6 +750,9 @@ MonoBehaviour:
     _name: Hat 2 Right
     _positiveName: 
     _negativeName: 
+    _key: hat_2/right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2Right
     _alternateScriptingName: 
@@ -591,6 +763,9 @@ MonoBehaviour:
     _name: Hat 2 Down-Right
     _positiveName: 
     _negativeName: 
+    _key: hat_2/down_right
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2DownRight
     _alternateScriptingName: 
@@ -601,6 +776,9 @@ MonoBehaviour:
     _name: Hat 2 Down
     _positiveName: 
     _negativeName: 
+    _key: hat_2/down
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2Down
     _alternateScriptingName: 
@@ -611,6 +789,9 @@ MonoBehaviour:
     _name: Hat 2 Down-Left
     _positiveName: 
     _negativeName: 
+    _key: hat_2/down_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2DownLeft
     _alternateScriptingName: 
@@ -621,6 +802,9 @@ MonoBehaviour:
     _name: Hat 2 Left
     _positiveName: 
     _negativeName: 
+    _key: hat_2/left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2Left
     _alternateScriptingName: 
@@ -631,6 +815,9 @@ MonoBehaviour:
     _name: Hat 2 Up-Left
     _positiveName: 
     _negativeName: 
+    _key: hat_2/up_left
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 1
     _scriptingName: hat2UpLeft
     _alternateScriptingName: 
@@ -641,6 +828,9 @@ MonoBehaviour:
     _name: Hat 1
     _positiveName: 
     _negativeName: 
+    _key: hat_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: hat1
     _alternateScriptingName: 
@@ -651,6 +841,9 @@ MonoBehaviour:
     _name: Hat 2
     _positiveName: 
     _negativeName: 
+    _key: hat_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 7
     _scriptingName: hat2
     _alternateScriptingName: 
@@ -661,6 +854,9 @@ MonoBehaviour:
     _name: Throttle 1
     _positiveName: 
     _negativeName: 
+    _key: throttle_1
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 6
     _scriptingName: throttle1
     _alternateScriptingName: 
@@ -671,6 +867,9 @@ MonoBehaviour:
     _name: Throttle 2
     _positiveName: 
     _negativeName: 
+    _key: throttle_2
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 6
     _scriptingName: throttle2
     _alternateScriptingName: 
@@ -681,6 +880,9 @@ MonoBehaviour:
     _name: Stick
     _positiveName: 
     _negativeName: 
+    _key: stick
+    _positiveKey: 
+    _negativeKey: 
     _elementType: 9
     _scriptingName: stick
     _alternateScriptingName: 

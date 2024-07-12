@@ -1,15 +1,11 @@
 // Copyright (c) 2015 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper {
 
     using UnityEngine;
     using UnityEditor;
-    using System.Collections;
     using System.Collections.Generic;
-    using System.Text.RegularExpressions;
     using Rewired;
     using Rewired.Data;
     using Rewired.Utils;
@@ -45,6 +41,7 @@ namespace Rewired.UI.ControlMapper {
 
         private const string c_showFullAxisInputFields = "_showFullAxisInputFields";
         private const string c_showSplitAxisInputFields = "_showSplitAxisInputFields";
+        private const string c_showGlyphs = "_showGlyphs";
 
         private const string c_allowElementAssignmentConflicts = "_allowElementAssignmentConflicts";
         private const string c_allowElementAssignmentSwap = "_allowElementAssignmentSwap";
@@ -156,6 +153,7 @@ namespace Rewired.UI.ControlMapper {
 
             AddProperty(c_showFullAxisInputFields);
             AddProperty(c_showSplitAxisInputFields);
+            AddProperty(c_showGlyphs);
 
             AddProperty(c_allowElementAssignmentConflicts);
             AddProperty(c_allowElementAssignmentSwap);
@@ -325,6 +323,7 @@ namespace Rewired.UI.ControlMapper {
             using(new EditorGUILayoutSection(true, style_sectionBkg)) {
                 EditorGUILayout.LabelField(new GUIContent("Input Field Options:", "Various options for the input field grid."), style_sectionLabel);
                 EditorGUILayout.Space();
+                EditorGUILayout.PropertyField(properties[c_showGlyphs]);
                 EditorGUILayout.PropertyField(properties[c_showFullAxisInputFields]);
                 EditorGUILayout.PropertyField(properties[c_showSplitAxisInputFields]);
                 if(!properties[c_showFullAxisInputFields].boolValue) {

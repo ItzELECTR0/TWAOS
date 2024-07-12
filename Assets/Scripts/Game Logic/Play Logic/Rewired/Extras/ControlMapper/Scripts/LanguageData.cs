@@ -1,15 +1,11 @@
 // Copyright (c) 2015 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
-#pragma warning disable 0219
-#pragma warning disable 0618
 #pragma warning disable 0649
 
 namespace Rewired.UI.ControlMapper {
 
     using System;
     using UnityEngine;
-    using System.Collections;
     using System.Collections.Generic;
-    using System.Text.RegularExpressions;
     using Rewired;
 
     [Serializable]
@@ -268,6 +264,7 @@ namespace Rewired.UI.ControlMapper {
 
         public override string GetElementIdentifierName(ActionElementMap actionElementMap) {
             if(actionElementMap == null) throw new ArgumentNullException("actionElementMap");
+            if(isLocalizationSystemEnabled) return actionElementMap.elementIdentifierName; // always prefer localization system if in use
             if(actionElementMap.controllerMap.controllerType == ControllerType.Keyboard) return GetElementIdentifierName(actionElementMap.keyCode, actionElementMap.modifierKeyFlags);
             return GetElementIdentifierName(actionElementMap.controllerMap.controller, actionElementMap.elementIdentifierId, actionElementMap.axisRange);
         }
@@ -277,16 +274,10 @@ namespace Rewired.UI.ControlMapper {
             if(eid == null) throw new ArgumentException("Invalid element identifier id: " + elementIdentifierId);
             Controller.Element element = controller.GetElementById(elementIdentifierId);
             if(element == null) return string.Empty;
-            switch(element.type) {
-                case ControllerElementType.Axis:
-                    return eid.GetDisplayName(element.type, axisRange);
-                case ControllerElementType.Button:
-                    return eid.name;
-                default:
-                    return eid.name;
-            }
+            return eid.GetDisplayName(element.type, axisRange);
         }
         public override string GetElementIdentifierName(KeyCode keyCode, ModifierKeyFlags modifierKeyFlags) {
+            if(isLocalizationSystemEnabled) return Keyboard.GetKeyName(keyCode, modifierKeyFlags); // always prefer localization system if in use
             if(modifierKeyFlags != ModifierKeyFlags.None) {
                 return string.Format(
                     "{0}{1}{2}",
@@ -307,7 +298,8 @@ namespace Rewired.UI.ControlMapper {
         public override string GetActionName(int actionId, AxisRange axisRange) {
             InputAction action = ReInput.mapping.GetAction(actionId);
             if(action == null) throw new ArgumentException("Invalid action id: " + actionId);
-            switch(axisRange) {
+            if(isLocalizationSystemEnabled) return action.GetDisplayName(axisRange); // always prefer localization system if in use
+            switch (axisRange) {
                 case AxisRange.Full:
                     return action.descriptiveName;
                 case AxisRange.Positive:
@@ -338,6 +330,7 @@ namespace Rewired.UI.ControlMapper {
         }
 
         public override string ModifierKeyFlagsToString(ModifierKeyFlags flags) {
+            if(isLocalizationSystemEnabled) return Keyboard.ModifierKeyFlagsToString(flags); // always prefer localization system if in use
             int count = 0;
             string label = string.Empty;
 
