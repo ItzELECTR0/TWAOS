@@ -1,12 +1,17 @@
 ManifestVersion: 1
 ModuleID: Unity.Addressables
-ModuleVersion: 1.1.0.5
+ModuleVersion: 1.1.0.7
 ModuleFiles:
   AddressablesInspectors.cs
   AddressablesInspectors.cs.meta
+  Internal.meta
   Sirenix.OdinInspector.Modules.Unity.Addressables.asmdef
   Sirenix.OdinInspector.Modules.Unity.Addressables.asmdef.meta
   Validators.meta
+  Internal/OdinAddressableReflection.cs
+  Internal/OdinAddressableReflection.cs.meta
+  Internal/OdinAddressableReflectionValidator.cs
+  Internal/OdinAddressableReflectionValidator.cs.meta
   Validators/AssetLabelReferenceValidator.cs
   Validators/AssetLabelReferenceValidator.cs.meta
   Validators/AssetReferenceValidator.cs

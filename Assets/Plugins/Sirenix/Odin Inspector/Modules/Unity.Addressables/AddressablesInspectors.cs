@@ -6,6 +6,9 @@
 
 using System;
 using Sirenix.OdinInspector;
+using Sirenix.OdinInspector.Modules.Addressables.Editor.Internal;
+using Sirenix.Reflection.Editor;
+using UnityEditor.U2D;
 using UnityEngine;
 
 [assembly: RegisterAssetReferenceAttributeForwardToChild(typeof(InlineEditorAttribute))]
@@ -82,6 +85,7 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
     using UnityEngine.AddressableAssets;
 	using System.Runtime.Serialization;
     using UnityEngine.U2D;
+    using System.IO;
 
     /// <summary>
     /// Draws an AssetReference property.
@@ -107,6 +111,8 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
 
         private List<AssetReferenceUIRestriction> restrictions;
 
+        private bool isSpriteAtlas;
+
         protected override bool CanDrawValueProperty(InspectorProperty property)
         {
             return property.GetAttribute<DrawWithUnityAttribute>() == null;
@@ -124,6 +130,8 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
             this.validMainAssetTypes = OdinAddressableUtility.GetAssetReferenceValidMainAssetTypes(typeof(T));
             this.targetType = OdinAddressableUtility.GetAssetReferenceTargetType(typeof(T));
             this.targetTypeIsNotValidMainAsset = this.validMainAssetTypes.Contains(this.targetType) == false;
+
+            this.isSpriteAtlas = this.validMainAssetTypes.Length > 0 && this.validMainAssetTypes[0] == typeof(SpriteAtlas);
 
             if (this.targetType == typeof(UnityEngine.Object))
             {
@@ -238,56 +246,83 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
                 var drop = DragAndDropUtilities.DropZone(rect, null, typeof(object), false, controlId);
                 if (EditorGUI.EndChangeCheck())
                 {
-                    T dropValue;
-
-                    if (ConvertToValidAssignment(drop, out var obj, out var isSubAssetAssignment))
+                    if (this.ConvertToValidAssignment(drop, out Object obj, out bool isSubAssetAssignment))
                     {
-                        if (this.ValueEntry.SmartValue != null)
+                        if (this.isSpriteAtlas && obj is Sprite sprite)
                         {
-                            if (isSubAssetAssignment)
+                            foreach (SpriteAtlas spriteAtlas in AssetDatabase_Internals.FindAssets<SpriteAtlas>(String.Empty, false, AssetDatabaseSearchArea.AllAssets))
                             {
-                                if (this.ValueEntry.SmartValue.editorAsset == null)
+                                if (!spriteAtlas.CanBindTo(sprite))
                                 {
-                                    var path = AssetDatabase.GetAssetPath(obj);
-                                    var mainAsset = AssetDatabase.LoadMainAssetAtPath(path);
-
-                                    if (mainAsset != null)
-                                    {
-                                        this.ValueEntry.SmartValue = CreateAssetReferenceFrom(mainAsset, obj);
-                                    }
+                                    continue;
                                 }
-                                else
-                                {
-                                    this.ValueEntry.SmartValue.SetEditorSubObject(obj);
-                                }
-                            }
-                            else
-                            {
-                                this.ValueEntry.SmartValue.SetEditorAsset(obj);
-                            }
 
-                            this.updateShowSubAssetField = true; 
-                            dropValue = null;
+                                this.ValueEntry.SmartValue = OdinAddressableUtility.CreateAssetReference<T>(spriteAtlas);
+                                this.ValueEntry.SmartValue.SetEditorSubObject(sprite);
+
+                                this.updateShowSubAssetField = true;
+
+                                break;
+                            }
                         }
                         else
                         {
-                            dropValue = CreateAssetReferenceFrom(obj);
-                        }
-                    }
-                    else
-                    {
-                        dropValue = drop as T;
-                    }
+                            if (isSubAssetAssignment)
+                            {
+                                string path = AssetDatabase.GetAssetPath(obj);
 
-                    if (dropValue != null)
-                    {
-                        if (this.ActuallyDisallowSubAssets && !this.targetTypeIsNotValidMainAsset && string.IsNullOrEmpty(dropValue.SubObjectName) == false)
+                                UnityEngine.Object mainAsset = AssetDatabase.LoadMainAssetAtPath(path);
+
+                                if (mainAsset != null)
+                                {
+                                    if (this.ValueEntry.SmartValue == null)
+                                    {
+                                        this.ValueEntry.SmartValue = OdinAddressableUtility.CreateAssetReference<T>(mainAsset);
+                                    }
+                                    else if (this.ValueEntry.SmartValue.editorAsset != mainAsset)
+                                    {
+                                        this.ValueEntry.SmartValue.SetEditorAsset(mainAsset);
+                                    }
+
+                                    this.ValueEntry.SmartValue.SetEditorSubObject(obj);
+                                }
+
+                                this.updateShowSubAssetField = true;
+                            }
+                            else
+                            {
+                                if (this.ValueEntry.SmartValue == null)
+                                {
+                                    this.ValueEntry.SmartValue = OdinAddressableUtility.CreateAssetReference<T>(obj);
+                                }
+                                else
+                                {
+                                    this.ValueEntry.SmartValue.SetEditorAsset(obj);
+                                }
+
+                                if (string.IsNullOrEmpty(this.ValueEntry.SmartValue.SubObjectName))
+                                {
+                                    if (obj is Sprite)
+                                    {
+                                        Object[] subAsset = AssetDatabase.LoadAllAssetRepresentationsAtPath(AssetDatabase.GetAssetPath(obj));
+
+                                        if (subAsset.Length > 0)
+                                        {
+                                            this.ValueEntry.SmartValue.SetEditorSubObject(subAsset[0]);
+                                            this.updateShowSubAssetField = true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        if (this.ActuallyDisallowSubAssets &&
+                            !this.targetTypeIsNotValidMainAsset &&
+                            !string.IsNullOrEmpty(this.ValueEntry.SmartValue.SubObjectName))
                         {
-                            dropValue.SubObjectName = null;
+                            this.ValueEntry.SmartValue.SubObjectName = null;
+                            this.updateShowSubAssetField = true;
                         }
-
-                        this.updateShowSubAssetField = true; 
-                        this.ValueEntry.SmartValue = dropValue;
                     }
                     else if (drop == null)
                     {
@@ -423,13 +458,29 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
                 return;
 
             var mainAsset = AssetDatabase.LoadMainAssetAtPath(path);
-            var subAssets = OdinAddressableUtility.EnumerateAllActualAndVirtualSubAssets(mainAsset, path).Where(val => val != null && this.targetType.IsAssignableFrom(val.GetType())).ToList();
+
+            List<Object> subAssets;
+
+            if (mainAsset != null && mainAsset is SpriteAtlas)
+            {
+                subAssets = OdinAddressableUtility.EnumerateAllActualAndVirtualSubAssets(mainAsset, path)
+                                                  .Where(val => val != null && (val is Sprite || val is Texture2D))
+                                                  .ToList();
+            }
+            else
+            {
+                subAssets = OdinAddressableUtility.EnumerateAllActualAndVirtualSubAssets(mainAsset, path)
+                                                  .Where(val => val != null && this.targetType.IsInstanceOfType(val))
+                                                  .ToList();
+            }
+
             var items = new GenericSelectorItem<UnityEngine.Object>[subAssets.Count + 1];
 
             items[0] = new GenericSelectorItem<UnityEngine.Object>("<none>", null);
             for (int i = 0; i < subAssets.Count; i++)
-            {
-                items[i + 1] = new GenericSelectorItem<UnityEngine.Object>(subAssets[i].name + " : " + subAssets[i].GetType().GetNiceName(), subAssets[i]);
+            {   
+                var item = new GenericSelectorItem<UnityEngine.Object>(subAssets[i].name, subAssets[i]);
+                items[i + 1] = item;
             }
 
             var selector = new GenericSelector<UnityEngine.Object>("Select Sub Asset", false, items);
@@ -455,6 +506,7 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
             var selected = selection.FirstOrDefault();
 
             this.ValueEntry.SmartValue.SetEditorSubObject(selected);
+            this.Property.MarkSerializationRootDirty();
         }
 
         private T CreateAssetReferenceFrom(AddressableAssetEntry entry)
@@ -608,6 +660,8 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
         private readonly List<AssetReferenceUIRestriction> restrictions;
         private readonly AssetReference assetReferenceForValidating;
 
+        internal bool ShowNonAddressables;
+
         public override string Title => this.title;
         
         /// <summary>
@@ -688,6 +742,13 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
                         this.RebuildMenuTree();
                     }
 
+                    EditorGUI.BeginChangeCheck();
+                    this.ShowNonAddressables = SirenixEditorGUI.ToolbarToggle(this.ShowNonAddressables, EditorIcons.UnityLogo);
+                    if (EditorGUI.EndChangeCheck())
+                    {
+                        this.RebuildMenuTree();
+                    }
+
                     if (SirenixEditorGUI.ToolbarButton(SdfIconType.GearFill, true))
                     {
                         OdinAddressableUtility.OpenGroupsWindow();
@@ -701,42 +762,158 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
 
         protected override void BuildSelectionTree(OdinMenuTree tree)
         {
+            tree.Config.EXPERIMENTAL_INTERNAL_SparseFixedLayouting = true;
+            
+            tree.Config.SelectMenuItemsOnMouseDown = true;
+
+            if (AddressableAssetSettingsDefaultObject.SettingsExists)
+            {
+                AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.Settings;
+
+                foreach (AddressableAssetGroup group in settings.groups)
+                {
+                    if (group == null || group.name == "Built In Data")
+                    {
+                        continue;
+                    }
+
+                    foreach (AddressableAssetEntry entry in group.entries)
+                    {
+                        this.AddEntriesToTree(tree, group.name, entry);
+                    }
+                }
+            }
+
+            foreach (OdinMenuItem item in tree.EnumerateTree())
+            {
+                if (item.Value == null)
+                {
+                    item.SdfIcon = SdfIconType.Folder;
+                }
+            }
+
+            if (this.ShowNonAddressables)
+            {
+                var searchFilter = "";
+
+                foreach (Type filterType in this.filterTypes)
+                {
+                    searchFilter += $"t:{filterType.Name} ";
+                }
+
+                IEnumerator<HierarchyProperty> enumerator = AssetDatabase_Internals.EnumerateAllAssets(searchFilter, false, AssetDatabaseSearchArea.InAssetsOnly);
+
+                if (enumerator.MoveNext())
+                {
+                    var addedGuids = new HashSet<string>();
+
+                    foreach (OdinMenuItem item in tree.EnumerateTree())
+                    {
+                        if (item.Value != null)
+                        {
+                            addedGuids.Add((item.Value as AddressableAssetEntry).guid);
+                        }
+                    }
+
+                    const string NON_ADDRESSABLES_ITEM_NAME = "Non Addressables";
+
+                    var nonAddressablesItem = new OdinMenuItem(tree, NON_ADDRESSABLES_ITEM_NAME, null) {Icon = EditorIcons.UnityLogo};
+
+                    tree.MenuItems.Add(nonAddressablesItem);
+
+                    do
+                    {
+                        HierarchyProperty current = enumerator.Current;
+
+                        if (addedGuids.Contains(current.guid) || !current.isMainRepresentation)
+                        {
+                            continue;
+                        }
+
+                        AddressableAssetEntry entry = OdinAddressableUtility.CreateFakeAddressableAssetEntry(current.guid);
+
+                        if (listMode == SelectorListMode.Flat)
+                        {
+                            var item = new OdinMenuItem(tree, current.name, entry) {Icon = current.icon};
+
+                            nonAddressablesItem.ChildMenuItems.Add(item);
+                        }
+                        else
+                        {
+                            string path = AssetDatabase.GetAssetPath(current.instanceID);
+
+                            if (!current.isFolder)
+                            {
+                                int extensionEndingIndex = GetExtensionsEndingIndex(path);
+
+                                if (extensionEndingIndex != -1)
+                                {
+                                    path = path.Substring(0, extensionEndingIndex);
+                                }
+                            }
+
+                            path = RemoveBaseDirectoryFromAssetPath(path);
+
+                            tree.Add($"{NON_ADDRESSABLES_ITEM_NAME}/{path}", entry, current.icon);
+                        }
+                    } while (enumerator.MoveNext());
+
+                    nonAddressablesItem.ChildMenuItems.SortMenuItemsByName();
+                }
+            }
+
             OdinMenuItem noneItem;
-            if (filterTypes.OfType<UnityEngine.Object>().Any())
+
+            if (this.filterTypes.Contains(typeof(UnityEngine.Object)))
             {
                 noneItem = new OdinMenuItem(tree, "<none> (Addressable Asset)", null);
             }
             else
             {
-                noneItem = new OdinMenuItem(tree, $"<none> (Addressable {(filterTypes.Length == 1 ? filterTypes[0].GetNiceName() : string.Join("/", filterTypes.Select(t => t.GetNiceName())))})", null);
+                string filterTypesJoined;
+
+                if (this.filterTypes.Length == 1)
+                {
+                    filterTypesJoined = this.filterTypes[0].GetNiceName();
+                }
+                else
+                {
+                    filterTypesJoined = string.Join("/", this.filterTypes.Select(t => t.GetNiceName()));
+                }
+
+                noneItem = new OdinMenuItem(tree, $"<none> (Addressable {filterTypesJoined})", null);
             }
 
             noneItem.SdfIcon = SdfIconType.X;
-            tree.MenuItems.Add(noneItem);
-            tree.Config.SelectMenuItemsOnMouseDown = true;
+            tree.MenuItems.Insert(0, noneItem);
+        }
 
-            if (AddressableAssetSettingsDefaultObject.SettingsExists)
+        private static int GetExtensionsEndingIndex(string path)
+        {
+            for (var i = path.Length - 1; i >= 0; i--)
             {
-                var settings = AddressableAssetSettingsDefaultObject.Settings;
-
-                foreach (var group in settings.groups)
+                if (path[i] == '\\' || path[i] == '/')
                 {
-                    if (group == null || group.name == "Built In Data") continue;
+                    return -1;
+                }
 
-                    foreach (var entry in group.entries)
-                    {
-                        AddEntriesToTree(tree, group.name, entry);
-                    }
+                if (path[i] == '.')
+                {
+                    return i;
                 }
             }
 
-            foreach (var i in tree.EnumerateTree().Skip(1))
+            return -1;
+        }
+
+        private static string RemoveBaseDirectoryFromAssetPath(string path)
+        {
+            if (path.StartsWith("Assets/"))
             {
-                if (i.Value == null)
-                {
-                    i.SdfIcon = SdfIconType.Folder;
-                }
+                return path.Remove(0, "Assets/".Length);
             }
+
+            return path;
         }
 
         private void AddEntriesToTree(OdinMenuTree tree, string groupName, AddressableAssetEntry entry)
@@ -745,7 +922,21 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
 
             var asset = entry.TargetAsset;
 
-            if (entry.IsFolder == false)
+            var isFolder = entry.IsFolder || AssetDatabase.IsValidFolder(entry.AssetPath);
+
+            if (isFolder)
+            {
+                entry.GatherAllAssets(null, false, false, true, null);
+
+                if (entry.SubAssets != null)
+                {
+                    foreach (var e in entry.SubAssets)
+                    {
+                        AddEntriesToTree(tree, groupName, e);
+                    }
+                }
+            }
+            else 
             {
                 var assetType = asset.GetType();
                 bool inheritsFromFilterType = false;
@@ -827,22 +1018,6 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
                     else if (listMode.Value == SelectorListMode.Flat)
                     {
                         tree.MenuItems.Add(item);
-                    }
-                }
-            }
-            
-            if (entry.IsFolder)
-            {
-                if (entry.SubAssets == null)
-                {
-                    entry.GatherAllAssets(null, false, false, true, null);
-                }
-
-                if (entry.SubAssets != null)
-                {
-                    foreach (var e in entry.SubAssets)
-                    {
-                        AddEntriesToTree(tree, groupName, e);
                     }
                 }
             }
@@ -1346,9 +1521,9 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
                 yield break;
             }
 
-            var subAssets = AssetDatabase.LoadAllAssetRepresentationsAtPath(mainAssetPath);
+            Object[] subAssets = AssetDatabase.LoadAllAssetRepresentationsAtPath(mainAssetPath);
 
-            foreach (var subAsset in subAssets)
+            foreach (Object subAsset in subAssets)
             {
                 yield return subAsset;
             }
@@ -1357,60 +1532,46 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
             // still part of the atlas in a way that the addressables system considers a sub asset.
             if (mainAsset is UnityEngine.U2D.SpriteAtlas atlas)
             {
-                // The only way we can ask the atlas for which sprites/textures it contains without it returning
-                // us cloned sprite copies is to make a SerializedObject for it and "inspect" it.
-                //
-                // Why, Unity? Why?
-                var serializedObject = new SerializedObject(atlas);
+                Object[] packables = atlas.GetPackables();
 
-                try
+                foreach (Object packable in packables)
                 {
-                    var packablesList = serializedObject.FindProperty("m_EditorData.packables");
-
-                    if (packablesList != null)
+                    if (packable == null)
                     {
-                        int count = packablesList.arraySize;
-
-                        if (count > 0)
-                        {
-                            var current = packablesList.GetArrayElementAtIndex(0);
-
-                            for (int i = 0; i < count; i++)
-                            {
-                                var packable = current.objectReferenceValue;
-
-                                if (packable != null)
-                                {
-                                    yield return packable;
-
-                                    foreach (var subAsset in EnumerateAllActualAndVirtualSubAssets(packable, AssetDatabase.GetAssetPath(packable)))
-                                    {
-                                        yield return subAsset;
-                                    }
-                                }
-
-                                if (!current.Next(false))
-                                    break;
-                            }
-                        }
+                        continue;
                     }
-                    else
+
+                    if (!(packable is DefaultAsset packableFolder))
                     {
-                        if (!hasLoggedPackablesMissingError)
-                        {
-                            hasLoggedPackablesMissingError = true;
-                            Debug.LogError(
-                                "Odin could not find the 'm_EditorData.packables' list in SpriteAtlas via a " +
-                                "SerializedObject to validate the list of packables. This may cause issues with " +
-                                "validation of addressable sub asset reference in SpriteAtlas assets, namely " +
-                                "that Odin's validation will likely begin to detect all sub asset references in " +
-                                "Sprite Atlas instances as missing. Please report this issue.");
-                        }
+                        yield return packable;
+                        continue;
                     }
-                }
-                finally
-                {
-                    serializedObject.Dispose();
+
+                    string packablePath = AssetDatabase.GetAssetPath(packableFolder);
+
+                    if (!AssetDatabase.IsValidFolder(packablePath))
+                    {
+                        continue;
+                    }
+
+                    string[] files = Directory.GetFiles(packablePath, "*.*", SearchOption.AllDirectories);
+
+                    foreach (string file in files)
+                    {
+                        if (file.EndsWith(".meta"))
+                        {
+                            continue;
+                        }
+
+                        Type assetType = AssetDatabase.GetMainAssetTypeAtPath(file);
+
+                        if (assetType != typeof(Sprite) && assetType != typeof(Texture2D))
+                        {
+                            continue;
+                        }
+
+                        yield return AssetDatabase.LoadMainAssetAtPath(file);
+                    }
                 }
             }
         }
@@ -1550,6 +1711,37 @@ namespace Sirenix.OdinInspector.Modules.Addressables.Editor
 
             failedRestriction = null;
             return true;
+        }
+
+        internal static TAssetReference CreateAssetReference<TAssetReference>(string guid) where TAssetReference : AssetReference
+        {
+            if (string.IsNullOrEmpty(guid))
+            {
+                return null;
+            }
+
+            return (TAssetReference) Activator.CreateInstance(typeof(TAssetReference), guid);
+        }
+
+        internal static TAssetReference CreateAssetReference<TAssetReference>(UnityEngine.Object obj) where TAssetReference : AssetReference
+        {
+            if (obj == null)
+            {
+                return null;
+            }
+
+            string guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(obj));
+
+            return CreateAssetReference<TAssetReference>(guid);
+        }
+
+        internal static AddressableAssetEntry CreateFakeAddressableAssetEntry(string guid)
+        {
+            var entry = (AddressableAssetEntry) FormatterServices.GetUninitializedObject(typeof(AddressableAssetEntry));
+
+            OdinAddressableReflection.AddressableAssetEntry_mGUID_Field.SetValue(entry, guid);
+
+            return entry;
         }
     }
 }

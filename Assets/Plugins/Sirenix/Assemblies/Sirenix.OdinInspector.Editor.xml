@@ -4485,6 +4485,13 @@
             </summary>
             <param name="label">The label.</param>
         </member>
+        <member name="M:Sirenix.OdinInspector.Editor.Drawers.InlineEditorAttributeDrawer`1.DrawAnimationClipEditorPreview(UnityEngine.Rect)">
+            <summary>
+            
+            </summary>
+            <param name="rect"></param>
+            <remarks>Will set <see cref="P:UnityEngine.GUI.enabled">GUI.enabled</see> to false during some cases, to avoid the Preview eating events when it really shouldn't.</remarks>
+        </member>
         <member name="T:Sirenix.OdinInspector.Editor.Drawers.InlinePropertyAttributeDrawer">
             <summary>
             Drawer for the <see cref="T:Sirenix.OdinInspector.InlinePropertyAttribute"/> attribute.
