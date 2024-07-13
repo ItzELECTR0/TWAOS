@@ -9,7 +9,7 @@ While this project is governed by a Creative Commons license
 <br>Any unauthorised use of their content is strictly prohibited
 <br>They are present in this repo strictly for the project's functionality
 <br>Parts of the game depend on said packages
-<br>They author is not responsible for the use of the project's assets
+<br>The author is not responsible for the use of the project's assets
 <br>Illegitimate use can and will be punished by either Unity or the creators of the packages themselves
 
 </div>
