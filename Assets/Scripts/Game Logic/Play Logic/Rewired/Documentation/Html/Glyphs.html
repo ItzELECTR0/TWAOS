@@ -149,6 +149,7 @@
 
     <p>As of version 1.1.56.0, Rewired includes a glyph system that can be used to display glyphs for controller elements. Rewired comes with a default set of glyphs for some commonly-used controllers and components to display them in Unity UI. (Unity 5+)</p>
 <p>The glyph system was written to be highly customizable. The included glyph sets use Unity's Sprite and Unity UI, but the system could be modified to use any data format or UI system (advanced developers only).</p>
+<p><img src="files/images/glyphs-example-glyphs.png" width="415" height="304" alt="Some glyphs" /></p>
 <h3><a name="contents" id="contents"></a>Contents</h3>
 <ul>
   <li><a href="#quick-setup">Quick Setup</a></li>
@@ -186,6 +187,7 @@
   <li>Action Name: The name of the Action.</li>
   <li>Action Range: The range of the Action for which to show glyphs / text. This determines whether to show the glyph for an axis-type Action (ex: Move Horizontal), or the positive/negative pole of an Action (ex: Move Right). For button-type Actions, Full and Positive are equivalent.</li>
   </ul>
+<p><a href="#unity-ui-text-mesh-pro-glyph-helper">Or, see this to display glyphs inline in  Text Mesh Pro text.</a></p>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="namespace" id="namespace"></a>Namespace</h3>
@@ -205,7 +207,7 @@ using Rewired.Glyphs.UnityUI;</pre>
 <h3><a name="glyph-provider" id="glyph-provider"></a>Glyph Provider</h3>
 <p>The glyph provider is responsible for performing a string key lookup and returning a glyph. A glyph provider is required to use the glyph system.</p>
 <p>Any class that implements Rewired.Interfaces.IGlyphProvider can be used as the glyph provider by assigning it to ReInput.glyphs.glyphProvider. The  GlyphProvider component implements this interface and sets itself as the glyph provider in OnEnable. (The glyph provider should always null the ReInput.glyphs.glyphProvider property when no longer needed, usually in OnDisable.)</p>
-<p>If you want to implement your own glyph provider, you can extend the ControllerElementGlyphProvider class, or create a new class that implements Rewired.Interfaces.IGlyphProvider.</p>
+<p>If you want to implement your own glyph provider, you can extend the GlyphProvider class, or create a new class that implements Rewired.Interfaces.IGlyphProvider.</p>
 <p><strong> GlyphProvider</strong></p>
 <p>The GlyphProvider component is the default implementation of a glyph provider.</p>
 <p>Add the Glyph Provider component to the Rewired Input Manager (or a child object) by selecting the Game Object and  from the menu:</p>
