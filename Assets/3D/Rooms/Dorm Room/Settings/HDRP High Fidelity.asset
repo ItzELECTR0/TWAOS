@@ -57,7 +57,7 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     cubeReflectionResolution:
-      m_Values: 001000000010000000100000
+      m_Values: 000100000002000000040000
       m_SchemaId:
         m_Id: With3Levels
     supportDecals: 1
@@ -92,11 +92,11 @@ MonoBehaviour:
       cookieTexArraySize: 16
       planarReflectionAtlasSize: 2048
       reflectionProbeCacheSize: 32
-      reflectionCubemapSize: 4096
+      reflectionCubemapSize: 256
       maxEnvLightsOnScreen: 32
       reflectionCacheCompressed: 1
       reflectionProbeFormat: 74
-      reflectionProbeTexCacheSize: 512
+      reflectionProbeTexCacheSize: 8192
       reflectionProbeTexLastValidCubeMip: 3
       reflectionProbeTexLastValidPlanarMip: 0
       reflectionProbeDecreaseResToFit: 1
@@ -299,11 +299,11 @@ MonoBehaviour:
       Fog_Budget:
       - 0.25
       - 0.5
-      - 0.75
+      - 1
       Fog_DepthRatio:
       - 0.5
       - 0.5
-      - 0.5
+      - 1
     gpuResidentDrawerSettings:
       mode: 0
       smallMeshScreenPercentage: 0
