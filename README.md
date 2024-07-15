@@ -1,20 +1,27 @@
 <div align="center">
-  <h1>TWAOS</h1>
-  <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS Cover 4K 2 0" width="600"/>
-  <h3>The Wonderful Adventures Of Sip: An open-source AAA Game created by a Solo Developer<h3>
+  
+# TWAOS
+
+<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS Cover 4K 2 0" width="600"/>
+
+### The Wonderful Adventures Of Sip: An open-source AAA Game created by a Solo Developer
+
 </div>
 
+<div align="left">
+  
 ## OFFICIAL PAGES
 
 [The Wonderful Adventures Of Sip on Steam](https://store.steampowered.com/app/2231750/The_Wonderful_Adventures_Of_Sip/)
 
 [The Wonderful Adventures Of Sip on Itch.io](https://electris.itch.io/twaos)
 
-<div align="left">
-  <h2>FLASHING LIGHTS DISCLAIMER</h2>
-  <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100"/>
-  <h4>The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.<h4>
-</div>
+## FLASHING LIGHTS DISCLAIMER
+  
+<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100"/>
+
+#### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
+
 
 ## RESPONSIBILITY DISCLAIMER
 
@@ -54,13 +61,16 @@ As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of hi
 
 The game is planned to have 10 chapters. I wish to finish the first one by 2027, the rest following along not too long after.
 
+## WHY OPEN SOURCE?
+
+"Culture shouldn't exist only for those who can afford it"
+@HakitaDev on Twitter/X
+
 ## MATURE CONTENT
 
 The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
 
 ## Documentation
-
-<div align="left">
 
 **[Instructions](Documentation/INSTRUCTIONS.md)**
 <br>**[Dependencies](Documentation/DEPENDENCIES.md)**
@@ -68,10 +78,10 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 <br>**[Asset Store Disclaimer](Documentation/ASSET-DISCLAIMER.md)**
 <br>**[Credits](Documentation/CREDITS.md)**
 
-</div>
-
 ## CREATOR's SOCIALS
 
 [Studio Youtube Channel](https://www.youtube.com/@ELECTRIS)
 [Personal Youtube Channel](https://www.youtube.com/@ELEC7RO)
 [Discord Server](https://discord.gg/TgtCGKxbZr)
+
+</div>
