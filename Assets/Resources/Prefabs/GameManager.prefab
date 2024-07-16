@@ -484,117 +484,7 @@ MonoBehaviour:
       _controllerMapEnablerSettings:
         _enabled: 1
         _ruleSets: []
-    - _id: 1
-      _name: Sip
-      _descriptiveName: Sip
-      _key: 
-      _startPlaying: 1
-      _defaultJoystickMaps:
-      - _enabled: 1
-        _categoryId: 1
-        _layoutId: 2
-      _defaultMouseMaps: []
-      _defaultKeyboardMaps:
-      - _enabled: 1
-        _categoryId: 1
-        _layoutId: 1
-      _defaultCustomControllerMaps: []
-      _startingCustomControllers: []
-      _assignMouseOnStart: 1
-      _assignKeyboardOnStart: 1
-      _excludeFromControllerAutoAssignment: 1
-      _controllerMapLayoutManagerSettings:
-        _enabled: 1
-        _loadFromUserDataStore: 1
-        _ruleSets: []
-      _controllerMapEnablerSettings:
-        _enabled: 1
-        _ruleSets: []
-    actions:
-    - _id: 1
-      _name: Horizontal
-      _type: 0
-      _descriptiveName: Horizontal Axis
-      _positiveDescriptiveName: Left
-      _negativeDescriptiveName: Right
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 2
-      _name: Vertical
-      _type: 0
-      _descriptiveName: Vertical Axis
-      _positiveDescriptiveName: Up
-      _negativeDescriptiveName: Down
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 4
-      _name: Pause
-      _type: 1
-      _descriptiveName: Pause Button
-      _positiveDescriptiveName: 
-      _negativeDescriptiveName: 
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 5
-      _name: Combat
-      _type: 1
-      _descriptiveName: Enter Combat Mode
-      _positiveDescriptiveName: 
-      _negativeDescriptiveName: 
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 6
-      _name: Jump
-      _type: 1
-      _descriptiveName: Make the player Jump
-      _positiveDescriptiveName: 
-      _negativeDescriptiveName: 
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 7
-      _name: Horizontal Look
-      _type: 0
-      _descriptiveName: Horizontal Axis
-      _positiveDescriptiveName: Up
-      _negativeDescriptiveName: Down
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
-    - _id: 8
-      _name: Vertical Look
-      _type: 0
-      _descriptiveName: Vertical Axis
-      _positiveDescriptiveName: Left
-      _negativeDescriptiveName: Right
-      _key: 
-      _positiveKey: 
-      _negativeKey: 
-      _behaviorId: 0
-      _userAssignable: 1
-      _categoryId: 1
+    actions: []
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -602,18 +492,10 @@ MonoBehaviour:
       _tag: 
       _id: 0
       _userAssignable: 1
-    - _name: Sip
-      _descriptiveName: Sip Player Controls
-      _key: 
-      _tag: 
-      _id: 1
-      _userAssignable: 1
     actionCategoryMap:
       list:
       - categoryId: 0
         actionIds: 
-      - categoryId: 1
-        actionIds: 01000000020000000400000005000000060000000700000008000000
     inputBehaviors:
     - _id: 0
       _name: Default
