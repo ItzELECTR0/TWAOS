@@ -337,7 +337,6 @@ MonoBehaviour:
       ps4_primaryInputSource: 0
       ps5_primaryInputSource: 0
       webGL_primaryInputSource: 0
-      stadia_primaryInputSource: 0
       useXInput: 1
       useNativeMouse: 1
       useEnhancedDeviceSupport: 1
@@ -425,13 +424,7 @@ MonoBehaviour:
         disableKeyboard: 0
         disableMouse: 0
         ignoreInputWhenAppNotInFocus: 1
-      platformVars_stadia:
-        disableKeyboard: 0
-        disableMouse: 0
-        ignoreInputWhenAppNotInFocus: 1
-        useNativeKeyboard: 1
-        useNativeMouse: 1
-      maxJoysticksPerPlayer: 1
+      maxJoysticksPerPlayer: 100
       autoAssignJoysticks: 1
       assignJoysticksToPlayingPlayersOnly: 0
       distributeJoysticksEvenly: 1
@@ -474,6 +467,7 @@ MonoBehaviour:
     - _id: 9999999
       _name: System
       _descriptiveName: System
+      _key: 
       _startPlaying: 1
       _defaultJoystickMaps: []
       _defaultMouseMaps: []
@@ -493,6 +487,7 @@ MonoBehaviour:
     - _id: 1
       _name: Sip
       _descriptiveName: Sip
+      _key: 
       _startPlaying: 1
       _defaultJoystickMaps:
       - _enabled: 1
@@ -522,6 +517,9 @@ MonoBehaviour:
       _descriptiveName: Horizontal Axis
       _positiveDescriptiveName: Left
       _negativeDescriptiveName: Right
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -531,6 +529,9 @@ MonoBehaviour:
       _descriptiveName: Vertical Axis
       _positiveDescriptiveName: Up
       _negativeDescriptiveName: Down
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -540,6 +541,9 @@ MonoBehaviour:
       _descriptiveName: Pause Button
       _positiveDescriptiveName: 
       _negativeDescriptiveName: 
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -549,6 +553,9 @@ MonoBehaviour:
       _descriptiveName: Enter Combat Mode
       _positiveDescriptiveName: 
       _negativeDescriptiveName: 
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -558,6 +565,9 @@ MonoBehaviour:
       _descriptiveName: Make the player Jump
       _positiveDescriptiveName: 
       _negativeDescriptiveName: 
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -567,6 +577,9 @@ MonoBehaviour:
       _descriptiveName: Horizontal Axis
       _positiveDescriptiveName: Up
       _negativeDescriptiveName: Down
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
@@ -576,17 +589,22 @@ MonoBehaviour:
       _descriptiveName: Vertical Axis
       _positiveDescriptiveName: Left
       _negativeDescriptiveName: Right
+      _key: 
+      _positiveKey: 
+      _negativeKey: 
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
     actionCategories:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _tag: 
       _id: 0
       _userAssignable: 1
     - _name: Sip
       _descriptiveName: Sip Player Controls
+      _key: 
       _tag: 
       _id: 1
       _userAssignable: 1
@@ -623,6 +641,7 @@ MonoBehaviour:
     mapCategories:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _tag: 
       _id: 0
       _userAssignable: 1
@@ -630,6 +649,7 @@ MonoBehaviour:
       _checkConflictsCategoryIds: 
     - _name: Sip
       _descriptiveName: Sip Map Category
+      _key: 
       _tag: 
       _id: 1
       _userAssignable: 1
@@ -638,24 +658,30 @@ MonoBehaviour:
     joystickLayouts:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _id: 0
     - _name: Sip
       _descriptiveName: Sip Controler Layout
+      _key: 
       _id: 2
     keyboardLayouts:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _id: 0
     - _name: Sip
       _descriptiveName: Sip Keyboard Layout
+      _key: 
       _id: 1
     mouseLayouts:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _id: 0
     customControllerLayouts:
     - _name: Default
       _descriptiveName: Default
+      _key: 
       _id: 0
     joystickMaps:
     - id: 1
