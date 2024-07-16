@@ -778,6 +778,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3427856745340595040, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
+      propertyPath: _userData.configVars.unityUsePhysicalKeys
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3562052065908105185, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
       propertyPath: 'rewiredPlayerIds.Array.data[0]'
       value: 0
@@ -1227,9 +1231,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1285adc9cf37f04faee41fba3934f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 0
-  mSpeed: 0
-  speedMultiplier: 0
+  rb: {fileID: 4006731557799045298}
+  playerId: 1
+  mSpeed: 5
+  speedMultiplier: 5
 --- !u!1 &2729610701154005796
 GameObject:
   m_ObjectHideFlags: 0
