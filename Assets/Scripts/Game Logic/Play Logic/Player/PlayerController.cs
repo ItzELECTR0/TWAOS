@@ -12,6 +12,7 @@ namespace ELECTRIS
         [SerializeField] private bool allowSprint = false;
         [SerializeField] private bool allowJump = false;
         [SerializeField] private bool allowSlide = false;
+        [SerializeField] private bool allowDebugging = false;
         [SerializeField] private bool combatMode = false;
         [SerializeField] private bool reInput = false;
 
@@ -82,6 +83,11 @@ namespace ELECTRIS
             rb.freezeRotation = true;
 
             playerActionId = playerId - 1;
+
+            if (allowDebugging)
+            {
+                Debugging();
+            }
         }
 
         private void Update()
@@ -192,6 +198,11 @@ namespace ELECTRIS
         private void ResetJump()
         {
             readyToJump = true;
+        }
+
+        private void Debugging()
+        {
+            Debug.Log("Test" + playerActionId.ToString());
         }
     }
 }
