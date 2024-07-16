@@ -7,6 +7,9 @@ namespace ELECTRIS
 {
     public class PlayerConroller : MonoBehaviour
     {
+        [Header("Script Options")]
+        public bool UseRewired;
+
         [Header("Player")]
         [SerializeField] private Transform orientation;
         [SerializeField] private Vector3 mDirection;
@@ -43,12 +46,24 @@ namespace ELECTRIS
 
         private void Update()
         {
-            RewiredInput();
+            if (UseRewired)
+            {
+                RewiredInput();
+            }else
+            {
+                UnityInput();
+            }
         }
 
         private void FixedUpdate()
         {
             Movement();
+        }
+
+        private void UnityInput()
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
         }
 
         private void RewiredInput()
