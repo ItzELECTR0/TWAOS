@@ -10,6 +10,9 @@ namespace ELECTRIS
     [Header("Script Control")]
     [SerializeField] private bool reInput;
 
+    [Header("Script Connectors")]
+    public PlayerController playerCtl;
+
     [Header("Variables")]
     public Transform orientation;
     public Transform Player;
