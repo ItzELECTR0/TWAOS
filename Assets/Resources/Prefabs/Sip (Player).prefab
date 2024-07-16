@@ -862,7 +862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowMovement: 1
   allowSprint: 0
-  allowJump: 0
+  allowJump: 1
   allowSlide: 0
   combatMode: 0
   reInput: 0
@@ -876,10 +876,10 @@ MonoBehaviour:
   playerId: 1
   jumpKey: 32
   sprintKey: 304
-  walkSpeed: 5
-  speedMultiplier: 5
+  walkSpeed: 7
+  speedMultiplier: 10
   groundDrag: 5
-  jumpForce: 7
+  jumpForce: 5
   jumpCooldown: 0.25
   airMultiplier: 0.4
   Checker: {fileID: 4340005975568194403}
