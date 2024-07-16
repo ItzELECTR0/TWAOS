@@ -20,6 +20,10 @@ namespace ELECTRIS
     [SerializeField] private Rigidbody rb;
     public float roationSpeed;
 
+    [Header("Adjustments")]
+    public float XAdjustment;
+    public float ZAdjustment;
+
     [Header("Input")]
     private float horizontal;
     private float vertical;
@@ -44,7 +48,7 @@ namespace ELECTRIS
     private void Update()
     {
         // Rotate Orientation based on Camera Position
-        Vector3 viewDirection = Player.position - new Vector3(transform.position.x, Player.position.y, transform.position.z);
+        Vector3 viewDirection = Player.position - new Vector3(transform.position.x * XAdjustment, Player.position.y, transform.position.z * ZAdjustment);
         orientation.forward = viewDirection.normalized;
 
         if (reInput)
