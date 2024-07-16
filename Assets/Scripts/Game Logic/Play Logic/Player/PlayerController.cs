@@ -7,27 +7,49 @@ namespace ELECTRIS
 {
     public class PlayerConroller : MonoBehaviour
     {
-        [Header("Script Options")]
-        public bool UseRewired;
+        [Header("Script Control")]
+        [SerializeField] private bool allowMovement = true;
+        [SerializeField] private bool allowSprint = false;
+        [SerializeField] private bool allowJump = false;
+        [SerializeField] private bool allowSlide = false;
+        [SerializeField] private bool combatMode = false;
+        [SerializeField] private bool reInput = false;
+
+        [Header("Script Connecors")]
+        public PauseController pausectl;
+        public PausedGame paused;
 
         [Header("Player")]
         [SerializeField] private Transform orientation;
         [SerializeField] private Vector3 mDirection;
         [SerializeField] private Rigidbody rb;
+        private bool readyToJump;
+        private bool grounded;
+        public bool isInside;
+        public bool isOutside;
 
         [Header("Rewired")]
         [SerializeField] private int playerId;
         private Player player;
         private Player systemPlayer;
 
+        [Header("Legacy Keybinds")]
+        public KeyCode jumpKey = KeyCode.Space;
+        public KeyCode sprintKey = KeyCode.LeftShift;
+
         [Header("Movement")]
         public float mSpeed;
         public float speedMultiplier;
+        [SerializeField] private float groundDrag;
         private float horizontal;
         private float vertical;
 
-        [Header("Variables")]
-        private bool readyToJump;
+        [Header("Physics Checking")]
+        public Transform Checker;
+        public float checkDistance = 0.2f;
+        public LayerMask whatIsGround;
+        public LayerMask whatIsInside;
+        public LayerMask whatIsOutside;
 
         void Awake()
         {
@@ -43,6 +65,11 @@ namespace ELECTRIS
             GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
 
+        private void OnGameStateChanged(GameState newGameState)
+        {
+            Debug.Log(newGameState.ToString());
+        }
+
         private void Start()
         {
             readyToJump = true;
@@ -51,18 +78,35 @@ namespace ELECTRIS
 
         private void Update()
         {
-            if (UseRewired)
+            grounded = Physics.CheckSphere(Checker.position, checkDistance, whatIsGround);
+            isInside = Physics.CheckSphere(Checker.position, checkDistance, whatIsInside);
+            isOutside = Physics.CheckSphere(Checker.position, checkDistance, whatIsOutside);
+
+            // Input Method
+            if (reInput)
             {
                 RewiredInput();
             }else
             {
                 UnityInput();
             }
+
+            // Drag
+            if (grounded)
+            {
+                rb.linearDamping = groundDrag;
+            }else
+            {
+                rb.linearDamping = 0;
+            }
         }
 
         private void FixedUpdate()
         {
-            Movement();
+            if (allowMovement)
+            {
+                Movement();
+            }
         }
 
         private void UnityInput()
