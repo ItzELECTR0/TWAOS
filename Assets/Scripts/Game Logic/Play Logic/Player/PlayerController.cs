@@ -29,19 +29,24 @@ namespace ELECTRIS
         [Header("Variables")]
         private bool readyToJump;
 
-        private void Awake()
+        void Awake()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             player = ReInput.players.GetPlayer(playerId);
             systemPlayer = ReInput.players.GetSystemPlayer();
+            GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        }
+
+        void OnDestroy()
+        {
+            GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
 
         private void Start()
         {
             readyToJump = true;
             rb.freezeRotation = true;
-
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
         }
 
         private void Update()
