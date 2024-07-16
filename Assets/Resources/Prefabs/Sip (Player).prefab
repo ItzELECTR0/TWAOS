@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 1018236111341020867}
   - component: {fileID: 5445362965740474648}
   - component: {fileID: 4370248422627874400}
+  - component: {fileID: 5028319904409303681}
   - component: {fileID: 8043697260068595575}
   m_Layer: 0
   m_Name: TPSCamera
@@ -709,6 +710,26 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &5028319904409303681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089544968590152533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dab1d33bdf55ea4a9dd5bc3f7ff3fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reInput: 0
+  orientation: {fileID: 0}
+  Player: {fileID: 0}
+  playerObj: {fileID: 0}
+  rb: {fileID: 0}
+  roationSpeed: 0
+  playerId: 0
+  playerActionId: 0
 --- !u!114 &8043697260068595575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,7 +773,6 @@ GameObject:
   - component: {fileID: 3782235513253624462}
   - component: {fileID: 1196425384587943214}
   - component: {fileID: 4442324323090357855}
-  - component: {fileID: 7487855860043148162}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -824,23 +844,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7487855860043148162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7417102780194987013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dab1d33bdf55ea4a9dd5bc3f7ff3fb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientation: {fileID: 4047140104277312256}
-  Player: {fileID: 3782235513253624462}
-  playerObj: {fileID: 2592098552215423968}
-  rb: {fileID: 1196425384587943214}
-  roationSpeed: 1
 --- !u!1 &7583979595295205946
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +925,7 @@ MonoBehaviour:
   allowSprint: 0
   allowJump: 1
   allowSlide: 0
+  allowDebugging: 0
   combatMode: 0
   reInput: 0
   pausectl: {fileID: 0}
