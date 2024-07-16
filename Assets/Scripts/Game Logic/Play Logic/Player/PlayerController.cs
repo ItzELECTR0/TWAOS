@@ -91,6 +91,8 @@ namespace ELECTRIS
                 UnityInput();
             }
 
+            SpeedControl();
+
             // Drag
             if (grounded)
             {
@@ -128,6 +130,19 @@ namespace ELECTRIS
 
             // Move the player
             rb.AddForce(mDirection.normalized * mSpeed * speedMultiplier, ForceMode.Force);
+        }
+
+        private void SpeedControl()
+        {
+            // Calculate the flat velocity of the player
+            Vector3 flatVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+            // Limit Movement Velocity of the player
+            if (flatVelocity.magnitude > mSpeed)
+            {
+                Vector3 limitedVelocity = flatVelocity.normalized * mSpeed;
+                rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
+            }
         }
     }
 }
