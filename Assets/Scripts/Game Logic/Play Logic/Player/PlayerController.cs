@@ -136,6 +136,15 @@ namespace ELECTRIS
         {
             horizontal = player.GetAxisRaw("Horizontal");
             vertical = player.GetAxisRaw("Vertical");
+
+            //Jump
+            if (allowJump && player.GetButton("Jump") && readyToJump && grounded)
+            {
+                readyToJump = false;
+                Jump();
+
+                Invoke(nameof(ResetJump), jumpCooldown);
+            }
         }
 
         private void Movement()
