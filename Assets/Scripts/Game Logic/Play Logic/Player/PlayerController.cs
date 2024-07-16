@@ -60,8 +60,6 @@ namespace ELECTRIS
 
         void Awake()
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             player = ReInput.players.GetPlayer(playerId);
             systemPlayer = ReInput.players.GetSystemPlayer();
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
