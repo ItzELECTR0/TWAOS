@@ -33,16 +33,21 @@ namespace ELECTRIS
         private Player player;
         private Player systemPlayer;
 
+        [Header("Input")]
+        private float horizontal;
+        private float vertical;
+
         [Header("Legacy Keybinds")]
         public KeyCode jumpKey = KeyCode.Space;
         public KeyCode sprintKey = KeyCode.LeftShift;
 
         [Header("Movement")]
-        public float mSpeed;
+        public float walkSpeed;
         public float speedMultiplier;
         [SerializeField] private float groundDrag;
-        private float horizontal;
-        private float vertical;
+        public float jumpForce;
+        public float jumpCooldown;
+        public float airMultiplier;
 
         [Header("Physics Checking")]
         public Transform Checker;
@@ -113,8 +118,18 @@ namespace ELECTRIS
 
         private void UnityInput()
         {
+            // WASD Input
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
+
+            //Jump
+            if (allowJump && Input.GetKey(jumpKey) && readyToJump && grounded)
+            {
+                readyToJump = false;
+                Jump();
+
+                Invoke(nameof(ResetJump), jumpCooldown);
+            }
         }
 
         private void RewiredInput()
@@ -128,8 +143,16 @@ namespace ELECTRIS
             // Calculating the movement direction
             mDirection = orientation.forward * vertical + orientation.right * horizontal;
 
-            // Move the player
-            rb.AddForce(mDirection.normalized * mSpeed * speedMultiplier, ForceMode.Force);
+            // Ground movement
+            if (grounded)
+            {
+                // Move the player
+                rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier, ForceMode.Force);
+            }else if (!grounded)
+            {
+                // Move the player
+                rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier * airMultiplier, ForceMode.Force);
+            }
         }
 
         private void SpeedControl()
@@ -138,11 +161,25 @@ namespace ELECTRIS
             Vector3 flatVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
             // Limit Movement Velocity of the player
-            if (flatVelocity.magnitude > mSpeed)
+            if (flatVelocity.magnitude > walkSpeed)
             {
-                Vector3 limitedVelocity = flatVelocity.normalized * mSpeed;
+                Vector3 limitedVelocity = flatVelocity.normalized * walkSpeed;
                 rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
             }
+        }
+
+        private void Jump()
+        {
+            // Reset Y velocity
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+            // Make the player jump
+            rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        }
+
+        private void ResetJump()
+        {
+            readyToJump = true;
         }
     }
 }
