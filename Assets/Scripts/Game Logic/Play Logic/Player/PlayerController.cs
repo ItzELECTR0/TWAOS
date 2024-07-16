@@ -31,6 +31,7 @@ namespace ELECTRIS
         [Header("Rewired")]
         [SerializeField] private int playerId;
         private Player player;
+        [SerializeField] private int playerActionId;
         private Player systemPlayer;
 
         [Header("Input")]
@@ -79,6 +80,8 @@ namespace ELECTRIS
         {
             readyToJump = true;
             rb.freezeRotation = true;
+
+            playerActionId = playerId - 1;
         }
 
         private void Update()
@@ -134,11 +137,11 @@ namespace ELECTRIS
 
         private void RewiredInput()
         {
-            horizontal = player.GetAxisRaw("Horizontal");
-            vertical = player.GetAxisRaw("Vertical");
+            horizontal = player.GetAxisRaw("Horizontal" + playerActionId.ToString());
+            vertical = player.GetAxisRaw("Vertical" + playerActionId.ToString());
 
             //Jump
-            if (allowJump && player.GetButton("Jump") && readyToJump && grounded)
+            if (allowJump && player.GetButton("Jump" + playerActionId.ToString()) && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();
