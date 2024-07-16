@@ -860,10 +860,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1285adc9cf37f04faee41fba3934f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseRewired: 0
+  allowMovement: 1
+  allowSprint: 0
+  allowJump: 0
+  allowSlide: 0
+  combatMode: 0
+  reInput: 0
+  pausectl: {fileID: 0}
+  paused: {fileID: 0}
   orientation: {fileID: 4047140104277312256}
   mDirection: {x: 0, y: 0, z: 0}
   rb: {fileID: 1196425384587943214}
+  isInside: 0
+  isOutside: 0
   playerId: 1
-  mSpeed: 5
+  jumpKey: 32
+  sprintKey: 304
+  walkSpeed: 5
   speedMultiplier: 5
+  groundDrag: 5
+  jumpForce: 7
+  jumpCooldown: 0.25
+  airMultiplier: 0.4
+  Checker: {fileID: 4340005975568194403}
+  checkDistance: 0.2
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 448
+  whatIsInside:
+    serializedVersion: 2
+    m_Bits: 256
+  whatIsOutside:
+    serializedVersion: 2
+    m_Bits: 128
