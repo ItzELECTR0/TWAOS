@@ -15,7 +15,7 @@ namespace ELECTRIS
         [SerializeField] private bool combatMode = false;
         [SerializeField] private bool reInput = false;
 
-        [Header("Script Connecors")]
+        [Header("Script Connectors")]
         public PauseController pausectl;
         public PausedGame paused;
 
