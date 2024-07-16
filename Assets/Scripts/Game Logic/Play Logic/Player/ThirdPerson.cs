@@ -21,8 +21,8 @@ namespace ELECTRIS
     public float roationSpeed;
 
     [Header("Adjustments")]
-    public float XAdjustment;
-    public float ZAdjustment;
+    public float xAdjustment;
+    public float zAdjustment;
 
     [Header("Input")]
     private float horizontal;
@@ -48,7 +48,7 @@ namespace ELECTRIS
     private void Update()
     {
         // Rotate Orientation based on Camera Position
-        Vector3 viewDirection = Player.position - new Vector3(transform.position.x * XAdjustment, Player.position.y, transform.position.z * ZAdjustment);
+        Vector3 viewDirection = Player.position - new Vector3(transform.position.x * xAdjustment, Player.position.y, transform.position.z * zAdjustment);
         orientation.forward = viewDirection.normalized;
 
         if (reInput)
