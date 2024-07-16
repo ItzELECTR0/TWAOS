@@ -8,9 +8,9 @@ namespace ELECTRIS
     public class PlayerConroller : MonoBehaviour
     {
         [Header("Player")]
-        private Transform orientation;
-        private Vector3 mDirection;
-        private Rigidbody rb;
+        [SerializeField] private Transform orientation;
+        [SerializeField] private Vector3 mDirection;
+        [SerializeField] private Rigidbody rb;
 
         [Header("Rewired")]
         [SerializeField] private int playerId;
