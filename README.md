@@ -22,6 +22,13 @@
 
 #### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
 
+## OPEN-SOURCE AAA?
+
+The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
+<br> However I plan to deliver as close to tripple A quality to the best of my ability.
+<br> I will create and use the best assets that I find, indifferent of cost (My wallet hurts)
+<br> I will find the best possible voice actors in my budget with my available knowledge
+<br> I will try my best to not blunder Sip's voice acting (I'm voicing him, that will NEVER change)
 
 ## RESPONSIBILITY DISCLAIMER
 
