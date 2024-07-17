@@ -88,4 +88,8 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 [Personal Youtube Channel](https://www.youtube.com/@ELEC7RO)
 [Discord Server](https://discord.gg/TgtCGKxbZr)
 
+## RELEASE DATE?
+
+<img src="https://github.com/user-attachments/assets/50c09c6e-8687-4ba5-9852-058418fc68ae" alt="GOTY Meme" width="600"/>
+
 </div>
