@@ -36,11 +36,6 @@ namespace ELECTRIS
         playerCtl.player = ReInput.players.GetPlayer(playerCtl.playerId);
     }
 
-    private void Start()
-    {
-        playerCtl.playerActionId = playerCtl.playerId - 1;
-    }
-
     private void Update()
     {
         // Rotate Orientation based on Camera Position
