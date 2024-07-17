@@ -34,7 +34,6 @@ namespace ELECTRIS
         [Header("Rewired")]
         public int playerId;
         public Player player;
-        public int playerActionId;
         private Player systemPlayer;
 
         [Header("Input")]
@@ -201,7 +200,7 @@ namespace ELECTRIS
 
         private void Debugging()
         {
-            Debug.Log("Test" + playerActionId.ToString());
+            Debug.Log("PlayerCtl Debug" + playerId.ToString());
         }
     }
 }
