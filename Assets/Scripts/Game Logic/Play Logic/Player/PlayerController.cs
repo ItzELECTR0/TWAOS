@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
+using ELECTRIS;
 using UnityEngine;
 using Rewired;
 
 namespace ELECTRIS
 {
-    public class PlayerConroller : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         [Header("Script Control")]
         [SerializeField] private bool allowMovement = true;
@@ -31,9 +32,9 @@ namespace ELECTRIS
         public bool isOutside;
 
         [Header("Rewired")]
-        [SerializeField] private int playerId;
-        private Player player;
-        [SerializeField] private int playerActionId;
+        public int playerId;
+        public Player player;
+        public int playerActionId;
         private Player systemPlayer;
 
         [Header("Input")]
@@ -95,11 +96,11 @@ namespace ELECTRIS
             isInside = Physics.CheckSphere(Checker.position, checkDistance, whatIsInside);
             isOutside = Physics.CheckSphere(Checker.position, checkDistance, whatIsOutside);
 
-            // Input Method
+            // Decide which Input Method to use
             if (reInput)
             {
                 RewiredInput();
-            }else
+            }else if (!reInput)
             {
                 UnityInput();
             }
@@ -142,6 +143,7 @@ namespace ELECTRIS
 
         private void RewiredInput()
         {
+            // WASD Input
             horizontal = player.GetAxisRaw("Horizontal" + playerActionId.ToString());
             vertical = player.GetAxisRaw("Vertical" + playerActionId.ToString());
 
