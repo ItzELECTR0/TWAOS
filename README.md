@@ -26,9 +26,12 @@
 
 The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
 <br> However I plan to deliver as close to tripple A quality to the best of my ability.
-<br> I will create and use the best assets that I find, indifferent of cost (My wallet hurts)
-<br> I will find the best possible voice actors in my budget with my available knowledge
-<br> I will try my best to not blunder Sip's voice acting (I'm voicing him, that will NEVER change)
+<br> I will:
+<br> 1. Create and use the best assets that I find, indifferent of cost (My wallet hurts)
+<br> 2. Find the best possible voice actors in my budget with my available knowledge
+<br> 3. Try my best to not blunder Sip's voice acting (I'm voicing him, that will NEVER change)
+<br> 4. Will try my best to optimize my code and the game, even though I'm not good at either
+<br> 5. Keep this game free at heart even though it's intended to return revenue
 
 ## RESPONSIBILITY DISCLAIMER
 
