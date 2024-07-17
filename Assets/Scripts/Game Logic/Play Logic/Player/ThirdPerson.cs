@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ELECTRIS;
 using UnityEngine;
 using Rewired;
 
@@ -11,7 +12,7 @@ namespace ELECTRIS
     [SerializeField] private bool reInput;
 
     [Header("Script Connectors")]
-    public PlayerController playerCtl;
+    private PlayerController playerCtl;
 
     [Header("Variables")]
     public Transform orientation;
@@ -28,21 +29,16 @@ namespace ELECTRIS
     private float horizontal;
     private float vertical;
 
-    [Header("Rewired")]
-    [SerializeField] private int playerId;
-    private Player player;
-    [SerializeField] private int playerActionId;
-
     private void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        player = ReInput.players.GetPlayer(playerId);
+        playerCtl.player = ReInput.players.GetPlayer(playerCtl.playerId);
     }
 
     private void Start()
     {
-        playerActionId = playerId - 1;
+        playerCtl.playerActionId = playerCtl.playerId - 1;
     }
 
     private void Update()
@@ -51,16 +47,19 @@ namespace ELECTRIS
         Vector3 viewDirection = Player.position - new Vector3(transform.position.x * xAdjustment, Player.position.y, transform.position.z * zAdjustment);
         orientation.forward = viewDirection.normalized;
 
+        // Decide which Input Method to use
         if (reInput)
         {
             RewiredInput();
-        }else
+        }else if (!reInput)
         {
             UnityInput();
         }
 
+        // Calculate the direction the player is trying to go
         Vector3 inputDirection = orientation.forward * vertical + orientation.right * horizontal;
         
+        // Rotate the player object based on desired direction
         if (inputDirection !=  Vector3.zero)
         {
             playerObj.forward = Vector3.Slerp(playerObj.forward, inputDirection.normalized, Time.deltaTime * roationSpeed);
@@ -76,8 +75,9 @@ namespace ELECTRIS
 
     private void RewiredInput()
     {
-        horizontal = player.GetAxisRaw("Horizontal" + playerActionId.ToString());
-        vertical = player.GetAxisRaw("Vertical" + playerActionId.ToString());
+        // WASD Input
+        horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerActionId.ToString());
+        vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerActionId.ToString());
     }
 }
 }
