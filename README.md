@@ -60,6 +60,11 @@ As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of hi
 
 The game is planned to have 10 chapters. I wish to finish the first one by 2027, the rest following along not too long after.
 
+## OPEN-SOURCE AAA?
+
+The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
+<br> However I plan to deliver as close to tripple A quality to the best of my ability.
+
 ## WHY OPEN SOURCE?
 
 "Culture shouldn't exist only for those who can afford it"
