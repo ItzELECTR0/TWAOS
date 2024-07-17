@@ -64,8 +64,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2739284461532105382}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06381146, y: -0.7042217, z: 0.06381149, w: 0.7042216}
-  m_LocalPosition: {x: 10.00076, y: -6.374846, z: 0.3486185}
+  m_LocalRotation: {x: -0.015055073, y: -0.981963, z: 0.0889783, w: -0.1661474}
+  m_LocalPosition: {x: 6.6661615, y: -6.3748474, z: 2.7180984}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,14 +137,14 @@ MonoBehaviour:
   Radius: 10
   Orbits:
     Top:
-      Radius: 0.7
-      Height: 2.2
+      Radius: 1
+      Height: 2
     Center:
       Radius: 2.5
-      Height: 0.8
+      Height: 0.6
     Bottom:
-      Radius: 1.5
-      Height: -0.5
+      Radius: 1
+      Height: -0.3
     SplineCurvature: 0.5
   RecenteringTarget: 2
   HorizontalAxis:
@@ -313,7 +313,7 @@ MonoBehaviour:
   IgnoreTag: Player
   TransparentLayers:
     serializedVersion: 2
-    m_Bits: 62
+    m_Bits: 574
   MinimumDistanceFromTarget: 0.3
   AvoidObstacles:
     Enabled: 1
@@ -366,7 +366,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4047140104277312256}
-  - {fileID: 5405089079360800322}
   - {fileID: 4340005975568194403}
   m_Father: {fileID: 3782235513253624462}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -386,7 +385,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3623938517855505707}
   m_Enabled: 1
-  m_CastShadows: 2
+  m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -513,8 +512,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7089544968590152533}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06381148, y: -0.7042217, z: 0.063811496, w: 0.7042216}
-  m_LocalPosition: {x: 9.92886, y: -5.981361, z: 0.3486185}
+  m_LocalRotation: {x: -0.015055069, y: -0.981963, z: 0.08897834, w: -0.16614743}
+  m_LocalPosition: {x: 6.6898155, y: -5.9813614, z: 2.6502008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -722,14 +721,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dab1d33bdf55ea4a9dd5bc3f7ff3fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reInput: 0
+  reInput: 1
+  playerCtl: {fileID: 5696329553474050187}
   orientation: {fileID: 4047140104277312256}
   Player: {fileID: 3782235513253624462}
   playerObj: {fileID: 2592098552215423968}
   rb: {fileID: 1196425384587943214}
   roationSpeed: 7
-  playerId: 1
-  playerActionId: 0
+  xAdjustment: 0
+  zAdjustment: 0
 --- !u!114 &8043697260068595575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,37 +844,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &7583979595295205946
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5405089079360800322}
-  m_Layer: 0
-  m_Name: CombatLookAt
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
-  m_IsActive: 1
---- !u!4 &5405089079360800322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7583979595295205946}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2592098552215423968}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7829404741523833247
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +896,7 @@ MonoBehaviour:
   allowSlide: 0
   allowDebugging: 0
   combatMode: 0
-  reInput: 0
+  reInput: 1
   tpsCtl: {fileID: 5028319904409303681}
   pausectl: {fileID: 0}
   paused: {fileID: 0}
@@ -936,8 +905,7 @@ MonoBehaviour:
   rb: {fileID: 1196425384587943214}
   isInside: 0
   isOutside: 0
-  playerId: 1
-  playerActionId: 0
+  playerId: 0
   jumpKey: 32
   sprintKey: 304
   walkSpeed: 7
