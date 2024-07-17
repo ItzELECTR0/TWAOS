@@ -18,7 +18,7 @@ namespace ELECTRIS
         [SerializeField] private bool reInput = false;
 
         [Header("Script Connectors")]
-        public ThirdPerson tpsCtl;
+        [SerializeField] private ThirdPerson tpsCtl;
         public PauseController pausectl;
         public PausedGame paused;
 
