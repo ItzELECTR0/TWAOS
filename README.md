@@ -56,6 +56,10 @@ Your decisions will determine whether Sip becomes a <b>beacon of hope</b> or a <
 Experience a gripping narrative that blends <b>heart-wrenching drama</b> with <b>psychological horror</b>.
 As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of his power. 
 
+## MATURE CONTENT
+
+The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
+
 ## DEVELOPMENT PLANS
 
 The game is planned to have 10 chapters. I wish to finish the first one by 2027, the rest following along not too long after.
@@ -69,10 +73,6 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 
 "Culture shouldn't exist only for those who can afford it"
 <br> - @HakitaDev on Twitter/X
-
-## MATURE CONTENT
-
-The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
 
 ## Documentation
 
