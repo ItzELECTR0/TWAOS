@@ -12,7 +12,7 @@ namespace ELECTRIS
     [SerializeField] private bool reInput;
 
     [Header("Script Connectors")]
-    private PlayerController playerCtl;
+    [SerializeField] private PlayerController playerCtl;
 
     [Header("Variables")]
     public Transform orientation;
