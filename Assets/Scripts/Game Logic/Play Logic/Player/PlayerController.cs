@@ -82,8 +82,6 @@ namespace ELECTRIS
             readyToJump = true;
             rb.freezeRotation = true;
 
-            playerActionId = playerId - 1;
-
             if (allowDebugging)
             {
                 Debugging();
@@ -144,11 +142,11 @@ namespace ELECTRIS
         private void RewiredInput()
         {
             // WASD Input
-            horizontal = player.GetAxisRaw("Horizontal" + playerActionId.ToString());
-            vertical = player.GetAxisRaw("Vertical" + playerActionId.ToString());
+            horizontal = player.GetAxisRaw("Horizontal" + playerId.ToString());
+            vertical = player.GetAxisRaw("Vertical" + playerId.ToString());
 
             //Jump
-            if (allowJump && player.GetButton("Jump" + playerActionId.ToString()) && readyToJump && grounded)
+            if (allowJump && player.GetButton("Jump" + playerId.ToString()) && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();

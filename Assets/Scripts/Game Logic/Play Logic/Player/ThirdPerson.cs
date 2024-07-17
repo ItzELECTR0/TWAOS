@@ -76,8 +76,8 @@ namespace ELECTRIS
     private void RewiredInput()
     {
         // WASD Input
-        horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerActionId.ToString());
-        vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerActionId.ToString());
+        horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerId.ToString());
+        vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerId.ToString());
     }
 }
 }
