@@ -22,17 +22,6 @@
 
 #### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
 
-## OPEN-SOURCE AAA?
-
-The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
-<br> However I plan to deliver as close to tripple A quality to the best of my ability.
-<br> I will:
-<br> 1. Create and use the best assets that I find, indifferent of cost (My wallet hurts)
-<br> 2. Find the best possible voice actors in my budget with my available knowledge
-<br> 3. Try my best to not blunder Sip's voice acting (I'm voicing him, that will NEVER change)
-<br> 4. Will try my best to optimize my code and the game, even though I'm not good at either
-<br> 5. Keep this game free at heart even though it's intended to return revenue
-
 ## RESPONSIBILITY DISCLAIMER
 
 Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. I hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and my cloud backup of the game.
