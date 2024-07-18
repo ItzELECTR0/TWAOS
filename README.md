@@ -9,10 +9,6 @@
 </div>
 
 <div align="left">
-
-## WHAT IS TWAOS?
-
-A game developed in Unity, by one guy, who wants to tell a story. Through any means necessary.
   
 ## OFFICIAL PAGES
 
@@ -33,7 +29,10 @@ Official support is not available to you. If you use the contents of this reposi
 <div>I want to make it clear that while the first chapter is free, the rest won't be.
 <br>However, everything will remain open source, nothing will be locked away.
 <br>Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
-</div>
+
+## WHAT IS TWAOS?
+
+A game developed in Unity, by one guy, who wants to tell a story. Through any means necessary.
 
 ##  THE PREMISE
 
