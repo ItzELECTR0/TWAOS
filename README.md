@@ -9,6 +9,10 @@
 </div>
 
 <div align="left">
+
+## WHAT IS TWAOS?
+
+A game developed in Unity, by one guy, who wants to tell a story. Through any means necessary.
   
 ## OFFICIAL PAGES
 
