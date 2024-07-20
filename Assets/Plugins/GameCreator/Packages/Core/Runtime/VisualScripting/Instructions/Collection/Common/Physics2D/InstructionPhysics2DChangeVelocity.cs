@@ -46,7 +46,7 @@ namespace GameCreator.Runtime.VisualScripting
             Rigidbody2D rigidbody = gameObject.Get<Rigidbody2D>();
             if (rigidbody == null) return DefaultResult;
 
-            rigidbody.velocity = this.m_Velocity.Get(rigidbody.velocity, args);
+            rigidbody.linearVelocity = this.m_Velocity.Get(rigidbody.linearVelocity, args);
             return DefaultResult;
         }
     }
