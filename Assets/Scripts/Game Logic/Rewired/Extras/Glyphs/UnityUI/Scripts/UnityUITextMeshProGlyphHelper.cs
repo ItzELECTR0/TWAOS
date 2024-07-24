@@ -12,7 +12,7 @@
 #define UNITY_2018_PLUS
 #endif
 
-#if UNITY_2018_PLUS && REWIRED_TMPRO_INSTALLED
+#if UNITY_2018_PLUS
 #define REWIRED_SUPPORTS_TMPRO
 #endif
 
@@ -27,7 +27,7 @@
 #define MAY_SUPPORT_TMPRO_ASSET_V_1_1_0
 #endif
 
-#if REWIRED_TMPRO_ASSET_V_1_1_0_PLUS || UNITY_6000_0_OR_NEWER
+#if UNITY_6000_0_OR_NEWER
 // This Unity version is guaranteed to support at least Unity UI 2.0,
 // which uses asset version 1.1.0. Avoid most of the reflection nonsense.
 // However, some reflection is still required because

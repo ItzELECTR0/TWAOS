@@ -153,7 +153,7 @@
     <ul>
       <li>Works in Unity free and Pro.</li>
       <li>Player-centric input system.</li>
-      <li>Full hot-plugging support on Windows, OSX, Linux, Windows 10 Universal, WebGL, Xbox One, Xbox Series S/X, PS4, PS5, Nintendo Switch, and Stadia. (Other platforms depend on Unity's input system's support for hot-plugging on that platform.)</li>
+      <li>Full hot-plugging support on Windows, OSX, Linux, Windows 10 Universal, WebGL, Xbox One, Xbox Series S/X, PS4, PS5, and Nintendo Switch. (Other platforms depend on Unity's input system's support for hot-plugging on that platform.)</li>
       <li>Extended native input support on several platforms.</li>
       <li>Optional XInput support for Windows (mandatory for Windows 8 Store).</li>
       <li>Fallback on Unity input for all other platforms. Most features still work.</li>
@@ -176,12 +176,12 @@
     </h4>
     <ul>
       <li>Functional support for most USB and Bluetooth controllers <span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications">1</a>]</span> (see below).</li>
-      <li><a href="SupportedControllers.html">Extended support for many game controllers of all types</a> on numerous platforms. You can create additional controller definitions to support more, or if you'd like you can mail me your controller and I'll add the definitions and mail it back! :)</li>
+      <li><a href="SupportedControllers.html">Extended support for many game controllers of all types</a> on numerous platforms.</li>
       <li>Supported controllers are recognized on each platform and are fully mapable by element name and have standardized axis directions.</li>
       <li>For any controller not included, you can map an Unknown controller which includes all possible buttons/axes on the platform (Windows 128 buttons &amp; 32 axes, etc.) Regardless of whether you define a map for this, users will always be able to manually map every element on the controller. This means support for the vast majority of USB and Bluetooth controllers. <span style="vertical-align: super; font-size: 65%;">[<a href="#clarifications">1</a>]</span></li>
       <li>Controller template system so you can either choose to create default maps for every controller you wish to explicitly support, or save time and just map the template. All controllers that use that template will be mapped automatically. Rewired comes with controller templates for gamepads, flight controllers, racing wheels, and 6-dof controllers. User can always map any remaining controller elements even if they're not defined on the template.</li>
       <li>Named buttons and controller elements for supported controllers (for help messages and config screens).</li>
-      <li>Vibration (Windows,  Windows 10 Universal, OSX, Linux, XBox One, Xbox Series S/X, PS4, PS5, Nintendo Switch, and Stadia currently).</li>
+      <li>Vibration (Windows,  Windows 10 Universal, OSX, Linux, XBox One, Xbox Series S/X, PS4, PS5, and Nintendo Switch currently).</li>
       <li>Advanced controller features such as vibration, touchpad, light, and gyro on the Sony DualShock 4 and DualSense controllers.</li>
       <li>Custom Controllers  - Any source can be used to drive the controller's element values. Custom Controllers can be used for on-screeen touch controllers and more.</li>
     </ul>
@@ -260,11 +260,11 @@
       <li>Rewired is fast, written in C#, and tuned for performace.</li>
       <li>ZERO bytes of memory allocated per-frame during gameplay situations means no garbage collection overhead.* (Some allocations required during remapping).<br />
         * Fallback platforms have periodic very small allocations as it polls Input.GetJoystickNames() every second or two to detect joystick changes.<!-- end .content --></li>
+      <li>The vast majority of code is included in a DLL, so it won't slow down your script compilation during development.</li>
       </ul>
     <h4>Limitations:</h4>
     <ul>
-    	<li>Hot-plugging in Windows Webplayer is not possible because the Windows Unity webplayer cannot access outside libraries. However, the rest of the features work just fine in Webplayer.</li>
-	    <li>Rewired is not for those who want to make games with zero coding knowledge. <strong>Coding is required.</strong></li>
+      <li>Rewired is not for those who want to make games with zero coding knowledge. <strong>Coding is required.</strong></li>
     </ul>
     <h4>Requirements:</h4>
     <ul>

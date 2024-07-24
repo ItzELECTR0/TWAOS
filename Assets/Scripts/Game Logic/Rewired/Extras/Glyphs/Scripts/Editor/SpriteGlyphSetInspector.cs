@@ -76,6 +76,7 @@ namespace Rewired.Glyphs.Editor {
     public sealed class SpriteGlyphSetInspector : UnityEditor.Editor {
 
         private const float imagePixelSize = 64f;
+        private const float glyphsScrollViewHeight = 572f;
 
         private const string keyPathSeparator = "/";
         private const string keyControllerBasePath = "controller" + keyPathSeparator;
@@ -104,7 +105,7 @@ namespace Rewired.Glyphs.Editor {
         private const string fieldName_entry_value = "_value";
 
         [NonSerialized]
-        private UnityEngine.Vector2 _scrollPosition;
+        private UnityEngine.Vector2 _glyphsScrollPosition;
         [NonSerialized]
         private UnityEngine.GUIStyle _style_labelCentered;
         [NonSerialized]
@@ -144,12 +145,6 @@ namespace Rewired.Glyphs.Editor {
                 _pendingCustomControllerPickedEvent = null;
             }
 
-            _scrollPosition = UnityEditor.EditorGUILayout.BeginScrollView(
-                _scrollPosition,
-                UnityEngine.GUILayout.ExpandWidth(true),
-                UnityEngine.GUILayout.ExpandHeight(true)
-            );
-
             {
                 UnityEditor.SerializedProperty sp = serializedObject.FindProperty(fieldName_baseKeys);
                 ReorderableListGUI.Title("Base Keys");
@@ -160,12 +155,26 @@ namespace Rewired.Glyphs.Editor {
             }
 
             {
+                // Scroll view must be placed around glyphs only and set to a fixed height
+                // because Unity 2019+ will size the scroll view to the entire vertical
+                // contents, making it not even draw its scroll bars. Unity 5 - 2018 worked.
+                // This is a workaround to draw a smaller scroll view within the inspector.
+                _glyphsScrollPosition = UnityEditor.EditorGUILayout.BeginScrollView(
+                    _glyphsScrollPosition,
+                    false, true,
+                    UnityEngine.GUILayout.Height(glyphsScrollViewHeight),
+                    UnityEngine.GUILayout.ExpandWidth(true),
+                    UnityEngine.GUILayout.ExpandHeight(false)
+                );
+
                 var adaptor = new SerializedPropertyAdaptor(serializedObject.FindProperty(fieldName_glyphs));
                 adaptor.drawItemDelegate = DrawEntry;
                 adaptor.FixedItemHeight = imagePixelSize;
 
                 ReorderableListGUI.Title("Glyphs");
                 ReorderableListGUI.ListField(adaptor);
+
+                UnityEditor.EditorGUILayout.EndScrollView();
             }
 
             UnityEditor.EditorGUILayout.Separator();
@@ -239,8 +248,6 @@ namespace Rewired.Glyphs.Editor {
 
             UnityEngine.GUILayout.EndVertical();
 
-            UnityEditor.EditorGUILayout.EndScrollView();
-
             serializedObject.ApplyModifiedProperties();
         }
 
@@ -255,8 +262,7 @@ namespace Rewired.Glyphs.Editor {
 
         private void DrawEntry(UnityEditor.SerializedProperty property, UnityEngine.Rect position, int index) {
 
-            bool isVisible = GetViewportRect().Overlaps(position);
-
+            bool isVisible = GetGlyphsScrollViewVisibleRect().Overlaps(position);
             if (!isVisible) return;
 
             UnityEditor.EditorGUI.PropertyField(
@@ -602,12 +608,13 @@ namespace Rewired.Glyphs.Editor {
             return true;
         }
 
-        private UnityEngine.Rect GetViewportRect() {
+        private UnityEngine.Rect GetGlyphsScrollViewVisibleRect() {
             return new UnityEngine.Rect(
-                _scrollPosition.x,
-                _scrollPosition.y,
+                _glyphsScrollPosition.x,
+                _glyphsScrollPosition.y,
+                // This is the entire inspector width. Not exactly correct, but should be good enough.
                 UnityEngine.Screen.width,
-                UnityEngine.Screen.height
+                glyphsScrollViewHeight
             );
         }
 

@@ -149,9 +149,10 @@
 
     <p>As of version 1.1.56.0, Rewired includes a glyph system that can be used to display glyphs for controller elements. Rewired comes with a default set of glyphs for some commonly-used controllers and components to display them in Unity UI. (Unity 5+)</p>
 <p>The glyph system was written to be highly customizable. The included glyph sets use Unity's Sprite and Unity UI, but the system could be modified to use any data format or UI system (advanced developers only).</p>
-<p><img src="files/images/glyphs-example-glyphs.png" width="415" height="304" alt="Some glyphs" /></p>
+<p><img src="files/images/glyphs-example-glyphs.png" width="300" height="219" alt="Some glyphs" /></p>
 <h3><a name="contents" id="contents"></a>Contents</h3>
 <ul>
+  <li><a href="#installation">Installation</a></li>
   <li><a href="#quick-setup">Quick Setup</a></li>
   <li><a href="#namespace">Namespace</a></li>
   <li><a href="#important-classes">Important Classes</a></li>
@@ -166,6 +167,16 @@
   <li><a href="#accessing-glyphs-from-scripts">Accessing Glyphs from Scripts</a></li>
   <li><a href="#key-format">Key Format</a></li>
 </ul>
+<p>&nbsp;</p>
+<hr />
+<h3><a name="installation" id="installation"></a>Installation</h3>
+<p>Install the Glyphs pack from the menu:</p>
+<ul>
+  <li>Window -&gt; Rewired -&gt; Extras -&gt; Glyphs -&gt; Install</li>
+  </ul>
+<p>Rewired will automatically install an additional addon pack if Text Mesh Pro is installed in the project. If you installed the glyphs pack before Text Mesh Pro was installed, you will be unable to use features that are dependent upon Text Mesh Pro. After installing Text Mesh Pro, install the glyphs pack again.</p>
+<p><strong>Uninstalling</strong></p>
+<p>  Delete the Rewired/Extras/Glyphs folder.</p>
 <p>&nbsp;</p>
 <hr />
 <h3><a name="quick-setup" id="quick-setup"></a>Quick Setup</h3>
@@ -452,7 +463,7 @@ namespace MyNamespace {
 <hr />
 <h3><a name="unity-ui-text-mesh-pro-glyph-helper" id="unity-ui-text-mesh-pro-glyph-helper"></a>Unity UI Text Mesh Pro Glyph Helper</h3>
 <p><img src="files/images/glyphs-unity-ui-text-mesh-pro-glyph-helper-example1.png" alt="Press A to Shoot" width="362" height="100" style="float: right; margin-left: 2em; padding-bottom: 2em;" />A helper class to display Rewired glyphs and display names inline in TMPro Text (Unity UI). Parses tags within text and replaces them with Sprites or text. Enter text in this component's text field, not in the TMPro Text field. Text entered here will be parsed, then the Text Mesh  Pro Text component will be updated with the text, including Sprite tags.</p>
-<p>To it, create a Text Mesh Pro UGUI object, select the GameObject, and add the component from the menu:</p>
+<p>To use it, create a Text Mesh Pro UGUI object, select the GameObject, and add the component from the menu:</p>
 <ul>
   <li>Component -&gt; Rewired -&gt; Glyphs -&gt; Unity UI -&gt; Unity UI Text Mesh Pro Glyph Helper</li>
   </ul>
@@ -621,33 +632,32 @@ controller/microsoft_xbox_one_controller/left_stick/horizontal</p>
 <p>Keys in the tables below are listed in order of precedence, with first in list being highest precedence. This list applies to recognized Joysticks.</p>
 <p><br />
 </p>
-<ul>
-  <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td valign="top">controller/[controller_key]/[input_source_hardware_info]/[element_key]</td>
-      <td valign="top"><p>Hardware Specific</p>
-        Rare special case for certain devices on some input sources / platforms. See below.</td>
-    </tr>
-    <tr>
-      <td width="78%" valign="top">controller/[controller_key]/[element_key]</td>
-      <td width="22%" valign="top"><p>Base Controller</p>
-        <p>This is the most common match type.</p></td>
-      </tr>
-    <tr>
-      <td valign="top">controller/[input_source_special_controller_key]/[element_key]</td>
-      <td valign="top"><p>Input Source Special Fallback</p>
-        <p>Only if controller on current input source has additional fallbacks.</p></td>
-      </tr>
-    <tr>
-      <td valign="top">controller/element/[element_key]</td>
-      <td valign="top">Element Only Fallback</td>
-      </tr>
-    <tr>
-      <td valign="top">controller/template/[element_key]</td>
-      <td valign="top"><p>Controller Template</p>
-        <p>Only if controller implements a Controller Template.</p></td>
-      </tr>
-  </table></ul>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td valign="top">controller/[controller_key]/[input_source_hardware_info]/[element_key]</td>
+  <td valign="top"><p>Hardware Specific</p>
+    Rare special case for certain devices on some input sources / platforms. See below.</td>
+</tr>
+<tr>
+  <td width="78%" valign="top">controller/[controller_key]/[element_key]</td>
+  <td width="22%" valign="top"><p>Base Controller</p>
+    <p>This is the most common match type.</p></td>
+  </tr>
+<tr>
+  <td valign="top">controller/[input_source_special_controller_key]/[element_key]</td>
+  <td valign="top"><p>Input Source Special Fallback</p>
+    <p>Only if controller on current input source has additional fallbacks.</p></td>
+  </tr>
+<tr>
+  <td valign="top">controller/element/[element_key]</td>
+  <td valign="top">Element Only Fallback</td>
+  </tr>
+<tr>
+  <td valign="top">controller/template/[element_key]</td>
+  <td valign="top"><p>Controller Template</p>
+    <p>Only if controller implements a Controller Template.</p></td>
+  </tr>
+</table>
 <p>&nbsp;</p>
 <p><strong><a name="keys-element-only-fallback" id="keys-element-only-fallback"></a>Element Only Fallback</strong></p>
 <p>If no glyph is found for the specific controller, you can still match on element only. This allows you to define glyphs for generic controller elements without knowing anything about the controller they may appear on. For example, creating a glyph with the key controller/element/dpad/up will match to any controller element that has the key dpad/up. This isn't terribly useful for gamepads, because they will be handled by Controller Template fallback (see below), but for other controller types, this may prove useful. (Racing wheels, flight sticks, Custom Controllers, etc.)</p>

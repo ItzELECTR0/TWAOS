@@ -1,3 +1,27 @@
+1.1.57.1:
+
+     Bug Fixes:
+      - Windows Standalone, Windows Gaming Input: Fix exception thrown if no Tag is present.
+
+1.1.57.0:
+    
+    Changes:
+      - Removed Glyph system from base Rewired package and moved it into an optional pack that must be installed by the user.
+      - Removed editor script that set up scripting defines used for detecting Text Mesh Pro presence and version.
+
+    Bug Fixes:
+      - Windows Standalone, Windows Gaming Input: Prevent controller definition matching without Tag if Tag is supplied by definition.
+
+1.1.56.3:
+
+    Bug Fixes:
+      - Workaround for Sprite Glyph Set inspector glyph list clipping not working correctly on Unity 2019+ due to Unity editor GUI Layout inconsistencies.
+
+1.1.56.2:
+
+    Bug Fixes:
+      - Fixed exception thrown when ReInput is set to run in Edit mode and then entering Play mode directly.
+
 1.1.56.1:
     
     Bug Fixes:

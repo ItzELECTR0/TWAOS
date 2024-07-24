@@ -56,10 +56,6 @@
 #define REWIRED_DEFAULT_FONT_IS_LEGACYRUNTIME
 #endif
 
-#if UNITY_2018_PLUS && REWIRED_TMPRO_INSTALLED
-#define REWIRED_SUPPORTS_TMPRO
-#endif
-
 #pragma warning disable 0649
 
 namespace Rewired.Glyphs.UnityUI {
@@ -93,18 +89,37 @@ namespace Rewired.Glyphs.UnityUI {
                 s_defaultGlyphOrTextPrefab = value;
             }
         }
+        
+        private static System.Func<UnityEngine.GameObject> s_defaultGlyphOrTextPrefabProvider;
+        
+        /// <summary>
+        /// The  provider of the default glyph or text prefab.
+        /// This is for internal use only. Do not set this value.
+        /// </summary>
+        public static System.Func<UnityEngine.GameObject> defaultGlyphOrTextPrefabProvider {
+          get {
+              return s_defaultGlyphOrTextPrefabProvider;
+          }
+          set {
+              s_defaultGlyphOrTextPrefabProvider = value;
+          }
+        }
 
         private static UnityEngine.GameObject CreateDefaultGlyphOrTextPrefab() {
+
+            // Get default prefab from provider if available
+            if (s_defaultGlyphOrTextPrefabProvider != null) {
+                return s_defaultGlyphOrTextPrefabProvider();
+            }
+
+            // Warning: Do not make any changes to this without also making equivalent
+            // changes to TMPro version if they are meant to be in sync.
 
             UnityEngine.GameObject prefab = new UnityEngine.GameObject("Glyph or text prefab");
             prefab.hideFlags = UnityEngine.HideFlags.HideAndDontSave;
             UnityEngine.Object.DontDestroyOnLoad(prefab);
 
-#if REWIRED_SUPPORTS_TMPRO
-            UnityUIGlyphOrTextTMPro glyphOrText = prefab.AddComponent<UnityUIGlyphOrTextTMPro>();
-#else
             UnityUIGlyphOrText glyphOrText = prefab.AddComponent<UnityUIGlyphOrText>();
-#endif
 
             // Add layout group
             UnityEngine.UI.VerticalLayoutGroup layoutGroup = prefab.AddComponent<UnityEngine.UI.VerticalLayoutGroup>();
@@ -131,15 +146,6 @@ namespace Rewired.Glyphs.UnityUI {
                 UnityEngine.GameObject go = new UnityEngine.GameObject("Text");
                 go.hideFlags = UnityEngine.HideFlags.HideAndDontSave;
                 go.transform.SetParent(prefab.transform, false);
-#if REWIRED_SUPPORTS_TMPRO
-                var text = go.AddComponent<TMPro.TextMeshProUGUI>();
-                text.alignment = TMPro.TextAlignmentOptions.Center;
-                text.fontSize = maxFontSize;
-                text.enableAutoSizing = true;
-                text.fontSizeMin = minFontSize;
-                text.fontSizeMax = maxFontSize;
-                text.raycastTarget = false;
-#else
                 var text = go.AddComponent<UnityEngine.UI.Text>();
                 text.alignment = UnityEngine.TextAnchor.MiddleCenter;
                 text.fontSize = maxFontSize;
@@ -154,7 +160,6 @@ namespace Rewired.Glyphs.UnityUI {
                 text.font = UnityEngine.Resources.GetBuiltinResource<UnityEngine.Font>(defaultFontName);
 #if UNITY_5_2_PLUS
                 text.raycastTarget = false;
-#endif
 #endif
                 glyphOrText.textComponent = text;
             }
