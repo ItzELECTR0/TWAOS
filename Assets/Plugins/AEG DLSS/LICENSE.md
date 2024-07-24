@@ -1,1 +1,0 @@
-All copyright lies with Alterego Games 2020. Do not use, copy, change without permission.
