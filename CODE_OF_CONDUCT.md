@@ -18,7 +18,7 @@ The behavior that we encourage:
 * Accepting responsibility and apologizing to those affected by our mistakes
 * Focusing on what is best not just for us as individuals, but for the overall community and the project
 
-The behavior that is unaccetpable:
+The behavior that is unacceptpable:
 
 * Trolling, insulting or derogatory comments, and personal or political attacks
 * Public or private harassment
