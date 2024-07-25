@@ -9,10 +9,10 @@
 <br>3 - Add the project to Unity Hub to open it
 <br>4 - Once inside the project, you might want to disable the steam DRM
 <br>4.1 - To disable the DRM, first go to File > Build Settings to see all of the active scenes
-<br>4.2 - Go to the scenes present in the build settings, and find their "Game Manager" at the top of the hierarchy
-<br>4.3 - With the Game Manager selected, go to the inspector and find "Steam Manager" as a component of the Game Manager
+<br>4.2 - Go inside the scenes present in the build settings, and find their "Game Manager" at the top of the hierarchy
+<br>4.3 - With the Game Manager selected, go to the inspector and find "Steam Manager" as a component
 <br>4.4 - Disable or Remove the Steam Manager to remove the DRM
-<br>5 - Once you have disable the DRM, go back to the build settings, and press the build button
+<br>5 - Once you have disabled the DRM, go back to the build settings, and press the build button
 <br>6 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
 <br>7 - Now just wait
 
