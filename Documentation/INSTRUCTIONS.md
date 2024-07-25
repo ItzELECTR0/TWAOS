@@ -20,7 +20,7 @@ You might consider going to Code > Download ZIP
 - 1 - Install all [dependencies](DEPENDENCIES.md) required
 - 2 - Open a termial of your choosing
 - 3 - Navigate into your desired path to clone the project with "cd 'path\for\project'" (Without the "" quotes)
-- 4 - Type or paste in this command "git clone https://github.com/ItzELECTR0/TWAOS.git"
+- 4 - Type or paste in this command "git clone https://github.com/ItzELECTR0/TWAOS.git" (Without the "" quotes)
 - 5 - If you are asked to input your email and password, input your email, but not your password, enter your github token
 - 6 - The project should now be cloning, if not, just repeat the command at step 4
 
