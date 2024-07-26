@@ -5,11 +5,12 @@ using Rewired;
 
 namespace ELECTRIS
 {
-    public class StoryManagerCh1Prologue : MonoBehaviour
+    public class StoryManagerCh1 : MonoBehaviour
     {
         public bool TUS;
         public bool TPC;
 
-        // Placeholder, logic will be added later on
+        // Run of The Tempest;
+        // This is a Placeholder, logic will be added later on;
     }
 }
