@@ -82,16 +82,17 @@ namespace Rewired.Localization {
         /// Sets this as the Localized String in Rewired.
         /// </summary>
         protected virtual void TrySetLocalizedStringProvider() {
-            if (!ReInput.isReady) {
-                // Workaround to handle OnEnable script execution order bugs in various versions of Unity.
-                // When recompiling in the editor in Play mode, OnEnable can be called on this script
-                // before it is called on Rewired, so Rewired is not initialized by the time this runs.
-                // This also has the side benefit of allowing the user to instantiate this object
-                // before Rewired for whatever reason, and it will set itself as the provider
-                // when Rewired initalizes.
-                ReInput.InitializedEvent += TrySetLocalizedStringProvider;
-                return;
-            }
+            // Workaround to handle OnEnable script execution order bugs in various versions of Unity.
+            // When recompiling in the editor in Play mode, OnEnable can be called on this script
+            // before it is called on Rewired, so Rewired is not initialized by the time this runs.
+            // This also has the side benefit of allowing the user to instantiate this object
+            // before Rewired for whatever reason, and it will set itself as the provider
+            // when Rewired initalizes.
+            // This will also set the glyph provider again after calling ReInput.Reset or changing
+            // some configuration setting that causes Rewired to reset.
+            ReInput.InitializedEvent -= TrySetLocalizedStringProvider;
+            ReInput.InitializedEvent += TrySetLocalizedStringProvider;
+            if (!ReInput.isReady) return;
             if (!Rewired.Utils.UnityTools.IsNullOrDestroyed(ReInput.localization.localizedStringProvider)) {
                 UnityEngine.Debug.LogWarning("A localized string provider is already set. Only one localized string provider can exist at a time.");
                 return;
@@ -99,7 +100,6 @@ namespace Rewired.Localization {
             ReInput.localization.localizedStringProvider = this;
             ReInput.localization.prefetch = _prefetch;
         }
-
 
         /// <summary>
         /// Called when initialized.

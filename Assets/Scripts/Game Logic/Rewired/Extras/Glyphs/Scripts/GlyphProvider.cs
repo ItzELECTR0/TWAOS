@@ -89,16 +89,17 @@ namespace Rewired.Glyphs {
         /// Sets this as the Glyph Provider in Rewired.
         /// </summary>
         protected virtual void TrySetGlyphProvider() {
-            if (!ReInput.isReady) {
-                // Workaround to handle OnEnable script execution order bugs in various versions of Unity.
-                // When recompiling in the editor in Play mode, OnEnable can be called on this script
-                // before it is called on Rewired, so Rewired is not initialized by the time this runs.
-                // This also has the side benefit of allowing the user to instantiate this object
-                // before Rewired for whatever reason, and it will set itself as the provider
-                // when Rewired initalizes.
-                ReInput.InitializedEvent += TrySetGlyphProvider;
-                return;
-            }
+            // Workaround to handle OnEnable script execution order bugs in various versions of Unity.
+            // When recompiling in the editor in Play mode, OnEnable can be called on this script
+            // before it is called on Rewired, so Rewired is not initialized by the time this runs.
+            // This also has the side benefit of allowing the user to instantiate this object
+            // before Rewired for whatever reason, and it will set itself as the provider
+            // when Rewired initalizes.
+            // This will also set the glyph provider again after calling ReInput.Reset or changing
+            // some configuration setting that causes Rewired to reset.
+            ReInput.InitializedEvent -= TrySetGlyphProvider;
+            ReInput.InitializedEvent += TrySetGlyphProvider;
+            if (!ReInput.isReady) return;
             if (!Rewired.Utils.UnityTools.IsNullOrDestroyed(ReInput.glyphs.glyphProvider)) {
                 UnityEngine.Debug.LogWarning("Rewired: A glyph provider is already set. Only one glyph provider can exist at a time.");
                 return;

@@ -90,6 +90,7 @@
             <strong>Extras:</strong>
             <ul>
               <li><a href="ControlMapper.html" title="Control Mapper">Control Mapper</a></li>
+              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
 	          <li><a href="TouchControls.html" title="Touch Controls">Touch Controls</a></li>
 	          <li><a href="UnityInputOverride.html" title="Unity Input Override">Unity Input Override</a></li>
             </ul>
@@ -101,7 +102,6 @@
 	          <li><a href="InputMapper.html" title="Input Mapper">Input Mapper</a></li>
 	          <li><a href="UserDataStore.html" title="User Data Store">User Data Store</a></li>
 	          <li><a href="CustomPlatforms.html" title="User Data Store">Custom Platforms</a></li>
-              <li><a href="Glyphs.html" title="Glyphs">Glyphs</a></li>
               <li><a href="Localization.html" title="Localization">Localization</a></li>
             </ul>
             <strong>How To's:</strong>
@@ -140,7 +140,7 @@
     	<div class="main-body">
 	        <div class="logo"><a href="http://guavaman.com/projects/rewired" title="Rewired"><img src="files/images/rewired-logo.png" width="173" height="139" alt="Rewired" /></a></div>
                      
-          <h1>
+            <h1>
             <!-- InstanceBeginEditable name="PageHeader" -->Glyphs
       <!-- InstanceEndEditable -->
             </h1>
@@ -510,7 +510,9 @@ namespace MyNamespace {
 <p><strong><a name="unity-ui-text-mesh-pro-glyph-helper-tags" id="unity-ui-text-mesh-pro-glyph-helper-tags"></a>Tags:</strong></p>
 <p>Text containing the below tags will be converted into glyphs / text for the specified parameters.</p>
 <pre><strong>Display glyph / text for a controller element bound to an Action for a Player:</strong>
+
     &lt;rewiredElement [attributes]&gt;
+
     Attributes:
         type="[glyphOrText|glyph|text]" (optional, default: glyphOrText)
         playerId=[player_id] (id or name required)
@@ -518,23 +520,30 @@ namespace MyNamespace {
         actionId=[action_id] (id or name required)
         actionName="[action_name]" (id or name required)
         actionRange="[full|positive|negative]" (optional, default: full)
+
     Example:
-        &lt;rewiredElement type="glyphOrText" playerId=5 actionName="MoveHorizontal" actionRange="full"&gt;
+        &lt;rewiredElement playerId=5 actionName="MoveHorizontal" actionRange="full"&gt;
 
 <strong>Display the name of an Action:</strong>
+
     &lt;rewiredAction [attributes]&gt;
+
     Attributes:
         id=[action_id] (id or name required)
         name=[action_name] (id or name required)
         range="[full|positive|negative]" (optional, default: full)
+
     Example:
         &lt;rewiredAction name="MoveHorizontal" range="positive"&gt;
 
 <strong>Display the name of a Player:</strong>
+
     &lt;rewiredPlayer [attributes]&gt;
+
     Attributes:
         id=[action_id] (id or name required)
         name=[action_name] (id or name required)
+
     Example:
         &lt;rewiredPlayer id=0&gt;
 </pre>

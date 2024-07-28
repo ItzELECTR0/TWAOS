@@ -1,3 +1,17 @@
+1.1.57.2:
+
+    Changes:
+      - Glyphs pack:
+        - Added Steam Contoller glyph set (re-uses Xbox One glyphs).
+        - Glyph Provider now sets itself back as the glyph provider when Rewired is reset.
+      - Localized String Provider now sets itself back as the localized string provider when Rewired is reset.
+
+    Controller Definition Changes:
+      - MacOS, Native: Added variant to Xbox One Controller definition for Xbox Elite Series 2 controller.
+    
+    Bug Fixes:
+      - Desktop Platforms, Enhanced Device Support, Nintendo Switch controllers: Vibration with duration works correctly now.
+
 1.1.57.1:
 
      Bug Fixes:
