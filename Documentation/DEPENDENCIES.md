@@ -10,12 +10,13 @@
 ### FOR BUILDING
   
 - 1 - [Unity Hub](https://unity.com/download)
-  - 1.1 - Unity 6 Preview 10 (Version: 6000.0.11f1 - Install via Hub)
-- 2 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (Any edition)
-  - 2.1 - These Visual Studio Workloads:
-   - Desktop development with C++
-   - Game Development with Unity
-   - Game Development with C++
-   - .NET Desktop Development
+  - 1.1 - Unity 6 Preview 12 (Version: 6000.0.12f1 - Install via Hub)
+- 2 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+  - 2.1 - Choose Community Edition (Profesional and Enterprise also work)
+  - 2.2 - These Visual Studio Workloads:
+    - Desktop development with C++
+    - Game Development with Unity
+    - Game Development with C++
+    - .NET Desktop Development
 
 </div>
