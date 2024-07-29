@@ -26,7 +26,7 @@
 
 Official support is not available to you. If you use the contents of this repository for anything other than building it yourself or examining the code, you are on your own. For any modifications, you will have to rely on yourself or the community for help. I hope this is an understandable request since this is a paid product offered for free officially. This repository will be maintained until the development of the game is complete. This is both an offering to the community and my cloud backup of the game.
 
-<div>I want to make it clear that while the first chapter is free, the rest won't be.
+I want to make it clear that while the first chapter is free, the rest won't be.
 <br>However, everything will remain open source, nothing will be locked away.
 <br>Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
 
@@ -36,28 +36,31 @@ A game developed in Unity, by one guy, who wants to tell a story. Through any me
 
 ##  THE PREMISE
 
-The characters of the game are spheres. The world they live in is one of powers. The game's main story takes place in 2069 (Starts in 2066). The main character, Sip, has the power of lightning and energy, but not the regular one, it's quite, different.
+The characters of the game are spheres. The world they live in is one of powers. The game's main story takes place in 2069 (Starts in 2066).
+<br>The main character, Sip, has the power of lightning and energy, but not the regular one, it's quite, different.
+<br>
+<br>The story is separated by two paths. One tends to go for the happy ending everyone wants. The other, not so much.
 
 ## THE STORY
 
-Welcome to <b>2066</b>, where every individual is born with a unique <b>power</b>.
-You take on the role of <b>Sip</b> Dorian, a boy who appears to be cursed with the weakest of all abilities: <b>lightning</b>.
-A gift from the <b>Electrinity</b>, a deity who praises itself for what it created in Sip.
-Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him by the Electrinity.
-After what it told him, he just wanted a peaceful existence. But it refused.
-Guided by the <b>mystery</b> of his mind, Sip tries to avoid confrontation, and unnecessary attention, but that doesn't last long.
-And he is forced to face the dark truths about his world and himself.
-Will he rise to become the hero the world needs? Will he finally <b>feel</b> the way he wants to? Or will he remain the <b>same</b>. Forever.
+Welcome to <b>2066</b>, where every person is born with a unique <b>power</b>.
+<br>You take on the role of <b>Sip Dorian</b>, a boy who appears to be cursed with the weakest of all abilities: <b>lightning</b>.
+<br>A gift from the <b>Electrinity</b>, a deity who praises itself for what it created.
+<br>Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him by the Electrinity.
+<br>But after what it told him, he just wanted a peaceful existence. However, it refused.
+<br>Guided by the <b>mystery</b> of his own mind, Sip tries to avoid confrontation, and unnecessary attention. But that doesn't last long.
+<br>And he is forced to face the dark truths about his world, himself, and whatever is beyond that.
+<br>Will he rise to become the hero the world needs? Will he finally <b>feel</b> the way he wants to? Or will he remain the <b>same</b>. Forever.
 
 ## THE GAMEPLAY
 
-Immerse yourself in a richly detailed <b>3D world</b> from a </b>third-person</b> perspective, where every </b>choice</b> shapes Sip's destiny.
-Explore closed environments filled with interactive elements and hidden <b>secrets</b>.
-Unlock and master Sip's supernatural <b>lightning powers</b>, capable of manipulating any form of </b>energy</b>.
-Engage in combat and explore, using Sip's abilities to either <b>protect</b> the innocent or unleash <b>havoc</b>.
-Your decisions will determine whether Sip becomes a <b>beacon of hope</b> or a <b>force of destruction</b>.
-Experience a gripping narrative that blends <b>heart-wrenching drama</b> with <b>psychological horror</b>.
-As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of his power. 
+Witness a richly detailed super-powered <b>3D world</b> from a </b>third-person</b> perspective, where every </b>choice</b> shapes Sip's destiny.
+<br>Explore closed environments filled with interactive elements and hidden <b>secrets</b>.
+<br>Unlock and master Sip's supernatural <b>lightning powers</b>, capable of manipulating any form of </b>energy</b>.
+<br>Engage in combat and explore, using Sip's abilities to either <b>protect</b> the innocent or unleash <b>havoc</b>.
+<br>Your decisions will determine whether Sip becomes a <b>beacon of hope</b> or a <b>force of destruction</b>.
+<br>Experience a gripping narrative that blends <b>heart-wrenching drama</b> with <b>psychological horror</b>.
+<br>As Sip's enigmatic mind and mysterious <b>smile</b> unveil the true extent of his power.
 
 ## MATURE CONTENT
 
@@ -65,7 +68,7 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 ## DEVELOPMENT PLANS
 
-The game is planned to have 10 chapters. I wish to finish the first one by 2027, the rest following along not too long after.
+The game is planned to have 10 chapters, and maybe an <b>extra</b>. I wish to finish the first one by 2027, the rest following along not too long after.
 
 ## FAQ / FACTS AND QUESTIONS
 
