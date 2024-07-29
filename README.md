@@ -67,12 +67,24 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 The game is planned to have 10 chapters. I wish to finish the first one by 2027, the rest following along not too long after.
 
-## OPEN-SOURCE AAA?
+## FAQ / FACTS AND QUESTIONS
+
+### NOT SEEING NEW COMMITS FOR A WHILE?
+
+Bad mental state. Burnout.
+
+### I'VE WORKED WITH YOU! DIDN'T YOU SAY YOU HAD A TEAM?
+
+Sorry I lied. I needed to make this project seem more stable.
+<br>Everything is being worked on by me alone, with whatever resources I can manage.
+<br>However, your work did not go to waste. I'll get things done. Eventually.
+
+### OPEN-SOURCE AAA?
 
 The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
 <br> However I plan to deliver as close to tripple A quality to the best of my ability.
 
-## WHY OPEN SOURCE?
+### WHY OPEN SOURCE?
 
 "Culture shouldn't exist only for those who can afford it"
 <br> - @HakitaDev on Twitter/X
