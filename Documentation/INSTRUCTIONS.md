@@ -49,15 +49,27 @@ You might consider going to Code > Download ZIP
 - 6 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
 - 7 - Now just wait
 
-#### Disclaimer: Building will take a really long time, since the game's shader variants aren't included, and will have to be built from scratch
+#### Disclaimers:
+ - Project can only be opened and built on Windows 10/11 (Attempts on Arch Linux have always failed me)
+ - Building will take a really long time, since the game's shader variants aren't included, and will have to be built from scratch
 
-## HOW REMOVE STEAM DRM
+## HOW DISABLE/REMOVE STEAM DRM
 
+### Medthod 1 - RECOMMENDED
+- 1 - Open Edit > Project Settings
+- 2 - Go to the "Player" options
+- 3 - Expand "Other Settings" and scroll down
+- 4 - Inside of "Scripting Define Symbols" find "ELECTRIS_ENABLE_STEAMWORKS"
+- 5 - Select the field by clicking the two lines by it's side
+- 6 - Remove the entry by clicking the minus sign at the bottom of the list
+
+### Method 2 - DEPRECATED (Still works, but not recommended)
 - 1 - To disable the DRM, first go to File > Build Settings to see all of the active scenes
 - 2 - Go inside the scenes present in the build settings, and find their "Game Manager" at the top of the hierarchy
 - 3 - With the Game Manager selected, go to the inspector and find "Steam Manager" as a component
 - 4 - Disable or Remove the Steam Manager to remove the DRM
 
-#### Disclaimer: Disabling Steam DRM will remove any online functionality from the game, and there is no way to avoid this
+#### Disclaimer:
+ - Disabling Steam DRM will remove any online functionality from the game, and there is no way to avoid this
 
 </div>
