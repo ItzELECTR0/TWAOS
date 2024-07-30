@@ -200,7 +200,7 @@ namespace ELECTRIS
 
         private void Debugging()
         {
-            Debug.Log("PlayerCtl Debug" + playerId.ToString());
+            Debug.Log("PlayerCtl Debug ID:" + playerId.ToString());
         }
     }
 }
