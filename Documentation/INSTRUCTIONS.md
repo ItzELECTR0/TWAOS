@@ -1,6 +1,6 @@
 <div align="left">
 
-## HOW TO GET THE PROJECT LOCALY
+## HOW TO GET THE PROJECT LOCALLY
 
 You might consider going to Code > Download ZIP
 <br>However, a better way is to clone the project
