@@ -4,6 +4,8 @@ using ELECTRIS;
 using UnityEngine;
 using Rewired;
 
+// ELECTRO - 03/08/2024 21:32 - Dear future contributors, this code is hot garbage, please either bear with it until it's imroved, or improve it.
+
 namespace ELECTRIS
 {
     public class PlayerController : MonoBehaviour

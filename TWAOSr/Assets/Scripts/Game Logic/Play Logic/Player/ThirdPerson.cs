@@ -4,6 +4,8 @@ using ELECTRIS;
 using UnityEngine;
 using Rewired;
 
+// ELECTRO - 03/08/2024 21:34 - Dear future contributors, this code barely functions the way it's intended, please either bear with it until it's imroved, or improve it.
+
 namespace ELECTRIS
 {
     public class ThirdPerson : MonoBehaviour
