@@ -20,7 +20,7 @@
   
 <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100"/>
 
-#### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game. Consider yourself warned.
+#### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game.<br> Consider yourself warned.
 
 ## RESPONSIBILITY DISCLAIMER
 
