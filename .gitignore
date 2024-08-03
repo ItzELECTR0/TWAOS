@@ -1,22 +1,29 @@
 # Ignore System specific directories and files
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Ll]ogs/
+TWAOSr/[Ll]ibrary/
+TWAOSr/[Tt]emp/
+TWAOSr/[Oo]bj/
+TWAOSr/[Ll]ogs/
 
 # Deliberately ignored directories
-[Aa]ssets/3D/Licensed/
-[Aa]ssets/Plugins/FMOD/Cache/
-[Uu]serSettings/
+[Aa]udio
+[Bb]uilds
+[Cc]haracters
+[Cc]over
+[Ss]team
+[Ww]riting
+TWAOSr/[Aa]ssets/3D/Licensed/
+TWAOSr/[Aa]ssets/Plugins/FMOD/Cache/
+TWAOSr/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-!/[Aa]ssets/**/*.meta
+!/TWAOSr/[Aa]ssets/**/*.meta
 
 # Deliberately ignored files
-[Aa]ssets/StreamingAssets/**/*.bank
+TWAOSr/[Aa]ssets/StreamingAssets/**/*.bank
 
 # Ignore VS Code directory
 .vscode/
+TWAOSr/.vscode/
 
 # Ignore temporary files and logs
 *.tmp
@@ -24,10 +31,10 @@
 *.log
 
 # Ignore Visual Studio specific files
-.vs/
+TWAOSr/.vs/
 
 # Ignore Rider specific files
-.idea/
+TWAOSr/.idea/
 
 # Ignore Unity generated files
 *.sln
