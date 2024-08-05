@@ -72,9 +72,9 @@ The game is planned to have 10 chapters, and maybe an <b>extra</b>. I wish to fi
 
 ## FAQ / FACTS AND QUESTIONS
 
-### NOT SEEING NEW COMMITS FOR A WHILE?
+### WHY IS PROGRESS SO SLOW?
 
-Bad mental state. Burnout.
+Burnout.
 
 ### I'VE WORKED WITH YOU! DIDN'T YOU SAY YOU HAD A TEAM?
 
