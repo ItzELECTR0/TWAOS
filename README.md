@@ -74,7 +74,7 @@ The game is planned to have 10 chapters, and maybe an <b>extra</b>.
 
 ### Game-wise:
 I will first create a functional game. Make all of the story playable, then focus on quality.
-<br>When a chapter's story is fully playable, it will come out as an alpha.
+<br>When a chapter's story is fully playable, it will come out as an alpha build.
 <br>As quality improves in graphics and design, it will move on to beta, and finally a release.
 
 ## FAQ / FACTS AND QUESTIONS
