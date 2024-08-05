@@ -96,6 +96,7 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 
 **[Instructions](Documentation/INSTRUCTIONS.md)**
 <br>**[Dependencies](Documentation/DEPENDENCIES.md)**
+<br>**[Branches](Documentation/BRANCHES.md)**
 <br>**[License](LICENSE.md)**
 <br>**[Asset Store Disclaimer](Documentation/ASSET-DISCLAIMER.md)**
 <br>**[Credits](Documentation/CREDITS.md)**
