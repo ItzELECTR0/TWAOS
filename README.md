@@ -29,6 +29,7 @@ Official support is not available to you. If you use the contents of this reposi
 I want to make it clear that while the first chapter is free, the rest won't be.
 <br>However, everything will remain open source, nothing will be locked away.
 <br>Don't pirate. Don't buy stolen keys. Build it yourself. It's still free, and it's better than piracy.
+<br>Buying a copy of the game is showing your support towards the project. And I deeply respect it.
 
 ## WHAT IS TWAOS?
 
