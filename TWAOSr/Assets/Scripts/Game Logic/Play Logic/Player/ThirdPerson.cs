@@ -5,76 +5,57 @@ using UnityEngine;
 using Rewired;
 
 // ELECTRO - 03/08/2024 21:34 - Dear future contributors, this code barely functions the way it's intended, please either bear with it until it's imroved, or improve it.
+// ELECTRO - 05/08/2024 23:36 - Fighting the burnout with a mighty will, all I manage to do is delete everything after realizing it makes things worse.
 
 namespace ELECTRIS
 {
     public class ThirdPerson : MonoBehaviour
-{
-    [Header("Script Control")]
-    [SerializeField] private bool reInput;
-
-    [Header("Script Connectors")]
-    [SerializeField] private PlayerController playerCtl;
-
-    [Header("Variables")]
-    public Transform orientation;
-    public Transform Player;
-    public Transform playerObj;
-    [SerializeField] private Rigidbody rb;
-    public float roationSpeed;
-
-    [Header("Adjustments")]
-    public float xAdjustment;
-    public float zAdjustment;
-
-    [Header("Input")]
-    private float horizontal;
-    private float vertical;
-
-    private void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        playerCtl.player = ReInput.players.GetPlayer(playerCtl.playerId);
-    }
+        [Header("Script Control")]
+        [SerializeField] private bool reInput;
 
-    private void Update()
-    {
-        // Rotate Orientation based on Camera Position
-        Vector3 viewDirection = Player.position - new Vector3(transform.position.x * xAdjustment, Player.position.y, transform.position.z * zAdjustment);
-        orientation.forward = viewDirection.normalized;
+        [Header("Script Connectors")]
+        [SerializeField] private PlayerController playerCtl;
 
-        // Decide which Input Method to use
-        if (reInput)
+        [Header("Rewired")]
+        [SerializeField] private int playerId;
+        private Player player;
+
+        [Header("Input")]
+        [SerializeField] private float horizontal;
+        [SerializeField] private float vertical;
+
+        private void Awake()
         {
-            RewiredInput();
-        }else if (!reInput)
-        {
-            UnityInput();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            player = ReInput.players.GetPlayer(playerCtl.playerId);
         }
 
-        // Calculate the direction the player is trying to go
-        Vector3 inputDirection = orientation.forward * vertical + orientation.right * horizontal;
-        
-        // Rotate the player object based on desired direction
-        if (inputDirection !=  Vector3.zero)
+        private void UnityInput()
         {
-            playerObj.forward = Vector3.Slerp(playerObj.forward, inputDirection.normalized, Time.deltaTime * roationSpeed);
+            // WASD Input
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
+        }
+
+        private void RewiredInput()
+        {
+            // WASD Input
+            horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerId.ToString());
+            vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerId.ToString());
+        }
+
+        private void Update()
+        {
+            // Decide which Input Method to use
+            if (reInput)
+            {
+                RewiredInput();
+            }else if (!reInput)
+            {
+                UnityInput();
+            }
         }
     }
-
-    private void UnityInput()
-    {
-        // WASD Input
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-    }
-
-    private void RewiredInput()
-    {
-        // WASD Input
-        horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerId.ToString());
-        vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerId.ToString());
-    }
-}
 }
