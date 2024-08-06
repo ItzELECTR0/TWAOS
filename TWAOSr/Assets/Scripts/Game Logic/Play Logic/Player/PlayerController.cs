@@ -26,7 +26,7 @@ namespace ELECTRIS
 
         [Header("Player")]
         [SerializeField] private Transform orientation;
-        [SerializeField] private Transform character;
+        public Transform character;
         [SerializeField] private Vector3 mDirection;
         [SerializeField] private Rigidbody rb;
         private bool readyToJump;
@@ -161,9 +161,6 @@ namespace ELECTRIS
         {
             // Calculating the movement direction
             mDirection = orientation.forward * vertical + orientation.right * horizontal;
-
-            float targetAngle = Mathf.Atan2(mDirection.x, mDirection.z) * Mathf.Rad2Deg;
-            character.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             // Ground movement
             if (grounded)

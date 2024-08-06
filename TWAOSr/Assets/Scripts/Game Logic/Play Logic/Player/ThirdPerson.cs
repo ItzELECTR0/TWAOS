@@ -58,5 +58,13 @@ namespace ELECTRIS
                 UnityInput();
             }
         }
+
+        public void PlayerRotation()
+        {
+            Vector3 inputDirection = new Vector3(horizontal, 0, vertical);
+
+            float targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
+            playerCtl.character.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+        }
     }
 }
