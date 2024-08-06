@@ -17,7 +17,7 @@ namespace ELECTRIS
         [SerializeField] private bool allowSlide = false;
         [SerializeField] private bool allowDebugging = false;
         [SerializeField] private bool combatMode = false;
-        [SerializeField] private bool reInput = false;
+        [SerializeField] private bool reInput = true;
 
         [Header("Script Connectors")]
         [SerializeField] private ThirdPerson tpsCtl;
@@ -144,11 +144,11 @@ namespace ELECTRIS
         private void RewiredInput()
         {
             // WASD Input
-            horizontal = player.GetAxisRaw("Horizontal" + playerId.ToString());
-            vertical = player.GetAxisRaw("Vertical" + playerId.ToString());
+            horizontal = player.GetAxisRaw("Horizontal");
+            vertical = player.GetAxisRaw("Vertical");
 
             //Jump
-            if (allowJump && player.GetButton("Jump" + playerId.ToString()) && readyToJump && grounded)
+            if (allowJump && player.GetButton("Jump") && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();
@@ -159,7 +159,7 @@ namespace ELECTRIS
 
         private void Movement()
         {
-            // Calculating the movement direction
+            // Calculating the movement direction | P.S. Part of "the shittest code I've ever wrote"
             mDirection = orientation.forward * vertical + orientation.right * horizontal;
 
             // Ground movement

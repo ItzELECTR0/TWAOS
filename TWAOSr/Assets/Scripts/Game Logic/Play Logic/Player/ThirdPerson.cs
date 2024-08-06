@@ -12,7 +12,8 @@ namespace ELECTRIS
     public class ThirdPerson : MonoBehaviour
     {
         [Header("Script Control")]
-        [SerializeField] private bool reInput;
+        [SerializeField] private bool reInput = true;
+        [SerializeField] private bool rotatePlayer = true;
 
         [Header("Script Connectors")]
         [SerializeField] private PlayerController playerCtl;
@@ -56,6 +57,11 @@ namespace ELECTRIS
             }else if (!reInput)
             {
                 UnityInput();
+            }
+
+            if (rotatePlayer)
+            {
+                PlayerRotation();
             }
         }
 
