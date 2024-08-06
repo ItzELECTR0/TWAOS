@@ -489,9 +489,15 @@ MonoBehaviour:
       _descriptiveName: Player 1
       _key: 
       _startPlaying: 1
-      _defaultJoystickMaps: []
+      _defaultJoystickMaps:
+      - _enabled: 1
+        _categoryId: 2
+        _layoutId: 5
       _defaultMouseMaps: []
-      _defaultKeyboardMaps: []
+      _defaultKeyboardMaps:
+      - _enabled: 1
+        _categoryId: 2
+        _layoutId: 2
       _defaultCustomControllerMaps: []
       _startingCustomControllers: []
       _assignMouseOnStart: 1
