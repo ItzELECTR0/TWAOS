@@ -3,9 +3,9 @@ using System.Collections;
 using ELECTRIS;
 using UnityEngine;
 using Rewired;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 
 // ELECTRO - 03/08/2024 21:32 - Dear future contributors, this code is hot garbage, please either bear with it until it's imroved, or improve it.
+// ELECTRO - 06/o8/2024 21:31 - IT WORKS LET'S GOOOOOO (If you change it make sure it STILL works, or it is NOT getting merged)
 
 namespace ELECTRIS
 {
