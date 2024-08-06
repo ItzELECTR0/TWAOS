@@ -3,6 +3,7 @@ using System.Collections;
 using ELECTRIS;
 using UnityEngine;
 using Rewired;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 
 // ELECTRO - 03/08/2024 21:32 - Dear future contributors, this code is hot garbage, please either bear with it until it's imroved, or improve it.
 
@@ -12,25 +13,26 @@ namespace ELECTRIS
     {
         [Header("Script Control")]
         [SerializeField] private bool allowMovement = true;
+        [SerializeField] private bool allowPlayerRotation = true;
+        [SerializeField] private bool allowSpeedControl = true;
         [SerializeField] private bool allowSprint = false;
         [SerializeField] private bool allowJump = false;
-        [SerializeField] private bool allowSlide = false;
         [SerializeField] private bool allowDebugging = false;
-        [SerializeField] private bool combatMode = false;
         [SerializeField] private bool reInput = true;
 
         [Header("Script Connectors")]
-        [SerializeField] private ThirdPerson tpsCtl;
         public PauseController pausectl;
         public PausedGame paused;
 
         [Header("Player")]
-        [SerializeField] private Transform orientation;
         public Transform character;
+        private float turnSmoothVelocity;
+        [SerializeField] private float rotationSmoothess = 0.1f;
         [SerializeField] private Vector3 mDirection;
         [SerializeField] private Rigidbody rb;
-        private bool readyToJump;
-        private bool grounded;
+        [SerializeField] private bool readyToJump;
+        [SerializeField] private bool grounded;
+        [SerializeField] private bool combatMode = false;
         public bool isInside;
         public bool isOutside;
 
@@ -62,69 +64,54 @@ namespace ELECTRIS
         public LayerMask whatIsInside;
         public LayerMask whatIsOutside;
 
+        [Header("Other Variables")]
+        [SerializeField] private Camera cam;
+        [SerializeField] private Transform camTransform;
+
         void Awake()
         {
+            // Initialize rewired by selecting a player
             player = ReInput.players.GetPlayer(playerId);
             systemPlayer = ReInput.players.GetSystemPlayer();
+
+            // Subscribe to the OnGameStateChanged event to initialize pause system
             GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+
+            // Get the camera's transform
+            camTransform = cam.transform;
+            
+            // Lock the cursor the center of the screen and make it invisible
+            Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
         }
 
         void OnDestroy()
         {
+            // Unsusbscribe from the event in the case of the object being destroyed
             GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
         }
 
         private void OnGameStateChanged(GameState newGameState)
         {
+            // Log the game state change to console
             Debug.Log(newGameState.ToString());
         }
 
         private void Start()
         {
+            // Ready to jump on game start
             readyToJump = true;
+
+            // Freeze rotation of the Rigidbody component
             rb.freezeRotation = true;
 
+            // Debug mode
             if (allowDebugging)
             {
                 Debugging();
             }
         }
 
-        private void Update()
-        {
-            grounded = Physics.CheckSphere(Checker.position, checkDistance, whatIsGround);
-            isInside = Physics.CheckSphere(Checker.position, checkDistance, whatIsInside);
-            isOutside = Physics.CheckSphere(Checker.position, checkDistance, whatIsOutside);
-
-            // Decide which Input Method to use
-            if (reInput)
-            {
-                RewiredInput();
-            }else if (!reInput)
-            {
-                UnityInput();
-            }
-
-            SpeedControl();
-
-            // Drag
-            if (grounded)
-            {
-                rb.linearDamping = groundDrag;
-            }else
-            {
-                rb.linearDamping = 0;
-            }
-        }
-
-        private void FixedUpdate()
-        {
-            if (allowMovement)
-            {
-                Movement();
-            }
-        }
-
+        // Get input using the Unity legacy method
         private void UnityInput()
         {
             // WASD Input
@@ -141,14 +128,15 @@ namespace ELECTRIS
             }
         }
 
+        //Get input using Rewired
         private void RewiredInput()
         {
             // WASD Input
-            horizontal = player.GetAxisRaw("Horizontal");
-            vertical = player.GetAxisRaw("Vertical");
+            horizontal = player.GetAxisRaw("Horizontal" + playerId.ToString());
+            vertical = player.GetAxisRaw("Vertical" + playerId.ToString());
 
             //Jump
-            if (allowJump && player.GetButton("Jump") && readyToJump && grounded)
+            if (allowJump && player.GetButton("Jump" + playerId.ToString()) && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();
@@ -157,23 +145,101 @@ namespace ELECTRIS
             }
         }
 
+        private void Update()
+        {
+            // Determine the player's current ground state
+            grounded = Physics.CheckSphere(Checker.position, checkDistance, whatIsGround);
+            isInside = Physics.CheckSphere(Checker.position, checkDistance, whatIsInside);
+            isOutside = Physics.CheckSphere(Checker.position, checkDistance, whatIsOutside);
+
+            // Decide which Input Method to use
+            if (reInput)
+            {
+                RewiredInput();
+            }else if (!reInput)
+            {
+                UnityInput();
+            }
+
+            // Control the player's speed gain
+            if (allowSpeedControl)
+            {
+                SpeedControl();
+            }
+
+            // Apply drag to the player
+            if (grounded)
+            {
+                rb.linearDamping = groundDrag;
+            }else
+            {
+                rb.linearDamping = 0;
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            // Rotate the player based on movement input
+            if (allowPlayerRotation)
+            {
+                PlayerRotation();
+            }
+
+            // Move the player
+            if (allowMovement)
+            {
+                Movement();
+            }
+        }
+
+        // Logic for rotating the player
+        public void PlayerRotation()
+        {
+            // Calculate rotation based on input
+            Vector3 inputDirection = new Vector3(horizontal, 0, vertical).normalized;
+
+            if (inputDirection.magnitude >= 0.1f)
+            {
+                // Calculate rotation based on input angle using Atan2
+                float targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg + camTransform.eulerAngles.y;
+
+                // Adjust targetAngle to account for texture displacement
+                float targetAngleAdjusted = targetAngle - 90f;
+
+                //Smooth out the calculated rotation
+                float angle = Mathf.SmoothDampAngle(character.eulerAngles.y, targetAngleAdjusted, ref turnSmoothVelocity, rotationSmoothess);
+
+                // Rotate the player based on calculated rotation
+                character.rotation = Quaternion.Euler(0f, angle, 0f);
+
+                // Calculating the movement direction based on target angle
+                Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                mDirection = moveDirection.normalized;
+            }else
+            {
+                // If no input, set mDirection to zero
+                mDirection = Vector3.zero;
+            }
+        }
+
+        // All movement logic
         private void Movement()
         {
-            // Calculating the movement direction | P.S. Part of "the shittest code I've ever wrote"
-            mDirection = orientation.forward * vertical + orientation.right * horizontal;
-
             // Ground movement
             if (grounded)
             {
                 // Move the player
                 rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier, ForceMode.Force);
+
+            // Air movement
             }else if (!grounded)
             {
-                // Move the player
+                // Move the player with air multiplier
                 rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier * airMultiplier, ForceMode.Force);
             }
         }
 
+        // Logic for controlling the player's speed
         private void SpeedControl()
         {
             // Calculate the flat velocity of the player
@@ -187,6 +253,7 @@ namespace ELECTRIS
             }
         }
 
+        // Logic for making the player jump
         private void Jump()
         {
             // Reset Y velocity
@@ -196,13 +263,16 @@ namespace ELECTRIS
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
         }
 
+        // Make the player able to jump again
         private void ResetJump()
         {
             readyToJump = true;
         }
 
+        // Logic for Debug Mode
         private void Debugging()
         {
+            // Display the current player ID
             Debug.Log("PlayerCtl Debug ID:" + playerId.ToString());
         }
     }
