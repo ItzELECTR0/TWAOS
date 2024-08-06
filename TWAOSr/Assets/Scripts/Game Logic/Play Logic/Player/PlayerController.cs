@@ -40,8 +40,8 @@ namespace ELECTRIS
         private Player systemPlayer;
 
         [Header("Input")]
-        private float horizontal;
-        private float vertical;
+        [SerializeField] private float horizontal;
+        [SerializeField] private float vertical;
 
         [Header("Legacy Keybinds")]
         public KeyCode jumpKey = KeyCode.Space;
