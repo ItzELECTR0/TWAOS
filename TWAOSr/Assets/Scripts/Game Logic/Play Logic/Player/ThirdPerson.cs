@@ -29,7 +29,8 @@ namespace ELECTRIS
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            player = ReInput.players.GetPlayer(playerCtl.playerId);
+            playerId = playerCtl.playerId;
+            player = ReInput.players.GetPlayer(playerId);
         }
 
         private void UnityInput()
@@ -42,8 +43,8 @@ namespace ELECTRIS
         private void RewiredInput()
         {
             // WASD Input
-            horizontal = playerCtl.player.GetAxisRaw("Horizontal" + playerCtl.playerId.ToString());
-            vertical = playerCtl.player.GetAxisRaw("Vertical" + playerCtl.playerId.ToString());
+            horizontal = playerCtl.player.GetAxisRaw("Horizontal");
+            vertical = playerCtl.player.GetAxisRaw("Vertical");
         }
 
         private void Update()
