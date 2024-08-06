@@ -2201,7 +2201,7 @@ MonoBehaviour:
   allowDebugging: 0
   combatMode: 0
   reInput: 0
-  tpsCtl: {fileID: 0}
+  tpsCtl: {fileID: 8043697259462604176}
   pausectl: {fileID: 978289038}
   paused: {fileID: 878352205}
   orientation: {fileID: 4047140103536579064}
@@ -2211,6 +2211,8 @@ MonoBehaviour:
   isInside: 0
   isOutside: 0
   playerId: 0
+  horizontal: 0
+  vertical: 0
   jumpKey: 32
   sprintKey: 304
   walkSpeed: 7
@@ -2242,6 +2244,7 @@ GameObject:
   - component: {fileID: 5445362965003994080}
   - component: {fileID: 4370248422021973144}
   - component: {fileID: 8043697259462604175}
+  - component: {fileID: 8043697259462604176}
   m_Layer: 9
   m_Name: TPSCamera
   m_TagString: MainCamera
@@ -2378,6 +2381,23 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &8043697259462604176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089544967850262957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dab1d33bdf55ea4a9dd5bc3f7ff3fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reInput: 0
+  playerCtl: {fileID: 5696329553002596979}
+  playerId: 0
+  horizontal: 0
+  vertical: 0
 --- !u!114 &8233803398646330582
 MonoBehaviour:
   m_ObjectHideFlags: 0
