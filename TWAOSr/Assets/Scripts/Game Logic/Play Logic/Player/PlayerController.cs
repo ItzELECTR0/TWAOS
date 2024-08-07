@@ -6,6 +6,7 @@ using Rewired;
 
 // ELECTRO - 03/08/2024 21:32 - Dear future contributors, this code is hot garbage, please either bear with it until it's imroved, or improve it.
 // ELECTRO - 06/o8/2024 21:31 - IT WORKS LET'S GOOOOOO (If you change it make sure it STILL works, or it is NOT getting merged)
+// ELECTRO - 07/08/2024 19:11 - Adding sprinting and slope movement raaahhh
 
 namespace ELECTRIS
 {
@@ -50,12 +51,20 @@ namespace ELECTRIS
         public KeyCode sprintKey = KeyCode.LeftShift;
 
         [Header("Movement")]
+        private float moveSpeed;
         public float walkSpeed;
+        public float sprintSpeed;
+        private float superSpeed;
+        public float superMultiplier;
         public float speedMultiplier;
+        public float airMultiplier;
         [SerializeField] private float groundDrag;
         public float jumpForce;
         public float jumpCooldown;
-        public float airMultiplier;
+
+        [Header("Slope Handling")]
+        public float maxSlopeAngle;
+        private RaycastHit slopeHit;
 
         [Header("Physics Checking")]
         public Transform Checker;
@@ -64,9 +73,26 @@ namespace ELECTRIS
         public LayerMask whatIsInside;
         public LayerMask whatIsOutside;
 
-        [Header("Other Variables")]
+        [Header("Player Camera Connectors")]
         [SerializeField] private Camera cam;
         [SerializeField] private Transform camTransform;
+
+        public enum CurrentPlayer
+        {
+            Sip,
+            Zip,
+            Neon
+        }
+
+        public enum CurrentMoveState
+        {
+            Walking,
+            Sprinting,
+            Air
+        }
+
+        public CurrentPlayer currentPlayer;
+        public CurrentMoveState moveState;
 
         void Awake()
         {
@@ -98,6 +124,22 @@ namespace ELECTRIS
 
         private void Start()
         {
+            // State which character is selected as the current player.
+            // This is a very simple implementation for future CO-OP plans.
+            if (playerId == 0)
+            {
+                currentPlayer = CurrentPlayer.Sip;
+            }else if (playerId == 1)
+            {
+                currentPlayer = CurrentPlayer.Zip;
+            }else if (playerId == 2)
+            {
+                currentPlayer = CurrentPlayer.Neon;
+            }
+
+            // Set Walking state on start
+            moveState = CurrentMoveState.Walking;
+
             // Ready to jump on game start
             readyToJump = true;
 
@@ -118,12 +160,27 @@ namespace ELECTRIS
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
 
+            // Sprinting
+            if (grounded && Input.GetKeyDown(sprintKey))
+            {
+                moveState = CurrentMoveState.Sprinting;
+                moveSpeed = sprintSpeed;
+            }else if (grounded)
+            {
+                moveState = CurrentMoveState.Walking;
+                moveSpeed = walkSpeed;
+            }else
+            {
+                moveState = CurrentMoveState.Air;
+            }
+
             //Jump
             if (allowJump && Input.GetKey(jumpKey) && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();
 
+                // Apply jump cooldown
                 Invoke(nameof(ResetJump), jumpCooldown);
             }
         }
@@ -135,18 +192,45 @@ namespace ELECTRIS
             horizontal = player.GetAxisRaw("Horizontal" + playerId.ToString());
             vertical = player.GetAxisRaw("Vertical" + playerId.ToString());
 
+            // Sprinting
+            if (grounded && player.GetButtonDown("Sprint" + playerId.ToString()))
+            {
+                moveState = CurrentMoveState.Sprinting;
+                moveSpeed = sprintSpeed;
+            }else if (grounded)
+            {
+                moveState = CurrentMoveState.Walking;
+                moveSpeed = walkSpeed;
+            }else
+            {
+                moveState = CurrentMoveState.Air;
+            }
+
             //Jump
             if (allowJump && player.GetButton("Jump" + playerId.ToString()) && readyToJump && grounded)
             {
                 readyToJump = false;
                 Jump();
 
+                // Apply jump cooldown
                 Invoke(nameof(ResetJump), jumpCooldown);
             }
         }
 
         private void Update()
         {
+            // Decide which abilities to enable based on the playing character
+            if (currentPlayer == CurrentPlayer.Sip)
+            {
+                EnergyManipulation();
+            }else if (currentPlayer == CurrentPlayer.Zip)
+            {
+                HyperThinking();
+            }else if (currentPlayer == CurrentPlayer.Neon)
+            {
+                ElectricUsage();
+            }
+
             // Determine the player's current ground state
             grounded = Physics.CheckSphere(Checker.position, checkDistance, whatIsGround);
             isInside = Physics.CheckSphere(Checker.position, checkDistance, whatIsInside);
@@ -229,13 +313,13 @@ namespace ELECTRIS
             if (grounded)
             {
                 // Move the player
-                rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier, ForceMode.Force);
+                rb.AddForce(mDirection.normalized * moveSpeed * speedMultiplier, ForceMode.Force);
 
             // Air movement
             }else if (!grounded)
             {
                 // Move the player with air multiplier
-                rb.AddForce(mDirection.normalized * walkSpeed * speedMultiplier * airMultiplier, ForceMode.Force);
+                rb.AddForce(mDirection.normalized * moveSpeed * speedMultiplier * airMultiplier, ForceMode.Force);
             }
         }
 
@@ -274,6 +358,26 @@ namespace ELECTRIS
         {
             // Display the current player ID
             Debug.Log("PlayerCtl Debug ID:" + playerId.ToString());
+        }
+
+        // Logic For Sip's powers
+        private void EnergyManipulation()
+        {
+            // Establish Super Speed value
+            superSpeed = sprintSpeed * 2 * superMultiplier;
+        }
+
+        // Logic for Zip's powers
+        private void HyperThinking()
+        {
+
+        }
+
+        // Logic for Neon's powers
+        private void ElectricUsage()
+        {
+            // Establish Super Speed value
+            superSpeed = sprintSpeed * 1.5f;
         }
     }
 }
