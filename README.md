@@ -68,7 +68,16 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 ## DEVELOPMENT PLANS
 
-The game is planned to have 10 chapters, and maybe an <b>extra</b>. I wish to finish the first one by 2027, the rest following along not too long after.
+### Story-wise:
+The game is planned to have 10 chapters, and maybe an <b>extra</b>.
+<br>I wish to finish the first one by 2027, the rest following along not too long after.
+
+### Game-wise:
+I will first create a functional game. Make all of the story playable, then focus on quality.
+<br>When a chapter's story is fully playable, it will come out as an alpha build.
+<br>As quality improves in graphics and design, it will move on to beta, and finally a release.
+
+##### For more info, check **[here](Documentation/PLANS.md)**
 
 ## FAQ / FACTS AND QUESTIONS
 
