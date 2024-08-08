@@ -1,13 +1,12 @@
 using System;
-using System.Collections;
 using ELECTRIS;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
-using TMPro.Examples;
-using Unity.Entities.UniversalDelegates;
+
+// ELECTRO - 09/08/2024 00:43 - Code is a mess with very specific needs, but works well as intended.
 
 namespace ELECTRIS
 {
@@ -41,32 +40,48 @@ namespace ELECTRIS
             objRendererDropdown = GraphicsDropdown.GetComponent<Image>();
             objRendererTemplate = GraphicsTemplate.GetComponent<Image>();
 
-            if (QualitySettings.GetQualityLevel() == 1)
+            switch (QualitySettings.GetQualityLevel())
             {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(false);
-                Wonderful.SetActive(false);
-                objRendererDropdown.material = materialDropdown[0];
-                objRendererTemplate.material = materialTemplate[0];
-            }
-            else if (QualitySettings.GetQualityLevel() == 2)
-            {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(true);
-                Wonderful.SetActive(false);
-                objRendererDropdown.material = materialDropdown[0];
-                objRendererTemplate.material = materialTemplate[0];
-            }
-            else if (QualitySettings.GetQualityLevel() == 3)
-            {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(true);
-                Wonderful.SetActive(true);
-                objRendererDropdown.material = materialDropdown[1];
-                objRendererTemplate.material = materialTemplate[1];
+                case 0:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(false);
+                    Amazing.SetActive(false);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 1:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(false);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 2:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(true);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 3:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(true);
+                    Wonderful.SetActive(true);
+                    objRendererDropdown.material = materialDropdown[1];
+                    objRendererTemplate.material = materialTemplate[1];
+                    break;
+                }
             }
 
             resolutions = Screen.resolutions;
@@ -97,40 +112,48 @@ namespace ELECTRIS
         {
             QualitySettings.SetQualityLevel(qualityLevel);
 
-            if (qualityLevel == 0)
+            switch (qualityLevel)
             {
-                Minimal.SetActive(true);
-                Pretty.SetActive(false);
-                Amazing.SetActive(false);
-                Wonderful.SetActive(false);
-                objRendererDropdown.material = materialDropdown[0];
-                objRendererTemplate.material = materialTemplate[0];
-            }else if (qualityLevel == 1)
-            {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(false);
-                Wonderful.SetActive(false);
-                objRendererDropdown.material = materialDropdown[0];
-                objRendererTemplate.material = materialTemplate[0];
-            }
-            else if (qualityLevel == 2)
-            {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(true);
-                Wonderful.SetActive(false);
-                objRendererDropdown.material = materialDropdown[0];
-                objRendererTemplate.material = materialTemplate[0];
-            }
-            else if (qualityLevel == 3)
-            {
-                Minimal.SetActive(true);
-                Pretty.SetActive(true);
-                Amazing.SetActive(true);
-                Wonderful.SetActive(true);
-                objRendererDropdown.material = materialDropdown[1];
-                objRendererTemplate.material = materialTemplate[1];
+                case 0:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(false);
+                    Amazing.SetActive(false);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 1:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(false);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 2:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(true);
+                    Wonderful.SetActive(false);
+                    objRendererDropdown.material = materialDropdown[0];
+                    objRendererTemplate.material = materialTemplate[0];
+                    break;
+                }
+                case 3:
+                {
+                    Minimal.SetActive(true);
+                    Pretty.SetActive(true);
+                    Amazing.SetActive(true);
+                    Wonderful.SetActive(true);
+                    objRendererDropdown.material = materialDropdown[1];
+                    objRendererTemplate.material = materialTemplate[1];
+                    break;
+                }
             }
         }
 
@@ -145,14 +168,20 @@ namespace ELECTRIS
             switch (screenIndex)
             {
                 case 0:
+                {
                     WindowedMode();
                     break;
+                }
                 case 1:
+                {
                     FullscreenWindowed();
                     break;
+                }
                 case 2:
+                {
                     ExclusiveFullscreen();
                     break;
+                }
             }
         }
 
