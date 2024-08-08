@@ -489,9 +489,15 @@ MonoBehaviour:
       _descriptiveName: Player 1
       _key: 
       _startPlaying: 1
-      _defaultJoystickMaps: []
+      _defaultJoystickMaps:
+      - _enabled: 1
+        _categoryId: 2
+        _layoutId: 5
       _defaultMouseMaps: []
-      _defaultKeyboardMaps: []
+      _defaultKeyboardMaps:
+      - _enabled: 1
+        _categoryId: 2
+        _layoutId: 2
       _defaultCustomControllerMaps: []
       _startingCustomControllers: []
       _assignMouseOnStart: 1
@@ -521,8 +527,8 @@ MonoBehaviour:
       _name: Horizontal0
       _type: 0
       _descriptiveName: Horizontal Axis
-      _positiveDescriptiveName: Left
-      _negativeDescriptiveName: Right
+      _positiveDescriptiveName: Right
+      _negativeDescriptiveName: Left
       _key: 
       _positiveKey: 
       _negativeKey: 
@@ -1497,7 +1503,7 @@ MonoBehaviour:
         _elementIdentifierId: -1
         _axisRange: 0
         _invert: 0
-        _axisContribution: 0
+        _axisContribution: 1
         _keyboardKeyCode: 97
         _modifierKey1: 0
         _modifierKey2: 0
@@ -1519,7 +1525,7 @@ MonoBehaviour:
         _elementIdentifierId: -1
         _axisRange: 0
         _invert: 0
-        _axisContribution: 1
+        _axisContribution: 0
         _keyboardKeyCode: 100
         _modifierKey1: 0
         _modifierKey2: 0

@@ -78,6 +78,8 @@ I will first create a functional game. Make all of the story playable, then focu
 <br>When a chapter's story is fully playable, it will come out as an alpha build.
 <br>As quality improves in graphics and design, it will move on to beta, and finally a release.
 
+##### For more info, check **[here](Documentation/PLANS.md)**
+
 ## FAQ / FACTS AND QUESTIONS
 
 ### WHY IS PROGRESS SO SLOW?
