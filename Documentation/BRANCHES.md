@@ -10,11 +10,8 @@
 ### The main branch of the project, as the name suggests.
 What is pushed to this branch (As of the creation of this document and the other branches) will be production only.
 <br> Meaning the code has been tested and assured as functional beforehand.
-<br> However, 'main' is still in an unstable state, with many problems.
-<br> It is NOT production ready and not recommended to use yet.
-<br> This page will be updated to display the current status of 'main' over time.
 
-#### Current status of main: Unstable
+#### Current status of main: Somewhat stable
 
 ## TESTING
 ### The experimental branch, as the name implies.
