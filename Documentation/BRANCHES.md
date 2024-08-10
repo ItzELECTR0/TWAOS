@@ -11,7 +11,7 @@
 What is pushed to this branch (As of the creation of this document and the other branches) will be production only.
 <br> Meaning the code has been tested and assured as functional beforehand.
 
-#### Current status of main: Unstable (Builds can successfully be completed)
+#### Current status of main: Unstable (Builds can be completed)
 
 ## TESTING
 ### The experimental branch, as the name implies.
