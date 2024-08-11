@@ -43,7 +43,8 @@ You might consider going to Code > Download ZIP
   
 - 1 - Install all [dependencies](DEPENDENCIES.md) required
 - 2 - Clone the project
-- 3 - Add the project to Unity Hub to open it
+ - 2.1 - Look for the "TWAOSr" directory within the project
+- 3 - Add the "TWAOSr" project to Unity Hub to open it
 - 4 - Once inside the project, to build and play you are required to disable the Steam DRM, even if you own a copy on steam
 - 5 - Once you have disabled the DRM, go back to the build settings, and press the build button
 - 6 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
