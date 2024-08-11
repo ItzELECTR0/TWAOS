@@ -1358,6 +1358,7 @@ MonoBehaviour:
   - {fileID: 1687628465126613418}
   - {fileID: -5627560066211311539}
   - {fileID: -183930592663074470}
+  - {fileID: 8766608527261233694}
 --- !u!114 &448115243408767295
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2935,6 +2936,22 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   cascadeShadowBorder3:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &8766608527261233694
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25efb80591d75a54a90f3d70c1721ae6, type: 3}
+  m_Name: DLSSRenderPass
+  m_EditorClassIdentifier: 
+  active: 1
+  enable:
     m_OverrideState: 1
     m_Value: 0
 --- !u!114 &8771893094103402435
