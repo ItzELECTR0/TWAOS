@@ -283,8 +283,6 @@ GameObject:
   - component: {fileID: 5789097233571797186}
   - component: {fileID: 5752631297108137046}
   - component: {fileID: 8347847905943629184}
-  - component: {fileID: 8389762160957151363}
-  - component: {fileID: 3900276441133028779}
   - component: {fileID: 4490429240661905422}
   m_Layer: 0
   m_Name: GameManager
@@ -1700,50 +1698,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loader: {fileID: 5752631297108137046}
---- !u!114 &8389762160957151363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342909586678630353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324903d56a3e1be41bea5de404fc0a22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ResDropdown: {fileID: 0}
-  mixer: {fileID: 24100000, guid: 808a9b61b62971b4d96ff81751d0cbc9, type: 2}
-  MainSlider: {fileID: 0}
-  MusicSlider: {fileID: 0}
-  UserInterfaceSlider: {fileID: 0}
-  GraphicsDropdown: {fileID: 0}
-  GraphicsTemplate: {fileID: 0}
-  Minimal: {fileID: 5633478304000489791}
-  Pretty: {fileID: 8353136563664793648}
-  Amazing: {fileID: 4573632139833780839}
-  Wonderful: {fileID: 5974478814231482048}
-  materialDropdown:
-  - {fileID: 2100000, guid: 3b8efba0c36ddf040849f728b8c6aa05, type: 2}
-  - {fileID: 2100000, guid: 4c6c4f7d5a354be40a2a6afbd30f3b45, type: 2}
-  materialTemplate:
-  - {fileID: 2100000, guid: e7e01de4a2f7bee4db3dd04c16a00792, type: 2}
-  - {fileID: 2100000, guid: 77ef50b0c7e24204eaab3d11d15011ee, type: 2}
-  objRendererDropdown: {fileID: 0}
-  objRendererTemplate: {fileID: 0}
---- !u!114 &3900276441133028779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8342909586678630353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a3e1d7be99b6d44a9dfd6d6a5761e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settings: {fileID: 8389762160957151363}
 --- !u!114 &4490429240661905422
 MonoBehaviour:
   m_ObjectHideFlags: 0
