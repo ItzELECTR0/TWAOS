@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3239591217329854763}
   m_Layer: 3
-  m_Name: Post Processing
+  m_Name: Graphics Qualities
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536181697464846998}
   - component: {fileID: 3427856745340595040}
+  - component: {fileID: 2528236045169159876}
   - component: {fileID: 5175529696275153728}
   - component: {fileID: 5789097233571797186}
   - component: {fileID: 5752631297108137046}
@@ -1629,6 +1630,24 @@ MonoBehaviour:
     controllerMapLayoutManagerSetIdCounter: 0
     controllerMapEnablerSetIdCounter: 0
   _controllerDataFiles: {fileID: 11400000, guid: d21d2b20df8369642b76aafbb2576ba7, type: 2}
+--- !u!114 &2528236045169159876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342909586678630353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2102335c03872af45a06b9a4291e9e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customStartQuality: 3
+  startWithCustomQuality: 1
+  Minimal: {fileID: 5633478304000489791}
+  Pretty: {fileID: 8353136563664793648}
+  Amazing: {fileID: 4573632139833780839}
+  Wonderful: {fileID: 5974478814231482048}
 --- !u!114 &5175529696275153728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1641,8 +1660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cd07dc7d888a04683d408d89048c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActivityDetails: 
-  ActivityState: 
+  ActivityDetails: TWAOS
+  ActivityState: Alpha 0.0.1
 --- !u!114 &5789097233571797186
 MonoBehaviour:
   m_ObjectHideFlags: 0

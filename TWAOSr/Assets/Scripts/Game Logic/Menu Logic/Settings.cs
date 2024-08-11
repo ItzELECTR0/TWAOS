@@ -25,10 +25,6 @@ namespace ELECTRIS
         [Header("Quality Settings")]
         public GameObject GraphicsDropdown;
         public GameObject GraphicsTemplate;
-        public GameObject Minimal;
-        public GameObject Pretty;
-        public GameObject Amazing;
-        public GameObject Wonderful;
         public Material[] materialDropdown;
         public Material[] materialTemplate;
         public Image objRendererDropdown;
@@ -36,7 +32,6 @@ namespace ELECTRIS
 
         void Start()
         {
-            Minimal.SetActive(true);
             objRendererDropdown = GraphicsDropdown.GetComponent<Image>();
             objRendererTemplate = GraphicsTemplate.GetComponent<Image>();
 
@@ -44,40 +39,24 @@ namespace ELECTRIS
             {
                 case 0:
                 {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(false);
-                    Amazing.SetActive(false);
-                    Wonderful.SetActive(false);
                     objRendererDropdown.material = materialDropdown[0];
                     objRendererTemplate.material = materialTemplate[0];
                     break;
                 }
                 case 1:
                 {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(false);
-                    Wonderful.SetActive(false);
                     objRendererDropdown.material = materialDropdown[0];
                     objRendererTemplate.material = materialTemplate[0];
                     break;
                 }
                 case 2:
                 {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(true);
-                    Wonderful.SetActive(false);
                     objRendererDropdown.material = materialDropdown[0];
                     objRendererTemplate.material = materialTemplate[0];
                     break;
                 }
                 case 3:
                 {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(true);
-                    Wonderful.SetActive(true);
                     objRendererDropdown.material = materialDropdown[1];
                     objRendererTemplate.material = materialTemplate[1];
                     break;
@@ -111,50 +90,6 @@ namespace ELECTRIS
         public void SetQuality(int qualityLevel)
         {
             QualitySettings.SetQualityLevel(qualityLevel);
-
-            switch (qualityLevel)
-            {
-                case 0:
-                {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(false);
-                    Amazing.SetActive(false);
-                    Wonderful.SetActive(false);
-                    objRendererDropdown.material = materialDropdown[0];
-                    objRendererTemplate.material = materialTemplate[0];
-                    break;
-                }
-                case 1:
-                {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(false);
-                    Wonderful.SetActive(false);
-                    objRendererDropdown.material = materialDropdown[0];
-                    objRendererTemplate.material = materialTemplate[0];
-                    break;
-                }
-                case 2:
-                {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(true);
-                    Wonderful.SetActive(false);
-                    objRendererDropdown.material = materialDropdown[0];
-                    objRendererTemplate.material = materialTemplate[0];
-                    break;
-                }
-                case 3:
-                {
-                    Minimal.SetActive(true);
-                    Pretty.SetActive(true);
-                    Amazing.SetActive(true);
-                    Wonderful.SetActive(true);
-                    objRendererDropdown.material = materialDropdown[1];
-                    objRendererTemplate.material = materialTemplate[1];
-                    break;
-                }
-            }
         }
 
         public void SetResolution(int resIndex)
