@@ -1,0 +1,24 @@
+name: 🦠 Malicious Contribution Report
+description: Submit any malicious commits, pull or merge requests and we can add them to the denylist.
+labels: [🦠 malicious code]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: 🔗 Link to the malicious contribution
+      description: A link to the fork or commit in question.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Describe the Issue
+      description: What does the code do that is unsafe/malicious?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📸 Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false

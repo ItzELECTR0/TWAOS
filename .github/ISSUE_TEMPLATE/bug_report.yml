@@ -1,0 +1,56 @@
+name: 🐛 Bug report
+description: Report a bug within the game, code errors or unexpected behaviour.
+labels: [🐛 bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: 🔍 Is there already an issue for your problem?
+      description: Please make sure you are not creating an already submitted <a href="https://github.com/ItzELECTR0/TWAOS/issues">Issue</a>. Check closed issues as well, because your issue may have already been fixed.
+      options:
+        - label: I have checked older issues, open and closed
+          required: true
+  - type: textarea
+    attributes:
+      label: ℹ Environment / Computer Info
+      description: Please provide the details of the system Spicetify is running on.
+      value: |
+        - Operaing System: 
+        - Operating System Version: 
+        - Operating System Build (Optional): 
+
+        - Unity Version: 
+        - Unity Build (Optional): 
+
+        - TWAOS Version: 
+        - TWAOS Project Version: 
+      placeholder: |
+        - Operaing System: Windows 11 (64 Bit)
+        - Operating System Version: 24H2
+        - Operating System Build (Optional): 26257.5000
+
+        - Unity Version: Unity 6 Preview 14
+        - Unity Build (Optional): 6000.0.14f1
+
+        - TWAOS Game Version: 0.0.1
+        - TWAOS Project Version: 0.0.1.493
+      render: Markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📝 Describe the Problem
+      description: List details on what happens and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🔂 To Reproduce
+      description: Clearly explain the steps required to experience the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📸 Screenshots
+      description: Place any screenshots of the issue here if needed
+    validations:
+      required: false
