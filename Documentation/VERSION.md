@@ -1,1 +1,2 @@
-TWAOS Current Project Version: 0.0.1.493
+### TWAOS Project Version on branch 'main'
+### 0.0.1.494
