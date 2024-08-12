@@ -2,7 +2,7 @@
   
 # TWAOS
 
-<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS Cover 4K 2 0" width="600"/>
+<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS-Cover-4K-v2" width="600"/>
 
 ### The Wonderful Adventures Of Sip: An open-source AAA Game created by a Solo Developer
 
@@ -106,6 +106,7 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 
 **[Instructions](Documentation/INSTRUCTIONS.md)**
 <br>**[Dependencies](Documentation/DEPENDENCIES.md)**
+<br>**[Project Version](Documentation/VERSION.md)**
 <br>**[Branches](Documentation/BRANCHES.md)**
 <br>**[License](LICENSE.md)**
 <br>**[Asset Store Disclaimer](Documentation/ASSET-DISCLAIMER.md)**
