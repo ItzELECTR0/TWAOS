@@ -47,11 +47,12 @@ The characters of the game are spheres. The world they live in is one of powers.
 Welcome to <b>2066</b>, where every person is born with a unique <b>power</b>.
 <br>You take on the role of <b>Sip Dorian</b>, a boy who appears to be cursed with the weakest of all abilities: <b>lightning</b>.
 <br>A gift from the <b>Electrinity</b>, a deity who praises itself for what it created.
-<br>Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him by the Electrinity.
+<br>Sip's life begins in a small, isolated cabin in a forest, at a time he didn't know what was being asked of him.
 <br>But after what it told him, he just wanted a peaceful existence. However, it refused.
-<br>Guided by the <b>mystery</b> of his own mind, Sip tries to avoid confrontation, and unnecessary attention. But that doesn't last long.
-<br>And he is forced to face the dark truths about his world, himself, and whatever is beyond that.
-<br>Will he rise to become the hero the world needs? Will he finally <b>feel</b> the way he wants to? Or will he remain the <b>same</b>. Forever.
+<br>Guided by the <b>mystery</b> of his own mind, Sip tries to avoid confrontation, and unnecessary attention.
+<br>But that doesn't last long. And he is forced to face the dark truths about his world, himself, and whatever is beyond that.
+<br>Will he rise to become the hero the world needs? Will he finally <b>feel</b> the way he wants to? Or will he remain the <b>same</b>.
+<br>Forever.
 
 ## THE GAMEPLAY
 
@@ -65,12 +66,12 @@ Witness a richly detailed super-powered <b>3D world</b> from a </b>third-person<
 
 ## MATURE CONTENT
 
-The Wonderful Adventures of Sip contains battles, strong language, moments of gore, and psychological horror elements.
+The Wonderful Adventures of Sip contains battles, strong language, moments of gore and psychological horror elements.
 
 ## DEVELOPMENT PLANS
 
 ### Story-wise:
-The game is planned to have 10 chapters, and maybe an <b>extra</b>.
+The game is planned to have 10 chapters, and maybe some <b>extras</b>.
 <br>I wish to finish the first one by 2027, the rest following along not too long after.
 
 ### Game-wise:
