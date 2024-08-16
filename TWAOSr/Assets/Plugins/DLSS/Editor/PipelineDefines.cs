@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using UnityEditor;
+using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace TND.DLSS
@@ -13,19 +14,19 @@ namespace TND.DLSS
         static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
                                            string[] movedAssets, string[] movedFromAssetPaths)
         {
-            if (deletedAssets != null && deletedAssets.Contains($"Assets/{relativeFilePathWithTypeExtension}"))
+            try
             {
-                RemoveScriptingDefine();
+                if (deletedAssets != null && deletedAssets.Contains($"Assets/{relativeFilePathWithTypeExtension}"))
+                {
+                    PipelineDefines.RemoveDefine("TND_DLSS");
+                    PipelineDefines.RemoveDefine("DLSS_INSTALLED");
+                    PipelineDefines.RemoveDefine("UNITY_BIRP");
+                    PipelineDefines.RemoveDefine("UNITY_HDRP");
+                    PipelineDefines.RemoveDefine("UNITY_URP");
+                    PipelineDefines.RemoveDefine("TND_HDRP_EDITEDSOURCE");
+                }
             }
-        }
-
-        static void RemoveScriptingDefine()
-        {
-            PipelineDefines.RemoveDefine("TND_DLSS");
-            PipelineDefines.RemoveDefine("DLSS_INSTALLED");
-            PipelineDefines.RemoveDefine("UNITY_BIRP");
-            PipelineDefines.RemoveDefine("UNITY_HDRP");
-            PipelineDefines.RemoveDefine("UNITY_URP");
+            catch { }
         }
     }
 
@@ -50,7 +51,7 @@ namespace TND.DLSS
         static void UpdateDefines()
         {
             var pipeline = GetPipeline();
-            if(pipeline == PipelineType.URP)
+            if (pipeline == PipelineType.URP)
             {
                 AddDefine("UNITY_URP");
             }
@@ -58,7 +59,7 @@ namespace TND.DLSS
             {
                 RemoveDefine("UNITY_URP");
             }
-            if(pipeline == PipelineType.HDRP)
+            if (pipeline == PipelineType.HDRP)
             {
                 AddDefine("UNITY_HDRP");
             }
@@ -66,7 +67,7 @@ namespace TND.DLSS
             {
                 RemoveDefine("UNITY_HDRP");
             }
-            if(pipeline == PipelineType.BIRP)
+            if (pipeline == PipelineType.BIRP)
             {
                 AddDefine("UNITY_BIRP");
             }
@@ -85,30 +86,36 @@ namespace TND.DLSS
         static PipelineType GetPipeline()
         {
 #if UNITY_2019_1_OR_NEWER
+            var srpType = "BIRP";
+
             if (GraphicsSettings.defaultRenderPipeline != null)
             {
-                var srpType = GraphicsSettings.defaultRenderPipeline.GetType().ToString();
-                //HDRP
-                if (srpType.Contains("HDRenderPipelineAsset"))
-                {
-                    return PipelineType.HDRP;
-                }
-                //URP
-                else
-                {
-                    return PipelineType.URP;
-                }
+                srpType = GraphicsSettings.defaultRenderPipeline.GetType().ToString();
+            }
+            else if (QualitySettings.renderPipeline != null)
+            {
+                srpType = QualitySettings.renderPipeline.GetType().ToString();
             }
 #endif
 
-            //BIRP
-            return PipelineType.BIRP;
+            if (srpType == "BIRP")//BIRP
+            {
+                return PipelineType.BIRP;
+            }
+            else if (srpType.Contains("HDRenderPipelineAsset"))  //HDRP 
+            {
+                return PipelineType.HDRP;
+            }
+            else //URP
+            {
+                return PipelineType.URP;
+            }
         }
 
         public static void AddDefine(string define)
         {
             var definesList = GetDefines();
-            if(!definesList.Contains(define))
+            if (!definesList.Contains(define))
             {
                 definesList.Add(define);
                 SetDefines(definesList);
@@ -118,7 +125,7 @@ namespace TND.DLSS
         public static void RemoveDefine(string define)
         {
             var definesList = GetDefines();
-            if(definesList.Contains(define))
+            if (definesList.Contains(define))
             {
                 definesList.Remove(define);
                 SetDefines(definesList);

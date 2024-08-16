@@ -1,0 +1,28 @@
+{
+    "name": "com.thenakeddev.dlss.Runtime.URP",
+    "rootNamespace": "TND.DLSS",
+    "references": [
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "com.thenakeddev.dlss.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [
+        ""
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_URP"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "1.0.0",
+            "define": "DLSS_URP"
+        }
+    ],
+    "noEngineReferences": false
+}

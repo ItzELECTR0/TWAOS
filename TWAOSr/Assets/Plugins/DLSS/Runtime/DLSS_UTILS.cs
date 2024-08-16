@@ -272,6 +272,7 @@ namespace TND.DLSS
         private static float _antiGhostingJitterX;
         private static float _antiGhostingJitterY;
         internal static int taaFrameIndex;
+
         public static Matrix4x4 GetJitteredProjectionMatrix(Matrix4x4 origProj,
             int width, int height, float antiGhosting, Camera cam)
         {
@@ -297,13 +298,13 @@ namespace TND.DLSS
             _jitterX += UnityEngine.Random.Range(-0.1f * antiGhosting, 0.1f * antiGhosting);
             _jitterY += UnityEngine.Random.Range(-0.1f * antiGhosting, 0.1f * antiGhosting);
 
-            _antiGhostingJitterX = Random.Range(-0.01f * antiGhosting, 0.01f * antiGhosting);
-            _antiGhostingJitterY = Random.Range(-0.01f * antiGhosting, 0.01f * antiGhosting);
+            //_antiGhostingJitterX = Random.Range(-0.01f * antiGhosting, 0.01f * antiGhosting);
+            //_antiGhostingJitterY = Random.Range(-0.01f * antiGhosting, 0.01f * antiGhosting);
 
-            _antiGhostingJitterX = _antiGhostingJitterX * Mathf.Sign(_antiGhostingJitterX);
-            _antiGhostingJitterY = _antiGhostingJitterY * Mathf.Sign(_antiGhostingJitterY);
+            //_antiGhostingJitterX = _antiGhostingJitterX * Mathf.Sign(_antiGhostingJitterX);
+            //_antiGhostingJitterY = _antiGhostingJitterY * Mathf.Sign(_antiGhostingJitterY);
 
-            cam.transform.localRotation *= Quaternion.Euler(_antiGhostingJitterX, _antiGhostingJitterY, 0);
+            //cam.transform.localRotation *= Quaternion.Euler(_antiGhostingJitterX, _antiGhostingJitterY, 0);
 
 
             taaJitter = new Vector2(_jitterX, _jitterY);

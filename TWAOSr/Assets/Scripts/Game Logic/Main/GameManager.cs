@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using Rewired;
 using TMPro;
-using Mirror;
 
 // ELECTRO - 11/08/2024 05:27 - Treat this as the heart of the game. I'm not kidding.
 

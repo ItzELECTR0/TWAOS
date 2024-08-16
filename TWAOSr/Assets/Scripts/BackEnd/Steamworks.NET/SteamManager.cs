@@ -1,4 +1,4 @@
-#if !(ELECTRIS_ENABLE_STEAMWORKS)
+#if !ELECTRIS_ENABLE_STEAMWORKS
 #define DISABLESTEAMWORKS
 #endif
 
@@ -13,10 +13,9 @@
 //
 // Version: 1.0.12
 
-using UnityEngine;
-using ELECTRIS;
 using System.Collections;
-using Mirror;
+using ELECTRIS;
+using UnityEngine;
 #if !DISABLESTEAMWORKS
 using Steamworks;
 #endif

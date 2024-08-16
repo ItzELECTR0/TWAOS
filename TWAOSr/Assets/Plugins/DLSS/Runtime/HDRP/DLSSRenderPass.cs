@@ -28,7 +28,6 @@ namespace TND.DLSS
 
         public override void Render(CommandBuffer cmd, HDCamera camera, RTHandle source, RTHandle destination)
         {
-            
 #if TND_DLSS && UNITY_STANDALONE_WIN && UNITY_64
 
 #if UNITY_EDITOR

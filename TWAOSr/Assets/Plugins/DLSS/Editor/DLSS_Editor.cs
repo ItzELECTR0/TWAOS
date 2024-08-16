@@ -3,12 +3,15 @@ using UnityEditor;
 
 #if UNITY_STANDALONE_WIN && UNITY_64
 using UnityEngine.NVIDIA;
+
 #endif
 #if DLSS_INSTALLED
 using NVIDIA = UnityEngine.NVIDIA;
 #endif
 
-
+#if !UPSCALING_HDRP_EDITEDSOURCE
+using System.IO;
+#endif
 namespace TND.DLSS
 {
     [CustomEditor(typeof(DLSS_UTILS), editorForChildClasses: true)]
@@ -24,7 +27,13 @@ namespace TND.DLSS
                 AssetDatabase.Refresh();
             }
 #endif
-
+#elif !TND_HDRP_EDITEDSOURCE && UNITY_HDRP
+            EditorGUILayout.LabelField("----- HDRP Upscaling requires Source File edits. Please read the 'Quick Start: HDRP' chapter in the documentation. ------", EditorStyles.boldLabel);
+            if (GUILayout.Button("I have edited the source files!"))
+            {
+                PipelineDefines.AddDefine("TND_HDRP_EDITEDSOURCE");
+                AssetDatabase.Refresh();
+            }
 #elif TND_DLSS
 
 #if !UNITY_STANDALONE_WIN || !UNITY_64
