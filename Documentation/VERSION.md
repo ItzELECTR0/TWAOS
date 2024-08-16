@@ -1,2 +1,2 @@
 ### TWAOS Project Version on branch 'Update'
-### 0.0.1.522
+### 0.0.1.530
