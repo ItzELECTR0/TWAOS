@@ -13,7 +13,6 @@
 //
 // Version: 1.0.12
 
-using System.Collections;
 using ELECTRIS;
 using UnityEngine;
 #if !DISABLESTEAMWORKS
@@ -149,6 +148,8 @@ if (s_instance != null)
             }
 
             s_EverInitialized = true;
+
+
         }
 
         // This should only ever get called on first load and after an Assembly reload, You should never Disable the Steamworks Manager yourself.
@@ -171,7 +172,19 @@ if (s_instance != null)
                 m_SteamAPIWarningMessageHook = new SteamAPIWarningMessageHook_t(SteamAPIDebugTextHook);
                 SteamClient.SetWarningMessageHook(m_SteamAPIWarningMessageHook);
             }
+
+            CallbackDispatcher.OnSteamExceptionEvent += OnSteamException;
         }
+
+        protected virtual void OnDisable()
+	    {
+		    CallbackDispatcher.OnSteamExceptionEvent -= OnSteamException;
+        }
+
+	    public static void OnSteamException(System.Exception e)
+	    {
+		    Debug.LogException(e); 
+	    }
 
         // OnApplicationQuit gets called too early to shutdown the SteamAPI.
         // Because the SteamManager should be persistent and never disabled or destroyed we can shutdown the SteamAPI here.
