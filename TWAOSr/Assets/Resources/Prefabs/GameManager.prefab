@@ -573,7 +573,7 @@ MonoBehaviour:
   _userData:
     configVars:
       updateMode: 0
-      updateLoop: 1
+      updateLoop: 3
       alwaysUseUnityInput: 0
       windowsStandalonePrimaryInputSource: 0
       osx_primaryInputSource: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
       logToScreen: 0
       runInEditMode: 0
       allowInputInEditorSceneView: 0
-      unityUsePhysicalKeys: 0
+      unityUsePhysicalKeys: 1
       keyCombinationOverrideMode: 1
       generateKeyEventsOnKeyCombinationOverride: 0
       platformVars_windowsStandalone:
@@ -1895,6 +1895,12 @@ MonoBehaviour:
   Pretty: {fileID: 8353136563664793648}
   Amazing: {fileID: 4573632139833780839}
   Wonderful: {fileID: 5974478814231482048}
+  PrettyRTXPerformance: {fileID: 8509884258021301278}
+  PrettyRTXQuality: {fileID: 145094155539308105}
+  AmazingRTXPerformance: {fileID: 959753842716736316}
+  AmazingRTXQuality: {fileID: 7406605708630796327}
+  WonderfulRTXPerformance: {fileID: 7427753389783984957}
+  WonderfulRTXQuality: {fileID: 1358930480403483038}
 --- !u!114 &5175529696275153728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,13 +1960,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8342909586678630353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 414cbb2fda496db4b97bece84fc22a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reInput: 0
-  playerId: 1
+  reInput: 1
+  playerId: 0
   paused: {fileID: 0}
 --- !u!1 &8353136563664793648
 GameObject:
