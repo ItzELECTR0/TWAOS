@@ -1,0 +1,40 @@
+#GC-Box-Root {
+    margin-top: var(--gc-common-space-smallest);
+    margin-bottom: var(--gc-common-space-smallest);
+}
+
+#GC-Box-Head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--gc-color-list-head-default);
+    border-width: var(--gc-common-border-width);
+    border-color: var(--gc-color-border-default);
+}
+
+#GC-Box-Head:hover {
+    background-color: var(--gc-color-list-head-hover);
+}
+
+#GC-Box-Head:active {
+    background-color: var(--gc-color-list-head-press);
+}
+
+#GC-Box-Head Label {
+    -unity-font-style: bold;
+    height: var(--gc-common-element-height);
+    -unity-text-align: middle-left;
+}
+
+#GC-Box-Head Image {
+    width: var(--gc-common-element-height);
+    height: var(--gc-common-element-height);
+}
+
+#GC-Box-Body.gc-box-active {
+    background-color: var(--gc-color-list-body);
+    margin: 0 var(--gc-list-body-margins);
+    padding: var(--gc-list-body-padding);
+    border-width: var(--gc-common-border-width);
+    border-top-width: 0;
+    border-color: var(--gc-color-border-default);   
+}

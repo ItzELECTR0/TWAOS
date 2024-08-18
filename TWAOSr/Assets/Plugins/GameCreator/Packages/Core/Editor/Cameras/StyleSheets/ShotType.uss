@@ -1,0 +1,46 @@
+﻿#GC-Cameras-ShotType-Head {
+    margin-top: var(--gc-common-space-smaller);
+}
+
+#GC-Cameras-ShotType-Head-Btn {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    border-width: var(--gc-common-border-width);
+    border-radius: var(--gc-common-border-radius) var(--gc-common-border-radius) 0 0;
+    border-color: var(--gc-color-border-default);
+}
+
+#GC-Cameras-ShotType-Head-BtnIcon {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+    margin: var(--gc-list-head-image-margin) var(--gc-common-space-smaller);
+}
+
+#GC-Cameras-ShotType-Head-BtnLabel {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 0;
+    padding-left: var(--gc-common-space-smallest);
+    -unity-text-align: middle-left;
+}
+
+#GC-Cameras-ShotType-Head-BtnArrow {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+    margin: var(--gc-list-head-image-margin);
+}
+
+.gc-cameras-shot-type-body {
+    margin: 0;
+    padding: var(--gc-list-body-padding);
+    background-color: var(--gc-color-list-body);
+    border-width: 0 var(--gc-common-border-width) var(--gc-common-border-width) var(--gc-common-border-width);
+    border-color: var(--gc-color-border-default);
+    border-radius: 0 0 var(--gc-common-border-radius) var(--gc-common-border-radius);
+}

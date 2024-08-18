@@ -1,0 +1,29 @@
+#GC-Section-Root {
+    margin-top: var(--gc-common-space-smallest);
+    margin-bottom: var(--gc-common-space-smallest);
+}
+
+#GC-Section-Head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#GC-Section-Head:hover {
+    background-color: var(--gc-color-list-head-hover);
+}
+
+#GC-Section-Head Label {
+    -unity-font-style: bold;
+    height: var(--gc-common-element-height);
+    -unity-text-align: middle-left;
+}
+
+#GC-Section-Head Image {
+    width: var(--gc-common-element-height);
+    height: var(--gc-common-element-height);
+}
+
+#GC-Section-Body.gc-section-active {
+    margin-left: 18px;
+    padding: var(--gc-common-space-smallest) 0;
+}

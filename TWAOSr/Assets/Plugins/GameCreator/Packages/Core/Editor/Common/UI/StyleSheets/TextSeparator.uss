@@ -1,0 +1,21 @@
+TextSeparator {
+    height: var(--gc-common-element-height);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+TextSeparator Label {
+    -unity-text-align: middle-center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 var(--gc-common-space-smaller);
+}
+
+#GC-TextSeparator-Line {
+    flex-grow: 1;
+    background-color: red;
+    height: var(--gc-common-border-width);
+    margin: 0 var(--gc-common-space-smaller);
+    opacity: 0.5;
+}

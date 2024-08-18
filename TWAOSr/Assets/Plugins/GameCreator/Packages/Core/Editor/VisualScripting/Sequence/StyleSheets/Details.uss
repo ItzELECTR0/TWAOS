@@ -1,0 +1,31 @@
+DetailsTool {
+    --gc-sequence-sign-height: 15px;
+}
+
+DetailsTool #GC-Sequence-Details-Head {
+    height: var(--gc-sequence-sign-height);
+    width: 100%;
+}
+
+DetailsTool #GC-Sequence-Details-Head-Track {
+    height: var(--gc-sequence-sign-height);
+    width: 100%;
+    position: relative;
+}
+
+DetailsTool #GC-Sequence-Details-Head-Sign {
+    position: absolute;
+    height: var(--gc-sequence-sign-height);
+    width: var(--gc-sequence-sign-height);
+    -unity-background-image-tint-color: var(--gc-color-border-default);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+DetailsTool #GC-Sequence-Details-Body {
+    background-color: var(--gc-color-bg-dark);
+    border-width: 1px;
+    border-color: var(--gc-color-border-default);
+    border-radius: var(--gc-common-border-radius);
+    padding: 10px;
+    width: 100%;
+}

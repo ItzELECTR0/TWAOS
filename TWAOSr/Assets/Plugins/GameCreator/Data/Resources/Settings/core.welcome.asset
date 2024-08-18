@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4e4b5bcadd43b9954383072c8e2a26, type: 3}
+  m_Name: core.welcome
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 2991598931067011342
+  references:
+    version: 2
+    RefIds:
+    - rid: 2991598931067011342
+      type: {class: WelcomeRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_OpenOnStartup: 1
+        m_WelcomeData:
+          pages: []

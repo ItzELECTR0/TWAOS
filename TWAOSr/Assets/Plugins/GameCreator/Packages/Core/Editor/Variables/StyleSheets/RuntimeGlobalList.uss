@@ -1,0 +1,27 @@
+#GC-RuntimeGlobal-List-Head .gc-runtime-global-list-element {
+    border-width: var(--gc-common-border-width);
+    border-color: var(--gc-color-border-default);
+    margin: 0 0 -1px 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#GC-RuntimeGlobal-List-Head .gc-runtime-global-list-element Image {
+    height: var(--gc-list-head-image-size);
+    width: var(--gc-list-head-image-size);
+    margin: 3px;
+}
+
+#GC-RuntimeGlobal-List-Head .gc-runtime-global-list-element Label {
+    border-radius: 0;
+    border-color: var(--gc-color-border-element);
+    border-width: 0 var(--gc-common-border-width) 0 var(--gc-common-border-width);
+    background-color: var(--gc-color-bg-darker);
+    -unity-text-align: middle-left;
+    margin: 0;
+    padding: 0 var(--gc-common-space-smaller);
+    flex-grow: 1;
+    flex-shrink: 1;
+}

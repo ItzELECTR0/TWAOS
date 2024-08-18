@@ -1,0 +1,91 @@
+#GC-ListIndex-List-Head {
+    border-width: var(--gc-common-border-width);
+    border-color: var(--gc-color-border-default);
+    border-radius: var(--gc-common-border-radius);
+    margin: 0 0 var(--gc-common-space-smaller) 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-button {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    border-color: var(--gc-color-border-element);
+    border-left-width: var(--gc-common-border-width);
+    height: var(--gc-list-head-size);
+    width: var(--gc-list-head-size);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-button Image {
+    height: var(--gc-list-head-image-size);
+    width: var(--gc-list-head-image-size);
+    margin: 3px;
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-dropdown {
+    border-radius: 0;
+    border-color: var(--gc-color-border-element);
+    border-width: 0 0 0 var(--gc-common-border-width);
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-dropdown Image {
+    height: var(--gc-list-head-image-size);
+    width: var(--gc-list-head-image-size);
+    margin: 3px var(--gc-common-space-smaller);
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-dropdown Label {
+    -unity-text-align: middle-left;
+}
+
+#GC-ListIndex-List-Head .gc-variables-index-dropdown > .unity-enum-field__input  {
+    border-width: 0;
+    border-radius: 0;
+    padding: 0 var(--gc-common-space-smaller);
+}
+
+/* Drop Zone */
+
+#GC-ListIndex-List-Head-DropZone {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    height: var(--gc-list-head-size);
+    width: var(--gc-list-head-size);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#GC-ListIndex-List-Head-DropZone Image {
+    height: var(--gc-list-head-image-size);
+    width: var(--gc-list-head-image-size);
+    margin: 3px;
+}
+
+.gc-list-variables-drop-default {
+    border-color: var(--gc-color-border-default);
+    background-color: var(--gc-color-bg-default);
+}
+
+.gc-list-variables-drop-accept {
+    border-color: var(--gc-color-border-accept);
+    background-color: var(--gc-color-bg-accept);
+}
+
+.gc-list-variables-drop-disregard {
+    border-color: var(--gc-color-border-error);
+    background-color: var(--gc-color-bg-error);
+}

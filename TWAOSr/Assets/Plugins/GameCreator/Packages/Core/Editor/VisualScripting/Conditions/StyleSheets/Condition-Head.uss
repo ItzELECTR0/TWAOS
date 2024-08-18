@@ -1,0 +1,22 @@
+﻿
+.gc-list-item-head-running > .gc-list-item-head .gc-list-item-head-info {
+    border-left-color: var(--gc-color-border-active);
+    border-left-width: 5px;
+    background-color: var(--gc-color-list-head-running);
+}
+
+#GC-Condition-List-Item-Sign {
+    padding: 0 1px;
+    margin: 0;
+    border-width: 0;
+    border-radius: 0;
+    border-right-width: var(--gc-common-border-width);
+    border-color: var(--gc-color-border-element);
+}
+
+#GC-Condition-List-Item-Sign Image {
+    height: var(--gc-list-head-image-size);
+    width: var(--gc-list-head-image-size);
+    margin: var(--gc-list-head-image-margin);
+    padding: 0;
+}

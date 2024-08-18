@@ -1,0 +1,17 @@
+﻿.gc-saveuniqueid-root {
+    border-width: 0;
+    margin-top: var(--gc-common-space-smaller);
+
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gc-saveuniqueid-root .gc-saveuniqueid-save {
+    flex-grow: 0;
+    margin-right: var(--gc-common-space-smaller);
+}
+
+.gc-saveuniqueid-root .gc-saveuniqueid-uniqueid {
+    flex-grow: 1;
+}

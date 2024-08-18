@@ -1,0 +1,117 @@
+﻿/* FONTS: -------------------------------------------------------------------------------------- */
+
+.gc-monospace {
+    -unity-font: url("../../Fonts/RobotoMono.ttf");
+}
+
+PropertyField {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* PROPERTIES: --------------------------------------------------------------------------------- */
+
+.gc-margin-top-default {
+    margin-top: var(--gc-common-space-smaller);
+}
+
+.gc-margin-top-double {
+    margin-top: var(--gc-common-space-small);
+}
+
+.gc-rounded-default {
+    border-radius: var(--gc-common-border-radius);
+}
+
+/* COMMON: ------------------------------------------------------------------------------------- */
+
+.gc-btn-default,
+.gc-btn-light {
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+}
+
+.gc-spacer {
+    flex-grow: 1;
+}
+
+.gc-space-small {
+    height: var(--gc-common-space-small);
+}
+
+.gc-space-smaller {
+    height: var(--gc-common-space-smaller);
+}
+
+.gc-bold {
+    -unity-font-style: bold;
+}
+
+.gc-label-title {
+    -unity-font-style: bold;
+    margin: var(--gc-common-space-small) 3px 3px 3px;
+}
+
+.gc-indent {
+    margin-left: var(--gc-common-indent-left);
+}
+
+.gc-inspector-margins-x {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.gc-inspector-margins-y {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* BUTTON DEFAULT: ----------------------------------------------------------------------------- */
+
+.gc-btn-default {
+    background-color: var(--gc-color-bg-default);
+}
+
+.gc-btn-default:hover {
+    background-color: var(--gc-color-bg-light);
+}
+
+/* BUTTON LIGHT: ------------------------------------------------------------------------------- */
+
+.gc-btn-light {
+    background-color: var(--gc-color-bg-light);
+}
+
+.gc-btn-light:hover {
+    background-color: var(--gc-color-bg-lighter);
+}
+
+/* BOX: ---------------------------------------------------------------------------------------- */
+
+.gc-box-light {
+    border-color: var(--gc-color-border-default);
+    border-width: var(--gc-common-border-width);
+    background-color: var(--gc-color-bg-light);
+}
+
+.gc-box-dark {
+    border-color: var(--gc-color-border-default);
+    border-width: var(--gc-common-border-width);
+    background-color: var(--gc-color-bg-dark);
+}
+
+/* TOGGLE + FIELD: ----------------------------------------------------------------------------- */
+
+.gc-inline-toggle-field {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gc-inline-toggle-field Toggle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.gc-inline-toggle-field PropertyField {
+    flex-grow: 1;
+}

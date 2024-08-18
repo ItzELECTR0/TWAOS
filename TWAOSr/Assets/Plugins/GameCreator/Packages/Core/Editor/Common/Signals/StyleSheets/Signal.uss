@@ -1,0 +1,46 @@
+#GC-Signal {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#GC-Signal Label {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+#GC-Signal TextField {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#GC-Signal TextField TextInput {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#GC-Signal #GC-Signal-Favorite,
+#GC-Signal #GC-Signal-Dropdown {
+    width: 19px;
+    height: 18px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 1px 0 1px 0;
+    background-color: var(--gc-color-list-head-default);
+    border-color: var(--gc-color-border-default);
+    border-width: 1px;
+    border-left-width: 0;
+}
+
+#GC-Signal #GC-Signal-Dropdown {
+    margin-right: 3px;
+    border-top-right-radius: var(--gc-common-border-radius);
+    border-bottom-right-radius: var(--gc-common-border-radius);
+}
+
+#GC-Signal #GC-Signal-Favorite:hover,
+#GC-Signal #GC-Signal-Dropdown:hover {
+    background-color: var(--gc-color-list-head-hover);
+}

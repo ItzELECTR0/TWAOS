@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da354c80beb46ca8db111f47d23382d, type: 3}
+  m_Name: core.general
+  m_EditorClassIdentifier: 
+  m_Repository:
+    rid: 2991598931067011337
+  references:
+    version: 2
+    RefIds:
+    - rid: 2991598931067011337
+      type: {class: GeneralRepository, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Save:
+          m_Encryption:
+            rid: 2991598931067011338
+          m_Storage:
+            rid: 2991598931067011339
+          m_Load: 0
+          m_Scene:
+            m_Property:
+              rid: 2991598931067011340
+        m_Audio:
+          soundEffectsMixer: {fileID: 0}
+          ambientMixer: {fileID: 0}
+          musicMixer: {fileID: 0}
+          speechMixer: {fileID: 0}
+          userInterfaceMixer: {fileID: 0}
+    - rid: 2991598931067011338
+      type: {class: EncryptionNone, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 2991598931067011339
+      type: {class: StoragePlayerPrefs, ns: GameCreator.Runtime.Common.SaveSystem, asm: GameCreator.Runtime.Core}
+      data: 
+    - rid: 2991598931067011340
+      type: {class: GetSceneActive, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data: 

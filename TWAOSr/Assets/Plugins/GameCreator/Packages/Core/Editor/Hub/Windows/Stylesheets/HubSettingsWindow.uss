@@ -1,0 +1,42 @@
+#GC-Hub-Settings-Head {
+    background-color: var(--gc-color-bg-dark);
+    padding: 10px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: var(--gc-color-border-default);
+    border-bottom-color: var(--gc-color-border-default);
+}
+
+#GC-Hub-Settings-Head Label {
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+}
+
+#GC-Hub-Settings-Body {
+    flex-grow: 1;
+    padding: 16px;
+}
+
+#GC-Hub-Settings-Body TextField {
+    margin-bottom: var(--gc-common-space-smaller);
+}
+
+#GC-Hub-Settings-Foot {
+    padding: 16px;
+}
+
+#GC-Hub-Settings-Foot-Button-Help {
+    margin-top: var(--gc-common-space-smaller);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#GC-Hub-Settings-Foot-Button-Help Button {
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0);
+    border-bottom-width: 1px;
+    color: var(--gc-color-border-active);
+    border-bottom-color: var(--gc-color-border-active);
+    cursor: link;
+}

@@ -1,0 +1,42 @@
+﻿#GC-PropertyElement-Head {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    margin-right: -2px;
+}
+
+#GC-PropertyElement-Head Label {
+    -unity-text-align: middle-left;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-left: 3px;
+}
+
+#GC-PropertyElement-Head Button {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2px 5px;
+    -unity-text-align: middle-left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: 0;
+}
+
+#GC-PropertyElement-Head Button Image {
+    width: var(--gc-list-head-image-size);
+    height: var(--gc-list-head-image-size);
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#GC-PropertyElement-Body {
+    margin-left: 10px;
+}
+
+.gc-property-element-body-content {
+    /*margin-bottom: var(--gc-common-space-smaller);*/
+}
