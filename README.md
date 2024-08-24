@@ -87,12 +87,6 @@ I will first create a functional game. Make all of the story playable, then focu
 
 Burnout.
 
-### I'VE WORKED WITH YOU! DIDN'T YOU SAY YOU HAD A TEAM?
-
-Sorry I lied. I needed to make this project seem more stable.
-<br>Everything is being worked on by me alone, with whatever resources I can manage.
-<br>However, your work did not go to waste. I'll get things done. Eventually.
-
 ### OPEN-SOURCE AAA?
 
 The game is not tripple A in terms of budget or team size. After all I'm only a solo developer with big aspirations.
