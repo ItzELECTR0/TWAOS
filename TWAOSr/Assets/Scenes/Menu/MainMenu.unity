@@ -767,7 +767,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetScreen
         m_Mode: 0
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   m_BlockingObjects: 3
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2047
 --- !u!114 &318203645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1923,7 +1923,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetResolution
         m_Mode: 0
@@ -2659,7 +2659,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetUserInterfaceVolume
         m_Mode: 0
@@ -3344,8 +3344,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SIP
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
-  m_sharedMaterial: {fileID: 8677833924105820070, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
+  m_sharedMaterial: {fileID: 1188431857326718836, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5299,7 +5299,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetMasterVolume
         m_Mode: 0
@@ -6235,8 +6235,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Adventures Of
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
-  m_sharedMaterial: {fileID: 8677833924105820070, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
+  m_sharedMaterial: {fileID: 1188431857326718836, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6839,8 +6839,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: The Wonderful
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
-  m_sharedMaterial: {fileID: 8677833924105820070, guid: 7634cff7405a64f4dbcddce99e03ca57, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
+  m_sharedMaterial: {fileID: 1188431857326718836, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8562,7 +8562,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetQuality
         m_Mode: 0
@@ -9605,7 +9605,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2121585863948663563}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ELECTRIS.Settings, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 0
@@ -9862,8 +9862,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7326706f0030474fbe229f83b048823, type: 2}
-  m_sharedMaterial: {fileID: 8677833924105820070, guid: b7326706f0030474fbe229f83b048823, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
+  m_sharedMaterial: {fileID: 1188431857326718836, guid: 4ab1d4a21bbd831409cba59eeb76d3cd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10555,17 +10555,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
---- !u!114 &2121585863948663563 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8389762160957151363, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
-  m_PrefabInstance: {fileID: 2121585863948663562}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324903d56a3e1be41bea5de404fc0a22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2121585863948663565 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5752631297108137046, guid: bfb0f0a5a4fe1a247b2d2766a042596c, type: 3}
