@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ELECTRIS
 {
-    public class MainMenu : MonoBehaviour
+    public class MenuManager : MonoBehaviour
     {
         public LevelLoader loader;
 

@@ -26,7 +26,7 @@ namespace ELECTRIS
         [SerializeField] private bool reInput = true;
 
         [Header("Script Connectors")]
-        public PauseController pausectl;
+        public PauseManager pausectl;
         public PausedGame paused;
 
         [Header("Player")]

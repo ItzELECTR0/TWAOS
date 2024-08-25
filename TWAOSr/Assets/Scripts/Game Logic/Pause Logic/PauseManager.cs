@@ -8,7 +8,7 @@ using TMPro;
 
 namespace ELECTRIS
 {
-    public class PauseController : MonoBehaviour
+    public class PauseManager : MonoBehaviour
     {
         [Header("Script Control")]
         [SerializeField] private bool reInput;

@@ -11,6 +11,7 @@ using UnityEditor;
 // ELECTRO - 11/08/2024 05:27 - Treat this as the heart of the game. I'm not kidding.
 // ELECTRO - 16/08/2024 22:39 - Added support for enabling RTX. Also utility functions to reset the quality.
 // ELECTRO - 16/08/2024 23:18 - For some reason the game starts playmode pause, so I added a function to autostart it, but can be disabled if needed straight within the editor.
+// ELECTRO - 25/08/2024 14:32 - Should've probably mentioned this earlier but the unpauseOnStart thing doesn't really work.
 
 namespace ELECTRIS
 {
@@ -25,6 +26,12 @@ namespace ELECTRIS
         public bool startWithRTX = false;
         public bool startWithRTXQuality = false;
         public bool startWithCustomQuality = false;
+
+        [Header("Script Connectors")]
+        public MenuManager menuCtl;
+        public VideoManager vidCtl;
+        public LevelLoader levelCtl;
+        public PauseManager pauseCtl;
 
         [Header("Game Quality Levels")]
         public GameObject Minimal;
@@ -122,6 +129,16 @@ namespace ELECTRIS
             Wonderful.SetActive(false);
         }
 
+        public void ResetRayTracing()
+        {
+            PrettyRTXPerformance.SetActive(false);
+            PrettyRTXQuality.SetActive(false);
+            AmazingRTXPerformance.SetActive(false);
+            AmazingRTXQuality.SetActive(false);
+            WonderfulRTXPerformance.SetActive(false);
+            WonderfulRTXQuality.SetActive(false);
+        }
+
         public void EnableRayTracing(bool quality)
         {
             if (!quality)
@@ -199,6 +216,12 @@ namespace ELECTRIS
                     }
                 }
             }
+        }
+
+        public void DisableRayTracing()
+        {
+            ResetRayTracing();
+            ResetQuality();
         }
     }
 }

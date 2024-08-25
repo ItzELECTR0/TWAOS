@@ -3,8 +3,7 @@ using UnityEngine.Video;
 
 namespace ELECTRIS
 {
-
-    public class AutoPlayVideo : MonoBehaviour
+    public class VideoManager : MonoBehaviour
     {
         // Reference to the VideoPlayer component
         private VideoPlayer videoPlayer;
