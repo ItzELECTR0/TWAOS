@@ -1,7 +1,7 @@
 <div align="center">
 
-# DEVELOPMENT PLANS
-## An In-Depth Analysis
+## DEVELOPMENT PLANS
+### An In-Depth Analysis
 
 </div>
 
@@ -28,5 +28,12 @@ This is something I want to set straight, but also something I cannot go very in
 <br> The Co-Op will feature separate perspectives for the 3 main characters and the way they see the story
 <br> The Co-Op expasion will also bring a new story mode to the single player, the ability to play from a perspective other than Sip's.
 <br> With that said, it's the very limit of what I can say without revealing too much.
+
+### The Expansions
+This is something I have to be vague about, since I have a tendency to overshare.
+<br>However, I find it fine to mention this much.
+<br>Aside from the multiplayer expansion, the game is planned to have 3 other DLCs.
+<br>After those are complete and release, this reposity will stop being maintained by me,
+<br>And the story of this game will also conclude, and I will move on to other projects.
 
 </div>
