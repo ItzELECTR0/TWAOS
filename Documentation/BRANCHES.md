@@ -28,6 +28,6 @@ I like to keep my project up to date, however sometimes Unity launches some upda
 <br> Meaning this branch is not fully 'cutting edge' but not fully 'production ready' either.
 <br> Use it at your own risk.
 
-#### Current status of Update: Updated to Unity 6 Preview 14 Successfuly.
+#### Current status of Update: Updated to Unity 6 Preview 16 Successfuly.
 
 </div>

@@ -2,7 +2,7 @@
 
 <h2>Disclaimer for Unity Asset Store packages</h2>
 
-While this project is governed by a Creative Commons license
+While this project is governed by a Creative Commons Attribution license
 <br>Packages from the unity store aren't
 <br>While the owner of the project owns a licese to the packages in the project
 <br>They are still governed by the Asset Store license

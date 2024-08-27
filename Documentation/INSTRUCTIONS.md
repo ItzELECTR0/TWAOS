@@ -40,15 +40,16 @@ You might consider going to Code > Download ZIP
 - 7 - Copy the created token, and use it in the password field in the terminal
 
 ## HOW TO BUILD FROM SOURCE
-  
+
 - 1 - Install all [dependencies](DEPENDENCIES.md) required
 - 2 - Clone the project
- - 2.1 - Look for the "TWAOSr" directory within the project
-- 3 - Add the "TWAOSr" project to Unity Hub to open it
-- 4 - Once inside the project, to build and play you are required to disable the Steam DRM, even if you own a copy on steam
-- 5 - Once you have disabled the DRM, go back to the build settings, and press the build button
-- 6 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
-- 7 - Now just wait
+  - 2.1 - (OPTIONAL - If you want to fork) Enable viewing hidden files and delete the .git directory 
+- 3 - Look for the "TWAOSr" directory within the downloaded project
+- 4 - Add the "TWAOSr" project to Unity Hub to open it
+- 5 - Once inside the project, to build and play you are required to disable the Steam DRM, even if you own a copy on steam
+- 6 - Once you have disabled the DRM, go back to the build settings, and press the build button
+- 7 - You will be asked to select a folder where the game will be built, choose an empty one prefferably
+- 8 - Now just wait
 
 #### Disclaimers:
  - Project can only be opened and built on Windows 10/11 (Attempts on Arch Linux have always failed me)

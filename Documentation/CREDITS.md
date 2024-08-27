@@ -7,7 +7,7 @@
 <diV><b>[Varrow]</b><br>Marketing<br>Story Writer<br>Video Editor<br>Web Developer</div>
 
 ## |Voice Actors|
-<div>Kiera Rhodes - Voice Of Neon
+<div>Kiera (Kira) Rhodes - Voice Of Neon
 <br>ApaniVA - Voice Of Chloe</div>
 
 ## |Soundtrack Composers|  
