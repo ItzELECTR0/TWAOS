@@ -95,7 +95,7 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 ### WHY OPEN SOURCE?
 
 "Culture shouldn't exist only for those who can afford it"
-<br> - @HakitaDev on Twitter/X
+<br> -[HakitaDev](https://x.com/@HakitaDev)
 
 ## Documentation
 
