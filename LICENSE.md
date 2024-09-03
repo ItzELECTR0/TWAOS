@@ -6,4 +6,4 @@ Governed by [Creative Commons Attribution 4.0 International](https://creativecom
 
 ## UNITY ASSET STORE PACKAGES
 
-Governed by [Asset Store’s standard EULA](https://unity.com/legal/as-terms)
+Governed by [Unity Asset Store’s standard EULA](https://unity.com/legal/as-terms)
