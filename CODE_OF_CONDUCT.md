@@ -5,9 +5,9 @@
 ## Our Pledge
 
 We as members, moderators, contributors, and partners:
- - We pledge to make participation in our community a harassment-free experience for everyone
- - We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community
- - We pledge to make our contributions out of mutual respect, regardless of reward, if any at all
+* We pledge to make participation in our community a harassment-free experience for everyone
+* We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community
+* We pledge to make our contributions out of mutual respect, regardless of reward, if any at all
 
 ## Our Standards
 
@@ -18,7 +18,7 @@ The behavior that we encourage:
 * Accepting responsibility and apologizing to those affected by our mistakes
 * Focusing on what is best not just for us as individuals, but for the overall community and the project
 
-The behavior that is unacceptpable:
+The behavior that is unacceptable:
 
 * Trolling, insulting or derogatory comments, and personal or political attacks
 * Public or private harassment
@@ -49,8 +49,8 @@ This Code of Conduct applies community wide, including project pages, discord se
 ## Enforcement
 
 Instances of unacceptable behavior will be punished accordingly with the rules of this code of conduct or any other community rules
- - This allows members to report such instances to moderators or other members with authority
- - This allows members with authority and moderators to take action according to the gravity of the instance
+* This allows members to report such instances to moderators or other members with authority
+* This allows members with authority and moderators to take action according to the gravity of the instance
 
 ## Enforcement Guidelines
 
