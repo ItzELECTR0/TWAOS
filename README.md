@@ -68,6 +68,12 @@ Witness a super-powered <b>3D world</b> from a </b>third-person</b> perspective,
 
 The Wonderful Adventures of Sip contains battles, strong language, moments of gore and psychological horror elements.
 
+## TRAILERS
+
+<img src="https://github.com/user-attachments/assets/5c7662d1-073e-4f1d-b600-7cbb2896bd91" alt="TWAOS-Ch1-Cover-2K" width="400"/>
+   
+[Chapter One Teaser Trailer](https://www.youtube.com/watch?v=UctX2k-wf8U)
+
 ## DEVELOPMENT PLANS
 
 ### Story-wise:
