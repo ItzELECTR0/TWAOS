@@ -2,6 +2,12 @@
   
 # TWAOS
 
+<p align="center">
+<a href="https://img.shields.io/github/downloads/ItzELECTR0/TWAOS/total.svg?style=for-the-badge"><img src="https://img.shields.io/github/downloads/ItzELECTR0/TWAOS/total.svg?style=for-the-badge&color=CAF979"></a>
+<a href="https://img.shields.io/badge/Made_With-Unity-%2302569B.svg?style=for-the-badge&logo=Unity&logoColor=white"><img src="https://img.shields.io/badge/Made_With-Unity-%2302569B.svg?style=for-the-badge&logo=Unity&logoColor=white"></a>
+<a href="https://img.shields.io/badge/Made_For-PC-3DDC84?style=for-the-badge&logo=windows&logoColor=white"><img src="https://img.shields.io/badge/Made_For-PC-3DDC84?style=for-the-badge&logo=windows&logoColor=white"></a>
+</p>
+
 <img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS-Cover-4K-v2" width="600"/>
 
 ### The Wonderful Adventures Of Sip: An open-source AAA Game created by a Solo Developer
