@@ -33,11 +33,11 @@ This is something I want to set straight, but also something I cannot go very in
 This is something I have to be vague about, since I have a tendency to overshare.
 <br>However, I find it fine to mention this much.
 <br>Aside from the multiplayer expansion, the game is planned to have 3 other DLCs.
-<br>After those are complete and release, this reposity will stop being maintained by me,
+<br>After those are complete and released, this reposity will stop being maintained by me,
 <br>And the story of this game will also conclude, and I will move on to other projects.
 
 ### The Music
-I am no very good at composing, and artists are very expensive, especially when it comes to OSTs
+I am not very good at composing, and artists are very expensive, especially when it comes to OSTs
 <br> While the game may end up having some OSTs either composed by me or people I hire,
 <br> Most of the music will be licensed from existing works, rather than creating ones from scratch.
 <br> There are also plans to license copyrighted audio, music and songs,
