@@ -6,7 +6,7 @@ Licensing information for The Wonderful Adventures Of Sip by ELECTRIS & ELECTRIS
 
 ## ALL CHARACTER VOICE AUDIO FILES
 
-### Governed by an All Rights Reserved license.
+### Governed as All Rights Reserved
 Voice files shall never be used for any reason other than publicaly available non-profit creative works.
 <br> Such as:
  - YouTube videos,
