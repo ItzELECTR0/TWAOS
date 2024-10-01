@@ -4,6 +4,12 @@ TWAOSr/[Tt]emp/
 TWAOSr/[Oo]bj/
 TWAOSr/[Ll]ogs/
 
+# Asset meta data should only be ignored when the corresponding asset is also ignored
+!/TWAOSr/[Aa]ssets/**/*.meta
+
+# Deliberately ignored files
+TWAOSr/[Aa]ssets/StreamingAssets/**/*.bank
+
 # Deliberately ignored directories
 [Aa]udio
 [Bb]uilds
@@ -15,25 +21,9 @@ TWAOSr/[Ll]ogs/
 TWAOSr/[Aa]ssets/3D/Licensed/
 TWAOSr/[Uu]serSettings/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!/TWAOSr/[Aa]ssets/**/*.meta
-
-# Deliberately ignored files
-TWAOSr/[Aa]ssets/StreamingAssets/**/*.bank
-
-# Deliverately ignore Kiera's voice line audio files
-TWAOSr/[Aa]ssets/Audios/VL/RAW/Neon
-
 # Deliverately ignore ApaniVA's voice line audio files
-TWAOSr/[Aa]ssets/Audios/VL/RAW/Chapter1/Prologue/Intro/Chloe
-TWAOSr/[Aa]ssets/Audios/VL/RAW/Chapter1/Prologue/Intro/Chloe.meta
-
-# Deliverately ignore ApaniVA's voice line audio files
-TWAOSr/[Aa]ssets/Audio/VL/RAW/Chapter1/Prologue/Intro/Chloe
-
-# Ignore VS Code directory
-.vscode/
-TWAOSr/.vscode/
+TWAOSr/[Aa]ssets/Audios/VL/RAW/Chapter1/Chloe
+TWAOSr/[Aa]ssets/Audios/VL/RAW/Chapter1/Chloe.meta
 
 # Ignore Visual Sudio Directory
 .vs/
@@ -43,6 +33,10 @@ TWAOSr/.vs/
 *.tmp
 *.temp
 *.log
+
+# Ignore VS Code directory
+.vscode/
+TWAOSr/.vscode/
 
 # Ignore Visual Studio specific files
 TWAOSr/.vs/
