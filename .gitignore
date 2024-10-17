@@ -4,11 +4,9 @@ TWAOSr/[Tt]emp/
 TWAOSr/[Oo]bj/
 TWAOSr/[Ll]ogs/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!/TWAOSr/[Aa]ssets/**/*.meta
-
 # Deliberately ignored files
 TWAOSr/[Aa]ssets/StreamingAssets/**/*.bank
+TWAOSr/.vsconfig
 
 # Deliberately ignored directories
 [Aa]udio
@@ -20,6 +18,7 @@ TWAOSr/[Aa]ssets/StreamingAssets/**/*.bank
 [Ss]team
 [Ww]riting
 TWAOSr/[Aa]ssets/3D/Licensed/
+TWAOSr/[Aa]ssets/3D/Licensed.meta
 TWAOSr/[Uu]serSettings/
 
 # Deliverately ignore ApaniVA's voice line audio files
@@ -29,11 +28,6 @@ TWAOSr/[Aa]ssets/Audios/VL/RAW/Chapter1/Chloe.meta
 # Ignore Visual Sudio Directory
 .vs/
 TWAOSr/.vs/
-
-# Ignore temporary files and logs
-*.tmp
-*.temp
-*.log
 
 # Ignore VS Code directory
 .vscode/
@@ -48,3 +42,8 @@ TWAOSr/.idea/
 # Ignore Unity generated files
 *.sln
 *.csproj
+
+# Ignore temporary files and logs
+*.tmp
+*.temp
+*.log

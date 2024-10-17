@@ -1,6 +1,4 @@
-<div>
-
-# ELECTRIS Community Code of Conduct
+<div align="center"><h1> ELECTRIS Community Code of Conduct </h1></div>
 
 ## Our Pledge
 
@@ -42,9 +40,9 @@ decisions when appropriate.
 This Code of Conduct applies community wide, including project pages, discord servers, youtube channels, etc.
 <br>And it also applies when an individual is officially representing the community in public spaces.
 <br>Examples of representing our community include:
-<br>Acting as an appointed representative at an online or offline event
-<br>Posting via an official social media account (@electris_srl on twitter, @ELECTRIS on YouTube)
-<br>Using an official email address (Ending in @electris.net)
+* Acting as an appointed representative at an online or offline event
+* Posting via an official social media account (@0xELTS on Twitter/X, @ELECTRIS on YouTube)
+* Using an official email address (Ending in @electris.net)
 
 ## Enforcement
 
@@ -62,7 +60,7 @@ the consequences for any action they deem in violation of this Code of Conduct:
 **Community Impact**: Use of extreme inappropriate language or other behavior deemed
 unprofessional or unwelcome in the community (Depending on the context)
 
-**Consequence**: A private, written warning from community moderators, providing
+* **Consequence**: A private, written warning from community moderators, providing
 clarity around the nature of the violation and an explanation of why the
 behavior was inappropriate. A public apology may be requested.
 
@@ -71,7 +69,7 @@ behavior was inappropriate. A public apology may be requested.
 **Community Impact**: A violation through a single incident or series
 of actions.
 
-**Consequence**: A warning with consequences for continued behavior. No
+* **Consequence**: A warning with consequences for continued behavior. No
 interaction with the people involved, including unsolicited interaction with
 those enforcing the Code of Conduct, for a specified period of time. This
 includes avoiding interactions in community spaces as well as external channels
@@ -83,7 +81,7 @@ permanent ban.
 **Community Impact**: A serious violation of community standards, including
 sustained inappropriate behavior.
 
-**Consequence**: A temporary ban from any sort of interaction or public
+* **Consequence**: A temporary ban from any sort of interaction or public
 communication with the community for a specified period of time. No public or
 private interaction with the people involved, including unsolicited interaction
 with those enforcing the Code of Conduct, is allowed during this period.
@@ -95,7 +93,5 @@ Violating these terms may lead to a permanent ban.
 standards, including sustained inappropriate behavior,  harassment of an
 individual, or aggression toward or disparagement of classes of individuals.
 
-**Consequence**: A permanent ban from any sort of public interaction within
+* **Consequence**: A permanent ban from any sort of public interaction within
 the community.
-
-</div>

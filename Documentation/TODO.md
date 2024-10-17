@@ -12,6 +12,7 @@
  - OPTIMIZATION!!!
  - Animate Textures: Animated textures for character faces
  - Abilities: Implement Sip's abilities within the game
+ - Texture: Improve design of character faces
 
 ## Low Priority | Current Focus
  - Organize: Tidy up the project files

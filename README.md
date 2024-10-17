@@ -122,5 +122,5 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 
 ## CREATOR's SOCIALS
 
-**[Studio Youtube Channel](https://www.youtube.com/@ELECTRIS)** **[Studio Twitter Page](https://x.com/@0xELTS)**
-<br> **[Personal Youtube Channel](https://www.youtube.com/@ELEC7RO)** **[Discord Server](https://discord.gg/TgtCGKxbZr)**
+**[Studio Youtube Channel](https://www.youtube.com/@ELECTRIS)** **[Studio Twitter Page](https://x.com/@0xELTS)** **[Studio Discord Server](https://discord.gg/TgtCGKxbZr)**
+<br> **[Personal Youtube Channel](https://www.youtube.com/@ELEC7RO)**

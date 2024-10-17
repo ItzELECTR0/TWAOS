@@ -8,7 +8,8 @@
 <div align="left">
 
 ### The Story
-The story will be split and written across 10 chapters, each written individually.
+The story will a reflection of the state of mind
+<br> It will be split and written across 10 chapters, each written individually.
 <br> There are ideas for multiple expansions, but those cannot be talked about yet.
 <br> Not much more details can be revealed about the story iteself or the writing process.
 
