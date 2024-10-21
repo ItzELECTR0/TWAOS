@@ -5,23 +5,20 @@ using UnityEngine;
 using Rewired;
 using Unity.Mathematics;
 
-// ELECTRO - 03/08/2024 21:32 - Dear future contributors, this code is hot garbage, please either bear with it until it's imroved, or improve it.
-// ELECTRO - 06/o8/2024 21:31 - IT WORKS LET'S GOOOOOO (If you change it make sure it STILL works, or it is NOT getting merged)
-// ELECTRO - 07/08/2024 19:11 - Adding sprinting and slope movement raaahhh
-// ELECTRO - 07/08/2024 22:17 - You must NEVER disallow holdingBack. It's the law.
-// ELECTRO - 08/08/2024 04:18 - Slope stuff kinda works but it's janky as fuck
-
 namespace ELECTRIS
 {
     public class PlayerController : MonoBehaviour
     {
         [Header("Script Control")]
-        [SerializeField] private bool allowHoldingBack = true;
+        [SerializeField] private bool allowPower = true;
+        [SerializeField] private bool allowHoldingBack = true; // IT'S THE LAW
         [SerializeField] private bool allowMovement = true;
         [SerializeField] private bool allowPlayerRotation = true;
         [SerializeField] private bool allowSpeedControl = true;
         [SerializeField] private bool allowSprint = true;
         [SerializeField] private bool allowJump = true;
+        [SerializeField] private bool allowPhase = true;
+        [SerializeField] private bool allowDash = true;
         [SerializeField] private bool allowDebugging = true;
         [SerializeField] private bool reInput = true;
 
@@ -72,6 +69,7 @@ namespace ELECTRIS
         [Header("Legacy Keybinds")]
         public KeyCode jumpKey = KeyCode.Space;
         public KeyCode sprintKey = KeyCode.LeftShift;
+        public KeyCode dashKey = KeyCode.LeftControl;
 
         [Header("Movement")]
         [HideInInspector] public float moveSpeed;
@@ -119,6 +117,8 @@ namespace ELECTRIS
         {
             Walking,
             Sprinting,
+            Dashing,
+            Phasing,
             Air
         }
 
@@ -203,6 +203,14 @@ namespace ELECTRIS
                 moveState = CurrentMoveState.Air;
             }
 
+            if (Input.GetKeyDown(dashKey) && currentPlayer == CurrentPlayer.Sip && allowPhase)
+            {
+                moveState = CurrentMoveState.Phasing;
+            }else if (Input.GetKeyDown(dashKey) && currentPlayer == CurrentPlayer.Neon && allowDash)
+            {
+                moveState = CurrentMoveState.Dashing;
+            }
+
             //Jump
             if (allowJump && Input.GetKeyDown(jumpKey) && readyToJump && grounded)
             {
@@ -233,6 +241,14 @@ namespace ELECTRIS
                 moveState = CurrentMoveState.Air;
             }
 
+            if (player.GetButtonDown("Dash") && currentPlayer == CurrentPlayer.Sip && allowPhase)
+            {
+                moveState = CurrentMoveState.Phasing;
+            }else if (player.GetButtonDown("Dash") && currentPlayer == CurrentPlayer.Neon && allowDash)
+            {
+                moveState = CurrentMoveState.Dashing;
+            }
+
             //Jump
             if (allowJump && player.GetButtonDown("Jump" + playerId.ToString()) && readyToJump && grounded)
             {
@@ -247,13 +263,13 @@ namespace ELECTRIS
         private void Update()
         {
             // Decide which ability to enable based on the playing character
-            if (currentPlayer == CurrentPlayer.Sip)
+            if (currentPlayer == CurrentPlayer.Sip && allowPower)
             {
                 EnergyManipulation(allowHoldingBack);
-            }else if (currentPlayer == CurrentPlayer.Zip)
+            }else if (currentPlayer == CurrentPlayer.Zip && allowPower)
             {
                 HyperThinking();
-            }else if (currentPlayer == CurrentPlayer.Neon)
+            }else if (currentPlayer == CurrentPlayer.Neon && allowPower)
             {
                 ElectricUsage();
             }
@@ -455,6 +471,12 @@ namespace ELECTRIS
             {
                 superSpeed = sprintSpeedSip * 2 * superMultiplier;
             }
+
+            // Apply Phase Ability
+            if (moveState == CurrentMoveState.Phasing)
+            {
+                moveSpeed = superSpeed;
+            }
         }
 
         // Logic for Zip's powers
@@ -468,6 +490,12 @@ namespace ELECTRIS
         {
             // Establish Super Speed value
             superSpeed = sprintSpeedNeon * 1.5f;
+
+            // Apply Dash Ability
+            if (moveState == CurrentMoveState.Dashing)
+            {
+                moveSpeed = superSpeed;
+            }
         }
     }
 }
