@@ -8,7 +8,7 @@
 <a href="https://img.shields.io/badge/Made_For-PC-3DDC84?style=for-the-badge&logo=windows&logoColor=white"><img src="https://img.shields.io/badge/Made_For-PC-3DDC84?style=for-the-badge&logo=windows&logoColor=white"></a>
 </p>
 
-<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/63cb79fb-e64a-4ac7-9db2-99afa955bde3" alt="TWAOS-Cover-4K-v2" width="600"/>
+<img src=".github/Assets/Cover-4K-2.0.png" alt="TWAOS-Cover-4K-v2" width="600"/>
 
 ### The Wonderful Adventures Of Sip: An open-source AAA Game created by a Solo Developer
 
@@ -20,11 +20,9 @@
 
 [The Wonderful Adventures Of Sip on Steam](https://store.steampowered.com/app/2231750/The_Wonderful_Adventures_Of_Sip/)
 
-[The Wonderful Adventures Of Sip on Itch.io](https://electris.itch.io/twaos)
-
 ## FLASHING LIGHTS DISCLAIMER
   
-<img src="https://github.com/ItzELECTR0/TWAOS/assets/82042993/43c154b2-ac4a-4afe-b8bc-239f66bb0f6f" alt="flashwarnicon" width="100"/>
+<img src=".github/Assets/FlashWarn.png" alt="flashwarnicon" width="100"/>
 
 #### The game contains flashing lights that may cause epileptic attacks, even upon booting up the game.<br> Consider yourself warned.
 
@@ -76,8 +74,8 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 ## TRAILERS
 
-<img src="https://github.com/user-attachments/assets/5c7662d1-073e-4f1d-b600-7cbb2896bd91" alt="TWAOS-Ch1-Cover-2K" width="400"/>
-   
+<img href="https://www.youtube.com/watch?v=UctX2k-wf8U" src=".github/Assets/Cover-2K-Ch1.png" alt="TWAOS-Ch1-Cover-2K" width="400"/>
+
 [Chapter One Teaser Trailer](https://www.youtube.com/watch?v=UctX2k-wf8U)
 
 ## DEVELOPMENT PLANS
@@ -91,7 +89,11 @@ I will first create a functional game. Make all of the story playable, then focu
 <br>When a chapter's story is fully playable, it will come out as an alpha build.
 <br>As quality improves in graphics and design, it will move on to beta, and finally a release.
 
-##### For more info, check **[here](Documentation/PLANS.md)**
+### Some other information:
+**[The Creator Standard](Documentation/CREATE.md)**
+<br>**[TODO List](Documentation/TODO.md)**
+
+##### For even more info, check **[here](Documentation/PLANS.md)**
 
 ## FAQ / FACTS AND QUESTIONS
 
@@ -113,10 +115,9 @@ The game is not tripple A in terms of budget or team size. After all I'm only a 
 
 **[Instructions](Documentation/INSTRUCTIONS.md)**
 <br>**[Dependencies](Documentation/DEPENDENCIES.md)**
-<br>**[Project Version](Documentation/VERSION.md)**
-<br>**[TODO List](Documentation/TODO.md)**
-<br>**[Branches](Documentation/BRANCHES.md)**
 <br>**[License](LICENSE.md)**
+<br>**[Project Version](Documentation/VERSION.md)**
+<br>**[Branches](Documentation/BRANCHES.md)**
 <br>**[Asset Store Disclaimer](Documentation/ASSET-DISCLAIMER.md)**
 <br>**[Credits](Documentation/CREDITS.md)**
 

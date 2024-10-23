@@ -30,12 +30,19 @@ This is something I want to set straight, but also something I cannot go very in
 <br> The Co-Op expasion will also bring a new story mode to the single player, the ability to play from a perspective other than Sip's.
 <br> With that said, it's the very limit of what I can say without revealing too much.
 
+### The Networking
+The project is intended to functian via Steam networking. Therefore requirig Steam DRM.
+<br> However, for the FOSS version of the game I **MIGHT** implement an alternative networking method.
+<br> I do want as many people to enjoy the game together when I finally get around to adding the Co-Op, but,
+<br> If it's too much of a hassle for me to implement two methods of networking, I will not do it.
+<br> If that's what I end up doing, I will be throwing around steam keys sometimes, so watch your heads.
+
 ### The Expansions
 This is something I have to be vague about, since I have a tendency to overshare.
 <br>However, I find it fine to mention this much.
 <br>Aside from the multiplayer expansion, the game is planned to have 3 other DLCs.
 <br>After those are complete and released, this reposity will stop being maintained by me,
-<br>And the story of this game will also conclude, and I will move on to other projects.
+<br>As well as conclude the development of this game, and I will move on to other projects.
 
 ### The Music
 I am not very good at composing, and artists are very expensive, especially when it comes to OSTs

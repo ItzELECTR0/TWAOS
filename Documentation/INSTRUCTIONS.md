@@ -19,7 +19,7 @@ You might consider going to Code > Download ZIP
 
 - 1 - Install all [dependencies](DEPENDENCIES.md) required
 - 2 - Open a termial of your choosing
-- 3 - Navigate into your desired path to clone the project with
+- 3 - Navigate into your desired path to clone the project in
 
       cd "D:\path\for\project"
   - 3.1 - Letter doesn't have to be D, you can use any drive.
@@ -29,7 +29,7 @@ You might consider going to Code > Download ZIP
 - 5 - If you are asked to input your email and password, input your email, but not your password, enter your github token instead
 - 6 - The project should now be cloning, if not, just repeat the command at step 4
 
-### HOW TO CREATE A GITHUB TOKEN FOR CLONING
+### HOW TO CREATE A GITHUB TOKEN FOR CLONING (ONLY IF NEEDED)
 
 - 1 - To create a token, go back to the github website and go to your settings
 - 2 - Scroll to the bottom and access Developer Settings
@@ -53,7 +53,7 @@ You might consider going to Code > Download ZIP
 
 #### Disclaimers:
  - Project can only be opened and built on Windows 10/11 (Attempts on Arch Linux have always failed me)
- - Building will take a really long time, since the game's shader variants aren't included, and will have to be built from scratch
+ - Building will take a really long time, since the game's shader variants aren't included, and will have to be built from scratch.
 
 ## HOW DISABLE/REMOVE STEAM DRM
 
@@ -72,6 +72,6 @@ You might consider going to Code > Download ZIP
 - 4 - Disable or Remove the Steam Manager to remove the DRM
 
 #### Disclaimer:
- - Disabling Steam DRM will remove any online functionality from the game, and there is no way to avoid this
+ - Disabling Steam DRM will remove any online functionality from the game, and there is no way to avoid this.
 
 </div>
