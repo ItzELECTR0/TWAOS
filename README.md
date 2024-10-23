@@ -76,7 +76,7 @@ The Wonderful Adventures of Sip contains battles, strong language, moments of go
 
 [Chapter One Teaser Trailer](https://www.youtube.com/watch?v=UctX2k-wf8U)
 
-### Image Galery (UNFINISHED)
+## Image Galery (UNFINISHED)
 <img href="https://www.youtube.com/watch?v=UctX2k-wf8U" src=".github/Assets/Cover-2K-Ch1.png" alt="TWAOS-Ch1-Cover-2K" width="400"/>
 
 ## DEVELOPMENT PLANS
